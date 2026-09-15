@@ -77,7 +77,7 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
             <span>塞万提斯学院发音大纲 · 西班牙语纯正发音规范</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-            西班牙语 27 官方字母 & 4 大核心发音拼读铁律
+            西班牙语 27 官方字母 & 5 大核心发音拼读铁律
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl font-medium">
             点击任意字母收听正统马德里与拉美原声、透视嘴型指南与高频词汇；切换规则精析攻克 RRR 大舌颤音与重音戴帽铁律。
@@ -287,16 +287,16 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
           <div className="space-y-1 flex-1 min-w-0">
             <div className="flex items-center justify-between gap-2">
               <h3 className={`text-base sm:text-lg font-black ${activeModule === 'rules' ? 'text-[#B45309]' : 'text-slate-800'}`}>
-                4 大核心发音与重音规则精析
+                5 大核心发音与重音规则精析
               </h3>
               <span className={`text-[11px] font-black px-2.5 py-0.5 rounded-full whitespace-nowrap ${
                 activeModule === 'rules' ? 'bg-[#B45309] text-white shadow-2xs' : 'bg-slate-100 text-slate-600'
               }`}>
-                重中之重 · 4大规则
+                重中之重 · 5大规则
               </span>
             </div>
             <p className="text-xs text-slate-500 leading-relaxed">
-              搞清重音自然天性与强制戴帽法则、RRR 大舌音伯努利模型、倒置情绪符号 ¿¡、分音节与连音 (Sinalefa)。
+              搞清重音自然天性与强制戴帽法则、RRR 大舌音伯努利模型、倒置情绪符号 ¿¡、分音节与连音 (Sinalefa)、辅音软化与易混对决。
             </p>
           </div>
           {activeModule === 'rules' && (
@@ -499,11 +499,11 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
                 重中之重
               </span>
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                4 大核心发音与重音规则精析
+                5 大核心发音与重音规则精析
               </h2>
             </div>
             <p className="text-xs sm:text-sm text-slate-500 mt-1">
-              搞清重音自然天性与强制戴帽法则、RRR 大舌音伯努利模型、倒置情绪符号 ¿¡、分音节与连音 (Sinalefa)
+              搞清重音自然天性与强制戴帽法则、RRR 大舌音伯努利模型、倒置情绪符号 ¿¡、分音节与连音 (Sinalefa)、辅音软化与易混对决
             </p>
           </div>
 
@@ -657,7 +657,7 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
               <span>当前正在体验【西班牙语 27 字母与基础发音 · 免费体验】</span>
             </div>
             <p className="text-xs text-white/90 leading-relaxed">
-              开通 VIP 终身卡（仅 ¥49.9），立享<strong>全部 4 大高阶重音戴帽与 RRR 极速突破法</strong>、30部西影精学课、36套国家级模考全真大卷与 5000+ 核心词库！
+              开通 VIP 终身卡（仅 ¥49.9），立享<strong>全部 5 大高阶重音戴帽与 RRR 极速突破法</strong>、30部西影精学课、36套国家级模考全真大卷与 5000+ 核心词库！
             </p>
           </div>
           <button
