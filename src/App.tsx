@@ -233,7 +233,11 @@ export const App: React.FC = () => {
               )}
 
               {activeTab === 'grammar' && (
-                <GrammarView onOpenMindMap={() => setIsMindMapOpen(true)} />
+                <GrammarView 
+                  isVip={isVip}
+                  onOpenVipModal={() => handleOpenVipModal('解锁考研二外与DELE高阶文法全量精讲与避坑题库')}
+                  onOpenMindMap={() => setIsMindMapOpen(true)} 
+                />
               )}
 
               {activeTab === 'cinema' && (
