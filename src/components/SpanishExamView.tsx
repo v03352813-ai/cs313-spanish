@@ -69,6 +69,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
       siele: SPANISH_EXAM_PAPERS.filter(p => p.track === 'siele').length,
       tem4: SPANISH_EXAM_PAPERS.filter(p => p.track === 'tem4').length,
       kaoyan: SPANISH_EXAM_PAPERS.filter(p => p.track === 'kaoyan').length,
+      kaoyan_mock: SPANISH_EXAM_PAPERS.filter(p => p.track === 'kaoyan_mock').length,
     };
   }, []);
 
@@ -550,7 +551,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                 </h1>
               </div>
               <p className="text-xs text-slate-500 font-medium mt-0.5">
-                塞万提斯 DELE 欧标机考 · SIELE 在线综合 · 全国高校西语专四 (EEE-4) · 全国名校考研二外 (24X)
+                塞万提斯 DELE 欧标机考 · SIELE 在线综合 · 高校西语专四 (EEE-4) · 考研二外历届真题 (240) · 考研二外全真模拟
               </p>
             </div>
           </div>
@@ -601,13 +602,14 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           </div>
         )}
 
-        {/* 四大赛道选择 Tabs (严格尊重西语大考权威体系，严禁杜撰) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 pt-2 border-t border-amber-100">
+        {/* 五大权威大考与考研赛道选择 Tabs */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 pt-2 border-t border-amber-100">
           {[
             { id: 'dele' as ExamTrack, label: '塞万提斯 DELE 欧标机考', icon: Globe2, desc: 'A1-B2 终身认证真题卷', count: trackCounts.dele },
             { id: 'siele' as ExamTrack, label: 'SIELE 国际在线机考', icon: Laptop, desc: '四大顶尖大学机考', count: trackCounts.siele },
-            { id: 'tem4' as ExamTrack, label: '高校西语专四 (EEE-4)', icon: ShieldCheck, desc: '全国专业本科水平统考 (专四)', count: trackCounts.tem4 },
-            { id: 'kaoyan' as ExamTrack, label: '全国名校考研二外 (24X)', icon: GraduationCap, desc: '北外/上外自命题真题', count: trackCounts.kaoyan },
+            { id: 'tem4' as ExamTrack, label: '高校西语专四 (EEE-4)', icon: ShieldCheck, desc: '全国专业本科水平统考', count: trackCounts.tem4 },
+            { id: 'kaoyan' as ExamTrack, label: '名校考研二外历届真题', icon: GraduationCap, desc: '北外/上外/广外等真题卷', count: trackCounts.kaoyan },
+            { id: 'kaoyan_mock' as ExamTrack, label: '考研二外全真模拟冲刺', icon: Sparkles, desc: '全国统考模拟 & 专项攻坚', count: trackCounts.kaoyan_mock },
           ].map(track => {
             const Icon = track.icon;
             const isSelected = activeTrack === track.id;
@@ -650,7 +652,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
           <span className="text-xs font-bold text-slate-500 whitespace-nowrap mr-1">分类过滤:</span>
-          {(['all', 'A1', 'A2', 'B1', 'B2', 'TEM-4', '考研二外'] as const).map(lvl => (
+          {(['all', 'A1', 'A2', 'B1', 'B2', 'TEM-4', '考研二外', '考研模拟'] as const).map(lvl => (
             <button
               key={lvl}
               onClick={() => setLevelFilter(lvl)}
@@ -660,7 +662,15 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                   : 'bg-white text-slate-700 hover:bg-amber-50 border border-amber-200/80'
               }`}
             >
-              {lvl === 'all' ? '全部试卷' : (lvl === 'TEM-4' ? '专四(EEE-4)' : lvl)}
+              {lvl === 'all' 
+                ? '全部试卷' 
+                : (lvl === 'TEM-4' 
+                    ? '专四(EEE-4)' 
+                    : (lvl === '考研二外' 
+                        ? '二外真题' 
+                        : (lvl === '考研模拟' 
+                            ? '二外模拟冲刺' 
+                            : lvl)))}
             </button>
           ))}
         </div>

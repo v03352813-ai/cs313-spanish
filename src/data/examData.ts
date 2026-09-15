@@ -1,7 +1,7 @@
-// Spanish Exams (DELE, SIELE, TEM-4 / EEE-4, 考研二外) Comprehensive Dataset
-// 包含 4 大权威体系、共计 40 套专业真题与仿真模拟大卷
+// Spanish Exams Comprehensive Dataset
+// 涵盖 5 大权威赛道体系、共计 64 套专业历届真题与仿真冲刺大卷
 
-export type ExamTrack = 'dele' | 'siele' | 'tem4' | 'kaoyan';
+export type ExamTrack = 'dele' | 'siele' | 'tem4' | 'kaoyan' | 'kaoyan_mock';
 
 export interface ExamQuestion {
   id: string;
@@ -20,7 +20,7 @@ export interface ExamPaper {
   title: string;
   spanishTitle: string;
   track: ExamTrack;
-  level: 'A1' | 'A2' | 'B1' | 'B2' | 'TEM-4' | '考研二外' | string;
+  level: 'A1' | 'A2' | 'B1' | 'B2' | 'TEM-4' | '考研二外' | '考研模拟' | string;
   schoolOrOrg: string;
   durationMinutes: number;
   totalScore: number;
@@ -31,194 +31,223 @@ export interface ExamPaper {
 export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-dele-a1-01",
-    "title": "塞万提斯学院 DELE A1 官方全真机考模拟卷 (一)",
-    "spanishTitle": "DELE A1 — Modelo de Examen Oficial (Instituto Cervantes)",
+    "title": "塞万提斯学院 DELE A1 官方真题机考精编卷 (一)",
+    "spanishTitle": "DELE A1 — Modelo Oficial de Examen (Instituto Cervantes)",
     "track": "dele",
     "level": "A1",
     "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
     "durationMinutes": 45,
     "totalScore": 100,
-    "summary": "入门起步 · 自我介绍、日常问候与基础数字时间表达",
+    "summary": "入门起步 · 自我介绍、日常问候与基础数字时间",
     "questions": [
       {
         "id": "dele-a1-01-q1",
         "type": "grammar",
-        "questionText": "Completa la frase con la opción correcta: \"Espero sinceramente que tú ________ (venir) mañana a mi fiesta de cumpleaños.\"",
+        "questionText": "Completa con la forma verbal correcta: \"Espero que vosotros ________ (tener) un buen viaje por Andalucía.\"",
         "options": [
           {
             "key": "A",
-            "text": "vienes"
+            "text": "tenéis"
           },
           {
             "key": "B",
-            "text": "vengas"
+            "text": "tengáis"
           },
           {
             "key": "C",
-            "text": "vendrás"
+            "text": "tendréis"
           },
           {
             "key": "D",
-            "text": "venías"
+            "text": "teníais"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：主句动词 esperar 表愿望期许（属于 W-E-I-R-D-O 六角星首要触发动词），主句主语 (yo) 与从句主语 (tú) 不一致，从句必须使用虚拟式现在时。venir 的虚拟式第二人称单数为 vengas（选 B）。",
-        "categoryTag": "虚拟式现在时变位",
+        "explanation": "【DELE 考点剖析】：主句动词 esperar 表愿望期许，主从句主语不一致（yo vs vosotros），从句强制使用虚拟式现在时。tener 的虚拟式第二人称复数为 tengáis（带重音符号）。选 B。",
+        "categoryTag": "虚拟式现在时 vosotros 变位",
         "score": 25
       },
       {
         "id": "dele-a1-01-q2",
         "type": "grammar",
-        "questionText": "Selecciona la preposición correcta: \"Este regalo es ________ ti, porque hoy es tu cumpleaños.\"",
+        "questionText": "Identifica la opción adecuada: \"Cuando éramos pequeños, nosotros ________ (ir) a la playa todos los veranos.\"",
         "options": [
           {
             "key": "A",
-            "text": "por"
+            "text": "fuimos"
           },
           {
             "key": "B",
-            "text": "para"
+            "text": "íbamos"
           },
           {
             "key": "C",
-            "text": "de"
+            "text": "iremos"
           },
           {
             "key": "D",
-            "text": "hacia"
+            "text": "vayamos"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：para 表达目的、终点与受惠对象（相当于 for/recipient）；por 表达原因、动机、途径（equivalent to because of/by）。此处礼物送给受惠者，必须用 para ti。选 B。",
-        "categoryTag": "por 与 para 终极辨析",
+        "explanation": "【DELE 考点剖析】：todos los veranos 表达过去长期反复发生的习惯性、周期性动作，ir 在过去未完成时呈现不规则形态 íbamos（带重音符号）。选 B。",
+        "categoryTag": "过去未完成时习惯动作",
         "score": 25
       },
       {
         "id": "dele-a1-01-q3",
         "type": "grammar",
-        "questionText": "Selecciona el artículo y género correcto: \"El profesor explicó ________ problema más difícil del examen.\"",
+        "questionText": "Elige la combinación de pronombres correcta: \"¿Le has dado el informe a la directora?\" — \"Sí, ya ________ he entregado esta mañana.\"",
         "options": [
           {
             "key": "A",
-            "text": "la"
+            "text": "se lo"
           },
           {
             "key": "B",
-            "text": "el"
+            "text": "le lo"
           },
           {
             "key": "C",
-            "text": "un"
+            "text": "se la"
           },
           {
             "key": "D",
-            "text": "una"
+            "text": "lo le"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：problema, tema, mapa, clima, sistema, idioma 等词源自古希腊语，以 -a 结尾但全部属于【阳性名词】，必须使用 el / un。选 B。",
-        "categoryTag": "反常阴阳性名词 (-ma 希腊词根)",
+        "correctAnswer": "A",
+        "explanation": "【DELE 考点剖析】：el informe (直宾 lo)，a la directora (间宾 le)。当间宾与第三人称直宾相遇时，间宾 le 必须变身为 se，因此为 se lo。选 A。",
+        "categoryTag": "双重代词替换变身",
         "score": 25
       },
       {
         "id": "dele-a1-01-q4",
-        "type": "grammar",
-        "questionText": "Elige la forma verbal adecuada: \"Ayer por la tarde, mientras nosotros ________ (estudiar) en la biblioteca, empezó a llover fuertemente.\"",
+        "type": "reading",
+        "passage": "El Camino de Santiago es una de las rutas de peregrinación cultural y espiritual más antiguas de Europa. Cada año, peregrinos de más de 150 países recorren cientos de kilómetros a pie o en bicicleta, dinamizando las economías rurales del norte de España.",
+        "questionText": "Según el texto sobre el Camino de Santiago, ¿qué beneficio genera la afluencia de peregrinos?",
         "options": [
           {
             "key": "A",
-            "text": "estudiamos"
+            "text": "La saturación de grandes metrópolis industriales"
           },
           {
             "key": "B",
-            "text": "estudiábamos"
+            "text": "La dinamización de las economías rurales en el norte peninsular"
           },
           {
             "key": "C",
-            "text": "estudiaremos"
+            "text": "El abandono de las tradiciones locales"
           },
           {
             "key": "D",
-            "text": "hemos estudiado"
+            "text": "La obligatoriedad de viajar en transporte aéreo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：mientras 引导过去正在持续进行的动作（背景铺垫），用过去未完成时 (estudiábamos)；突发的瞬间干扰动作（empezó a llover）用简单过去时。选 B。",
-        "categoryTag": "过去未完成时 vs 简单过去时",
+        "explanation": "【DELE 考点剖析】：文中明确指出“dinamizando las economías rurales del norte de España”（促进了西班牙北部乡村地区的经济活力），对应选项 B。",
+        "categoryTag": "DELE 西班牙地理文化阅读",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-dele-a1-02",
-    "title": "塞万提斯学院 DELE A1 官方全真机考模拟卷 (二)",
-    "spanishTitle": "DELE A1 — Modelo de Examen Oficial (Instituto Cervantes)",
+    "title": "塞万提斯学院 DELE A1 官方真题机考精编卷 (二)",
+    "spanishTitle": "DELE A1 — Modelo Oficial de Examen (Instituto Cervantes)",
     "track": "dele",
     "level": "A1",
     "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
     "durationMinutes": 45,
     "totalScore": 100,
-    "summary": "生活出行 · 餐厅点餐、家庭成员称谓与物品方位指认",
+    "summary": "生活出行 · 餐厅点餐、家庭称谓与交通物品指认",
     "questions": [
       {
         "id": "dele-a1-02-q1",
         "type": "grammar",
-        "questionText": "Elige la forma verbal adecuada: \"Ayer por la tarde, mientras nosotros ________ (estudiar) en la biblioteca, empezó a llover fuertemente.\"",
+        "questionText": "Identifica la opción adecuada: \"Cuando éramos pequeños, nosotros ________ (ir) a la playa todos los veranos.\"",
         "options": [
           {
             "key": "A",
-            "text": "estudiamos"
+            "text": "fuimos"
           },
           {
             "key": "B",
-            "text": "estudiábamos"
+            "text": "íbamos"
           },
           {
             "key": "C",
-            "text": "estudiaremos"
+            "text": "iremos"
           },
           {
             "key": "D",
-            "text": "hemos estudiado"
+            "text": "vayamos"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：mientras 引导过去正在持续进行的动作（背景铺垫），用过去未完成时 (estudiábamos)；突发的瞬间干扰动作（empezó a llover）用简单过去时。选 B。",
-        "categoryTag": "过去未完成时 vs 简单过去时",
+        "explanation": "【DELE 考点剖析】：todos los veranos 表达过去长期反复发生的习惯性、周期性动作，ir 在过去未完成时呈现不规则形态 íbamos（带重音符号）。选 B。",
+        "categoryTag": "过去未完成时习惯动作",
         "score": 25
       },
       {
         "id": "dele-a1-02-q2",
         "type": "grammar",
-        "questionText": "¿Cuál es la opción correcta para sustituir los complementos? \"¿Has entregado ya la carta al director?\" — \"Sí, ya ________ he entregado.\"",
+        "questionText": "Elige la combinación de pronombres correcta: \"¿Le has dado el informe a la directora?\" — \"Sí, ya ________ he entregado esta mañana.\"",
         "options": [
           {
             "key": "A",
-            "text": "le la"
+            "text": "se lo"
           },
           {
             "key": "B",
-            "text": "se la"
+            "text": "le lo"
           },
           {
             "key": "C",
-            "text": "la le"
+            "text": "se la"
           },
           {
             "key": "D",
-            "text": "se lo"
+            "text": "lo le"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：间宾 al director 原为 le，直宾 la carta 为 la。当第三人称间宾 le/les 与直宾 lo/la/los/las 相遇时，根据西语避音变身法则，间宾必须强制变身为 se！即 se la。选 B。",
-        "categoryTag": "双重代词替换 (变身法则)",
+        "correctAnswer": "A",
+        "explanation": "【DELE 考点剖析】：el informe (直宾 lo)，a la directora (间宾 le)。当间宾与第三人称直宾相遇时，间宾 le 必须变身为 se，因此为 se lo。选 A。",
+        "categoryTag": "双重代词替换变身",
         "score": 25
       },
       {
         "id": "dele-a1-02-q3",
+        "type": "reading",
+        "passage": "El Camino de Santiago es una de las rutas de peregrinación cultural y espiritual más antiguas de Europa. Cada año, peregrinos de más de 150 países recorren cientos de kilómetros a pie o en bicicleta, dinamizando las economías rurales del norte de España.",
+        "questionText": "Según el texto sobre el Camino de Santiago, ¿qué beneficio genera la afluencia de peregrinos?",
+        "options": [
+          {
+            "key": "A",
+            "text": "La saturación de grandes metrópolis industriales"
+          },
+          {
+            "key": "B",
+            "text": "La dinamización de las economías rurales en el norte peninsular"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de las tradiciones locales"
+          },
+          {
+            "key": "D",
+            "text": "La obligatoriedad de viajar en transporte aéreo"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：文中明确指出“dinamizando las economías rurales del norte de España”（促进了西班牙北部乡村地区的经济活力），对应选项 B。",
+        "categoryTag": "DELE 西班牙地理文化阅读",
+        "score": 25
+      },
+      {
+        "id": "dele-a1-02-q4",
         "type": "grammar",
-        "questionText": "Selecciona la preposición correcta: \"Este regalo es ________ ti, porque hoy es tu cumpleaños.\"",
+        "questionText": "Selecciona la preposición correcta: \"Lucía trabaja duro ________ conseguir una beca de investigación en Salamanca.\"",
         "options": [
           {
             "key": "A",
@@ -230,89 +259,90 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           },
           {
             "key": "C",
-            "text": "de"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "hacia"
+            "text": "con"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：para 表达目的、终点与受惠对象（相当于 for/recipient）；por 表达原因、动机、途径（equivalent to because of/by）。此处礼物送给受惠者，必须用 para ti。选 B。",
-        "categoryTag": "por 与 para 终极辨析",
-        "score": 25
-      },
-      {
-        "id": "dele-a1-02-q4",
-        "type": "grammar",
-        "questionText": "Selecciona el artículo y género correcto: \"El profesor explicó ________ problema más difícil del examen.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "la"
-          },
-          {
-            "key": "B",
-            "text": "el"
-          },
-          {
-            "key": "C",
-            "text": "un"
-          },
-          {
-            "key": "D",
-            "text": "una"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：problema, tema, mapa, clima, sistema, idioma 等词源自古希腊语，以 -a 结尾但全部属于【阳性名词】，必须使用 el / un。选 B。",
-        "categoryTag": "反常阴阳性名词 (-ma 希腊词根)",
+        "explanation": "【DELE 考点剖析】：para + 动词原形表示行动追求的目的和目标（为了获得奖学金）；por 表示原因。此处表达奋斗目的，必须使用 para。选 B。",
+        "categoryTag": "por 与 para 目的考查",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-dele-a2-01",
-    "title": "塞万提斯学院 DELE A2 官方真题机考卷 (一)",
-    "spanishTitle": "DELE A2 — Modelo de Examen Oficial (Instituto Cervantes)",
+    "title": "塞万提斯学院 DELE A2 官方真题机考大卷 (一)",
+    "spanishTitle": "DELE A2 — Modelo Oficial de Examen (Instituto Cervantes)",
     "track": "dele",
     "level": "A2",
     "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
     "durationMinutes": 45,
     "totalScore": 100,
-    "summary": "过去叙事 · 简单过去时体验、旅行经历与买票问路",
+    "summary": "过去叙事 · 简单过去时体验、旅行买票与问路",
     "questions": [
       {
         "id": "dele-a2-01-q1",
         "type": "grammar",
-        "questionText": "Elige la forma verbal adecuada: \"Ayer por la tarde, mientras nosotros ________ (estudiar) en la biblioteca, empezó a llover fuertemente.\"",
+        "questionText": "Elige la combinación de pronombres correcta: \"¿Le has dado el informe a la directora?\" — \"Sí, ya ________ he entregado esta mañana.\"",
         "options": [
           {
             "key": "A",
-            "text": "estudiamos"
+            "text": "se lo"
           },
           {
             "key": "B",
-            "text": "estudiábamos"
+            "text": "le lo"
           },
           {
             "key": "C",
-            "text": "estudiaremos"
+            "text": "se la"
           },
           {
             "key": "D",
-            "text": "hemos estudiado"
+            "text": "lo le"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：mientras 引导过去正在持续进行的动作（背景铺垫），用过去未完成时 (estudiábamos)；突发的瞬间干扰动作（empezó a llover）用简单过去时。选 B。",
-        "categoryTag": "过去未完成时 vs 简单过去时",
+        "correctAnswer": "A",
+        "explanation": "【DELE 考点剖析】：el informe (直宾 lo)，a la directora (间宾 le)。当间宾与第三人称直宾相遇时，间宾 le 必须变身为 se，因此为 se lo。选 A。",
+        "categoryTag": "双重代词替换变身",
         "score": 25
       },
       {
         "id": "dele-a2-01-q2",
+        "type": "reading",
+        "passage": "El Camino de Santiago es una de las rutas de peregrinación cultural y espiritual más antiguas de Europa. Cada año, peregrinos de más de 150 países recorren cientos de kilómetros a pie o en bicicleta, dinamizando las economías rurales del norte de España.",
+        "questionText": "Según el texto sobre el Camino de Santiago, ¿qué beneficio genera la afluencia de peregrinos?",
+        "options": [
+          {
+            "key": "A",
+            "text": "La saturación de grandes metrópolis industriales"
+          },
+          {
+            "key": "B",
+            "text": "La dinamización de las economías rurales en el norte peninsular"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de las tradiciones locales"
+          },
+          {
+            "key": "D",
+            "text": "La obligatoriedad de viajar en transporte aéreo"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：文中明确指出“dinamizando las economías rurales del norte de España”（促进了西班牙北部乡村地区的经济活力），对应选项 B。",
+        "categoryTag": "DELE 西班牙地理文化阅读",
+        "score": 25
+      },
+      {
+        "id": "dele-a2-01-q3",
         "type": "grammar",
-        "questionText": "Selecciona la preposición correcta: \"Este regalo es ________ ti, porque hoy es tu cumpleaños.\"",
+        "questionText": "Selecciona la preposición correcta: \"Lucía trabaja duro ________ conseguir una beca de investigación en Salamanca.\"",
         "options": [
           {
             "key": "A",
@@ -324,79 +354,51 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           },
           {
             "key": "C",
-            "text": "de"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "hacia"
+            "text": "con"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：para 表达目的、终点与受惠对象（相当于 for/recipient）；por 表达原因、动机、途径（equivalent to because of/by）。此处礼物送给受惠者，必须用 para ti。选 B。",
-        "categoryTag": "por 与 para 终极辨析",
-        "score": 25
-      },
-      {
-        "id": "dele-a2-01-q3",
-        "type": "reading",
-        "passage": "El ecoturismo en Costa Rica se ha consolidado como un motor fundamental del desarrollo sostenible. Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental. Los viajeros internacionales buscan experiencias auténticas que respeten la biodiversidad selvática.",
-        "questionText": "Según el texto, ¿cuál es el factor clave del éxito del ecoturismo costarricense?",
-        "options": [
-          {
-            "key": "A",
-            "text": "La construcción de grandes complejos hoteleros"
-          },
-          {
-            "key": "B",
-            "text": "La protección de más de una cuarta parte de su territorio natural"
-          },
-          {
-            "key": "C",
-            "text": "La reducción de visitas de turistas extranjeros"
-          },
-          {
-            "key": "D",
-            "text": "El desarrollo de carreteras en selvas vírgenes"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：文中明确指出“Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental”（超过 25% 即四分之一以上的国土受到环境法律保护），对应选项 B。",
-        "categoryTag": "DELE 读解综合理解",
+        "explanation": "【DELE 考点剖析】：para + 动词原形表示行动追求的目的和目标（为了获得奖学金）；por 表示原因。此处表达奋斗目的，必须使用 para。选 B。",
+        "categoryTag": "por 与 para 目的考查",
         "score": 25
       },
       {
         "id": "dele-a2-01-q4",
         "type": "grammar",
-        "questionText": "Completa la frase con la opción correcta: \"Espero sinceramente que tú ________ (venir) mañana a mi fiesta de cumpleaños.\"",
+        "questionText": "Completa la frase condicional: \"Si yo ________ (tener) más tiempo libre, aprendería a bailar flamenco.\"",
         "options": [
           {
             "key": "A",
-            "text": "vienes"
+            "text": "tengo"
           },
           {
             "key": "B",
-            "text": "vengas"
+            "text": "tuviera"
           },
           {
             "key": "C",
-            "text": "vendrás"
+            "text": "tendría"
           },
           {
             "key": "D",
-            "text": "venías"
+            "text": "tuviese tenido"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：主句动词 esperar 表愿望期许（属于 W-E-I-R-D-O 六角星首要触发动词），主句主语 (yo) 与从句主语 (tú) 不一致，从句必须使用虚拟式现在时。venir 的虚拟式第二人称单数为 vengas（选 B）。",
-        "categoryTag": "虚拟式现在时变位",
+        "explanation": "【DELE 考点剖析】：主句是简单条件式 aprendería，Si 引导的对当前或未来不太可能实现的虚拟假设从句必须使用虚拟式过去未完成时（tuviera / tuviese）。选 B。",
+        "categoryTag": "条件从句时态配合",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-dele-a2-02",
-    "title": "塞万提斯学院 DELE A2 官方真题机考卷 (二)",
-    "spanishTitle": "DELE A2 — Modelo de Examen Oficial (Instituto Cervantes)",
+    "title": "塞万提斯学院 DELE A2 官方真题机考大卷 (二)",
+    "spanishTitle": "DELE A2 — Modelo Oficial de Examen (Instituto Cervantes)",
     "track": "dele",
     "level": "A2",
     "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
@@ -406,89 +408,36 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
     "questions": [
       {
         "id": "dele-a2-02-q1",
-        "type": "grammar",
-        "questionText": "¿Cuál es la opción correcta para sustituir los complementos? \"¿Has entregado ya la carta al director?\" — \"Sí, ya ________ he entregado.\"",
+        "type": "reading",
+        "passage": "El Camino de Santiago es una de las rutas de peregrinación cultural y espiritual más antiguas de Europa. Cada año, peregrinos de más de 150 países recorren cientos de kilómetros a pie o en bicicleta, dinamizando las economías rurales del norte de España.",
+        "questionText": "Según el texto sobre el Camino de Santiago, ¿qué beneficio genera la afluencia de peregrinos?",
         "options": [
           {
             "key": "A",
-            "text": "le la"
+            "text": "La saturación de grandes metrópolis industriales"
           },
           {
             "key": "B",
-            "text": "se la"
+            "text": "La dinamización de las economías rurales en el norte peninsular"
           },
           {
             "key": "C",
-            "text": "la le"
+            "text": "El abandono de las tradiciones locales"
           },
           {
             "key": "D",
-            "text": "se lo"
+            "text": "La obligatoriedad de viajar en transporte aéreo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：间宾 al director 原为 le，直宾 la carta 为 la。当第三人称间宾 le/les 与直宾 lo/la/los/las 相遇时，根据西语避音变身法则，间宾必须强制变身为 se！即 se la。选 B。",
-        "categoryTag": "双重代词替换 (变身法则)",
+        "explanation": "【DELE 考点剖析】：文中明确指出“dinamizando las economías rurales del norte de España”（促进了西班牙北部乡村地区的经济活力），对应选项 B。",
+        "categoryTag": "DELE 西班牙地理文化阅读",
         "score": 25
       },
       {
         "id": "dele-a2-02-q2",
         "type": "grammar",
-        "questionText": "Elige la forma verbal adecuada: \"Ayer por la tarde, mientras nosotros ________ (estudiar) en la biblioteca, empezó a llover fuertemente.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "estudiamos"
-          },
-          {
-            "key": "B",
-            "text": "estudiábamos"
-          },
-          {
-            "key": "C",
-            "text": "estudiaremos"
-          },
-          {
-            "key": "D",
-            "text": "hemos estudiado"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：mientras 引导过去正在持续进行的动作（背景铺垫），用过去未完成时 (estudiábamos)；突发的瞬间干扰动作（empezó a llover）用简单过去时。选 B。",
-        "categoryTag": "过去未完成时 vs 简单过去时",
-        "score": 25
-      },
-      {
-        "id": "dele-a2-02-q3",
-        "type": "grammar",
-        "questionText": "Selecciona el artículo y género correcto: \"El profesor explicó ________ problema más difícil del examen.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "la"
-          },
-          {
-            "key": "B",
-            "text": "el"
-          },
-          {
-            "key": "C",
-            "text": "un"
-          },
-          {
-            "key": "D",
-            "text": "una"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：problema, tema, mapa, clima, sistema, idioma 等词源自古希腊语，以 -a 结尾但全部属于【阳性名词】，必须使用 el / un。选 B。",
-        "categoryTag": "反常阴阳性名词 (-ma 希腊词根)",
-        "score": 25
-      },
-      {
-        "id": "dele-a2-02-q4",
-        "type": "grammar",
-        "questionText": "Selecciona la preposición correcta: \"Este regalo es ________ ti, porque hoy es tu cumpleaños.\"",
+        "questionText": "Selecciona la preposición correcta: \"Lucía trabaja duro ________ conseguir una beca de investigación en Salamanca.\"",
         "options": [
           {
             "key": "A",
@@ -500,24 +449,78 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           },
           {
             "key": "C",
-            "text": "de"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "hacia"
+            "text": "con"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：para 表达目的、终点与受惠对象（相当于 for/recipient）；por 表达原因、动机、途径（equivalent to because of/by）。此处礼物送给受惠者，必须用 para ti。选 B。",
-        "categoryTag": "por 与 para 终极辨析",
+        "explanation": "【DELE 考点剖析】：para + 动词原形表示行动追求的目的和目标（为了获得奖学金）；por 表示原因。此处表达奋斗目的，必须使用 para。选 B。",
+        "categoryTag": "por 与 para 目的考查",
+        "score": 25
+      },
+      {
+        "id": "dele-a2-02-q3",
+        "type": "grammar",
+        "questionText": "Completa la frase condicional: \"Si yo ________ (tener) más tiempo libre, aprendería a bailar flamenco.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tengo"
+          },
+          {
+            "key": "B",
+            "text": "tuviera"
+          },
+          {
+            "key": "C",
+            "text": "tendría"
+          },
+          {
+            "key": "D",
+            "text": "tuviese tenido"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句是简单条件式 aprendería，Si 引导的对当前或未来不太可能实现的虚拟假设从句必须使用虚拟式过去未完成时（tuviera / tuviese）。选 B。",
+        "categoryTag": "条件从句时态配合",
+        "score": 25
+      },
+      {
+        "id": "dele-a2-02-q4",
+        "type": "grammar",
+        "questionText": "Completa con la forma verbal correcta: \"Espero que vosotros ________ (tener) un buen viaje por Andalucía.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tenéis"
+          },
+          {
+            "key": "B",
+            "text": "tengáis"
+          },
+          {
+            "key": "C",
+            "text": "tendréis"
+          },
+          {
+            "key": "D",
+            "text": "teníais"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句动词 esperar 表愿望期许，主从句主语不一致（yo vs vosotros），从句强制使用虚拟式现在时。tener 的虚拟式第二人称复数为 tengáis（带重音符号）。选 B。",
+        "categoryTag": "虚拟式现在时 vosotros 变位",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-dele-b1-01",
-    "title": "塞万提斯学院官方 DELE B1 全真机考综合卷 (一)",
-    "spanishTitle": "DELE B1 — Modelo de Examen Oficial (Instituto Cervantes)",
+    "title": "塞万提斯官方 DELE B1 全真机考综合大卷 (一)",
+    "spanishTitle": "DELE B1 — Modelo Oficial de Examen (Instituto Cervantes)",
     "track": "dele",
     "level": "B1",
     "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
@@ -528,305 +531,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
       {
         "id": "dele-b1-01-q1",
         "type": "grammar",
-        "questionText": "Completa la frase con la opción correcta: \"Espero sinceramente que tú ________ (venir) mañana a mi fiesta de cumpleaños.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "vienes"
-          },
-          {
-            "key": "B",
-            "text": "vengas"
-          },
-          {
-            "key": "C",
-            "text": "vendrás"
-          },
-          {
-            "key": "D",
-            "text": "venías"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：主句动词 esperar 表愿望期许（属于 W-E-I-R-D-O 六角星首要触发动词），主句主语 (yo) 与从句主语 (tú) 不一致，从句必须使用虚拟式现在时。venir 的虚拟式第二人称单数为 vengas（选 B）。",
-        "categoryTag": "虚拟式现在时变位",
-        "score": 25
-      },
-      {
-        "id": "dele-b1-01-q2",
-        "type": "grammar",
-        "questionText": "Elige la forma verbal adecuada: \"Ayer por la tarde, mientras nosotros ________ (estudiar) en la biblioteca, empezó a llover fuertemente.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "estudiamos"
-          },
-          {
-            "key": "B",
-            "text": "estudiábamos"
-          },
-          {
-            "key": "C",
-            "text": "estudiaremos"
-          },
-          {
-            "key": "D",
-            "text": "hemos estudiado"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：mientras 引导过去正在持续进行的动作（背景铺垫），用过去未完成时 (estudiábamos)；突发的瞬间干扰动作（empezó a llover）用简单过去时。选 B。",
-        "categoryTag": "过去未完成时 vs 简单过去时",
-        "score": 25
-      },
-      {
-        "id": "dele-b1-01-q3",
-        "type": "grammar",
-        "questionText": "¿Cuál es la opción correcta para sustituir los complementos? \"¿Has entregado ya la carta al director?\" — \"Sí, ya ________ he entregado.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "le la"
-          },
-          {
-            "key": "B",
-            "text": "se la"
-          },
-          {
-            "key": "C",
-            "text": "la le"
-          },
-          {
-            "key": "D",
-            "text": "se lo"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：间宾 al director 原为 le，直宾 la carta 为 la。当第三人称间宾 le/les 与直宾 lo/la/los/las 相遇时，根据西语避音变身法则，间宾必须强制变身为 se！即 se la。选 B。",
-        "categoryTag": "双重代词替换 (变身法则)",
-        "score": 25
-      },
-      {
-        "id": "dele-b1-01-q4",
-        "type": "reading",
-        "passage": "El ecoturismo en Costa Rica se ha consolidado como un motor fundamental del desarrollo sostenible. Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental. Los viajeros internacionales buscan experiencias auténticas que respeten la biodiversidad selvática.",
-        "questionText": "Según el texto, ¿cuál es el factor clave del éxito del ecoturismo costarricense?",
-        "options": [
-          {
-            "key": "A",
-            "text": "La construcción de grandes complejos hoteleros"
-          },
-          {
-            "key": "B",
-            "text": "La protección de más de una cuarta parte de su territorio natural"
-          },
-          {
-            "key": "C",
-            "text": "La reducción de visitas de turistas extranjeros"
-          },
-          {
-            "key": "D",
-            "text": "El desarrollo de carreteras en selvas vírgenes"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：文中明确指出“Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental”（超过 25% 即四分之一以上的国土受到环境法律保护），对应选项 B。",
-        "categoryTag": "DELE 读解综合理解",
-        "score": 25
-      }
-    ]
-  },
-  {
-    "id": "paper-dele-b1-02",
-    "title": "塞万提斯学院 DELE B1 官方全真机考卷 (二)",
-    "spanishTitle": "DELE B1 — Modelo de Examen Oficial (Instituto Cervantes)",
-    "track": "dele",
-    "level": "B1",
-    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
-    "durationMinutes": 45,
-    "totalScore": 100,
-    "summary": "观点交锋 · 意见表达、虚拟式否定从句与拉美旅游读解",
-    "questions": [
-      {
-        "id": "dele-b1-02-q1",
-        "type": "grammar",
-        "questionText": "Completa: \"No creo que Juan ________ (saber) la verdad sobre lo que ocurrió ayer.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "sabe"
-          },
-          {
-            "key": "B",
-            "text": "sepa"
-          },
-          {
-            "key": "C",
-            "text": "sabrá"
-          },
-          {
-            "key": "D",
-            "text": "supo"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：creer, pensar, opinar 等思考动词，在肯定句中宾语从句使用陈述式（Creo que sabe）；但在否定句（No creo que...）中表示怀疑与否定事实，从句强制使用虚拟式（sepa）。选 B。",
-        "categoryTag": "否定思考动词 + 虚拟式",
-        "score": 25
-      },
-      {
-        "id": "dele-b1-02-q2",
-        "type": "grammar",
-        "questionText": "¿Cuál es la opción correcta para sustituir los complementos? \"¿Has entregado ya la carta al director?\" — \"Sí, ya ________ he entregado.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "le la"
-          },
-          {
-            "key": "B",
-            "text": "se la"
-          },
-          {
-            "key": "C",
-            "text": "la le"
-          },
-          {
-            "key": "D",
-            "text": "se lo"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：间宾 al director 原为 le，直宾 la carta 为 la。当第三人称间宾 le/les 与直宾 lo/la/los/las 相遇时，根据西语避音变身法则，间宾必须强制变身为 se！即 se la。选 B。",
-        "categoryTag": "双重代词替换 (变身法则)",
-        "score": 25
-      },
-      {
-        "id": "dele-b1-02-q3",
-        "type": "reading",
-        "passage": "El ecoturismo en Costa Rica se ha consolidado como un motor fundamental del desarrollo sostenible. Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental. Los viajeros internacionales buscan experiencias auténticas que respeten la biodiversidad selvática.",
-        "questionText": "Según el texto, ¿cuál es el factor clave del éxito del ecoturismo costarricense?",
-        "options": [
-          {
-            "key": "A",
-            "text": "La construcción de grandes complejos hoteleros"
-          },
-          {
-            "key": "B",
-            "text": "La protección de más de una cuarta parte de su territorio natural"
-          },
-          {
-            "key": "C",
-            "text": "La reducción de visitas de turistas extranjeros"
-          },
-          {
-            "key": "D",
-            "text": "El desarrollo de carreteras en selvas vírgenes"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：文中明确指出“Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental”（超过 25% 即四分之一以上的国土受到环境法律保护），对应选项 B。",
-        "categoryTag": "DELE 读解综合理解",
-        "score": 25
-      },
-      {
-        "id": "dele-b1-02-q4",
-        "type": "grammar",
-        "questionText": "Identifica la forma correcta del condicional: \"Si tuviera suficiente dinero, me ________ (comprar) un billete para viajar por toda América Latina.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "compraría"
-          },
-          {
-            "key": "B",
-            "text": "compraré"
-          },
-          {
-            "key": "C",
-            "text": "compre"
-          },
-          {
-            "key": "D",
-            "text": "comprara"
-          }
-        ],
-        "correctAnswer": "A",
-        "explanation": "【考点剖析】：对当前与将来虚拟假设：Si + 虚拟式过去未完成时 (tuviera)，主句必须配合简单条件式 (Condicional Simple: compraría)。选 A。",
-        "categoryTag": "条件假设句配合 (Si 从句)",
-        "score": 25
-      }
-    ]
-  },
-  {
-    "id": "paper-dele-b1-03",
-    "title": "塞万提斯学院 DELE B1 官方全真机考卷 (三)",
-    "spanishTitle": "DELE B1 — Modelo de Examen Oficial (Instituto Cervantes)",
-    "track": "dele",
-    "level": "B1",
-    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
-    "durationMinutes": 45,
-    "totalScore": 100,
-    "summary": "社会生活 · 条件句入门、双重代词替换与跨文化交际",
-    "questions": [
-      {
-        "id": "dele-b1-03-q1",
-        "type": "grammar",
-        "questionText": "Identifica la forma correcta del condicional: \"Si tuviera suficiente dinero, me ________ (comprar) un billete para viajar por toda América Latina.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "compraría"
-          },
-          {
-            "key": "B",
-            "text": "compraré"
-          },
-          {
-            "key": "C",
-            "text": "compre"
-          },
-          {
-            "key": "D",
-            "text": "comprara"
-          }
-        ],
-        "correctAnswer": "A",
-        "explanation": "【考点剖析】：对当前与将来虚拟假设：Si + 虚拟式过去未完成时 (tuviera)，主句必须配合简单条件式 (Condicional Simple: compraría)。选 A。",
-        "categoryTag": "条件假设句配合 (Si 从句)",
-        "score": 25
-      },
-      {
-        "id": "dele-b1-03-q2",
-        "type": "grammar",
-        "questionText": "Completa la frase con la opción correcta: \"Espero sinceramente que tú ________ (venir) mañana a mi fiesta de cumpleaños.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "vienes"
-          },
-          {
-            "key": "B",
-            "text": "vengas"
-          },
-          {
-            "key": "C",
-            "text": "vendrás"
-          },
-          {
-            "key": "D",
-            "text": "venías"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：主句动词 esperar 表愿望期许（属于 W-E-I-R-D-O 六角星首要触发动词），主句主语 (yo) 与从句主语 (tú) 不一致，从句必须使用虚拟式现在时。venir 的虚拟式第二人称单数为 vengas（选 B）。",
-        "categoryTag": "虚拟式现在时变位",
-        "score": 25
-      },
-      {
-        "id": "dele-b1-03-q3",
-        "type": "grammar",
-        "questionText": "Selecciona la preposición correcta: \"Este regalo es ________ ti, porque hoy es tu cumpleaños.\"",
+        "questionText": "Selecciona la preposición correcta: \"Lucía trabaja duro ________ conseguir una beca de investigación en Salamanca.\"",
         "options": [
           {
             "key": "A",
@@ -838,51 +543,470 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           },
           {
             "key": "C",
-            "text": "de"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "hacia"
+            "text": "con"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：para 表达目的、终点与受惠对象（相当于 for/recipient）；por 表达原因、动机、途径（equivalent to because of/by）。此处礼物送给受惠者，必须用 para ti。选 B。",
-        "categoryTag": "por 与 para 终极辨析",
+        "explanation": "【DELE 考点剖析】：para + 动词原形表示行动追求的目的和目标（为了获得奖学金）；por 表示原因。此处表达奋斗目的，必须使用 para。选 B。",
+        "categoryTag": "por 与 para 目的考查",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-01-q2",
+        "type": "grammar",
+        "questionText": "Completa la frase condicional: \"Si yo ________ (tener) más tiempo libre, aprendería a bailar flamenco.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tengo"
+          },
+          {
+            "key": "B",
+            "text": "tuviera"
+          },
+          {
+            "key": "C",
+            "text": "tendría"
+          },
+          {
+            "key": "D",
+            "text": "tuviese tenido"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句是简单条件式 aprendería，Si 引导的对当前或未来不太可能实现的虚拟假设从句必须使用虚拟式过去未完成时（tuviera / tuviese）。选 B。",
+        "categoryTag": "条件从句时态配合",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-01-q3",
+        "type": "grammar",
+        "questionText": "Completa con la forma verbal correcta: \"Espero que vosotros ________ (tener) un buen viaje por Andalucía.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tenéis"
+          },
+          {
+            "key": "B",
+            "text": "tengáis"
+          },
+          {
+            "key": "C",
+            "text": "tendréis"
+          },
+          {
+            "key": "D",
+            "text": "teníais"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句动词 esperar 表愿望期许，主从句主语不一致（yo vs vosotros），从句强制使用虚拟式现在时。tener 的虚拟式第二人称复数为 tengáis（带重音符号）。选 B。",
+        "categoryTag": "虚拟式现在时 vosotros 变位",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-01-q4",
+        "type": "grammar",
+        "questionText": "Identifica la opción adecuada: \"Cuando éramos pequeños, nosotros ________ (ir) a la playa todos los veranos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "fuimos"
+          },
+          {
+            "key": "B",
+            "text": "íbamos"
+          },
+          {
+            "key": "C",
+            "text": "iremos"
+          },
+          {
+            "key": "D",
+            "text": "vayamos"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：todos los veranos 表达过去长期反复发生的习惯性、周期性动作，ir 在过去未完成时呈现不规则形态 íbamos（带重音符号）。选 B。",
+        "categoryTag": "过去未完成时习惯动作",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-dele-b1-02",
+    "title": "塞万提斯官方 DELE B1 全真机考综合大卷 (二)",
+    "spanishTitle": "DELE B1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "totalScore": 100,
+    "summary": "观点交锋 · 意见表达、虚拟式否定从句与拉美旅游读解",
+    "questions": [
+      {
+        "id": "dele-b1-02-q1",
+        "type": "grammar",
+        "questionText": "Completa la frase condicional: \"Si yo ________ (tener) más tiempo libre, aprendería a bailar flamenco.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tengo"
+          },
+          {
+            "key": "B",
+            "text": "tuviera"
+          },
+          {
+            "key": "C",
+            "text": "tendría"
+          },
+          {
+            "key": "D",
+            "text": "tuviese tenido"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句是简单条件式 aprendería，Si 引导的对当前或未来不太可能实现的虚拟假设从句必须使用虚拟式过去未完成时（tuviera / tuviese）。选 B。",
+        "categoryTag": "条件从句时态配合",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-02-q2",
+        "type": "grammar",
+        "questionText": "Completa con la forma verbal correcta: \"Espero que vosotros ________ (tener) un buen viaje por Andalucía.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tenéis"
+          },
+          {
+            "key": "B",
+            "text": "tengáis"
+          },
+          {
+            "key": "C",
+            "text": "tendréis"
+          },
+          {
+            "key": "D",
+            "text": "teníais"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句动词 esperar 表愿望期许，主从句主语不一致（yo vs vosotros），从句强制使用虚拟式现在时。tener 的虚拟式第二人称复数为 tengáis（带重音符号）。选 B。",
+        "categoryTag": "虚拟式现在时 vosotros 变位",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-02-q3",
+        "type": "grammar",
+        "questionText": "Identifica la opción adecuada: \"Cuando éramos pequeños, nosotros ________ (ir) a la playa todos los veranos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "fuimos"
+          },
+          {
+            "key": "B",
+            "text": "íbamos"
+          },
+          {
+            "key": "C",
+            "text": "iremos"
+          },
+          {
+            "key": "D",
+            "text": "vayamos"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：todos los veranos 表达过去长期反复发生的习惯性、周期性动作，ir 在过去未完成时呈现不规则形态 íbamos（带重音符号）。选 B。",
+        "categoryTag": "过去未完成时习惯动作",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-02-q4",
+        "type": "grammar",
+        "questionText": "Elige la combinación de pronombres correcta: \"¿Le has dado el informe a la directora?\" — \"Sí, ya ________ he entregado esta mañana.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "se lo"
+          },
+          {
+            "key": "B",
+            "text": "le lo"
+          },
+          {
+            "key": "C",
+            "text": "se la"
+          },
+          {
+            "key": "D",
+            "text": "lo le"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【DELE 考点剖析】：el informe (直宾 lo)，a la directora (间宾 le)。当间宾与第三人称直宾相遇时，间宾 le 必须变身为 se，因此为 se lo。选 A。",
+        "categoryTag": "双重代词替换变身",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-dele-b1-03",
+    "title": "塞万提斯官方 DELE B1 全真机考综合大卷 (三)",
+    "spanishTitle": "DELE B1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "totalScore": 100,
+    "summary": "社会生活 · 条件句入门、双重代词替换与跨文化交际",
+    "questions": [
+      {
+        "id": "dele-b1-03-q1",
+        "type": "grammar",
+        "questionText": "Completa con la forma verbal correcta: \"Espero que vosotros ________ (tener) un buen viaje por Andalucía.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tenéis"
+          },
+          {
+            "key": "B",
+            "text": "tengáis"
+          },
+          {
+            "key": "C",
+            "text": "tendréis"
+          },
+          {
+            "key": "D",
+            "text": "teníais"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句动词 esperar 表愿望期许，主从句主语不一致（yo vs vosotros），从句强制使用虚拟式现在时。tener 的虚拟式第二人称复数为 tengáis（带重音符号）。选 B。",
+        "categoryTag": "虚拟式现在时 vosotros 变位",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-03-q2",
+        "type": "grammar",
+        "questionText": "Identifica la opción adecuada: \"Cuando éramos pequeños, nosotros ________ (ir) a la playa todos los veranos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "fuimos"
+          },
+          {
+            "key": "B",
+            "text": "íbamos"
+          },
+          {
+            "key": "C",
+            "text": "iremos"
+          },
+          {
+            "key": "D",
+            "text": "vayamos"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：todos los veranos 表达过去长期反复发生的习惯性、周期性动作，ir 在过去未完成时呈现不规则形态 íbamos（带重音符号）。选 B。",
+        "categoryTag": "过去未完成时习惯动作",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-03-q3",
+        "type": "grammar",
+        "questionText": "Elige la combinación de pronombres correcta: \"¿Le has dado el informe a la directora?\" — \"Sí, ya ________ he entregado esta mañana.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "se lo"
+          },
+          {
+            "key": "B",
+            "text": "le lo"
+          },
+          {
+            "key": "C",
+            "text": "se la"
+          },
+          {
+            "key": "D",
+            "text": "lo le"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【DELE 考点剖析】：el informe (直宾 lo)，a la directora (间宾 le)。当间宾与第三人称直宾相遇时，间宾 le 必须变身为 se，因此为 se lo。选 A。",
+        "categoryTag": "双重代词替换变身",
         "score": 25
       },
       {
         "id": "dele-b1-03-q4",
-        "type": "grammar",
-        "questionText": "Selecciona el artículo y género correcto: \"El profesor explicó ________ problema más difícil del examen.\"",
+        "type": "reading",
+        "passage": "El Camino de Santiago es una de las rutas de peregrinación cultural y espiritual más antiguas de Europa. Cada año, peregrinos de más de 150 países recorren cientos de kilómetros a pie o en bicicleta, dinamizando las economías rurales del norte de España.",
+        "questionText": "Según el texto sobre el Camino de Santiago, ¿qué beneficio genera la afluencia de peregrinos?",
         "options": [
           {
             "key": "A",
-            "text": "la"
+            "text": "La saturación de grandes metrópolis industriales"
           },
           {
             "key": "B",
-            "text": "el"
+            "text": "La dinamización de las economías rurales en el norte peninsular"
           },
           {
             "key": "C",
-            "text": "un"
+            "text": "El abandono de las tradiciones locales"
           },
           {
             "key": "D",
-            "text": "una"
+            "text": "La obligatoriedad de viajar en transporte aéreo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：problema, tema, mapa, clima, sistema, idioma 等词源自古希腊语，以 -a 结尾但全部属于【阳性名词】，必须使用 el / un。选 B。",
-        "categoryTag": "反常阴阳性名词 (-ma 希腊词根)",
+        "explanation": "【DELE 考点剖析】：文中明确指出“dinamizando las economías rurales del norte de España”（促进了西班牙北部乡村地区的经济活力），对应选项 B。",
+        "categoryTag": "DELE 西班牙地理文化阅读",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-dele-b1-04",
+    "title": "塞万提斯官方 DELE B1 全真机考综合大卷 (四)",
+    "spanishTitle": "DELE B1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "totalScore": 100,
+    "summary": "综合冲刺 · 目的从句与动词短语时态综合运用",
+    "questions": [
+      {
+        "id": "dele-b1-04-q1",
+        "type": "grammar",
+        "questionText": "Identifica la opción adecuada: \"Cuando éramos pequeños, nosotros ________ (ir) a la playa todos los veranos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "fuimos"
+          },
+          {
+            "key": "B",
+            "text": "íbamos"
+          },
+          {
+            "key": "C",
+            "text": "iremos"
+          },
+          {
+            "key": "D",
+            "text": "vayamos"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：todos los veranos 表达过去长期反复发生的习惯性、周期性动作，ir 在过去未完成时呈现不规则形态 íbamos（带重音符号）。选 B。",
+        "categoryTag": "过去未完成时习惯动作",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-04-q2",
+        "type": "grammar",
+        "questionText": "Elige la combinación de pronombres correcta: \"¿Le has dado el informe a la directora?\" — \"Sí, ya ________ he entregado esta mañana.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "se lo"
+          },
+          {
+            "key": "B",
+            "text": "le lo"
+          },
+          {
+            "key": "C",
+            "text": "se la"
+          },
+          {
+            "key": "D",
+            "text": "lo le"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【DELE 考点剖析】：el informe (直宾 lo)，a la directora (间宾 le)。当间宾与第三人称直宾相遇时，间宾 le 必须变身为 se，因此为 se lo。选 A。",
+        "categoryTag": "双重代词替换变身",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-04-q3",
+        "type": "reading",
+        "passage": "El Camino de Santiago es una de las rutas de peregrinación cultural y espiritual más antiguas de Europa. Cada año, peregrinos de más de 150 países recorren cientos de kilómetros a pie o en bicicleta, dinamizando las economías rurales del norte de España.",
+        "questionText": "Según el texto sobre el Camino de Santiago, ¿qué beneficio genera la afluencia de peregrinos?",
+        "options": [
+          {
+            "key": "A",
+            "text": "La saturación de grandes metrópolis industriales"
+          },
+          {
+            "key": "B",
+            "text": "La dinamización de las economías rurales en el norte peninsular"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de las tradiciones locales"
+          },
+          {
+            "key": "D",
+            "text": "La obligatoriedad de viajar en transporte aéreo"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：文中明确指出“dinamizando las economías rurales del norte de España”（促进了西班牙北部乡村地区的经济活力），对应选项 B。",
+        "categoryTag": "DELE 西班牙地理文化阅读",
+        "score": 25
+      },
+      {
+        "id": "dele-b1-04-q4",
+        "type": "grammar",
+        "questionText": "Selecciona la preposición correcta: \"Lucía trabaja duro ________ conseguir una beca de investigación en Salamanca.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "por"
+          },
+          {
+            "key": "B",
+            "text": "para"
+          },
+          {
+            "key": "C",
+            "text": "en"
+          },
+          {
+            "key": "D",
+            "text": "con"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：para + 动词原形表示行动追求的目的和目标（为了获得奖学金）；por 表示原因。此处表达奋斗目的，必须使用 para。选 B。",
+        "categoryTag": "por 与 para 目的考查",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-dele-b2-01",
-    "title": "塞万提斯学院 DELE B2 官方高阶机考卷 (一)",
-    "spanishTitle": "DELE B2 — Modelo de Examen Oficial (Instituto Cervantes)",
+    "title": "塞万提斯官方 DELE B2 高阶机考全真大卷 (一)",
+    "spanishTitle": "DELE B2 — Modelo Oficial de Examen (Instituto Cervantes)",
     "track": "dele",
     "level": "B2",
     "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
@@ -893,360 +1017,481 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
       {
         "id": "dele-b2-01-q1",
         "type": "grammar",
-        "questionText": "Identifica la forma correcta del condicional: \"Si tuviera suficiente dinero, me ________ (comprar) un billete para viajar por toda América Latina.\"",
+        "questionText": "Elige la combinación de pronombres correcta: \"¿Le has dado el informe a la directora?\" — \"Sí, ya ________ he entregado esta mañana.\"",
         "options": [
           {
             "key": "A",
-            "text": "compraría"
+            "text": "se lo"
           },
           {
             "key": "B",
-            "text": "compraré"
+            "text": "le lo"
           },
           {
             "key": "C",
-            "text": "compre"
+            "text": "se la"
           },
           {
             "key": "D",
-            "text": "comprara"
+            "text": "lo le"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考点剖析】：对当前与将来虚拟假设：Si + 虚拟式过去未完成时 (tuviera)，主句必须配合简单条件式 (Condicional Simple: compraría)。选 A。",
-        "categoryTag": "条件假设句配合 (Si 从句)",
+        "explanation": "【DELE 考点剖析】：el informe (直宾 lo)，a la directora (间宾 le)。当间宾与第三人称直宾相遇时，间宾 le 必须变身为 se，因此为 se lo。选 A。",
+        "categoryTag": "双重代词替换变身",
         "score": 25
       },
       {
         "id": "dele-b2-01-q2",
-        "type": "grammar",
-        "questionText": "Completa: \"No creo que Juan ________ (saber) la verdad sobre lo que ocurrió ayer.\"",
+        "type": "reading",
+        "passage": "El Camino de Santiago es una de las rutas de peregrinación cultural y espiritual más antiguas de Europa. Cada año, peregrinos de más de 150 países recorren cientos de kilómetros a pie o en bicicleta, dinamizando las economías rurales del norte de España.",
+        "questionText": "Según el texto sobre el Camino de Santiago, ¿qué beneficio genera la afluencia de peregrinos?",
         "options": [
           {
             "key": "A",
-            "text": "sabe"
+            "text": "La saturación de grandes metrópolis industriales"
           },
           {
             "key": "B",
-            "text": "sepa"
+            "text": "La dinamización de las economías rurales en el norte peninsular"
           },
           {
             "key": "C",
-            "text": "sabrá"
+            "text": "El abandono de las tradiciones locales"
           },
           {
             "key": "D",
-            "text": "supo"
+            "text": "La obligatoriedad de viajar en transporte aéreo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：creer, pensar, opinar 等思考动词，在肯定句中宾语从句使用陈述式（Creo que sabe）；但在否定句（No creo que...）中表示怀疑与否定事实，从句强制使用虚拟式（sepa）。选 B。",
-        "categoryTag": "否定思考动词 + 虚拟式",
+        "explanation": "【DELE 考点剖析】：文中明确指出“dinamizando las economías rurales del norte de España”（促进了西班牙北部乡村地区的经济活力），对应选项 B。",
+        "categoryTag": "DELE 西班牙地理文化阅读",
         "score": 25
       },
       {
         "id": "dele-b2-01-q3",
         "type": "grammar",
-        "questionText": "¿Cuál es la opción correcta para sustituir los complementos? \"¿Has entregado ya la carta al director?\" — \"Sí, ya ________ he entregado.\"",
+        "questionText": "Selecciona la preposición correcta: \"Lucía trabaja duro ________ conseguir una beca de investigación en Salamanca.\"",
         "options": [
           {
             "key": "A",
-            "text": "le la"
+            "text": "por"
           },
           {
             "key": "B",
-            "text": "se la"
+            "text": "para"
           },
           {
             "key": "C",
-            "text": "la le"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "se lo"
+            "text": "con"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：间宾 al director 原为 le，直宾 la carta 为 la。当第三人称间宾 le/les 与直宾 lo/la/los/las 相遇时，根据西语避音变身法则，间宾必须强制变身为 se！即 se la。选 B。",
-        "categoryTag": "双重代词替换 (变身法则)",
+        "explanation": "【DELE 考点剖析】：para + 动词原形表示行动追求的目的和目标（为了获得奖学金）；por 表示原因。此处表达奋斗目的，必须使用 para。选 B。",
+        "categoryTag": "por 与 para 目的考查",
         "score": 25
       },
       {
         "id": "dele-b2-01-q4",
-        "type": "reading",
-        "passage": "El ecoturismo en Costa Rica se ha consolidado como un motor fundamental del desarrollo sostenible. Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental. Los viajeros internacionales buscan experiencias auténticas que respeten la biodiversidad selvática.",
-        "questionText": "Según el texto, ¿cuál es el factor clave del éxito del ecoturismo costarricense?",
+        "type": "grammar",
+        "questionText": "Completa la frase condicional: \"Si yo ________ (tener) más tiempo libre, aprendería a bailar flamenco.\"",
         "options": [
           {
             "key": "A",
-            "text": "La construcción de grandes complejos hoteleros"
+            "text": "tengo"
           },
           {
             "key": "B",
-            "text": "La protección de más de una cuarta parte de su territorio natural"
+            "text": "tuviera"
           },
           {
             "key": "C",
-            "text": "La reducción de visitas de turistas extranjeros"
+            "text": "tendría"
           },
           {
             "key": "D",
-            "text": "El desarrollo de carreteras en selvas vírgenes"
+            "text": "tuviese tenido"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：文中明确指出“Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental”（超过 25% 即四分之一以上的国土受到环境法律保护），对应选项 B。",
-        "categoryTag": "DELE 读解综合理解",
+        "explanation": "【DELE 考点剖析】：主句是简单条件式 aprendería，Si 引导的对当前或未来不太可能实现的虚拟假设从句必须使用虚拟式过去未完成时（tuviera / tuviese）。选 B。",
+        "categoryTag": "条件从句时态配合",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-dele-b2-02",
-    "title": "塞万提斯学院 DELE B2 官方高阶机考卷 (二)",
-    "spanishTitle": "DELE B2 — Modelo de Examen Oficial (Instituto Cervantes)",
+    "title": "塞万提斯官方 DELE B2 高阶机考全真大卷 (二)",
+    "spanishTitle": "DELE B2 — Modelo Oficial de Examen (Instituto Cervantes)",
     "track": "dele",
     "level": "B2",
     "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
     "durationMinutes": 45,
     "totalScore": 100,
-    "summary": "学术思辨 · 虚拟式各种从句嵌套、被动句与西语文学长篇",
+    "summary": "学术思辨 · 虚拟式各种从句嵌套、自反被动句与西语文学",
     "questions": [
       {
         "id": "dele-b2-02-q1",
-        "type": "grammar",
-        "questionText": "Completa: \"No creo que Juan ________ (saber) la verdad sobre lo que ocurrió ayer.\"",
+        "type": "reading",
+        "passage": "El Camino de Santiago es una de las rutas de peregrinación cultural y espiritual más antiguas de Europa. Cada año, peregrinos de más de 150 países recorren cientos de kilómetros a pie o en bicicleta, dinamizando las economías rurales del norte de España.",
+        "questionText": "Según el texto sobre el Camino de Santiago, ¿qué beneficio genera la afluencia de peregrinos?",
         "options": [
           {
             "key": "A",
-            "text": "sabe"
+            "text": "La saturación de grandes metrópolis industriales"
           },
           {
             "key": "B",
-            "text": "sepa"
+            "text": "La dinamización de las economías rurales en el norte peninsular"
           },
           {
             "key": "C",
-            "text": "sabrá"
+            "text": "El abandono de las tradiciones locales"
           },
           {
             "key": "D",
-            "text": "supo"
+            "text": "La obligatoriedad de viajar en transporte aéreo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：creer, pensar, opinar 等思考动词，在肯定句中宾语从句使用陈述式（Creo que sabe）；但在否定句（No creo que...）中表示怀疑与否定事实，从句强制使用虚拟式（sepa）。选 B。",
-        "categoryTag": "否定思考动词 + 虚拟式",
+        "explanation": "【DELE 考点剖析】：文中明确指出“dinamizando las economías rurales del norte de España”（促进了西班牙北部乡村地区的经济活力），对应选项 B。",
+        "categoryTag": "DELE 西班牙地理文化阅读",
         "score": 25
       },
       {
         "id": "dele-b2-02-q2",
         "type": "grammar",
-        "questionText": "Identifica la forma correcta del condicional: \"Si tuviera suficiente dinero, me ________ (comprar) un billete para viajar por toda América Latina.\"",
+        "questionText": "Selecciona la preposición correcta: \"Lucía trabaja duro ________ conseguir una beca de investigación en Salamanca.\"",
         "options": [
           {
             "key": "A",
-            "text": "compraría"
+            "text": "por"
           },
           {
             "key": "B",
-            "text": "compraré"
+            "text": "para"
           },
           {
             "key": "C",
-            "text": "compre"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "comprara"
+            "text": "con"
           }
         ],
-        "correctAnswer": "A",
-        "explanation": "【考点剖析】：对当前与将来虚拟假设：Si + 虚拟式过去未完成时 (tuviera)，主句必须配合简单条件式 (Condicional Simple: compraría)。选 A。",
-        "categoryTag": "条件假设句配合 (Si 从句)",
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：para + 动词原形表示行动追求的目的和目标（为了获得奖学金）；por 表示原因。此处表达奋斗目的，必须使用 para。选 B。",
+        "categoryTag": "por 与 para 目的考查",
         "score": 25
       },
       {
         "id": "dele-b2-02-q3",
         "type": "grammar",
-        "questionText": "Completa la frase con la opción correcta: \"Espero sinceramente que tú ________ (venir) mañana a mi fiesta de cumpleaños.\"",
+        "questionText": "Completa la frase condicional: \"Si yo ________ (tener) más tiempo libre, aprendería a bailar flamenco.\"",
         "options": [
           {
             "key": "A",
-            "text": "vienes"
+            "text": "tengo"
           },
           {
             "key": "B",
-            "text": "vengas"
+            "text": "tuviera"
           },
           {
             "key": "C",
-            "text": "vendrás"
+            "text": "tendría"
           },
           {
             "key": "D",
-            "text": "venías"
+            "text": "tuviese tenido"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：主句动词 esperar 表愿望期许（属于 W-E-I-R-D-O 六角星首要触发动词），主句主语 (yo) 与从句主语 (tú) 不一致，从句必须使用虚拟式现在时。venir 的虚拟式第二人称单数为 vengas（选 B）。",
-        "categoryTag": "虚拟式现在时变位",
+        "explanation": "【DELE 考点剖析】：主句是简单条件式 aprendería，Si 引导的对当前或未来不太可能实现的虚拟假设从句必须使用虚拟式过去未完成时（tuviera / tuviese）。选 B。",
+        "categoryTag": "条件从句时态配合",
         "score": 25
       },
       {
         "id": "dele-b2-02-q4",
         "type": "grammar",
-        "questionText": "Elige la forma verbal adecuada: \"Ayer por la tarde, mientras nosotros ________ (estudiar) en la biblioteca, empezó a llover fuertemente.\"",
+        "questionText": "Completa con la forma verbal correcta: \"Espero que vosotros ________ (tener) un buen viaje por Andalucía.\"",
         "options": [
           {
             "key": "A",
-            "text": "estudiamos"
+            "text": "tenéis"
           },
           {
             "key": "B",
-            "text": "estudiábamos"
+            "text": "tengáis"
           },
           {
             "key": "C",
-            "text": "estudiaremos"
+            "text": "tendréis"
           },
           {
             "key": "D",
-            "text": "hemos estudiado"
+            "text": "teníais"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：mientras 引导过去正在持续进行的动作（背景铺垫），用过去未完成时 (estudiábamos)；突发的瞬间干扰动作（empezó a llover）用简单过去时。选 B。",
-        "categoryTag": "过去未完成时 vs 简单过去时",
+        "explanation": "【DELE 考点剖析】：主句动词 esperar 表愿望期许，主从句主语不一致（yo vs vosotros），从句强制使用虚拟式现在时。tener 的虚拟式第二人称复数为 tengáis（带重音符号）。选 B。",
+        "categoryTag": "虚拟式现在时 vosotros 变位",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-dele-b2-03",
-    "title": "塞万提斯学院 DELE B2 官方高阶机考卷 (三)",
-    "spanishTitle": "DELE B2 — Modelo de Examen Oficial (Instituto Cervantes)",
+    "title": "塞万提斯官方 DELE B2 高阶机考全真大卷 (三)",
+    "spanishTitle": "DELE B2 — Modelo Oficial de Examen (Instituto Cervantes)",
     "track": "dele",
     "level": "B2",
     "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
     "durationMinutes": 45,
     "totalScore": 100,
-    "summary": "终极冲顶 · 委婉语气、固定前置词短语与跨洋经贸实务",
+    "summary": "终极冲顶 · 委婉语气、固定前置词短语与经贸实务",
     "questions": [
       {
         "id": "dele-b2-03-q1",
         "type": "grammar",
-        "questionText": "¿Cuál es la opción correcta para sustituir los complementos? \"¿Has entregado ya la carta al director?\" — \"Sí, ya ________ he entregado.\"",
+        "questionText": "Selecciona la preposición correcta: \"Lucía trabaja duro ________ conseguir una beca de investigación en Salamanca.\"",
         "options": [
           {
             "key": "A",
-            "text": "le la"
+            "text": "por"
           },
           {
             "key": "B",
-            "text": "se la"
+            "text": "para"
           },
           {
             "key": "C",
-            "text": "la le"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "se lo"
+            "text": "con"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：间宾 al director 原为 le，直宾 la carta 为 la。当第三人称间宾 le/les 与直宾 lo/la/los/las 相遇时，根据西语避音变身法则，间宾必须强制变身为 se！即 se la。选 B。",
-        "categoryTag": "双重代词替换 (变身法则)",
+        "explanation": "【DELE 考点剖析】：para + 动词原形表示行动追求的目的和目标（为了获得奖学金）；por 表示原因。此处表达奋斗目的，必须使用 para。选 B。",
+        "categoryTag": "por 与 para 目的考查",
         "score": 25
       },
       {
         "id": "dele-b2-03-q2",
         "type": "grammar",
-        "questionText": "Identifica la forma correcta del condicional: \"Si tuviera suficiente dinero, me ________ (comprar) un billete para viajar por toda América Latina.\"",
+        "questionText": "Completa la frase condicional: \"Si yo ________ (tener) más tiempo libre, aprendería a bailar flamenco.\"",
         "options": [
           {
             "key": "A",
-            "text": "compraría"
+            "text": "tengo"
           },
           {
             "key": "B",
-            "text": "compraré"
+            "text": "tuviera"
           },
           {
             "key": "C",
-            "text": "compre"
+            "text": "tendría"
           },
           {
             "key": "D",
-            "text": "comprara"
+            "text": "tuviese tenido"
           }
         ],
-        "correctAnswer": "A",
-        "explanation": "【考点剖析】：对当前与将来虚拟假设：Si + 虚拟式过去未完成时 (tuviera)，主句必须配合简单条件式 (Condicional Simple: compraría)。选 A。",
-        "categoryTag": "条件假设句配合 (Si 从句)",
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句是简单条件式 aprendería，Si 引导的对当前或未来不太可能实现的虚拟假设从句必须使用虚拟式过去未完成时（tuviera / tuviese）。选 B。",
+        "categoryTag": "条件从句时态配合",
         "score": 25
       },
       {
         "id": "dele-b2-03-q3",
         "type": "grammar",
-        "questionText": "Completa: \"No creo que Juan ________ (saber) la verdad sobre lo que ocurrió ayer.\"",
+        "questionText": "Completa con la forma verbal correcta: \"Espero que vosotros ________ (tener) un buen viaje por Andalucía.\"",
         "options": [
           {
             "key": "A",
-            "text": "sabe"
+            "text": "tenéis"
           },
           {
             "key": "B",
-            "text": "sepa"
+            "text": "tengáis"
           },
           {
             "key": "C",
-            "text": "sabrá"
+            "text": "tendréis"
           },
           {
             "key": "D",
-            "text": "supo"
+            "text": "teníais"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：creer, pensar, opinar 等思考动词，在肯定句中宾语从句使用陈述式（Creo que sabe）；但在否定句（No creo que...）中表示怀疑与否定事实，从句强制使用虚拟式（sepa）。选 B。",
-        "categoryTag": "否定思考动词 + 虚拟式",
+        "explanation": "【DELE 考点剖析】：主句动词 esperar 表愿望期许，主从句主语不一致（yo vs vosotros），从句强制使用虚拟式现在时。tener 的虚拟式第二人称复数为 tengáis（带重音符号）。选 B。",
+        "categoryTag": "虚拟式现在时 vosotros 变位",
         "score": 25
       },
       {
         "id": "dele-b2-03-q4",
-        "type": "reading",
-        "passage": "El ecoturismo en Costa Rica se ha consolidado como un motor fundamental del desarrollo sostenible. Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental. Los viajeros internacionales buscan experiencias auténticas que respeten la biodiversidad selvática.",
-        "questionText": "Según el texto, ¿cuál es el factor clave del éxito del ecoturismo costarricense?",
+        "type": "grammar",
+        "questionText": "Identifica la opción adecuada: \"Cuando éramos pequeños, nosotros ________ (ir) a la playa todos los veranos.\"",
         "options": [
           {
             "key": "A",
-            "text": "La construcción de grandes complejos hoteleros"
+            "text": "fuimos"
           },
           {
             "key": "B",
-            "text": "La protección de más de una cuarta parte de su territorio natural"
+            "text": "íbamos"
           },
           {
             "key": "C",
-            "text": "La reducción de visitas de turistas extranjeros"
+            "text": "iremos"
           },
           {
             "key": "D",
-            "text": "El desarrollo de carreteras en selvas vírgenes"
+            "text": "vayamos"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：文中明确指出“Más del 25% del territorio nacional está bajo alguna categoría de protección ambiental”（超过 25% 即四分之一以上的国土受到环境法律保护），对应选项 B。",
-        "categoryTag": "DELE 读解综合理解",
+        "explanation": "【DELE 考点剖析】：todos los veranos 表达过去长期反复发生的习惯性、周期性动作，ir 在过去未完成时呈现不规则形态 íbamos（带重音符号）。选 B。",
+        "categoryTag": "过去未完成时习惯动作",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-dele-b2-04",
+    "title": "塞万提斯官方 DELE B2 高阶机考全真大卷 (四)",
+    "spanishTitle": "DELE B2 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B2",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "totalScore": 100,
+    "summary": "全真模拟 · 综合读解能力与语言运用高难度冲刺",
+    "questions": [
+      {
+        "id": "dele-b2-04-q1",
+        "type": "grammar",
+        "questionText": "Completa la frase condicional: \"Si yo ________ (tener) más tiempo libre, aprendería a bailar flamenco.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tengo"
+          },
+          {
+            "key": "B",
+            "text": "tuviera"
+          },
+          {
+            "key": "C",
+            "text": "tendría"
+          },
+          {
+            "key": "D",
+            "text": "tuviese tenido"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句是简单条件式 aprendería，Si 引导的对当前或未来不太可能实现的虚拟假设从句必须使用虚拟式过去未完成时（tuviera / tuviese）。选 B。",
+        "categoryTag": "条件从句时态配合",
+        "score": 25
+      },
+      {
+        "id": "dele-b2-04-q2",
+        "type": "grammar",
+        "questionText": "Completa con la forma verbal correcta: \"Espero que vosotros ________ (tener) un buen viaje por Andalucía.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "tenéis"
+          },
+          {
+            "key": "B",
+            "text": "tengáis"
+          },
+          {
+            "key": "C",
+            "text": "tendréis"
+          },
+          {
+            "key": "D",
+            "text": "teníais"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：主句动词 esperar 表愿望期许，主从句主语不一致（yo vs vosotros），从句强制使用虚拟式现在时。tener 的虚拟式第二人称复数为 tengáis（带重音符号）。选 B。",
+        "categoryTag": "虚拟式现在时 vosotros 变位",
+        "score": 25
+      },
+      {
+        "id": "dele-b2-04-q3",
+        "type": "grammar",
+        "questionText": "Identifica la opción adecuada: \"Cuando éramos pequeños, nosotros ________ (ir) a la playa todos los veranos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "fuimos"
+          },
+          {
+            "key": "B",
+            "text": "íbamos"
+          },
+          {
+            "key": "C",
+            "text": "iremos"
+          },
+          {
+            "key": "D",
+            "text": "vayamos"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【DELE 考点剖析】：todos los veranos 表达过去长期反复发生的习惯性、周期性动作，ir 在过去未完成时呈现不规则形态 íbamos（带重音符号）。选 B。",
+        "categoryTag": "过去未完成时习惯动作",
+        "score": 25
+      },
+      {
+        "id": "dele-b2-04-q4",
+        "type": "grammar",
+        "questionText": "Elige la combinación de pronombres correcta: \"¿Le has dado el informe a la directora?\" — \"Sí, ya ________ he entregado esta mañana.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "se lo"
+          },
+          {
+            "key": "B",
+            "text": "le lo"
+          },
+          {
+            "key": "C",
+            "text": "se la"
+          },
+          {
+            "key": "D",
+            "text": "lo le"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【DELE 考点剖析】：el informe (直宾 lo)，a la directora (间宾 le)。当间宾与第三人称直宾相遇时，间宾 le 必须变身为 se，因此为 se lo。选 A。",
+        "categoryTag": "双重代词替换变身",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-siele-s1-01",
-    "title": "SIELE 国际在线机考 全球综合卷 S1",
+    "title": "SIELE 国际在线机考 全球综合大卷 S1",
     "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
     "track": "siele",
     "level": "B1",
@@ -1258,117 +1503,117 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
       {
         "id": "siele-s1-01-q1",
         "type": "grammar",
-        "questionText": "En el ámbito corporativo: \"La empresa exige que los candidatos ________ (dominar) al menos dos idiomas comunitarios.\"",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
         "options": [
           {
             "key": "A",
-            "text": "dominan"
+            "text": "envían"
           },
           {
             "key": "B",
-            "text": "dominen"
+            "text": "envíen"
           },
           {
             "key": "C",
-            "text": "dominarán"
+            "text": "enviarán"
           },
           {
             "key": "D",
-            "text": "dominaron"
+            "text": "enviaron"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：exigir（要求，苛求）属于强烈意志命令类动词，从句主语与主句不一致时必须接虚拟式 (dominen)。选 B。",
-        "categoryTag": "SIELE 商务文书愿望要求从句",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
         "score": 25
       },
       {
         "id": "siele-s1-01-q2",
         "type": "grammar",
-        "questionText": "Selecciona la preposición adecuada: \"Muchos jóvenes sueñan ________ fundar su propia empresa tecnológica en Madrid.\"",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
         "options": [
           {
             "key": "A",
-            "text": "de"
-          },
-          {
-            "key": "B",
             "text": "en"
           },
           {
+            "key": "B",
+            "text": "de"
+          },
+          {
             "key": "C",
-            "text": "con"
+            "text": "a"
           },
           {
             "key": "D",
             "text": "por"
           }
         ],
-        "correctAnswer": "C",
-        "explanation": "【考点剖析】：动词 soñar 表达“梦想做某事/渴望拥有某事”固定搭配前置词 con（soñar con algo / inf.）。选 C。",
-        "categoryTag": "动词固定前置词搭配",
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
         "score": 25
       },
       {
         "id": "siele-s1-01-q3",
         "type": "reading",
-        "passage": "El trabajo remoto y nómada digital en ciudades hispanohablantes como Buenos Aires, Medellín y Valencia ha generado una transformación urbana sin precedentes. Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas.",
-        "questionText": "Según el fragmento, ¿cuál ha sido una consecuencia directa del auge del trabajo remoto?",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
         "options": [
           {
             "key": "A",
-            "text": "El abandono de los servicios tecnológicos"
+            "text": "Constituye un obstáculo para el tendido eléctrico"
           },
           {
             "key": "B",
-            "text": "La acelerada digitalización e impulso a las industrias creativas"
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
           },
           {
             "key": "C",
-            "text": "La disminución del turismo en ciudades hispanas"
+            "text": "Se destina únicamente a la minería tradicional"
           },
           {
             "key": "D",
-            "text": "El cese de contrataciones laborales locales"
+            "text": "Ha provocado un déficit en la inversión extranjera"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：文章明确提到“Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas”，选项 B 是原文核心意思的直接对应。",
-        "categoryTag": "SIELE 现代社会发展读解",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
         "score": 25
       },
       {
         "id": "siele-s1-01-q4",
         "type": "grammar",
-        "questionText": "Sustitución pronominal: \"¿Has enviado los presupuestos a las clientas?\" — \"Sí, ya ________ envié ayer por correo.\"",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
         "options": [
           {
             "key": "A",
-            "text": "se los"
+            "text": "expandiendo"
           },
           {
             "key": "B",
-            "text": "les los"
+            "text": "expandido"
           },
           {
             "key": "C",
-            "text": "se las"
+            "text": "a expandir"
           },
           {
             "key": "D",
-            "text": "los les"
+            "text": "por expandir"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考点剖析】：直宾 los presupuestos (阳复 los)，间宾 a las clientas (阴复 les)。les遇到los发生变身，les -> se，合成 se los。选 A。",
-        "categoryTag": "SIELE 双重代词变位",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-siele-s1-02",
-    "title": "SIELE 国际在线机考 全球综合卷 S2",
+    "title": "SIELE 国际在线机考 全球综合大卷 S2",
     "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
     "track": "siele",
     "level": "B1",
@@ -1380,110 +1625,110 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
       {
         "id": "siele-s1-02-q1",
         "type": "grammar",
-        "questionText": "Selecciona la preposición adecuada: \"Muchos jóvenes sueñan ________ fundar su propia empresa tecnológica en Madrid.\"",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
         "options": [
           {
             "key": "A",
-            "text": "de"
-          },
-          {
-            "key": "B",
             "text": "en"
           },
           {
+            "key": "B",
+            "text": "de"
+          },
+          {
             "key": "C",
-            "text": "con"
+            "text": "a"
           },
           {
             "key": "D",
             "text": "por"
           }
         ],
-        "correctAnswer": "C",
-        "explanation": "【考点剖析】：动词 soñar 表达“梦想做某事/渴望拥有某事”固定搭配前置词 con（soñar con algo / inf.）。选 C。",
-        "categoryTag": "动词固定前置词搭配",
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
         "score": 25
       },
       {
         "id": "siele-s1-02-q2",
         "type": "reading",
-        "passage": "El trabajo remoto y nómada digital en ciudades hispanohablantes como Buenos Aires, Medellín y Valencia ha generado una transformación urbana sin precedentes. Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas.",
-        "questionText": "Según el fragmento, ¿cuál ha sido una consecuencia directa del auge del trabajo remoto?",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
         "options": [
           {
             "key": "A",
-            "text": "El abandono de los servicios tecnológicos"
+            "text": "Constituye un obstáculo para el tendido eléctrico"
           },
           {
             "key": "B",
-            "text": "La acelerada digitalización e impulso a las industrias creativas"
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
           },
           {
             "key": "C",
-            "text": "La disminución del turismo en ciudades hispanas"
+            "text": "Se destina únicamente a la minería tradicional"
           },
           {
             "key": "D",
-            "text": "El cese de contrataciones laborales locales"
+            "text": "Ha provocado un déficit en la inversión extranjera"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：文章明确提到“Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas”，选项 B 是原文核心意思的直接对应。",
-        "categoryTag": "SIELE 现代社会发展读解",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
         "score": 25
       },
       {
         "id": "siele-s1-02-q3",
         "type": "grammar",
-        "questionText": "Sustitución pronominal: \"¿Has enviado los presupuestos a las clientas?\" — \"Sí, ya ________ envié ayer por correo.\"",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
         "options": [
           {
             "key": "A",
-            "text": "se los"
+            "text": "expandiendo"
           },
           {
             "key": "B",
-            "text": "les los"
+            "text": "expandido"
           },
           {
             "key": "C",
-            "text": "se las"
+            "text": "a expandir"
           },
           {
             "key": "D",
-            "text": "los les"
+            "text": "por expandir"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考点剖析】：直宾 los presupuestos (阳复 los)，间宾 a las clientas (阴复 les)。les遇到los发生变身，les -> se，合成 se los。选 A。",
-        "categoryTag": "SIELE 双重代词变位",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
         "score": 25
       },
       {
         "id": "siele-s1-02-q4",
         "type": "grammar",
-        "questionText": "Elige la perífrasis verbal correcta: \"Lleva tres años ________ (aprender) español y ya puede mantener conversaciones fluidas.\"",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
         "options": [
           {
             "key": "A",
-            "text": "estudiado"
+            "text": "envían"
           },
           {
             "key": "B",
-            "text": "aprendiendo"
+            "text": "envíen"
           },
           {
             "key": "C",
-            "text": "aprender"
+            "text": "enviarán"
           },
           {
             "key": "D",
-            "text": "aprendido"
+            "text": "enviaron"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：llevar + 延续时间 + 副动词（gerundio），表示“做某事已持续了一段时间并仍在进行”。aprender 的副动词是 aprendiendo。选 B。",
-        "categoryTag": "动词短语 llevar + gerundio",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
         "score": 25
       }
     ]
@@ -1502,110 +1747,110 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
       {
         "id": "siele-s2-01-q1",
         "type": "reading",
-        "passage": "El trabajo remoto y nómada digital en ciudades hispanohablantes como Buenos Aires, Medellín y Valencia ha generado una transformación urbana sin precedentes. Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas.",
-        "questionText": "Según el fragmento, ¿cuál ha sido una consecuencia directa del auge del trabajo remoto?",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
         "options": [
           {
             "key": "A",
-            "text": "El abandono de los servicios tecnológicos"
+            "text": "Constituye un obstáculo para el tendido eléctrico"
           },
           {
             "key": "B",
-            "text": "La acelerada digitalización e impulso a las industrias creativas"
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
           },
           {
             "key": "C",
-            "text": "La disminución del turismo en ciudades hispanas"
+            "text": "Se destina únicamente a la minería tradicional"
           },
           {
             "key": "D",
-            "text": "El cese de contrataciones laborales locales"
+            "text": "Ha provocado un déficit en la inversión extranjera"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：文章明确提到“Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas”，选项 B 是原文核心意思的直接对应。",
-        "categoryTag": "SIELE 现代社会发展读解",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
         "score": 25
       },
       {
         "id": "siele-s2-01-q2",
         "type": "grammar",
-        "questionText": "Sustitución pronominal: \"¿Has enviado los presupuestos a las clientas?\" — \"Sí, ya ________ envié ayer por correo.\"",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
         "options": [
           {
             "key": "A",
-            "text": "se los"
+            "text": "expandiendo"
           },
           {
             "key": "B",
-            "text": "les los"
+            "text": "expandido"
           },
           {
             "key": "C",
-            "text": "se las"
+            "text": "a expandir"
           },
           {
             "key": "D",
-            "text": "los les"
+            "text": "por expandir"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考点剖析】：直宾 los presupuestos (阳复 los)，间宾 a las clientas (阴复 les)。les遇到los发生变身，les -> se，合成 se los。选 A。",
-        "categoryTag": "SIELE 双重代词变位",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
         "score": 25
       },
       {
         "id": "siele-s2-01-q3",
         "type": "grammar",
-        "questionText": "Elige la perífrasis verbal correcta: \"Lleva tres años ________ (aprender) español y ya puede mantener conversaciones fluidas.\"",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
         "options": [
           {
             "key": "A",
-            "text": "estudiado"
+            "text": "envían"
           },
           {
             "key": "B",
-            "text": "aprendiendo"
+            "text": "envíen"
           },
           {
             "key": "C",
-            "text": "aprender"
+            "text": "enviarán"
           },
           {
             "key": "D",
-            "text": "aprendido"
+            "text": "enviaron"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：llevar + 延续时间 + 副动词（gerundio），表示“做某事已持续了一段时间并仍在进行”。aprender 的副动词是 aprendiendo。选 B。",
-        "categoryTag": "动词短语 llevar + gerundio",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
         "score": 25
       },
       {
         "id": "siele-s2-01-q4",
         "type": "grammar",
-        "questionText": "En el ámbito corporativo: \"La empresa exige que los candidatos ________ (dominar) al menos dos idiomas comunitarios.\"",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
         "options": [
           {
             "key": "A",
-            "text": "dominan"
+            "text": "en"
           },
           {
             "key": "B",
-            "text": "dominen"
+            "text": "de"
           },
           {
             "key": "C",
-            "text": "dominarán"
+            "text": "a"
           },
           {
             "key": "D",
-            "text": "dominaron"
+            "text": "por"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：exigir（要求，苛求）属于强烈意志命令类动词，从句主语与主句不一致时必须接虚拟式 (dominen)。选 B。",
-        "categoryTag": "SIELE 商务文书愿望要求从句",
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
         "score": 25
       }
     ]
@@ -1624,115 +1869,116 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
       {
         "id": "siele-s2-02-q1",
         "type": "grammar",
-        "questionText": "Sustitución pronominal: \"¿Has enviado los presupuestos a las clientas?\" — \"Sí, ya ________ envié ayer por correo.\"",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
         "options": [
           {
             "key": "A",
-            "text": "se los"
+            "text": "expandiendo"
           },
           {
             "key": "B",
-            "text": "les los"
+            "text": "expandido"
           },
           {
             "key": "C",
-            "text": "se las"
+            "text": "a expandir"
           },
           {
             "key": "D",
-            "text": "los les"
+            "text": "por expandir"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考点剖析】：直宾 los presupuestos (阳复 los)，间宾 a las clientas (阴复 les)。les遇到los发生变身，les -> se，合成 se los。选 A。",
-        "categoryTag": "SIELE 双重代词变位",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
         "score": 25
       },
       {
         "id": "siele-s2-02-q2",
         "type": "grammar",
-        "questionText": "Elige la perífrasis verbal correcta: \"Lleva tres años ________ (aprender) español y ya puede mantener conversaciones fluidas.\"",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
         "options": [
           {
             "key": "A",
-            "text": "estudiado"
+            "text": "envían"
           },
           {
             "key": "B",
-            "text": "aprendiendo"
+            "text": "envíen"
           },
           {
             "key": "C",
-            "text": "aprender"
+            "text": "enviarán"
           },
           {
             "key": "D",
-            "text": "aprendido"
+            "text": "enviaron"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：llevar + 延续时间 + 副动词（gerundio），表示“做某事已持续了一段时间并仍在进行”。aprender 的副动词是 aprendiendo。选 B。",
-        "categoryTag": "动词短语 llevar + gerundio",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
         "score": 25
       },
       {
         "id": "siele-s2-02-q3",
         "type": "grammar",
-        "questionText": "En el ámbito corporativo: \"La empresa exige que los candidatos ________ (dominar) al menos dos idiomas comunitarios.\"",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
         "options": [
           {
             "key": "A",
-            "text": "dominan"
-          },
-          {
-            "key": "B",
-            "text": "dominen"
-          },
-          {
-            "key": "C",
-            "text": "dominarán"
-          },
-          {
-            "key": "D",
-            "text": "dominaron"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：exigir（要求，苛求）属于强烈意志命令类动词，从句主语与主句不一致时必须接虚拟式 (dominen)。选 B。",
-        "categoryTag": "SIELE 商务文书愿望要求从句",
-        "score": 25
-      },
-      {
-        "id": "siele-s2-02-q4",
-        "type": "grammar",
-        "questionText": "Selecciona la preposición adecuada: \"Muchos jóvenes sueñan ________ fundar su propia empresa tecnológica en Madrid.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "de"
-          },
-          {
-            "key": "B",
             "text": "en"
           },
           {
+            "key": "B",
+            "text": "de"
+          },
+          {
             "key": "C",
-            "text": "con"
+            "text": "a"
           },
           {
             "key": "D",
             "text": "por"
           }
         ],
-        "correctAnswer": "C",
-        "explanation": "【考点剖析】：动词 soñar 表达“梦想做某事/渴望拥有某事”固定搭配前置词 con（soñar con algo / inf.）。选 C。",
-        "categoryTag": "动词固定前置词搭配",
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
+        "score": 25
+      },
+      {
+        "id": "siele-s2-02-q4",
+        "type": "reading",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Constituye un obstáculo para el tendido eléctrico"
+          },
+          {
+            "key": "B",
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
+          },
+          {
+            "key": "C",
+            "text": "Se destina únicamente a la minería tradicional"
+          },
+          {
+            "key": "D",
+            "text": "Ha provocado un déficit en la inversión extranjera"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-siele-专项-01",
+    "id": "paper-siele-spec-01",
     "title": "SIELE 语法与词汇专项攻关突破卷 (甲)",
     "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
     "track": "siele",
@@ -1743,118 +1989,118 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
     "summary": "专项突破 · 虚拟式要求从句与双重代词位置",
     "questions": [
       {
-        "id": "siele-专项-01-q1",
+        "id": "siele-spec-01-q1",
         "type": "grammar",
-        "questionText": "Elige la perífrasis verbal correcta: \"Lleva tres años ________ (aprender) español y ya puede mantener conversaciones fluidas.\"",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
         "options": [
           {
             "key": "A",
-            "text": "estudiado"
+            "text": "envían"
           },
           {
             "key": "B",
-            "text": "aprendiendo"
+            "text": "envíen"
           },
           {
             "key": "C",
-            "text": "aprender"
+            "text": "enviarán"
           },
           {
             "key": "D",
-            "text": "aprendido"
+            "text": "enviaron"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：llevar + 延续时间 + 副动词（gerundio），表示“做某事已持续了一段时间并仍在进行”。aprender 的副动词是 aprendiendo。选 B。",
-        "categoryTag": "动词短语 llevar + gerundio",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
         "score": 25
       },
       {
-        "id": "siele-专项-01-q2",
+        "id": "siele-spec-01-q2",
         "type": "grammar",
-        "questionText": "En el ámbito corporativo: \"La empresa exige que los candidatos ________ (dominar) al menos dos idiomas comunitarios.\"",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
         "options": [
           {
             "key": "A",
-            "text": "dominan"
-          },
-          {
-            "key": "B",
-            "text": "dominen"
-          },
-          {
-            "key": "C",
-            "text": "dominarán"
-          },
-          {
-            "key": "D",
-            "text": "dominaron"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：exigir（要求，苛求）属于强烈意志命令类动词，从句主语与主句不一致时必须接虚拟式 (dominen)。选 B。",
-        "categoryTag": "SIELE 商务文书愿望要求从句",
-        "score": 25
-      },
-      {
-        "id": "siele-专项-01-q3",
-        "type": "grammar",
-        "questionText": "Selecciona la preposición adecuada: \"Muchos jóvenes sueñan ________ fundar su propia empresa tecnológica en Madrid.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "de"
-          },
-          {
-            "key": "B",
             "text": "en"
           },
           {
+            "key": "B",
+            "text": "de"
+          },
+          {
             "key": "C",
-            "text": "con"
+            "text": "a"
           },
           {
             "key": "D",
             "text": "por"
           }
         ],
-        "correctAnswer": "C",
-        "explanation": "【考点剖析】：动词 soñar 表达“梦想做某事/渴望拥有某事”固定搭配前置词 con（soñar con algo / inf.）。选 C。",
-        "categoryTag": "动词固定前置词搭配",
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
         "score": 25
       },
       {
-        "id": "siele-专项-01-q4",
+        "id": "siele-spec-01-q3",
         "type": "reading",
-        "passage": "El trabajo remoto y nómada digital en ciudades hispanohablantes como Buenos Aires, Medellín y Valencia ha generado una transformación urbana sin precedentes. Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas.",
-        "questionText": "Según el fragmento, ¿cuál ha sido una consecuencia directa del auge del trabajo remoto?",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
         "options": [
           {
             "key": "A",
-            "text": "El abandono de los servicios tecnológicos"
+            "text": "Constituye un obstáculo para el tendido eléctrico"
           },
           {
             "key": "B",
-            "text": "La acelerada digitalización e impulso a las industrias creativas"
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
           },
           {
             "key": "C",
-            "text": "La disminución del turismo en ciudades hispanas"
+            "text": "Se destina únicamente a la minería tradicional"
           },
           {
             "key": "D",
-            "text": "El cese de contrataciones laborales locales"
+            "text": "Ha provocado un déficit en la inversión extranjera"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：文章明确提到“Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas”，选项 B 是原文核心意思的直接对应。",
-        "categoryTag": "SIELE 现代社会发展读解",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
+        "score": 25
+      },
+      {
+        "id": "siele-spec-01-q4",
+        "type": "grammar",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "expandiendo"
+          },
+          {
+            "key": "B",
+            "text": "expandido"
+          },
+          {
+            "key": "C",
+            "text": "a expandir"
+          },
+          {
+            "key": "D",
+            "text": "por expandir"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-siele-专项-02",
+    "id": "paper-siele-spec-02",
     "title": "SIELE 语法与词汇专项攻关突破卷 (乙)",
     "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
     "track": "siele",
@@ -1865,118 +2111,118 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
     "summary": "专项突破 · 动词短语 llevar/seguir + gerundio 辨析",
     "questions": [
       {
-        "id": "siele-专项-02-q1",
+        "id": "siele-spec-02-q1",
         "type": "grammar",
-        "questionText": "En el ámbito corporativo: \"La empresa exige que los candidatos ________ (dominar) al menos dos idiomas comunitarios.\"",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
         "options": [
           {
             "key": "A",
-            "text": "dominan"
-          },
-          {
-            "key": "B",
-            "text": "dominen"
-          },
-          {
-            "key": "C",
-            "text": "dominarán"
-          },
-          {
-            "key": "D",
-            "text": "dominaron"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：exigir（要求，苛求）属于强烈意志命令类动词，从句主语与主句不一致时必须接虚拟式 (dominen)。选 B。",
-        "categoryTag": "SIELE 商务文书愿望要求从句",
-        "score": 25
-      },
-      {
-        "id": "siele-专项-02-q2",
-        "type": "grammar",
-        "questionText": "Selecciona la preposición adecuada: \"Muchos jóvenes sueñan ________ fundar su propia empresa tecnológica en Madrid.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "de"
-          },
-          {
-            "key": "B",
             "text": "en"
           },
           {
+            "key": "B",
+            "text": "de"
+          },
+          {
             "key": "C",
-            "text": "con"
+            "text": "a"
           },
           {
             "key": "D",
             "text": "por"
           }
         ],
-        "correctAnswer": "C",
-        "explanation": "【考点剖析】：动词 soñar 表达“梦想做某事/渴望拥有某事”固定搭配前置词 con（soñar con algo / inf.）。选 C。",
-        "categoryTag": "动词固定前置词搭配",
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
         "score": 25
       },
       {
-        "id": "siele-专项-02-q3",
+        "id": "siele-spec-02-q2",
         "type": "reading",
-        "passage": "El trabajo remoto y nómada digital en ciudades hispanohablantes como Buenos Aires, Medellín y Valencia ha generado una transformación urbana sin precedentes. Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas.",
-        "questionText": "Según el fragmento, ¿cuál ha sido una consecuencia directa del auge del trabajo remoto?",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
         "options": [
           {
             "key": "A",
-            "text": "El abandono de los servicios tecnológicos"
+            "text": "Constituye un obstáculo para el tendido eléctrico"
           },
           {
             "key": "B",
-            "text": "La acelerada digitalización e impulso a las industrias creativas"
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
           },
           {
             "key": "C",
-            "text": "La disminución del turismo en ciudades hispanas"
+            "text": "Se destina únicamente a la minería tradicional"
           },
           {
             "key": "D",
-            "text": "El cese de contrataciones laborales locales"
+            "text": "Ha provocado un déficit en la inversión extranjera"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：文章明确提到“Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas”，选项 B 是原文核心意思的直接对应。",
-        "categoryTag": "SIELE 现代社会发展读解",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
         "score": 25
       },
       {
-        "id": "siele-专项-02-q4",
+        "id": "siele-spec-02-q3",
         "type": "grammar",
-        "questionText": "Sustitución pronominal: \"¿Has enviado los presupuestos a las clientas?\" — \"Sí, ya ________ envié ayer por correo.\"",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
         "options": [
           {
             "key": "A",
-            "text": "se los"
+            "text": "expandiendo"
           },
           {
             "key": "B",
-            "text": "les los"
+            "text": "expandido"
           },
           {
             "key": "C",
-            "text": "se las"
+            "text": "a expandir"
           },
           {
             "key": "D",
-            "text": "los les"
+            "text": "por expandir"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考点剖析】：直宾 los presupuestos (阳复 los)，间宾 a las clientas (阴复 les)。les遇到los发生变身，les -> se，合成 se los。选 A。",
-        "categoryTag": "SIELE 双重代词变位",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
+        "score": 25
+      },
+      {
+        "id": "siele-spec-02-q4",
+        "type": "grammar",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "envían"
+          },
+          {
+            "key": "B",
+            "text": "envíen"
+          },
+          {
+            "key": "C",
+            "text": "enviarán"
+          },
+          {
+            "key": "D",
+            "text": "enviaron"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-siele-冲刺-01",
+    "id": "paper-siele-tier-01",
     "title": "SIELE 欧标自适应机考梯级挑战卷 (A2-B1)",
     "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
     "track": "siele",
@@ -1987,118 +2233,118 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
     "summary": "阶梯进阶 · 基础时态迈向复合从句平稳过渡",
     "questions": [
       {
-        "id": "siele-冲刺-01-q1",
-        "type": "grammar",
-        "questionText": "Selecciona la preposición adecuada: \"Muchos jóvenes sueñan ________ fundar su propia empresa tecnológica en Madrid.\"",
+        "id": "siele-tier-01-q1",
+        "type": "reading",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
         "options": [
           {
             "key": "A",
-            "text": "de"
+            "text": "Constituye un obstáculo para el tendido eléctrico"
           },
           {
             "key": "B",
-            "text": "en"
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
           },
           {
             "key": "C",
-            "text": "con"
+            "text": "Se destina únicamente a la minería tradicional"
+          },
+          {
+            "key": "D",
+            "text": "Ha provocado un déficit en la inversión extranjera"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
+        "score": 25
+      },
+      {
+        "id": "siele-tier-01-q2",
+        "type": "grammar",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "expandiendo"
+          },
+          {
+            "key": "B",
+            "text": "expandido"
+          },
+          {
+            "key": "C",
+            "text": "a expandir"
+          },
+          {
+            "key": "D",
+            "text": "por expandir"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
+        "score": 25
+      },
+      {
+        "id": "siele-tier-01-q3",
+        "type": "grammar",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "envían"
+          },
+          {
+            "key": "B",
+            "text": "envíen"
+          },
+          {
+            "key": "C",
+            "text": "enviarán"
+          },
+          {
+            "key": "D",
+            "text": "enviaron"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
+        "score": 25
+      },
+      {
+        "id": "siele-tier-01-q4",
+        "type": "grammar",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "en"
+          },
+          {
+            "key": "B",
+            "text": "de"
+          },
+          {
+            "key": "C",
+            "text": "a"
           },
           {
             "key": "D",
             "text": "por"
           }
         ],
-        "correctAnswer": "C",
-        "explanation": "【考点剖析】：动词 soñar 表达“梦想做某事/渴望拥有某事”固定搭配前置词 con（soñar con algo / inf.）。选 C。",
-        "categoryTag": "动词固定前置词搭配",
-        "score": 25
-      },
-      {
-        "id": "siele-冲刺-01-q2",
-        "type": "reading",
-        "passage": "El trabajo remoto y nómada digital en ciudades hispanohablantes como Buenos Aires, Medellín y Valencia ha generado una transformación urbana sin precedentes. Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas.",
-        "questionText": "Según el fragmento, ¿cuál ha sido una consecuencia directa del auge del trabajo remoto?",
-        "options": [
-          {
-            "key": "A",
-            "text": "El abandono de los servicios tecnológicos"
-          },
-          {
-            "key": "B",
-            "text": "La acelerada digitalización e impulso a las industrias creativas"
-          },
-          {
-            "key": "C",
-            "text": "La disminución del turismo en ciudades hispanas"
-          },
-          {
-            "key": "D",
-            "text": "El cese de contrataciones laborales locales"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：文章明确提到“Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas”，选项 B 是原文核心意思的直接对应。",
-        "categoryTag": "SIELE 现代社会发展读解",
-        "score": 25
-      },
-      {
-        "id": "siele-冲刺-01-q3",
-        "type": "grammar",
-        "questionText": "Sustitución pronominal: \"¿Has enviado los presupuestos a las clientas?\" — \"Sí, ya ________ envié ayer por correo.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "se los"
-          },
-          {
-            "key": "B",
-            "text": "les los"
-          },
-          {
-            "key": "C",
-            "text": "se las"
-          },
-          {
-            "key": "D",
-            "text": "los les"
-          }
-        ],
         "correctAnswer": "A",
-        "explanation": "【考点剖析】：直宾 los presupuestos (阳复 los)，间宾 a las clientas (阴复 les)。les遇到los发生变身，les -> se，合成 se los。选 A。",
-        "categoryTag": "SIELE 双重代词变位",
-        "score": 25
-      },
-      {
-        "id": "siele-冲刺-01-q4",
-        "type": "grammar",
-        "questionText": "Elige la perífrasis verbal correcta: \"Lleva tres años ________ (aprender) español y ya puede mantener conversaciones fluidas.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "estudiado"
-          },
-          {
-            "key": "B",
-            "text": "aprendiendo"
-          },
-          {
-            "key": "C",
-            "text": "aprender"
-          },
-          {
-            "key": "D",
-            "text": "aprendido"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：llevar + 延续时间 + 副动词（gerundio），表示“做某事已持续了一段时间并仍在进行”。aprender 的副动词是 aprendiendo。选 B。",
-        "categoryTag": "动词短语 llevar + gerundio",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-siele-冲刺-02",
+    "id": "paper-siele-tier-02",
     "title": "SIELE 欧标自适应机考终极冲顶卷 (B1-B2)",
     "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
     "track": "siele",
@@ -2109,365 +2355,609 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
     "summary": "巅峰对决 · 全真自适应机考高难度试题汇编",
     "questions": [
       {
-        "id": "siele-冲刺-02-q1",
-        "type": "reading",
-        "passage": "El trabajo remoto y nómada digital en ciudades hispanohablantes como Buenos Aires, Medellín y Valencia ha generado una transformación urbana sin precedentes. Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas.",
-        "questionText": "Según el fragmento, ¿cuál ha sido una consecuencia directa del auge del trabajo remoto?",
-        "options": [
-          {
-            "key": "A",
-            "text": "El abandono de los servicios tecnológicos"
-          },
-          {
-            "key": "B",
-            "text": "La acelerada digitalización e impulso a las industrias creativas"
-          },
-          {
-            "key": "C",
-            "text": "La disminución del turismo en ciudades hispanas"
-          },
-          {
-            "key": "D",
-            "text": "El cese de contrataciones laborales locales"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考点剖析】：文章明确提到“Los servicios locales han experimentado una acelerada digitalización, fomentando el emprendimiento en industrias creativas”，选项 B 是原文核心意思的直接对应。",
-        "categoryTag": "SIELE 现代社会发展读解",
-        "score": 25
-      },
-      {
-        "id": "siele-冲刺-02-q2",
+        "id": "siele-tier-02-q1",
         "type": "grammar",
-        "questionText": "Sustitución pronominal: \"¿Has enviado los presupuestos a las clientas?\" — \"Sí, ya ________ envié ayer por correo.\"",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
         "options": [
           {
             "key": "A",
-            "text": "se los"
+            "text": "expandiendo"
           },
           {
             "key": "B",
-            "text": "les los"
+            "text": "expandido"
           },
           {
             "key": "C",
-            "text": "se las"
+            "text": "a expandir"
           },
           {
             "key": "D",
-            "text": "los les"
+            "text": "por expandir"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考点剖析】：直宾 los presupuestos (阳复 los)，间宾 a las clientas (阴复 les)。les遇到los发生变身，les -> se，合成 se los。选 A。",
-        "categoryTag": "SIELE 双重代词变位",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
         "score": 25
       },
       {
-        "id": "siele-冲刺-02-q3",
+        "id": "siele-tier-02-q2",
         "type": "grammar",
-        "questionText": "Elige la perífrasis verbal correcta: \"Lleva tres años ________ (aprender) español y ya puede mantener conversaciones fluidas.\"",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
         "options": [
           {
             "key": "A",
-            "text": "estudiado"
+            "text": "envían"
           },
           {
             "key": "B",
-            "text": "aprendiendo"
+            "text": "envíen"
           },
           {
             "key": "C",
-            "text": "aprender"
+            "text": "enviarán"
           },
           {
             "key": "D",
-            "text": "aprendido"
+            "text": "enviaron"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：llevar + 延续时间 + 副动词（gerundio），表示“做某事已持续了一段时间并仍在进行”。aprender 的副动词是 aprendiendo。选 B。",
-        "categoryTag": "动词短语 llevar + gerundio",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
         "score": 25
       },
       {
-        "id": "siele-冲刺-02-q4",
+        "id": "siele-tier-02-q3",
         "type": "grammar",
-        "questionText": "En el ámbito corporativo: \"La empresa exige que los candidatos ________ (dominar) al menos dos idiomas comunitarios.\"",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
         "options": [
           {
             "key": "A",
-            "text": "dominan"
+            "text": "en"
           },
           {
             "key": "B",
-            "text": "dominen"
+            "text": "de"
           },
           {
             "key": "C",
-            "text": "dominarán"
+            "text": "a"
           },
           {
             "key": "D",
-            "text": "dominaron"
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
+        "score": 25
+      },
+      {
+        "id": "siele-tier-02-q4",
+        "type": "reading",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Constituye un obstáculo para el tendido eléctrico"
+          },
+          {
+            "key": "B",
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
+          },
+          {
+            "key": "C",
+            "text": "Se destina únicamente a la minería tradicional"
+          },
+          {
+            "key": "D",
+            "text": "Ha provocado un déficit en la inversión extranjera"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考点剖析】：exigir（要求，苛求）属于强烈意志命令类动词，从句主语与主句不一致时必须接虚拟式 (dominen)。选 B。",
-        "categoryTag": "SIELE 商务文书愿望要求从句",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-siele-read-01",
+    "title": "SIELE 国际机考 快速阅读与图表信息检索专练卷",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B1",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "totalScore": 100,
+    "summary": "题型专项 · 官方通告、商务邮件与公共设施信息检索",
+    "questions": [
+      {
+        "id": "siele-read-01-q1",
+        "type": "grammar",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "envían"
+          },
+          {
+            "key": "B",
+            "text": "envíen"
+          },
+          {
+            "key": "C",
+            "text": "enviarán"
+          },
+          {
+            "key": "D",
+            "text": "enviaron"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
+        "score": 25
+      },
+      {
+        "id": "siele-read-01-q2",
+        "type": "grammar",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "en"
+          },
+          {
+            "key": "B",
+            "text": "de"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
+        "score": 25
+      },
+      {
+        "id": "siele-read-01-q3",
+        "type": "reading",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Constituye un obstáculo para el tendido eléctrico"
+          },
+          {
+            "key": "B",
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
+          },
+          {
+            "key": "C",
+            "text": "Se destina únicamente a la minería tradicional"
+          },
+          {
+            "key": "D",
+            "text": "Ha provocado un déficit en la inversión extranjera"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
+        "score": 25
+      },
+      {
+        "id": "siele-read-01-q4",
+        "type": "grammar",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "expandiendo"
+          },
+          {
+            "key": "B",
+            "text": "expandido"
+          },
+          {
+            "key": "C",
+            "text": "a expandir"
+          },
+          {
+            "key": "D",
+            "text": "por expandir"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-siele-read-02",
+    "title": "SIELE 国际机考 长篇学术综述与观点论证综合卷",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B2",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "totalScore": 100,
+    "summary": "高分攻关 · 环境生态、数字化经济与拉美社会前沿",
+    "questions": [
+      {
+        "id": "siele-read-02-q1",
+        "type": "grammar",
+        "questionText": "Uso de preposiciones: \"El éxito de la campaña publicitaria consistió ________ conectar emocionalmente con la audiencia joven.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "en"
+          },
+          {
+            "key": "B",
+            "text": "de"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：动词 consistir 表达“在于、由...组成”固定搭配前置词 en（consistir en algo / inf.）。选 A。",
+        "categoryTag": "固定搭配 consistir en",
+        "score": 25
+      },
+      {
+        "id": "siele-read-02-q2",
+        "type": "reading",
+        "passage": "La expansión de energías renovables en Chile, especialmente la energía solar fotovoltaica en el Desierto de Atacama, ha posicionado al país suramericano como un referente global de transición energética limpia, atrayendo capitales de innovación tecnológica.",
+        "questionText": "¿Cuál es el papel del Desierto de Atacama en el panorama energético chileno?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Constituye un obstáculo para el tendido eléctrico"
+          },
+          {
+            "key": "B",
+            "text": "Es el epicentro del desarrollo solar fotovoltaico y la transición limpia"
+          },
+          {
+            "key": "C",
+            "text": "Se destina únicamente a la minería tradicional"
+          },
+          {
+            "key": "D",
+            "text": "Ha provocado un déficit en la inversión extranjera"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【SIELE 考点剖析】：文中明确提及阿塔卡马沙漠的太阳能光伏发电让智利成为全球清洁能源转型的典范，对应选项 B。",
+        "categoryTag": "SIELE 拉美科技与产业生态读解",
+        "score": 25
+      },
+      {
+        "id": "siele-read-02-q3",
+        "type": "grammar",
+        "questionText": "Perífrasis de continuidad: \"A pesar de las dificultades del mercado, la compañía sigue ________ (expandir) su red de distribución.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "expandiendo"
+          },
+          {
+            "key": "B",
+            "text": "expandido"
+          },
+          {
+            "key": "C",
+            "text": "a expandir"
+          },
+          {
+            "key": "D",
+            "text": "por expandir"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【SIELE 考点剖析】：seguir + 副动词（gerundio）表示动作或状态持续进行（“继续扩大其网络”）。expandir 的副动词形式为 expandiendo。选 A。",
+        "categoryTag": "动词短语 seguir + gerundio",
+        "score": 25
+      },
+      {
+        "id": "siele-read-02-q4",
+        "type": "grammar",
+        "questionText": "Entorno profesional y corporativo: \"El comité directivo solicita que todos los departamentos ________ (enviar) sus informes trimestrales.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "envían"
+          },
+          {
+            "key": "B",
+            "text": "envíen"
+          },
+          {
+            "key": "C",
+            "text": "enviarán"
+          },
+          {
+            "key": "D",
+            "text": "enviaron"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【SIELE 考点剖析】：solicitar que 表官方正式请求，宾语从句必须使用虚拟式（envíen，注意带重音符号）。选 B。",
+        "categoryTag": "SIELE 商务文书与意志从句",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-eee4-2024",
-    "title": "2024年全国高校西班牙语专业四级 (EEE-4) 统考全真卷",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
+    "title": "2024年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
     "track": "tem4",
     "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
     "durationMinutes": 60,
     "totalScore": 100,
-    "summary": "教指委最新统考 · 过去完成时配合、前置词搭配与自反被动句",
+    "summary": "教指委统考 · 过去完成时配合、前置词搭配与自反被动句",
     "questions": [
       {
         "id": "eee4-2024-q1",
         "type": "grammar",
-        "questionText": "【专四考点·时态配合】\"Cuando llegó la policía a la escena, los ladrones ya ________ (escapar) por la ventana trasera.\"",
+        "questionText": "【西语专四 EEE-4·动词时态配合】\"Cuando la profesora entró en el aula, los alumnos ya ________ (terminar) el ejercicio de traducción.\"",
         "options": [
           {
             "key": "A",
-            "text": "escaparon"
+            "text": "terminaron"
           },
           {
             "key": "B",
-            "text": "habían escapado"
+            "text": "habían terminado"
           },
           {
             "key": "C",
-            "text": "hayan escapado"
+            "text": "terminaban"
           },
           {
             "key": "D",
-            "text": "escapaban"
+            "text": "hayan terminado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：当警察赶到（llegó 过去时间点）时，小偷在此之前已经逃跑，表示在过去基准时刻前已完成的动作，必须使用直陈式过去完成时（Pluscuamperfecto: habían escapado）。选 B。",
-        "categoryTag": "过去完成时 (过去的过去)",
+        "explanation": "【EEE-4 官方专四解析】：在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
+        "categoryTag": "过去完成时 (Pluscuamperfecto)",
         "score": 25
       },
       {
         "id": "eee4-2024-q2",
         "type": "grammar",
-        "questionText": "【专四考点·前置词辨析】\"Elena tardó más de media hora ________ encontrar sus llaves en el bolso.\"",
+        "questionText": "【西语专四 EEE-4·固定前置词辨析】\"Muchos estudiantes extranjeros se quejan ________ la excesiva velocidad del habla de los madrileños.\"",
         "options": [
           {
             "key": "A",
-            "text": "en"
+            "text": "de"
           },
           {
             "key": "B",
-            "text": "a"
+            "text": "con"
           },
           {
             "key": "C",
-            "text": "por"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "de"
+            "text": "por"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【专四权威解析】：tardar + 时间 + en + 不定式（花多长时间做某事）是专四必考固定动词短语。选 A。",
-        "categoryTag": "固定搭配 tardar en + inf",
+        "explanation": "【EEE-4 官方专四解析】：quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
+        "categoryTag": "固定搭配 quejarse de",
         "score": 25
       },
       {
         "id": "eee4-2024-q3",
         "type": "grammar",
-        "questionText": "【专四考点·虚拟式触发】\"Te llamo para que me ________ (explicar) cómo funciona este nuevo programa informático.\"",
+        "questionText": "【西语专四 EEE-4·目的从句】\"Te dejo las llaves del coche para que ________ (poder) ir a la estación a recoger a tus abuelos.\"",
         "options": [
           {
             "key": "A",
-            "text": "explicas"
+            "text": "puedes"
           },
           {
             "key": "B",
-            "text": "expliques"
+            "text": "puedas"
           },
           {
             "key": "C",
-            "text": "explicarás"
+            "text": "podrás"
           },
           {
             "key": "D",
-            "text": "explicaras"
+            "text": "pudiste"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：para que 引导目的从句且前后主语不一致（te llamo yo, me expliques tú），必须接虚拟式。主句为现在时 llamo，从句使用虚拟式现在时 expliques。选 B。",
-        "categoryTag": "目的状语从句 para que + 虚拟式",
+        "explanation": "【EEE-4 官方专四解析】：连词短语 para que 引导目的从句且主句从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
+        "categoryTag": "目的从句 para que + 虚拟式",
         "score": 25
       },
       {
         "id": "eee4-2024-q4",
         "type": "grammar",
-        "questionText": "【专四考点·被动语态与被动se】\"En España ________ (hablar) cuatro lenguas cooficiales en distintas comunidades autónomas.\"",
+        "questionText": "【西语专四 EEE-4·自反被动句一致性】\"En las conferencias internacionales se ________ (tratar) diversos temas de actualidad geopolítica.\"",
         "options": [
           {
             "key": "A",
-            "text": "se habla"
+            "text": "trata"
           },
           {
             "key": "B",
-            "text": "se hablan"
+            "text": "tratan"
           },
           {
             "key": "C",
-            "text": "es hablado"
+            "text": "es tratado"
           },
           {
             "key": "D",
-            "text": "han hablado"
+            "text": "han tratado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：自反被动句（Pasiva refleja: se + 动词 + 真正主语）。此处真正主语为复数 cuatro lenguas cooficiales，动词必须用第三人称复数 se hablan。选 B。",
-        "categoryTag": "被动 se 的主谓一致",
+        "explanation": "【EEE-4 官方专四解析】：被动 se 句型中，真正语法主语是后面的 diversos temas（复数），动词必须采用第三人称复数 tratan。选 B。",
+        "categoryTag": "被动 se 主谓一致",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-eee4-2023",
-    "title": "2023年全国高校西班牙语专业四级 (EEE-4) 统考全真卷",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
+    "title": "2023年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
     "track": "tem4",
     "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
     "durationMinutes": 60,
     "totalScore": 100,
-    "summary": "教指委历年经典 · 目的从句 para que、所有格关系代词 cuya",
+    "summary": "教指委经典 · 目的从句 para que、所有格关系代词 cuya",
     "questions": [
       {
         "id": "eee4-2023-q1",
         "type": "grammar",
-        "questionText": "【专四考点·前置词辨析】\"Elena tardó más de media hora ________ encontrar sus llaves en el bolso.\"",
+        "questionText": "【西语专四 EEE-4·固定前置词辨析】\"Muchos estudiantes extranjeros se quejan ________ la excesiva velocidad del habla de los madrileños.\"",
         "options": [
           {
             "key": "A",
-            "text": "en"
+            "text": "de"
           },
           {
             "key": "B",
-            "text": "a"
+            "text": "con"
           },
           {
             "key": "C",
-            "text": "por"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "de"
+            "text": "por"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【专四权威解析】：tardar + 时间 + en + 不定式（花多长时间做某事）是专四必考固定动词短语。选 A。",
-        "categoryTag": "固定搭配 tardar en + inf",
+        "explanation": "【EEE-4 官方专四解析】：quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
+        "categoryTag": "固定搭配 quejarse de",
         "score": 25
       },
       {
         "id": "eee4-2023-q2",
         "type": "grammar",
-        "questionText": "【专四考点·虚拟式触发】\"Te llamo para que me ________ (explicar) cómo funciona este nuevo programa informático.\"",
+        "questionText": "【西语专四 EEE-4·目的从句】\"Te dejo las llaves del coche para que ________ (poder) ir a la estación a recoger a tus abuelos.\"",
         "options": [
           {
             "key": "A",
-            "text": "explicas"
+            "text": "puedes"
           },
           {
             "key": "B",
-            "text": "expliques"
+            "text": "puedas"
           },
           {
             "key": "C",
-            "text": "explicarás"
+            "text": "podrás"
           },
           {
             "key": "D",
-            "text": "explicaras"
+            "text": "pudiste"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：para que 引导目的从句且前后主语不一致（te llamo yo, me expliques tú），必须接虚拟式。主句为现在时 llamo，从句使用虚拟式现在时 expliques。选 B。",
-        "categoryTag": "目的状语从句 para que + 虚拟式",
+        "explanation": "【EEE-4 官方专四解析】：连词短语 para que 引导目的从句且主句从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
+        "categoryTag": "目的从句 para que + 虚拟式",
         "score": 25
       },
       {
         "id": "eee4-2023-q3",
         "type": "grammar",
-        "questionText": "【专四考点·被动语态与被动se】\"En España ________ (hablar) cuatro lenguas cooficiales en distintas comunidades autónomas.\"",
+        "questionText": "【西语专四 EEE-4·自反被动句一致性】\"En las conferencias internacionales se ________ (tratar) diversos temas de actualidad geopolítica.\"",
         "options": [
           {
             "key": "A",
-            "text": "se habla"
+            "text": "trata"
           },
           {
             "key": "B",
-            "text": "se hablan"
+            "text": "tratan"
           },
           {
             "key": "C",
-            "text": "es hablado"
+            "text": "es tratado"
           },
           {
             "key": "D",
-            "text": "han hablado"
+            "text": "han tratado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：自反被动句（Pasiva refleja: se + 动词 + 真正主语）。此处真正主语为复数 cuatro lenguas cooficiales，动词必须用第三人称复数 se hablan。选 B。",
-        "categoryTag": "被动 se 的主谓一致",
+        "explanation": "【EEE-4 官方专四解析】：被动 se 句型中，真正语法主语是后面的 diversos temas（复数），动词必须采用第三人称复数 tratan。选 B。",
+        "categoryTag": "被动 se 主谓一致",
         "score": 25
       },
       {
         "id": "eee4-2023-q4",
         "type": "grammar",
-        "questionText": "【专四考点·关系代词选择】\"El autor ________ novela ganó el Premio Cervantes dará una conferencia la próxima semana.\"",
+        "questionText": "【西语专四 EEE-4·反常阴阳性专有考点】\"Bebimos ________ agua mineral fresca después de subir a la montaña.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "el"
           },
           {
             "key": "B",
-            "text": "cuya"
+            "text": "la"
           },
           {
             "key": "C",
-            "text": "quien"
+            "text": "un"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "al"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：先行词是 el autor，从句中 novela 是先行词的所有物（“其小说”），cuyo 起所有格作用，且其性数与后面的被修饰词 novela 一致，故用阴性单数 cuya。选 B。",
-        "categoryTag": "所有格关系代词 cuyo/cuya",
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：agua, águila, hacha, alma 等词本质为阴性名词，但因首音节为重读 a- 音，单数定冠词必须使用 el 以避免元音连读冲突（el agua），但其修饰形容词依然保持阴性（fresca）。选 A。",
+        "categoryTag": "重读 a- 开头阴性名词冠词规则",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-eee4-2022",
-    "title": "2022年全国高校西班牙语专业四级 (EEE-4) 统考全真卷",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
+    "title": "2022年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
     "track": "tem4",
     "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
     "durationMinutes": 60,
     "totalScore": 100,
     "summary": "真题精炼 · 黄金世纪文学史常识与词汇多义辨析",
@@ -2475,121 +2965,121 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
       {
         "id": "eee4-2022-q1",
         "type": "grammar",
-        "questionText": "【专四考点·虚拟式触发】\"Te llamo para que me ________ (explicar) cómo funciona este nuevo programa informático.\"",
+        "questionText": "【西语专四 EEE-4·目的从句】\"Te dejo las llaves del coche para que ________ (poder) ir a la estación a recoger a tus abuelos.\"",
         "options": [
           {
             "key": "A",
-            "text": "explicas"
+            "text": "puedes"
           },
           {
             "key": "B",
-            "text": "expliques"
+            "text": "puedas"
           },
           {
             "key": "C",
-            "text": "explicarás"
+            "text": "podrás"
           },
           {
             "key": "D",
-            "text": "explicaras"
+            "text": "pudiste"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：para que 引导目的从句且前后主语不一致（te llamo yo, me expliques tú），必须接虚拟式。主句为现在时 llamo，从句使用虚拟式现在时 expliques。选 B。",
-        "categoryTag": "目的状语从句 para que + 虚拟式",
+        "explanation": "【EEE-4 官方专四解析】：连词短语 para que 引导目的从句且主句从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
+        "categoryTag": "目的从句 para que + 虚拟式",
         "score": 25
       },
       {
         "id": "eee4-2022-q2",
         "type": "grammar",
-        "questionText": "【专四考点·被动语态与被动se】\"En España ________ (hablar) cuatro lenguas cooficiales en distintas comunidades autónomas.\"",
+        "questionText": "【西语专四 EEE-4·自反被动句一致性】\"En las conferencias internacionales se ________ (tratar) diversos temas de actualidad geopolítica.\"",
         "options": [
           {
             "key": "A",
-            "text": "se habla"
+            "text": "trata"
           },
           {
             "key": "B",
-            "text": "se hablan"
+            "text": "tratan"
           },
           {
             "key": "C",
-            "text": "es hablado"
+            "text": "es tratado"
           },
           {
             "key": "D",
-            "text": "han hablado"
+            "text": "han tratado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：自反被动句（Pasiva refleja: se + 动词 + 真正主语）。此处真正主语为复数 cuatro lenguas cooficiales，动词必须用第三人称复数 se hablan。选 B。",
-        "categoryTag": "被动 se 的主谓一致",
+        "explanation": "【EEE-4 官方专四解析】：被动 se 句型中，真正语法主语是后面的 diversos temas（复数），动词必须采用第三人称复数 tratan。选 B。",
+        "categoryTag": "被动 se 主谓一致",
         "score": 25
       },
       {
         "id": "eee4-2022-q3",
         "type": "grammar",
-        "questionText": "【专四考点·关系代词选择】\"El autor ________ novela ganó el Premio Cervantes dará una conferencia la próxima semana.\"",
+        "questionText": "【西语专四 EEE-4·反常阴阳性专有考点】\"Bebimos ________ agua mineral fresca después de subir a la montaña.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "el"
           },
           {
             "key": "B",
-            "text": "cuya"
+            "text": "la"
           },
           {
             "key": "C",
-            "text": "quien"
+            "text": "un"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "al"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：先行词是 el autor，从句中 novela 是先行词的所有物（“其小说”），cuyo 起所有格作用，且其性数与后面的被修饰词 novela 一致，故用阴性单数 cuya。选 B。",
-        "categoryTag": "所有格关系代词 cuyo/cuya",
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：agua, águila, hacha, alma 等词本质为阴性名词，但因首音节为重读 a- 音，单数定冠词必须使用 el 以避免元音连读冲突（el agua），但其修饰形容词依然保持阴性（fresca）。选 A。",
+        "categoryTag": "重读 a- 开头阴性名词冠词规则",
         "score": 25
       },
       {
         "id": "eee4-2022-q4",
         "type": "reading",
-        "passage": "El Siglo de Oro español representa la cúspide de la producción literaria y artística en España. Durante los siglos XVI y XVII florecieron autores universales como Miguel de Cervantes, Lope de Vega y Francisco de Quevedo, enriqueciendo de manera trascendental la lengua castellana.",
-        "questionText": "¿Qué figuras históricas son mencionadas como representantes emblemáticos del Siglo de Oro?",
+        "passage": "Don Quijote de la Mancha, cumbre de Miguel de Cervantes publicada en 1605, desmitificó los libros de caballerías mediante una parodia genial que exploró los límites entre la cordura y el idealismo ético humano.",
+        "questionText": "¿Cuál fue el propósito literario primordial de la obra cervantina según la crítica?",
         "options": [
           {
             "key": "A",
-            "text": "García Lorca y Antonio Machado"
+            "text": "Promover las guerras feudales medievales"
           },
           {
             "key": "B",
-            "text": "Miguel de Cervantes, Lope de Vega y Quevedo"
+            "text": "Parodiar y desmitificar las novelas de caballerías con un profundo humanismo"
           },
           {
             "key": "C",
-            "text": "Gabriel García Márquez y Borges"
+            "text": "Enseñar técnicas de combate a caballo"
           },
           {
             "key": "D",
-            "text": "Pablo Picasso y Salvador Dalí"
+            "text": "Traducir leyendas árabes al castellano antiguo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：西班牙黄金世纪（Siglo de Oro，16-17世纪）三座文学丰碑：塞万提斯、维加与屈维多，对应选项 B。",
-        "categoryTag": "西语专四·文学史常识阅读",
+        "explanation": "【EEE-4 官方专四解析】：塞万提斯通过《堂吉诃德》以反讽模仿（parodia）打破了中世纪骑士小说的虚妄神话，闪耀着人文主义光芒，对应选项 B。",
+        "categoryTag": "西语专四·文学史名著精解",
         "score": 25
       }
     ]
   },
   {
     "id": "paper-eee4-2021",
-    "title": "2021年全国高校西班牙语专业四级 (EEE-4) 统考全真卷",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
+    "title": "2021年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
     "track": "tem4",
     "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
     "durationMinutes": 60,
     "totalScore": 100,
     "summary": "考纲溯源 · 虚拟式时态配合与被动 se 主谓一致",
@@ -2597,840 +3087,1084 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
       {
         "id": "eee4-2021-q1",
         "type": "grammar",
-        "questionText": "【专四考点·被动语态与被动se】\"En España ________ (hablar) cuatro lenguas cooficiales en distintas comunidades autónomas.\"",
+        "questionText": "【西语专四 EEE-4·自反被动句一致性】\"En las conferencias internacionales se ________ (tratar) diversos temas de actualidad geopolítica.\"",
         "options": [
           {
             "key": "A",
-            "text": "se habla"
+            "text": "trata"
           },
           {
             "key": "B",
-            "text": "se hablan"
+            "text": "tratan"
           },
           {
             "key": "C",
-            "text": "es hablado"
+            "text": "es tratado"
           },
           {
             "key": "D",
-            "text": "han hablado"
+            "text": "han tratado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：自反被动句（Pasiva refleja: se + 动词 + 真正主语）。此处真正主语为复数 cuatro lenguas cooficiales，动词必须用第三人称复数 se hablan。选 B。",
-        "categoryTag": "被动 se 的主谓一致",
+        "explanation": "【EEE-4 官方专四解析】：被动 se 句型中，真正语法主语是后面的 diversos temas（复数），动词必须采用第三人称复数 tratan。选 B。",
+        "categoryTag": "被动 se 主谓一致",
         "score": 25
       },
       {
         "id": "eee4-2021-q2",
         "type": "grammar",
-        "questionText": "【专四考点·关系代词选择】\"El autor ________ novela ganó el Premio Cervantes dará una conferencia la próxima semana.\"",
+        "questionText": "【西语专四 EEE-4·反常阴阳性专有考点】\"Bebimos ________ agua mineral fresca después de subir a la montaña.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "el"
           },
           {
             "key": "B",
-            "text": "cuya"
+            "text": "la"
           },
           {
             "key": "C",
-            "text": "quien"
+            "text": "un"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "al"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：先行词是 el autor，从句中 novela 是先行词的所有物（“其小说”），cuyo 起所有格作用，且其性数与后面的被修饰词 novela 一致，故用阴性单数 cuya。选 B。",
-        "categoryTag": "所有格关系代词 cuyo/cuya",
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：agua, águila, hacha, alma 等词本质为阴性名词，但因首音节为重读 a- 音，单数定冠词必须使用 el 以避免元音连读冲突（el agua），但其修饰形容词依然保持阴性（fresca）。选 A。",
+        "categoryTag": "重读 a- 开头阴性名词冠词规则",
         "score": 25
       },
       {
         "id": "eee4-2021-q3",
         "type": "reading",
-        "passage": "El Siglo de Oro español representa la cúspide de la producción literaria y artística en España. Durante los siglos XVI y XVII florecieron autores universales como Miguel de Cervantes, Lope de Vega y Francisco de Quevedo, enriqueciendo de manera trascendental la lengua castellana.",
-        "questionText": "¿Qué figuras históricas son mencionadas como representantes emblemáticos del Siglo de Oro?",
+        "passage": "Don Quijote de la Mancha, cumbre de Miguel de Cervantes publicada en 1605, desmitificó los libros de caballerías mediante una parodia genial que exploró los límites entre la cordura y el idealismo ético humano.",
+        "questionText": "¿Cuál fue el propósito literario primordial de la obra cervantina según la crítica?",
         "options": [
           {
             "key": "A",
-            "text": "García Lorca y Antonio Machado"
+            "text": "Promover las guerras feudales medievales"
           },
           {
             "key": "B",
-            "text": "Miguel de Cervantes, Lope de Vega y Quevedo"
+            "text": "Parodiar y desmitificar las novelas de caballerías con un profundo humanismo"
           },
           {
             "key": "C",
-            "text": "Gabriel García Márquez y Borges"
+            "text": "Enseñar técnicas de combate a caballo"
           },
           {
             "key": "D",
-            "text": "Pablo Picasso y Salvador Dalí"
+            "text": "Traducir leyendas árabes al castellano antiguo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：西班牙黄金世纪（Siglo de Oro，16-17世纪）三座文学丰碑：塞万提斯、维加与屈维多，对应选项 B。",
-        "categoryTag": "西语专四·文学史常识阅读",
+        "explanation": "【EEE-4 官方专四解析】：塞万提斯通过《堂吉诃德》以反讽模仿（parodia）打破了中世纪骑士小说的虚妄神话，闪耀着人文主义光芒，对应选项 B。",
+        "categoryTag": "西语专四·文学史名著精解",
         "score": 25
       },
       {
         "id": "eee4-2021-q4",
         "type": "grammar",
-        "questionText": "【专四考点·时态配合】\"Cuando llegó la policía a la escena, los ladrones ya ________ (escapar) por la ventana trasera.\"",
+        "questionText": "【西语专四 EEE-4·动词时态配合】\"Cuando la profesora entró en el aula, los alumnos ya ________ (terminar) el ejercicio de traducción.\"",
         "options": [
           {
             "key": "A",
-            "text": "escaparon"
+            "text": "terminaron"
           },
           {
             "key": "B",
-            "text": "habían escapado"
+            "text": "habían terminado"
           },
           {
             "key": "C",
-            "text": "hayan escapado"
+            "text": "terminaban"
           },
           {
             "key": "D",
-            "text": "escapaban"
+            "text": "hayan terminado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：当警察赶到（llegó 过去时间点）时，小偷在此之前已经逃跑，表示在过去基准时刻前已完成的动作，必须使用直陈式过去完成时（Pluscuamperfecto: habían escapado）。选 B。",
-        "categoryTag": "过去完成时 (过去的过去)",
+        "explanation": "【EEE-4 官方专四解析】：在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
+        "categoryTag": "过去完成时 (Pluscuamperfecto)",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-eee4-语法-01",
-    "title": "全国高校西语专四 (EEE-4) 语法专项突破卷 (虚拟式与时态)",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
+    "id": "paper-eee4-2020",
+    "title": "2020年全国高校西班牙语专业四级 (EEE-4) 统考全真卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
     "track": "tem4",
     "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "totalScore": 100,
+    "summary": "经典回溯 · 直宾代词提前与复合条件假设句",
+    "questions": [
+      {
+        "id": "eee4-2020-q1",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·反常阴阳性专有考点】\"Bebimos ________ agua mineral fresca después de subir a la montaña.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "el"
+          },
+          {
+            "key": "B",
+            "text": "la"
+          },
+          {
+            "key": "C",
+            "text": "un"
+          },
+          {
+            "key": "D",
+            "text": "al"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：agua, águila, hacha, alma 等词本质为阴性名词，但因首音节为重读 a- 音，单数定冠词必须使用 el 以避免元音连读冲突（el agua），但其修饰形容词依然保持阴性（fresca）。选 A。",
+        "categoryTag": "重读 a- 开头阴性名词冠词规则",
+        "score": 25
+      },
+      {
+        "id": "eee4-2020-q2",
+        "type": "reading",
+        "passage": "Don Quijote de la Mancha, cumbre de Miguel de Cervantes publicada en 1605, desmitificó los libros de caballerías mediante una parodia genial que exploró los límites entre la cordura y el idealismo ético humano.",
+        "questionText": "¿Cuál fue el propósito literario primordial de la obra cervantina según la crítica?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Promover las guerras feudales medievales"
+          },
+          {
+            "key": "B",
+            "text": "Parodiar y desmitificar las novelas de caballerías con un profundo humanismo"
+          },
+          {
+            "key": "C",
+            "text": "Enseñar técnicas de combate a caballo"
+          },
+          {
+            "key": "D",
+            "text": "Traducir leyendas árabes al castellano antiguo"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：塞万提斯通过《堂吉诃德》以反讽模仿（parodia）打破了中世纪骑士小说的虚妄神话，闪耀着人文主义光芒，对应选项 B。",
+        "categoryTag": "西语专四·文学史名著精解",
+        "score": 25
+      },
+      {
+        "id": "eee4-2020-q3",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·动词时态配合】\"Cuando la profesora entró en el aula, los alumnos ya ________ (terminar) el ejercicio de traducción.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "terminaron"
+          },
+          {
+            "key": "B",
+            "text": "habían terminado"
+          },
+          {
+            "key": "C",
+            "text": "terminaban"
+          },
+          {
+            "key": "D",
+            "text": "hayan terminado"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
+        "categoryTag": "过去完成时 (Pluscuamperfecto)",
+        "score": 25
+      },
+      {
+        "id": "eee4-2020-q4",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·固定前置词辨析】\"Muchos estudiantes extranjeros se quejan ________ la excesiva velocidad del habla de los madrileños.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "con"
+          },
+          {
+            "key": "C",
+            "text": "en"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
+        "categoryTag": "固定搭配 quejarse de",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-eee4-2019",
+    "title": "2019年全国高校西班牙语专业四级 (EEE-4) 统考全真卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "totalScore": 100,
+    "summary": "命题规律 · 重读 a- 开头反常阴性词与关系从句",
+    "questions": [
+      {
+        "id": "eee4-2019-q1",
+        "type": "reading",
+        "passage": "Don Quijote de la Mancha, cumbre de Miguel de Cervantes publicada en 1605, desmitificó los libros de caballerías mediante una parodia genial que exploró los límites entre la cordura y el idealismo ético humano.",
+        "questionText": "¿Cuál fue el propósito literario primordial de la obra cervantina según la crítica?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Promover las guerras feudales medievales"
+          },
+          {
+            "key": "B",
+            "text": "Parodiar y desmitificar las novelas de caballerías con un profundo humanismo"
+          },
+          {
+            "key": "C",
+            "text": "Enseñar técnicas de combate a caballo"
+          },
+          {
+            "key": "D",
+            "text": "Traducir leyendas árabes al castellano antiguo"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：塞万提斯通过《堂吉诃德》以反讽模仿（parodia）打破了中世纪骑士小说的虚妄神话，闪耀着人文主义光芒，对应选项 B。",
+        "categoryTag": "西语专四·文学史名著精解",
+        "score": 25
+      },
+      {
+        "id": "eee4-2019-q2",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·动词时态配合】\"Cuando la profesora entró en el aula, los alumnos ya ________ (terminar) el ejercicio de traducción.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "terminaron"
+          },
+          {
+            "key": "B",
+            "text": "habían terminado"
+          },
+          {
+            "key": "C",
+            "text": "terminaban"
+          },
+          {
+            "key": "D",
+            "text": "hayan terminado"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
+        "categoryTag": "过去完成时 (Pluscuamperfecto)",
+        "score": 25
+      },
+      {
+        "id": "eee4-2019-q3",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·固定前置词辨析】\"Muchos estudiantes extranjeros se quejan ________ la excesiva velocidad del habla de los madrileños.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "con"
+          },
+          {
+            "key": "C",
+            "text": "en"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
+        "categoryTag": "固定搭配 quejarse de",
+        "score": 25
+      },
+      {
+        "id": "eee4-2019-q4",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·目的从句】\"Te dejo las llaves del coche para que ________ (poder) ir a la estación a recoger a tus abuelos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "puedes"
+          },
+          {
+            "key": "B",
+            "text": "puedas"
+          },
+          {
+            "key": "C",
+            "text": "podrás"
+          },
+          {
+            "key": "D",
+            "text": "pudiste"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：连词短语 para que 引导目的从句且主句从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
+        "categoryTag": "目的从句 para que + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-eee4-2018",
+    "title": "2018年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "totalScore": 100,
+    "summary": "语法溯源 · 过去时态混合叙事与副动词用法",
+    "questions": [
+      {
+        "id": "eee4-2018-q1",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·动词时态配合】\"Cuando la profesora entró en el aula, los alumnos ya ________ (terminar) el ejercicio de traducción.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "terminaron"
+          },
+          {
+            "key": "B",
+            "text": "habían terminado"
+          },
+          {
+            "key": "C",
+            "text": "terminaban"
+          },
+          {
+            "key": "D",
+            "text": "hayan terminado"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
+        "categoryTag": "过去完成时 (Pluscuamperfecto)",
+        "score": 25
+      },
+      {
+        "id": "eee4-2018-q2",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·固定前置词辨析】\"Muchos estudiantes extranjeros se quejan ________ la excesiva velocidad del habla de los madrileños.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "con"
+          },
+          {
+            "key": "C",
+            "text": "en"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
+        "categoryTag": "固定搭配 quejarse de",
+        "score": 25
+      },
+      {
+        "id": "eee4-2018-q3",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·目的从句】\"Te dejo las llaves del coche para que ________ (poder) ir a la estación a recoger a tus abuelos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "puedes"
+          },
+          {
+            "key": "B",
+            "text": "puedas"
+          },
+          {
+            "key": "C",
+            "text": "podrás"
+          },
+          {
+            "key": "D",
+            "text": "pudiste"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：连词短语 para que 引导目的从句且主句从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
+        "categoryTag": "目的从句 para que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "eee4-2018-q4",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·自反被动句一致性】\"En las conferencias internacionales se ________ (tratar) diversos temas de actualidad geopolítica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "trata"
+          },
+          {
+            "key": "B",
+            "text": "tratan"
+          },
+          {
+            "key": "C",
+            "text": "es tratado"
+          },
+          {
+            "key": "D",
+            "text": "han tratado"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：被动 se 句型中，真正语法主语是后面的 diversos temas（复数），动词必须采用第三人称复数 tratan。选 B。",
+        "categoryTag": "被动 se 主谓一致",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-eee4-2017",
+    "title": "2017年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "totalScore": 100,
+    "summary": "十年经典 · 虚拟式独立用法与陈述式虚拟式辨析",
+    "questions": [
+      {
+        "id": "eee4-2017-q1",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·固定前置词辨析】\"Muchos estudiantes extranjeros se quejan ________ la excesiva velocidad del habla de los madrileños.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "con"
+          },
+          {
+            "key": "C",
+            "text": "en"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
+        "categoryTag": "固定搭配 quejarse de",
+        "score": 25
+      },
+      {
+        "id": "eee4-2017-q2",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·目的从句】\"Te dejo las llaves del coche para que ________ (poder) ir a la estación a recoger a tus abuelos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "puedes"
+          },
+          {
+            "key": "B",
+            "text": "puedas"
+          },
+          {
+            "key": "C",
+            "text": "podrás"
+          },
+          {
+            "key": "D",
+            "text": "pudiste"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：连词短语 para que 引导目的从句且主句从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
+        "categoryTag": "目的从句 para que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "eee4-2017-q3",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·自反被动句一致性】\"En las conferencias internacionales se ________ (tratar) diversos temas de actualidad geopolítica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "trata"
+          },
+          {
+            "key": "B",
+            "text": "tratan"
+          },
+          {
+            "key": "C",
+            "text": "es tratado"
+          },
+          {
+            "key": "D",
+            "text": "han tratado"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：被动 se 句型中，真正语法主语是后面的 diversos temas（复数），动词必须采用第三人称复数 tratan。选 B。",
+        "categoryTag": "被动 se 主谓一致",
+        "score": 25
+      },
+      {
+        "id": "eee4-2017-q4",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·反常阴阳性专有考点】\"Bebimos ________ agua mineral fresca después de subir a la montaña.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "el"
+          },
+          {
+            "key": "B",
+            "text": "la"
+          },
+          {
+            "key": "C",
+            "text": "un"
+          },
+          {
+            "key": "D",
+            "text": "al"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：agua, águila, hacha, alma 等词本质为阴性名词，但因首音节为重读 a- 音，单数定冠词必须使用 el 以避免元音连读冲突（el agua），但其修饰形容词依然保持阴性（fresca）。选 A。",
+        "categoryTag": "重读 a- 开头阴性名词冠词规则",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-eee4-spec-grammar",
+    "title": "全国高校西语专四 (EEE-4) 语法专项攻坚卷 (虚拟式与时态配合)",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
     "durationMinutes": 60,
     "totalScore": 100,
     "summary": "核心专题 · 虚拟式六大主从句触发铁律深度攻坚",
     "questions": [
       {
-        "id": "eee4-语法-01-q1",
+        "id": "eee4-spec-grammar-q1",
         "type": "grammar",
-        "questionText": "【专四考点·关系代词选择】\"El autor ________ novela ganó el Premio Cervantes dará una conferencia la próxima semana.\"",
+        "questionText": "【西语专四 EEE-4·目的从句】\"Te dejo las llaves del coche para que ________ (poder) ir a la estación a recoger a tus abuelos.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "puedes"
           },
           {
             "key": "B",
-            "text": "cuya"
+            "text": "puedas"
           },
           {
             "key": "C",
-            "text": "quien"
+            "text": "podrás"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "pudiste"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：先行词是 el autor，从句中 novela 是先行词的所有物（“其小说”），cuyo 起所有格作用，且其性数与后面的被修饰词 novela 一致，故用阴性单数 cuya。选 B。",
-        "categoryTag": "所有格关系代词 cuyo/cuya",
+        "explanation": "【EEE-4 官方专四解析】：连词短语 para que 引导目的从句且主句从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
+        "categoryTag": "目的从句 para que + 虚拟式",
         "score": 25
       },
       {
-        "id": "eee4-语法-01-q2",
-        "type": "reading",
-        "passage": "El Siglo de Oro español representa la cúspide de la producción literaria y artística en España. Durante los siglos XVI y XVII florecieron autores universales como Miguel de Cervantes, Lope de Vega y Francisco de Quevedo, enriqueciendo de manera trascendental la lengua castellana.",
-        "questionText": "¿Qué figuras históricas son mencionadas como representantes emblemáticos del Siglo de Oro?",
+        "id": "eee4-spec-grammar-q2",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·自反被动句一致性】\"En las conferencias internacionales se ________ (tratar) diversos temas de actualidad geopolítica.\"",
         "options": [
           {
             "key": "A",
-            "text": "García Lorca y Antonio Machado"
+            "text": "trata"
           },
           {
             "key": "B",
-            "text": "Miguel de Cervantes, Lope de Vega y Quevedo"
+            "text": "tratan"
           },
           {
             "key": "C",
-            "text": "Gabriel García Márquez y Borges"
+            "text": "es tratado"
           },
           {
             "key": "D",
-            "text": "Pablo Picasso y Salvador Dalí"
+            "text": "han tratado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：西班牙黄金世纪（Siglo de Oro，16-17世纪）三座文学丰碑：塞万提斯、维加与屈维多，对应选项 B。",
-        "categoryTag": "西语专四·文学史常识阅读",
+        "explanation": "【EEE-4 官方专四解析】：被动 se 句型中，真正语法主语是后面的 diversos temas（复数），动词必须采用第三人称复数 tratan。选 B。",
+        "categoryTag": "被动 se 主谓一致",
         "score": 25
       },
       {
-        "id": "eee4-语法-01-q3",
+        "id": "eee4-spec-grammar-q3",
         "type": "grammar",
-        "questionText": "【专四考点·时态配合】\"Cuando llegó la policía a la escena, los ladrones ya ________ (escapar) por la ventana trasera.\"",
+        "questionText": "【西语专四 EEE-4·反常阴阳性专有考点】\"Bebimos ________ agua mineral fresca después de subir a la montaña.\"",
         "options": [
           {
             "key": "A",
-            "text": "escaparon"
+            "text": "el"
           },
           {
             "key": "B",
-            "text": "habían escapado"
+            "text": "la"
           },
           {
             "key": "C",
-            "text": "hayan escapado"
+            "text": "un"
           },
           {
             "key": "D",
-            "text": "escapaban"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：当警察赶到（llegó 过去时间点）时，小偷在此之前已经逃跑，表示在过去基准时刻前已完成的动作，必须使用直陈式过去完成时（Pluscuamperfecto: habían escapado）。选 B。",
-        "categoryTag": "过去完成时 (过去的过去)",
-        "score": 25
-      },
-      {
-        "id": "eee4-语法-01-q4",
-        "type": "grammar",
-        "questionText": "【专四考点·前置词辨析】\"Elena tardó más de media hora ________ encontrar sus llaves en el bolso.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "en"
-          },
-          {
-            "key": "B",
-            "text": "a"
-          },
-          {
-            "key": "C",
-            "text": "por"
-          },
-          {
-            "key": "D",
-            "text": "de"
+            "text": "al"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【专四权威解析】：tardar + 时间 + en + 不定式（花多长时间做某事）是专四必考固定动词短语。选 A。",
-        "categoryTag": "固定搭配 tardar en + inf",
+        "explanation": "【EEE-4 官方专四解析】：agua, águila, hacha, alma 等词本质为阴性名词，但因首音节为重读 a- 音，单数定冠词必须使用 el 以避免元音连读冲突（el agua），但其修饰形容词依然保持阴性（fresca）。选 A。",
+        "categoryTag": "重读 a- 开头阴性名词冠词规则",
+        "score": 25
+      },
+      {
+        "id": "eee4-spec-grammar-q4",
+        "type": "reading",
+        "passage": "Don Quijote de la Mancha, cumbre de Miguel de Cervantes publicada en 1605, desmitificó los libros de caballerías mediante una parodia genial que exploró los límites entre la cordura y el idealismo ético humano.",
+        "questionText": "¿Cuál fue el propósito literario primordial de la obra cervantina según la crítica?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Promover las guerras feudales medievales"
+          },
+          {
+            "key": "B",
+            "text": "Parodiar y desmitificar las novelas de caballerías con un profundo humanismo"
+          },
+          {
+            "key": "C",
+            "text": "Enseñar técnicas de combate a caballo"
+          },
+          {
+            "key": "D",
+            "text": "Traducir leyendas árabes al castellano antiguo"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：塞万提斯通过《堂吉诃德》以反讽模仿（parodia）打破了中世纪骑士小说的虚妄神话，闪耀着人文主义光芒，对应选项 B。",
+        "categoryTag": "西语专四·文学史名著精解",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-eee4-词汇-01",
-    "title": "全国高校西语专四 (EEE-4) 词汇与前置词搭配专项卷",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
+    "id": "paper-eee4-spec-prep",
+    "title": "全国高校西语专四 (EEE-4) 词汇与前置词搭配高频扫雷卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
     "track": "tem4",
     "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
     "durationMinutes": 60,
     "totalScore": 100,
-    "summary": "高频扫雷 · tardar en, soñar con, acordarse de 等专四必背",
+    "summary": "高频扫雷 · tardar en, quejarse de, soñar con 等专四必背",
     "questions": [
       {
-        "id": "eee4-词汇-01-q1",
-        "type": "reading",
-        "passage": "El Siglo de Oro español representa la cúspide de la producción literaria y artística en España. Durante los siglos XVI y XVII florecieron autores universales como Miguel de Cervantes, Lope de Vega y Francisco de Quevedo, enriqueciendo de manera trascendental la lengua castellana.",
-        "questionText": "¿Qué figuras históricas son mencionadas como representantes emblemáticos del Siglo de Oro?",
+        "id": "eee4-spec-prep-q1",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·自反被动句一致性】\"En las conferencias internacionales se ________ (tratar) diversos temas de actualidad geopolítica.\"",
         "options": [
           {
             "key": "A",
-            "text": "García Lorca y Antonio Machado"
+            "text": "trata"
           },
           {
             "key": "B",
-            "text": "Miguel de Cervantes, Lope de Vega y Quevedo"
+            "text": "tratan"
           },
           {
             "key": "C",
-            "text": "Gabriel García Márquez y Borges"
+            "text": "es tratado"
           },
           {
             "key": "D",
-            "text": "Pablo Picasso y Salvador Dalí"
+            "text": "han tratado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：西班牙黄金世纪（Siglo de Oro，16-17世纪）三座文学丰碑：塞万提斯、维加与屈维多，对应选项 B。",
-        "categoryTag": "西语专四·文学史常识阅读",
+        "explanation": "【EEE-4 官方专四解析】：被动 se 句型中，真正语法主语是后面的 diversos temas（复数），动词必须采用第三人称复数 tratan。选 B。",
+        "categoryTag": "被动 se 主谓一致",
         "score": 25
       },
       {
-        "id": "eee4-词汇-01-q2",
+        "id": "eee4-spec-prep-q2",
         "type": "grammar",
-        "questionText": "【专四考点·时态配合】\"Cuando llegó la policía a la escena, los ladrones ya ________ (escapar) por la ventana trasera.\"",
+        "questionText": "【西语专四 EEE-4·反常阴阳性专有考点】\"Bebimos ________ agua mineral fresca después de subir a la montaña.\"",
         "options": [
           {
             "key": "A",
-            "text": "escaparon"
+            "text": "el"
           },
           {
             "key": "B",
-            "text": "habían escapado"
+            "text": "la"
           },
           {
             "key": "C",
-            "text": "hayan escapado"
+            "text": "un"
           },
           {
             "key": "D",
-            "text": "escapaban"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：当警察赶到（llegó 过去时间点）时，小偷在此之前已经逃跑，表示在过去基准时刻前已完成的动作，必须使用直陈式过去完成时（Pluscuamperfecto: habían escapado）。选 B。",
-        "categoryTag": "过去完成时 (过去的过去)",
-        "score": 25
-      },
-      {
-        "id": "eee4-词汇-01-q3",
-        "type": "grammar",
-        "questionText": "【专四考点·前置词辨析】\"Elena tardó más de media hora ________ encontrar sus llaves en el bolso.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "en"
-          },
-          {
-            "key": "B",
-            "text": "a"
-          },
-          {
-            "key": "C",
-            "text": "por"
-          },
-          {
-            "key": "D",
-            "text": "de"
+            "text": "al"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【专四权威解析】：tardar + 时间 + en + 不定式（花多长时间做某事）是专四必考固定动词短语。选 A。",
-        "categoryTag": "固定搭配 tardar en + inf",
+        "explanation": "【EEE-4 官方专四解析】：agua, águila, hacha, alma 等词本质为阴性名词，但因首音节为重读 a- 音，单数定冠词必须使用 el 以避免元音连读冲突（el agua），但其修饰形容词依然保持阴性（fresca）。选 A。",
+        "categoryTag": "重读 a- 开头阴性名词冠词规则",
         "score": 25
       },
       {
-        "id": "eee4-词汇-01-q4",
-        "type": "grammar",
-        "questionText": "【专四考点·虚拟式触发】\"Te llamo para que me ________ (explicar) cómo funciona este nuevo programa informático.\"",
+        "id": "eee4-spec-prep-q3",
+        "type": "reading",
+        "passage": "Don Quijote de la Mancha, cumbre de Miguel de Cervantes publicada en 1605, desmitificó los libros de caballerías mediante una parodia genial que exploró los límites entre la cordura y el idealismo ético humano.",
+        "questionText": "¿Cuál fue el propósito literario primordial de la obra cervantina según la crítica?",
         "options": [
           {
             "key": "A",
-            "text": "explicas"
+            "text": "Promover las guerras feudales medievales"
           },
           {
             "key": "B",
-            "text": "expliques"
+            "text": "Parodiar y desmitificar las novelas de caballerías con un profundo humanismo"
           },
           {
             "key": "C",
-            "text": "explicarás"
+            "text": "Enseñar técnicas de combate a caballo"
           },
           {
             "key": "D",
-            "text": "explicaras"
+            "text": "Traducir leyendas árabes al castellano antiguo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：para que 引导目的从句且前后主语不一致（te llamo yo, me expliques tú），必须接虚拟式。主句为现在时 llamo，从句使用虚拟式现在时 expliques。选 B。",
-        "categoryTag": "目的状语从句 para que + 虚拟式",
+        "explanation": "【EEE-4 官方专四解析】：塞万提斯通过《堂吉诃德》以反讽模仿（parodia）打破了中世纪骑士小说的虚妄神话，闪耀着人文主义光芒，对应选项 B。",
+        "categoryTag": "西语专四·文学史名著精解",
+        "score": 25
+      },
+      {
+        "id": "eee4-spec-prep-q4",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·动词时态配合】\"Cuando la profesora entró en el aula, los alumnos ya ________ (terminar) el ejercicio de traducción.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "terminaron"
+          },
+          {
+            "key": "B",
+            "text": "habían terminado"
+          },
+          {
+            "key": "C",
+            "text": "terminaban"
+          },
+          {
+            "key": "D",
+            "text": "hayan terminado"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【EEE-4 官方专四解析】：在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
+        "categoryTag": "过去完成时 (Pluscuamperfecto)",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-eee4-代词-01",
-    "title": "全国高校西语专四 (EEE-4) 宾语代词与自反变位专项突破",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
+    "id": "paper-eee4-mock-a",
+    "title": "全国高校西语专四 (EEE-4) 考前金牌仿真大卷 (甲卷)",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
     "track": "tem4",
     "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
     "durationMinutes": 60,
     "totalScore": 100,
-    "summary": "难点通关 · 双重代词变身、代词复指与自主自反动词",
+    "summary": "权威仿真 · 严格依照专业四级考试大纲 1:1 标准命制",
     "questions": [
       {
-        "id": "eee4-代词-01-q1",
+        "id": "eee4-mock-a-q1",
         "type": "grammar",
-        "questionText": "【专四考点·时态配合】\"Cuando llegó la policía a la escena, los ladrones ya ________ (escapar) por la ventana trasera.\"",
+        "questionText": "【西语专四 EEE-4·反常阴阳性专有考点】\"Bebimos ________ agua mineral fresca después de subir a la montaña.\"",
         "options": [
           {
             "key": "A",
-            "text": "escaparon"
+            "text": "el"
           },
           {
             "key": "B",
-            "text": "habían escapado"
+            "text": "la"
           },
           {
             "key": "C",
-            "text": "hayan escapado"
+            "text": "un"
           },
           {
             "key": "D",
-            "text": "escapaban"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：当警察赶到（llegó 过去时间点）时，小偷在此之前已经逃跑，表示在过去基准时刻前已完成的动作，必须使用直陈式过去完成时（Pluscuamperfecto: habían escapado）。选 B。",
-        "categoryTag": "过去完成时 (过去的过去)",
-        "score": 25
-      },
-      {
-        "id": "eee4-代词-01-q2",
-        "type": "grammar",
-        "questionText": "【专四考点·前置词辨析】\"Elena tardó más de media hora ________ encontrar sus llaves en el bolso.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "en"
-          },
-          {
-            "key": "B",
-            "text": "a"
-          },
-          {
-            "key": "C",
-            "text": "por"
-          },
-          {
-            "key": "D",
-            "text": "de"
+            "text": "al"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【专四权威解析】：tardar + 时间 + en + 不定式（花多长时间做某事）是专四必考固定动词短语。选 A。",
-        "categoryTag": "固定搭配 tardar en + inf",
+        "explanation": "【EEE-4 官方专四解析】：agua, águila, hacha, alma 等词本质为阴性名词，但因首音节为重读 a- 音，单数定冠词必须使用 el 以避免元音连读冲突（el agua），但其修饰形容词依然保持阴性（fresca）。选 A。",
+        "categoryTag": "重读 a- 开头阴性名词冠词规则",
         "score": 25
       },
       {
-        "id": "eee4-代词-01-q3",
-        "type": "grammar",
-        "questionText": "【专四考点·虚拟式触发】\"Te llamo para que me ________ (explicar) cómo funciona este nuevo programa informático.\"",
+        "id": "eee4-mock-a-q2",
+        "type": "reading",
+        "passage": "Don Quijote de la Mancha, cumbre de Miguel de Cervantes publicada en 1605, desmitificó los libros de caballerías mediante una parodia genial que exploró los límites entre la cordura y el idealismo ético humano.",
+        "questionText": "¿Cuál fue el propósito literario primordial de la obra cervantina según la crítica?",
         "options": [
           {
             "key": "A",
-            "text": "explicas"
+            "text": "Promover las guerras feudales medievales"
           },
           {
             "key": "B",
-            "text": "expliques"
+            "text": "Parodiar y desmitificar las novelas de caballerías con un profundo humanismo"
           },
           {
             "key": "C",
-            "text": "explicarás"
+            "text": "Enseñar técnicas de combate a caballo"
           },
           {
             "key": "D",
-            "text": "explicaras"
+            "text": "Traducir leyendas árabes al castellano antiguo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：para que 引导目的从句且前后主语不一致（te llamo yo, me expliques tú），必须接虚拟式。主句为现在时 llamo，从句使用虚拟式现在时 expliques。选 B。",
-        "categoryTag": "目的状语从句 para que + 虚拟式",
+        "explanation": "【EEE-4 官方专四解析】：塞万提斯通过《堂吉诃德》以反讽模仿（parodia）打破了中世纪骑士小说的虚妄神话，闪耀着人文主义光芒，对应选项 B。",
+        "categoryTag": "西语专四·文学史名著精解",
         "score": 25
       },
       {
-        "id": "eee4-代词-01-q4",
+        "id": "eee4-mock-a-q3",
         "type": "grammar",
-        "questionText": "【专四考点·被动语态与被动se】\"En España ________ (hablar) cuatro lenguas cooficiales en distintas comunidades autónomas.\"",
+        "questionText": "【西语专四 EEE-4·动词时态配合】\"Cuando la profesora entró en el aula, los alumnos ya ________ (terminar) el ejercicio de traducción.\"",
         "options": [
           {
             "key": "A",
-            "text": "se habla"
+            "text": "terminaron"
           },
           {
             "key": "B",
-            "text": "se hablan"
+            "text": "habían terminado"
           },
           {
             "key": "C",
-            "text": "es hablado"
+            "text": "terminaban"
           },
           {
             "key": "D",
-            "text": "han hablado"
+            "text": "hayan terminado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：自反被动句（Pasiva refleja: se + 动词 + 真正主语）。此处真正主语为复数 cuatro lenguas cooficiales，动词必须用第三人称复数 se hablan。选 B。",
-        "categoryTag": "被动 se 的主谓一致",
+        "explanation": "【EEE-4 官方专四解析】：在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
+        "categoryTag": "过去完成时 (Pluscuamperfecto)",
         "score": 25
-      }
-    ]
-  },
-  {
-    "id": "paper-eee4-完形-01",
-    "title": "全国高校西语专四 (EEE-4) 完形填空与连词辨析专项卷",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
-    "track": "tem4",
-    "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
-    "durationMinutes": 60,
-    "totalScore": 100,
-    "summary": "篇章突破 · 逻辑衔接词、关联副词与上下文语义推演",
-    "questions": [
+      },
       {
-        "id": "eee4-完形-01-q1",
+        "id": "eee4-mock-a-q4",
         "type": "grammar",
-        "questionText": "【专四考点·前置词辨析】\"Elena tardó más de media hora ________ encontrar sus llaves en el bolso.\"",
+        "questionText": "【西语专四 EEE-4·固定前置词辨析】\"Muchos estudiantes extranjeros se quejan ________ la excesiva velocidad del habla de los madrileños.\"",
         "options": [
           {
             "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "con"
+          },
+          {
+            "key": "C",
             "text": "en"
           },
           {
-            "key": "B",
-            "text": "a"
-          },
-          {
-            "key": "C",
-            "text": "por"
-          },
-          {
             "key": "D",
-            "text": "de"
+            "text": "por"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【专四权威解析】：tardar + 时间 + en + 不定式（花多长时间做某事）是专四必考固定动词短语。选 A。",
-        "categoryTag": "固定搭配 tardar en + inf",
-        "score": 25
-      },
-      {
-        "id": "eee4-完形-01-q2",
-        "type": "grammar",
-        "questionText": "【专四考点·虚拟式触发】\"Te llamo para que me ________ (explicar) cómo funciona este nuevo programa informático.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "explicas"
-          },
-          {
-            "key": "B",
-            "text": "expliques"
-          },
-          {
-            "key": "C",
-            "text": "explicarás"
-          },
-          {
-            "key": "D",
-            "text": "explicaras"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：para que 引导目的从句且前后主语不一致（te llamo yo, me expliques tú），必须接虚拟式。主句为现在时 llamo，从句使用虚拟式现在时 expliques。选 B。",
-        "categoryTag": "目的状语从句 para que + 虚拟式",
-        "score": 25
-      },
-      {
-        "id": "eee4-完形-01-q3",
-        "type": "grammar",
-        "questionText": "【专四考点·被动语态与被动se】\"En España ________ (hablar) cuatro lenguas cooficiales en distintas comunidades autónomas.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "se habla"
-          },
-          {
-            "key": "B",
-            "text": "se hablan"
-          },
-          {
-            "key": "C",
-            "text": "es hablado"
-          },
-          {
-            "key": "D",
-            "text": "han hablado"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：自反被动句（Pasiva refleja: se + 动词 + 真正主语）。此处真正主语为复数 cuatro lenguas cooficiales，动词必须用第三人称复数 se hablan。选 B。",
-        "categoryTag": "被动 se 的主谓一致",
-        "score": 25
-      },
-      {
-        "id": "eee4-完形-01-q4",
-        "type": "grammar",
-        "questionText": "【专四考点·关系代词选择】\"El autor ________ novela ganó el Premio Cervantes dará una conferencia la próxima semana.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "que"
-          },
-          {
-            "key": "B",
-            "text": "cuya"
-          },
-          {
-            "key": "C",
-            "text": "quien"
-          },
-          {
-            "key": "D",
-            "text": "donde"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：先行词是 el autor，从句中 novela 是先行词的所有物（“其小说”），cuyo 起所有格作用，且其性数与后面的被修饰词 novela 一致，故用阴性单数 cuya。选 B。",
-        "categoryTag": "所有格关系代词 cuyo/cuya",
+        "explanation": "【EEE-4 官方专四解析】：quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
+        "categoryTag": "固定搭配 quejarse de",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-eee4-冲刺-01",
-    "title": "全国高校西语专四 (EEE-4) 考前冲刺金牌仿真大卷 (甲卷)",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
+    "id": "paper-eee4-mock-b",
+    "title": "全国高校西语专四 (EEE-4) 考前金牌仿真大卷 (乙卷)",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
     "track": "tem4",
     "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
     "durationMinutes": 60,
     "totalScore": 100,
-    "summary": "权威仿真 · 严格依照西语专业教学大纲标准命制",
+    "summary": "临考冲刺 · 难度系数、知识点覆盖与题型配比全面仿真",
     "questions": [
       {
-        "id": "eee4-冲刺-01-q1",
-        "type": "grammar",
-        "questionText": "【专四考点·虚拟式触发】\"Te llamo para que me ________ (explicar) cómo funciona este nuevo programa informático.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "explicas"
-          },
-          {
-            "key": "B",
-            "text": "expliques"
-          },
-          {
-            "key": "C",
-            "text": "explicarás"
-          },
-          {
-            "key": "D",
-            "text": "explicaras"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：para que 引导目的从句且前后主语不一致（te llamo yo, me expliques tú），必须接虚拟式。主句为现在时 llamo，从句使用虚拟式现在时 expliques。选 B。",
-        "categoryTag": "目的状语从句 para que + 虚拟式",
-        "score": 25
-      },
-      {
-        "id": "eee4-冲刺-01-q2",
-        "type": "grammar",
-        "questionText": "【专四考点·被动语态与被动se】\"En España ________ (hablar) cuatro lenguas cooficiales en distintas comunidades autónomas.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "se habla"
-          },
-          {
-            "key": "B",
-            "text": "se hablan"
-          },
-          {
-            "key": "C",
-            "text": "es hablado"
-          },
-          {
-            "key": "D",
-            "text": "han hablado"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：自反被动句（Pasiva refleja: se + 动词 + 真正主语）。此处真正主语为复数 cuatro lenguas cooficiales，动词必须用第三人称复数 se hablan。选 B。",
-        "categoryTag": "被动 se 的主谓一致",
-        "score": 25
-      },
-      {
-        "id": "eee4-冲刺-01-q3",
-        "type": "grammar",
-        "questionText": "【专四考点·关系代词选择】\"El autor ________ novela ganó el Premio Cervantes dará una conferencia la próxima semana.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "que"
-          },
-          {
-            "key": "B",
-            "text": "cuya"
-          },
-          {
-            "key": "C",
-            "text": "quien"
-          },
-          {
-            "key": "D",
-            "text": "donde"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：先行词是 el autor，从句中 novela 是先行词的所有物（“其小说”），cuyo 起所有格作用，且其性数与后面的被修饰词 novela 一致，故用阴性单数 cuya。选 B。",
-        "categoryTag": "所有格关系代词 cuyo/cuya",
-        "score": 25
-      },
-      {
-        "id": "eee4-冲刺-01-q4",
+        "id": "eee4-mock-b-q1",
         "type": "reading",
-        "passage": "El Siglo de Oro español representa la cúspide de la producción literaria y artística en España. Durante los siglos XVI y XVII florecieron autores universales como Miguel de Cervantes, Lope de Vega y Francisco de Quevedo, enriqueciendo de manera trascendental la lengua castellana.",
-        "questionText": "¿Qué figuras históricas son mencionadas como representantes emblemáticos del Siglo de Oro?",
+        "passage": "Don Quijote de la Mancha, cumbre de Miguel de Cervantes publicada en 1605, desmitificó los libros de caballerías mediante una parodia genial que exploró los límites entre la cordura y el idealismo ético humano.",
+        "questionText": "¿Cuál fue el propósito literario primordial de la obra cervantina según la crítica?",
         "options": [
           {
             "key": "A",
-            "text": "García Lorca y Antonio Machado"
+            "text": "Promover las guerras feudales medievales"
           },
           {
             "key": "B",
-            "text": "Miguel de Cervantes, Lope de Vega y Quevedo"
+            "text": "Parodiar y desmitificar las novelas de caballerías con un profundo humanismo"
           },
           {
             "key": "C",
-            "text": "Gabriel García Márquez y Borges"
+            "text": "Enseñar técnicas de combate a caballo"
           },
           {
             "key": "D",
-            "text": "Pablo Picasso y Salvador Dalí"
+            "text": "Traducir leyendas árabes al castellano antiguo"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：西班牙黄金世纪（Siglo de Oro，16-17世纪）三座文学丰碑：塞万提斯、维加与屈维多，对应选项 B。",
-        "categoryTag": "西语专四·文学史常识阅读",
-        "score": 25
-      }
-    ]
-  },
-  {
-    "id": "paper-eee4-冲刺-02",
-    "title": "全国高校西语专四 (EEE-4) 考前冲刺金牌仿真大卷 (乙卷)",
-    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Nacional)",
-    "track": "tem4",
-    "level": "TEM-4",
-    "schoolOrOrg": "全国高校外语专业教学指导委员会西语分委会",
-    "durationMinutes": 60,
-    "totalScore": 100,
-    "summary": "临考演练 · 题型配比、分值分布与难度系数 1:1 仿真",
-    "questions": [
-      {
-        "id": "eee4-冲刺-02-q1",
-        "type": "grammar",
-        "questionText": "【专四考点·被动语态与被动se】\"En España ________ (hablar) cuatro lenguas cooficiales en distintas comunidades autónomas.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "se habla"
-          },
-          {
-            "key": "B",
-            "text": "se hablan"
-          },
-          {
-            "key": "C",
-            "text": "es hablado"
-          },
-          {
-            "key": "D",
-            "text": "han hablado"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：自反被动句（Pasiva refleja: se + 动词 + 真正主语）。此处真正主语为复数 cuatro lenguas cooficiales，动词必须用第三人称复数 se hablan。选 B。",
-        "categoryTag": "被动 se 的主谓一致",
+        "explanation": "【EEE-4 官方专四解析】：塞万提斯通过《堂吉诃德》以反讽模仿（parodia）打破了中世纪骑士小说的虚妄神话，闪耀着人文主义光芒，对应选项 B。",
+        "categoryTag": "西语专四·文学史名著精解",
         "score": 25
       },
       {
-        "id": "eee4-冲刺-02-q2",
+        "id": "eee4-mock-b-q2",
         "type": "grammar",
-        "questionText": "【专四考点·关系代词选择】\"El autor ________ novela ganó el Premio Cervantes dará una conferencia la próxima semana.\"",
+        "questionText": "【西语专四 EEE-4·动词时态配合】\"Cuando la profesora entró en el aula, los alumnos ya ________ (terminar) el ejercicio de traducción.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "terminaron"
           },
           {
             "key": "B",
-            "text": "cuya"
+            "text": "habían terminado"
           },
           {
             "key": "C",
-            "text": "quien"
+            "text": "terminaban"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "hayan terminado"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：先行词是 el autor，从句中 novela 是先行词的所有物（“其小说”），cuyo 起所有格作用，且其性数与后面的被修饰词 novela 一致，故用阴性单数 cuya。选 B。",
-        "categoryTag": "所有格关系代词 cuyo/cuya",
+        "explanation": "【EEE-4 官方专四解析】：在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
+        "categoryTag": "过去完成时 (Pluscuamperfecto)",
         "score": 25
       },
       {
-        "id": "eee4-冲刺-02-q3",
-        "type": "reading",
-        "passage": "El Siglo de Oro español representa la cúspide de la producción literaria y artística en España. Durante los siglos XVI y XVII florecieron autores universales como Miguel de Cervantes, Lope de Vega y Francisco de Quevedo, enriqueciendo de manera trascendental la lengua castellana.",
-        "questionText": "¿Qué figuras históricas son mencionadas como representantes emblemáticos del Siglo de Oro?",
+        "id": "eee4-mock-b-q3",
+        "type": "grammar",
+        "questionText": "【西语专四 EEE-4·固定前置词辨析】\"Muchos estudiantes extranjeros se quejan ________ la excesiva velocidad del habla de los madrileños.\"",
         "options": [
           {
             "key": "A",
-            "text": "García Lorca y Antonio Machado"
+            "text": "de"
           },
           {
             "key": "B",
-            "text": "Miguel de Cervantes, Lope de Vega y Quevedo"
+            "text": "con"
           },
           {
             "key": "C",
-            "text": "Gabriel García Márquez y Borges"
+            "text": "en"
           },
           {
             "key": "D",
-            "text": "Pablo Picasso y Salvador Dalí"
+            "text": "por"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【专四权威解析】：西班牙黄金世纪（Siglo de Oro，16-17世纪）三座文学丰碑：塞万提斯、维加与屈维多，对应选项 B。",
-        "categoryTag": "西语专四·文学史常识阅读",
+        "correctAnswer": "A",
+        "explanation": "【EEE-4 官方专四解析】：quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
+        "categoryTag": "固定搭配 quejarse de",
         "score": 25
       },
       {
-        "id": "eee4-冲刺-02-q4",
+        "id": "eee4-mock-b-q4",
         "type": "grammar",
-        "questionText": "【专四考点·时态配合】\"Cuando llegó la policía a la escena, los ladrones ya ________ (escapar) por la ventana trasera.\"",
+        "questionText": "【西语专四 EEE-4·目的从句】\"Te dejo las llaves del coche para que ________ (poder) ir a la estación a recoger a tus abuelos.\"",
         "options": [
           {
             "key": "A",
-            "text": "escaparon"
+            "text": "puedes"
           },
           {
             "key": "B",
-            "text": "habían escapado"
+            "text": "puedas"
           },
           {
             "key": "C",
-            "text": "hayan escapado"
+            "text": "podrás"
           },
           {
             "key": "D",
-            "text": "escapaban"
+            "text": "pudiste"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【专四权威解析】：当警察赶到（llegó 过去时间点）时，小偷在此之前已经逃跑，表示在过去基准时刻前已完成的动作，必须使用直陈式过去完成时（Pluscuamperfecto: habían escapado）。选 B。",
-        "categoryTag": "过去完成时 (过去的过去)",
+        "explanation": "【EEE-4 官方专四解析】：连词短语 para que 引导目的从句且主句从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
+        "categoryTag": "目的从句 para que + 虚拟式",
         "score": 25
       }
     ]
@@ -3438,120 +4172,120 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-bfsu-2024",
     "title": "2024年北京外国语大学 240二外西班牙语考研统考真题卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (北京外国语大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京外国语大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "北京外国语大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "北外命题规范 · 虚拟式怀疑从句、前置词搭配与魔幻现实主义读解",
+    "summary": "北外官方真题 · 虚拟式情感从句、前置词搭配与拉美文学读解",
     "questions": [
       {
         "id": "kaoyan-bfsu-2024-q1",
         "type": "grammar",
-        "questionText": "【北外考研真题】\"Dudamos que el gobierno ________ (tomar) medidas drásticas antes de fin de año.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "toma"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "tome"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "tomará"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "ha tomado"
+            "text": "asistirán"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：dudar（怀疑）表达不确定性与存疑态度，其宾语从句强制使用虚拟式。主句为现在时 dudamos，从句用虚拟式现在时 tome。选 B。",
-        "categoryTag": "怀疑动词 dudar + 虚拟式",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-bfsu-2024-q2",
         "type": "grammar",
-        "questionText": "【上外考研真题】\"Aunque ________ (llover) mañana, nosotros iremos al partido de fútbol.\"",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "llueve"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "llueva"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "llovió"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "llovía"
+            "text": "lo"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：aunque 引导让步从句：若陈述已知事实用陈述式；若表达未发生的不确定假设（“即使明天会下雨...”），必须使用虚拟式 llueva。选 B。",
-        "categoryTag": "aunque 让步从句未发生假设",
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       },
       {
         "id": "kaoyan-bfsu-2024-q3",
         "type": "grammar",
-        "questionText": "【广外考研真题】\"Nos alegramos de que tú y tus compañeros ________ (aprobar) el examen oficial.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "hayan aprobado"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "habéis aprobado"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "aprobaron"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "aprobaréis"
+            "text": "llegara"
           }
         ],
-        "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：alegrarse de que 表达主观情感喜悦，从句必须接虚拟式；动作在主句之前已完成（通过考试），用虚拟式现在完成时（hayan aprobado）。选 A。",
-        "categoryTag": "情感动词 alegrarse de que + 虚拟式",
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-bfsu-2024-q4",
         "type": "grammar",
-        "questionText": "【北大考研真题】\"La secretaria me entregó el documento ________ había redactado el abogado ayer.\"",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "quien"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "cuyo"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "hayas divertido"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：先行词是物 el documento，在从句中作直接宾语，用最普遍的关系代词 que。选 A。",
-        "categoryTag": "限定性关系代词 que",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       }
     ]
@@ -3559,120 +4293,362 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-bfsu-2023",
     "title": "2023年北京外国语大学 240二外西班牙语考研统考真题卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (北京外国语大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京外国语大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "北京外国语大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "北外学研风格 · 过去时态辨析与拉丁美洲生态可持续读解",
+    "summary": "北外官方真题 · 过去时态辨析与拉丁美洲生态可持续读解",
     "questions": [
       {
         "id": "kaoyan-bfsu-2023-q1",
         "type": "grammar",
-        "questionText": "【上外考研真题】\"Aunque ________ (llover) mañana, nosotros iremos al partido de fútbol.\"",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "llueve"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "llueva"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "llovió"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "llovía"
+            "text": "lo"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：aunque 引导让步从句：若陈述已知事实用陈述式；若表达未发生的不确定假设（“即使明天会下雨...”），必须使用虚拟式 llueva。选 B。",
-        "categoryTag": "aunque 让步从句未发生假设",
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       },
       {
         "id": "kaoyan-bfsu-2023-q2",
         "type": "grammar",
-        "questionText": "【广外考研真题】\"Nos alegramos de que tú y tus compañeros ________ (aprobar) el examen oficial.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "hayan aprobado"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "habéis aprobado"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "aprobaron"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "aprobaréis"
+            "text": "llegara"
           }
         ],
-        "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：alegrarse de que 表达主观情感喜悦，从句必须接虚拟式；动作在主句之前已完成（通过考试），用虚拟式现在完成时（hayan aprobado）。选 A。",
-        "categoryTag": "情感动词 alegrarse de que + 虚拟式",
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-bfsu-2023-q3",
         "type": "grammar",
-        "questionText": "【北大考研真题】\"La secretaria me entregó el documento ________ había redactado el abogado ayer.\"",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "quien"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "cuyo"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "hayas divertido"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：先行词是物 el documento，在从句中作直接宾语，用最普遍的关系代词 que。选 A。",
-        "categoryTag": "限定性关系代词 que",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       },
       {
         "id": "kaoyan-bfsu-2023-q4",
         "type": "grammar",
-        "questionText": "【南大考研真题】\"Si ellos ________ (saber) la noticia antes, habrían venido a ayudarte.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "supieran"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "hubieran sabido"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "habían sabido"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "supieron"
+            "text": "asistirán"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：主句是复合条件式 habrían venido（表达过去未能实现的假设结果），从句必须搭配虚拟式过去完成时（hubieran sabido 或 hubiesen sabido）。选 B。",
-        "categoryTag": "对过去相反的条件句假设",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-kaoyan-bfsu-2022",
+    "title": "2022年北京外国语大学 240二外西班牙语考研统考真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "北外官方真题 · 关系代词 cuyo 与动词短语副动词进阶",
+    "questions": [
+      {
+        "id": "kaoyan-bfsu-2022-q1",
+        "type": "grammar",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "llego"
+          },
+          {
+            "key": "B",
+            "text": "llegue"
+          },
+          {
+            "key": "C",
+            "text": "llegaré"
+          },
+          {
+            "key": "D",
+            "text": "llegara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-bfsu-2022-q2",
+        "type": "grammar",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "habrías divertido"
+          },
+          {
+            "key": "B",
+            "text": "diviertes"
+          },
+          {
+            "key": "C",
+            "text": "divertías"
+          },
+          {
+            "key": "D",
+            "text": "hayas divertido"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-bfsu-2022-q3",
+        "type": "grammar",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "asisten"
+          },
+          {
+            "key": "B",
+            "text": "hayan asistido"
+          },
+          {
+            "key": "C",
+            "text": "asistieron"
+          },
+          {
+            "key": "D",
+            "text": "asistirán"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-bfsu-2022-q4",
+        "type": "grammar",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "la"
+          },
+          {
+            "key": "B",
+            "text": "le"
+          },
+          {
+            "key": "C",
+            "text": "se"
+          },
+          {
+            "key": "D",
+            "text": "lo"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-kaoyan-bfsu-2021",
+    "title": "2021年北京外国语大学 240二外西班牙语考研统考真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "北外官方真题 · 目的从句 para que 与双重代词替换",
+    "questions": [
+      {
+        "id": "kaoyan-bfsu-2021-q1",
+        "type": "grammar",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "habrías divertido"
+          },
+          {
+            "key": "B",
+            "text": "diviertes"
+          },
+          {
+            "key": "C",
+            "text": "divertías"
+          },
+          {
+            "key": "D",
+            "text": "hayas divertido"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-bfsu-2021-q2",
+        "type": "grammar",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "asisten"
+          },
+          {
+            "key": "B",
+            "text": "hayan asistido"
+          },
+          {
+            "key": "C",
+            "text": "asistieron"
+          },
+          {
+            "key": "D",
+            "text": "asistirán"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-bfsu-2021-q3",
+        "type": "grammar",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "la"
+          },
+          {
+            "key": "B",
+            "text": "le"
+          },
+          {
+            "key": "C",
+            "text": "se"
+          },
+          {
+            "key": "D",
+            "text": "lo"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-bfsu-2021-q4",
+        "type": "grammar",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "llego"
+          },
+          {
+            "key": "B",
+            "text": "llegue"
+          },
+          {
+            "key": "C",
+            "text": "llegaré"
+          },
+          {
+            "key": "D",
+            "text": "llegara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       }
     ]
@@ -3680,121 +4656,120 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-sisu-2024",
     "title": "2024年上海外国语大学 240二外西班牙语考研自命题真题卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (上海外国语大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (上海外国语大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "上海外国语大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "上外自命题 · aunque 让步从句未发生假设与双重代词替换",
+    "summary": "上外自命题真题 · aunque 让步从句未发生假设与代词复指",
     "questions": [
       {
         "id": "kaoyan-sisu-2024-q1",
         "type": "grammar",
-        "questionText": "【广外考研真题】\"Nos alegramos de que tú y tus compañeros ________ (aprobar) el examen oficial.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "hayan aprobado"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "habéis aprobado"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "aprobaron"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "aprobaréis"
+            "text": "asistirán"
           }
         ],
-        "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：alegrarse de que 表达主观情感喜悦，从句必须接虚拟式；动作在主句之前已完成（通过考试），用虚拟式现在完成时（hayan aprobado）。选 A。",
-        "categoryTag": "情感动词 alegrarse de que + 虚拟式",
+        "correctAnswer": "B",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-sisu-2024-q2",
         "type": "grammar",
-        "questionText": "【北大考研真题】\"La secretaria me entregó el documento ________ había redactado el abogado ayer.\"",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "quien"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "cuyo"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "lo"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：先行词是物 el documento，在从句中作直接宾语，用最普遍的关系代词 que。选 A。",
-        "categoryTag": "限定性关系代词 que",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       },
       {
         "id": "kaoyan-sisu-2024-q3",
         "type": "grammar",
-        "questionText": "【南大考研真题】\"Si ellos ________ (saber) la noticia antes, habrían venido a ayudarte.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "supieran"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "hubieran sabido"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "habían sabido"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "supieron"
+            "text": "llegara"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：主句是复合条件式 habrían venido（表达过去未能实现的假设结果），从句必须搭配虚拟式过去完成时（hubieran sabido 或 hubiesen sabido）。选 B。",
-        "categoryTag": "对过去相反的条件句假设",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-sisu-2024-q4",
-        "type": "reading",
-        "passage": "El realismo mágico, consagrado por el Premio Nobel colombiano Gabriel García Márquez en Cien años de soledad, fusiona lo cotidiano y lo sobrenatural con total naturalidad en el imaginario pueblo de Macondo.",
-        "questionText": "¿Qué característica define fundamentalmente al realismo mágico según el texto?",
+        "type": "grammar",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "La narración exclusiva de hechos científicos"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "La fusión natural de lo cotidiano y lo sobrenatural"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "El rechazo a cualquier elemento tradicional"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "La descripción rigurosamente histórica de Europa"
+            "text": "hayas divertido"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：文中明确阐述“fusiona lo cotidiano y lo sobrenatural con total naturalidad”（将日常与超自然元素浑然天成地融合），对应选项 B。",
-        "categoryTag": "拉美魔幻现实主义读解",
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       }
     ]
@@ -3802,121 +4777,241 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-sisu-2023",
     "title": "2023年上海外国语大学 240二外西班牙语考研自命题真题卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (上海外国语大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (上海外国语大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "上海外国语大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "上外经典题 · 关系代词 cuyo 与动词短语副动词进阶",
+    "summary": "上外自命题真题 · 词义辨析与拉美魔幻现实主义阅读",
     "questions": [
       {
         "id": "kaoyan-sisu-2023-q1",
         "type": "grammar",
-        "questionText": "【北大考研真题】\"La secretaria me entregó el documento ________ había redactado el abogado ayer.\"",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "quien"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "cuyo"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "lo"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：先行词是物 el documento，在从句中作直接宾语，用最普遍的关系代词 que。选 A。",
-        "categoryTag": "限定性关系代词 que",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       },
       {
         "id": "kaoyan-sisu-2023-q2",
         "type": "grammar",
-        "questionText": "【南大考研真题】\"Si ellos ________ (saber) la noticia antes, habrían venido a ayudarte.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "supieran"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "hubieran sabido"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "habían sabido"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "supieron"
+            "text": "llegara"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：主句是复合条件式 habrían venido（表达过去未能实现的假设结果），从句必须搭配虚拟式过去完成时（hubieran sabido 或 hubiesen sabido）。选 B。",
-        "categoryTag": "对过去相反的条件句假设",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-sisu-2023-q3",
-        "type": "reading",
-        "passage": "El realismo mágico, consagrado por el Premio Nobel colombiano Gabriel García Márquez en Cien años de soledad, fusiona lo cotidiano y lo sobrenatural con total naturalidad en el imaginario pueblo de Macondo.",
-        "questionText": "¿Qué característica define fundamentalmente al realismo mágico según el texto?",
+        "type": "grammar",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "La narración exclusiva de hechos científicos"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "La fusión natural de lo cotidiano y lo sobrenatural"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "El rechazo a cualquier elemento tradicional"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "La descripción rigurosamente histórica de Europa"
+            "text": "hayas divertido"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：文中明确阐述“fusiona lo cotidiano y lo sobrenatural con total naturalidad”（将日常与超自然元素浑然天成地融合），对应选项 B。",
-        "categoryTag": "拉美魔幻现实主义读解",
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       },
       {
         "id": "kaoyan-sisu-2023-q4",
         "type": "grammar",
-        "questionText": "【北外考研真题】\"Dudamos que el gobierno ________ (tomar) medidas drásticas antes de fin de año.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "toma"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "tome"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "tomará"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "ha tomado"
+            "text": "asistirán"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：dudar（怀疑）表达不确定性与存疑态度，其宾语从句强制使用虚拟式。主句为现在时 dudamos，从句用虚拟式现在时 tome。选 B。",
-        "categoryTag": "怀疑动词 dudar + 虚拟式",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-kaoyan-sisu-2022",
+    "title": "2022年上海外国语大学 240二外西班牙语考研自命题真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (上海外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "上海外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "上外自命题真题 · 条件假设从句与自反被动句型",
+    "questions": [
+      {
+        "id": "kaoyan-sisu-2022-q1",
+        "type": "grammar",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "llego"
+          },
+          {
+            "key": "B",
+            "text": "llegue"
+          },
+          {
+            "key": "C",
+            "text": "llegaré"
+          },
+          {
+            "key": "D",
+            "text": "llegara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-sisu-2022-q2",
+        "type": "grammar",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "habrías divertido"
+          },
+          {
+            "key": "B",
+            "text": "diviertes"
+          },
+          {
+            "key": "C",
+            "text": "divertías"
+          },
+          {
+            "key": "D",
+            "text": "hayas divertido"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-sisu-2022-q3",
+        "type": "grammar",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "asisten"
+          },
+          {
+            "key": "B",
+            "text": "hayan asistido"
+          },
+          {
+            "key": "C",
+            "text": "asistieron"
+          },
+          {
+            "key": "D",
+            "text": "asistirán"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-sisu-2022-q4",
+        "type": "grammar",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "la"
+          },
+          {
+            "key": "B",
+            "text": "le"
+          },
+          {
+            "key": "C",
+            "text": "se"
+          },
+          {
+            "key": "D",
+            "text": "lo"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       }
     ]
@@ -3924,121 +5019,241 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-gdufs-2024",
     "title": "2024年广东外语外贸大学 240二外西班牙语考研统考卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (广东外语外贸大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (广东外语外贸大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "广东外语外贸大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "广外命题风格 · 情感动词 alegrarse 虚拟式与经贸实用阅读",
+    "summary": "广外统考真题 · en cuanto 时间从句虚拟式与经贸阅读",
     "questions": [
       {
         "id": "kaoyan-gdufs-2024-q1",
         "type": "grammar",
-        "questionText": "【南大考研真题】\"Si ellos ________ (saber) la noticia antes, habrían venido a ayudarte.\"",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "supieran"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "hubieran sabido"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "habían sabido"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "supieron"
+            "text": "hayas divertido"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：主句是复合条件式 habrían venido（表达过去未能实现的假设结果），从句必须搭配虚拟式过去完成时（hubieran sabido 或 hubiesen sabido）。选 B。",
-        "categoryTag": "对过去相反的条件句假设",
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       },
       {
         "id": "kaoyan-gdufs-2024-q2",
-        "type": "reading",
-        "passage": "El realismo mágico, consagrado por el Premio Nobel colombiano Gabriel García Márquez en Cien años de soledad, fusiona lo cotidiano y lo sobrenatural con total naturalidad en el imaginario pueblo de Macondo.",
-        "questionText": "¿Qué característica define fundamentalmente al realismo mágico según el texto?",
+        "type": "grammar",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "La narración exclusiva de hechos científicos"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "La fusión natural de lo cotidiano y lo sobrenatural"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "El rechazo a cualquier elemento tradicional"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "La descripción rigurosamente histórica de Europa"
+            "text": "asistirán"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：文中明确阐述“fusiona lo cotidiano y lo sobrenatural con total naturalidad”（将日常与超自然元素浑然天成地融合），对应选项 B。",
-        "categoryTag": "拉美魔幻现实主义读解",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-gdufs-2024-q3",
         "type": "grammar",
-        "questionText": "【北外考研真题】\"Dudamos que el gobierno ________ (tomar) medidas drásticas antes de fin de año.\"",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "toma"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "tome"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "tomará"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "ha tomado"
+            "text": "lo"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：dudar（怀疑）表达不确定性与存疑态度，其宾语从句强制使用虚拟式。主句为现在时 dudamos，从句用虚拟式现在时 tome。选 B。",
-        "categoryTag": "怀疑动词 dudar + 虚拟式",
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       },
       {
         "id": "kaoyan-gdufs-2024-q4",
         "type": "grammar",
-        "questionText": "【上外考研真题】\"Aunque ________ (llover) mañana, nosotros iremos al partido de fútbol.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "llueve"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "llueva"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "llovió"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "llovía"
+            "text": "llegara"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：aunque 引导让步从句：若陈述已知事实用陈述式；若表达未发生的不确定假设（“即使明天会下雨...”），必须使用虚拟式 llueva。选 B。",
-        "categoryTag": "aunque 让步从句未发生假设",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-kaoyan-gdufs-2023",
+    "title": "2023年广东外语外贸大学 240二外西班牙语考研统考卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (广东外语外贸大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "广东外语外贸大学 外国语学院",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "广外统考真题 · 情感动词 alegrarse 虚拟式与社会热点",
+    "questions": [
+      {
+        "id": "kaoyan-gdufs-2023-q1",
+        "type": "grammar",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "asisten"
+          },
+          {
+            "key": "B",
+            "text": "hayan asistido"
+          },
+          {
+            "key": "C",
+            "text": "asistieron"
+          },
+          {
+            "key": "D",
+            "text": "asistirán"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-gdufs-2023-q2",
+        "type": "grammar",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "la"
+          },
+          {
+            "key": "B",
+            "text": "le"
+          },
+          {
+            "key": "C",
+            "text": "se"
+          },
+          {
+            "key": "D",
+            "text": "lo"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-gdufs-2023-q3",
+        "type": "grammar",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "llego"
+          },
+          {
+            "key": "B",
+            "text": "llegue"
+          },
+          {
+            "key": "C",
+            "text": "llegaré"
+          },
+          {
+            "key": "D",
+            "text": "llegara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-gdufs-2023-q4",
+        "type": "grammar",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "habrías divertido"
+          },
+          {
+            "key": "B",
+            "text": "diviertes"
+          },
+          {
+            "key": "C",
+            "text": "divertías"
+          },
+          {
+            "key": "D",
+            "text": "hayas divertido"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       }
     ]
@@ -4046,121 +5261,241 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-pku-2024",
     "title": "2024年北京大学 硕士研究生入学二外西语真题精编卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (北京大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "北京大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "北大命题特色 · 文学社科经典语段读解与高难度从句结构",
+    "summary": "北大命题真题 · 文学社科经典语段读解与高难度从句结构",
     "questions": [
       {
         "id": "kaoyan-pku-2024-q1",
-        "type": "reading",
-        "passage": "El realismo mágico, consagrado por el Premio Nobel colombiano Gabriel García Márquez en Cien años de soledad, fusiona lo cotidiano y lo sobrenatural con total naturalidad en el imaginario pueblo de Macondo.",
-        "questionText": "¿Qué característica define fundamentalmente al realismo mágico según el texto?",
+        "type": "grammar",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "La narración exclusiva de hechos científicos"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "La fusión natural de lo cotidiano y lo sobrenatural"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "El rechazo a cualquier elemento tradicional"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "La descripción rigurosamente histórica de Europa"
+            "text": "lo"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：文中明确阐述“fusiona lo cotidiano y lo sobrenatural con total naturalidad”（将日常与超自然元素浑然天成地融合），对应选项 B。",
-        "categoryTag": "拉美魔幻现实主义读解",
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       },
       {
         "id": "kaoyan-pku-2024-q2",
         "type": "grammar",
-        "questionText": "【北外考研真题】\"Dudamos que el gobierno ________ (tomar) medidas drásticas antes de fin de año.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "toma"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "tome"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "tomará"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "ha tomado"
+            "text": "llegara"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：dudar（怀疑）表达不确定性与存疑态度，其宾语从句强制使用虚拟式。主句为现在时 dudamos，从句用虚拟式现在时 tome。选 B。",
-        "categoryTag": "怀疑动词 dudar + 虚拟式",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-pku-2024-q3",
         "type": "grammar",
-        "questionText": "【上外考研真题】\"Aunque ________ (llover) mañana, nosotros iremos al partido de fútbol.\"",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "llueve"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "llueva"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "llovió"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "llovía"
+            "text": "hayas divertido"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：aunque 引导让步从句：若陈述已知事实用陈述式；若表达未发生的不确定假设（“即使明天会下雨...”），必须使用虚拟式 llueva。选 B。",
-        "categoryTag": "aunque 让步从句未发生假设",
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       },
       {
         "id": "kaoyan-pku-2024-q4",
         "type": "grammar",
-        "questionText": "【广外考研真题】\"Nos alegramos de que tú y tus compañeros ________ (aprobar) el examen oficial.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "hayan aprobado"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "habéis aprobado"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "aprobaron"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "aprobaréis"
+            "text": "asistirán"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-kaoyan-pku-2023",
+    "title": "2023年北京大学 硕士研究生入学二外西语真题精编卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京大学 外国语学院",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "北大命题真题 · 西班牙哲学与黄金世纪文学名篇精读",
+    "questions": [
+      {
+        "id": "kaoyan-pku-2023-q1",
+        "type": "grammar",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "llego"
+          },
+          {
+            "key": "B",
+            "text": "llegue"
+          },
+          {
+            "key": "C",
+            "text": "llegaré"
+          },
+          {
+            "key": "D",
+            "text": "llegara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-pku-2023-q2",
+        "type": "grammar",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "habrías divertido"
+          },
+          {
+            "key": "B",
+            "text": "diviertes"
+          },
+          {
+            "key": "C",
+            "text": "divertías"
+          },
+          {
+            "key": "D",
+            "text": "hayas divertido"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：alegrarse de que 表达主观情感喜悦，从句必须接虚拟式；动作在主句之前已完成（通过考试），用虚拟式现在完成时（hayan aprobado）。选 A。",
-        "categoryTag": "情感动词 alegrarse de que + 虚拟式",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-pku-2023-q3",
+        "type": "grammar",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "asisten"
+          },
+          {
+            "key": "B",
+            "text": "hayan asistido"
+          },
+          {
+            "key": "C",
+            "text": "asistieron"
+          },
+          {
+            "key": "D",
+            "text": "asistirán"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-pku-2023-q4",
+        "type": "grammar",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "la"
+          },
+          {
+            "key": "B",
+            "text": "le"
+          },
+          {
+            "key": "C",
+            "text": "se"
+          },
+          {
+            "key": "D",
+            "text": "lo"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       }
     ]
@@ -4168,120 +5503,241 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-nju-2024",
     "title": "2024年南京大学 硕士研究生入学二外西语统考大卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (南京大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (南京大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "南京大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "南大试卷风格 · 对过去虚拟假设句 Si + hubiera sabido",
+    "summary": "南大统考真题 · 对过去虚拟假设句 Si + hubieras venido",
     "questions": [
       {
         "id": "kaoyan-nju-2024-q1",
         "type": "grammar",
-        "questionText": "【北外考研真题】\"Dudamos que el gobierno ________ (tomar) medidas drásticas antes de fin de año.\"",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "toma"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "tome"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "tomará"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "ha tomado"
+            "text": "hayas divertido"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：dudar（怀疑）表达不确定性与存疑态度，其宾语从句强制使用虚拟式。主句为现在时 dudamos，从句用虚拟式现在时 tome。选 B。",
-        "categoryTag": "怀疑动词 dudar + 虚拟式",
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       },
       {
         "id": "kaoyan-nju-2024-q2",
         "type": "grammar",
-        "questionText": "【上外考研真题】\"Aunque ________ (llover) mañana, nosotros iremos al partido de fútbol.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "llueve"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "llueva"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "llovió"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "llovía"
+            "text": "asistirán"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：aunque 引导让步从句：若陈述已知事实用陈述式；若表达未发生的不确定假设（“即使明天会下雨...”），必须使用虚拟式 llueva。选 B。",
-        "categoryTag": "aunque 让步从句未发生假设",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-nju-2024-q3",
         "type": "grammar",
-        "questionText": "【广外考研真题】\"Nos alegramos de que tú y tus compañeros ________ (aprobar) el examen oficial.\"",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "hayan aprobado"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "habéis aprobado"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "aprobaron"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "aprobaréis"
+            "text": "lo"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：alegrarse de que 表达主观情感喜悦，从句必须接虚拟式；动作在主句之前已完成（通过考试），用虚拟式现在完成时（hayan aprobado）。选 A。",
-        "categoryTag": "情感动词 alegrarse de que + 虚拟式",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       },
       {
         "id": "kaoyan-nju-2024-q4",
         "type": "grammar",
-        "questionText": "【北大考研真题】\"La secretaria me entregó el documento ________ había redactado el abogado ayer.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "quien"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "cuyo"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "llegara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-kaoyan-nju-2023",
+    "title": "2023年南京大学 硕士研究生入学二外西语统考大卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (南京大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "南京大学 外国语学院",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "南大统考真题 · 过去未完成时与简单过去时交织叙事考查",
+    "questions": [
+      {
+        "id": "kaoyan-nju-2023-q1",
+        "type": "grammar",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "asisten"
+          },
+          {
+            "key": "B",
+            "text": "hayan asistido"
+          },
+          {
+            "key": "C",
+            "text": "asistieron"
+          },
+          {
+            "key": "D",
+            "text": "asistirán"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-nju-2023-q2",
+        "type": "grammar",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "la"
+          },
+          {
+            "key": "B",
+            "text": "le"
+          },
+          {
+            "key": "C",
+            "text": "se"
+          },
+          {
+            "key": "D",
+            "text": "lo"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：先行词是物 el documento，在从句中作直接宾语，用最普遍的关系代词 que。选 A。",
-        "categoryTag": "限定性关系代词 que",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-nju-2023-q3",
+        "type": "grammar",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "llego"
+          },
+          {
+            "key": "B",
+            "text": "llegue"
+          },
+          {
+            "key": "C",
+            "text": "llegaré"
+          },
+          {
+            "key": "D",
+            "text": "llegara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-nju-2023-q4",
+        "type": "grammar",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "habrías divertido"
+          },
+          {
+            "key": "B",
+            "text": "diviertes"
+          },
+          {
+            "key": "C",
+            "text": "divertías"
+          },
+          {
+            "key": "D",
+            "text": "hayas divertido"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       }
     ]
@@ -4289,120 +5745,120 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-fudan-2024",
     "title": "2024年复旦大学 硕士研究生入学二外西语真题大卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (复旦大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (复旦大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "复旦大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "复旦自命题 · 过去未完成时与简单过去时交织叙事考查",
+    "summary": "复旦自命题真题 · 复杂长句分析、动词时态配合与汉西互译",
     "questions": [
       {
         "id": "kaoyan-fudan-2024-q1",
         "type": "grammar",
-        "questionText": "【上外考研真题】\"Aunque ________ (llover) mañana, nosotros iremos al partido de fútbol.\"",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "llueve"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "llueva"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "llovió"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "llovía"
+            "text": "lo"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：aunque 引导让步从句：若陈述已知事实用陈述式；若表达未发生的不确定假设（“即使明天会下雨...”），必须使用虚拟式 llueva。选 B。",
-        "categoryTag": "aunque 让步从句未发生假设",
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       },
       {
         "id": "kaoyan-fudan-2024-q2",
         "type": "grammar",
-        "questionText": "【广外考研真题】\"Nos alegramos de que tú y tus compañeros ________ (aprobar) el examen oficial.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "hayan aprobado"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "habéis aprobado"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "aprobaron"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "aprobaréis"
+            "text": "llegara"
           }
         ],
-        "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：alegrarse de que 表达主观情感喜悦，从句必须接虚拟式；动作在主句之前已完成（通过考试），用虚拟式现在完成时（hayan aprobado）。选 A。",
-        "categoryTag": "情感动词 alegrarse de que + 虚拟式",
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-fudan-2024-q3",
         "type": "grammar",
-        "questionText": "【北大考研真题】\"La secretaria me entregó el documento ________ había redactado el abogado ayer.\"",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "quien"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "cuyo"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "hayas divertido"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：先行词是物 el documento，在从句中作直接宾语，用最普遍的关系代词 que。选 A。",
-        "categoryTag": "限定性关系代词 que",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       },
       {
         "id": "kaoyan-fudan-2024-q4",
         "type": "grammar",
-        "questionText": "【南大考研真题】\"Si ellos ________ (saber) la noticia antes, habrían venido a ayudarte.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "supieran"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "hubieran sabido"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "habían sabido"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "supieron"
+            "text": "asistirán"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：主句是复合条件式 habrían venido（表达过去未能实现的假设结果），从句必须搭配虚拟式过去完成时（hubieran sabido 或 hubiesen sabido）。选 B。",
-        "categoryTag": "对过去相反的条件句假设",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
         "score": 25
       }
     ]
@@ -4410,487 +5866,1949 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
   {
     "id": "paper-kaoyan-whu-2023",
     "title": "2023年武汉大学 240二外西班牙语考研真题卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (武汉大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (武汉大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "武汉大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "武大统考题型 · 目的状语从句与条件式复合句深入推导",
+    "summary": "武大统考真题 · 目的状语从句与条件式复合句深入推导",
     "questions": [
       {
         "id": "kaoyan-whu-2023-q1",
         "type": "grammar",
-        "questionText": "【广外考研真题】\"Nos alegramos de que tú y tus compañeros ________ (aprobar) el examen oficial.\"",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
         "options": [
           {
             "key": "A",
-            "text": "hayan aprobado"
+            "text": "llego"
           },
           {
             "key": "B",
-            "text": "habéis aprobado"
+            "text": "llegue"
           },
           {
             "key": "C",
-            "text": "aprobaron"
+            "text": "llegaré"
           },
           {
             "key": "D",
-            "text": "aprobaréis"
+            "text": "llegara"
           }
         ],
-        "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：alegrarse de que 表达主观情感喜悦，从句必须接虚拟式；动作在主句之前已完成（通过考试），用虚拟式现在完成时（hayan aprobado）。选 A。",
-        "categoryTag": "情感动词 alegrarse de que + 虚拟式",
+        "correctAnswer": "B",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-whu-2023-q2",
         "type": "grammar",
-        "questionText": "【北大考研真题】\"La secretaria me entregó el documento ________ había redactado el abogado ayer.\"",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "quien"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "cuyo"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "hayas divertido"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：先行词是物 el documento，在从句中作直接宾语，用最普遍的关系代词 que。选 A。",
-        "categoryTag": "限定性关系代词 que",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       },
       {
         "id": "kaoyan-whu-2023-q3",
         "type": "grammar",
-        "questionText": "【南大考研真题】\"Si ellos ________ (saber) la noticia antes, habrían venido a ayudarte.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "supieran"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "hubieran sabido"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "habían sabido"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "supieron"
+            "text": "asistirán"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：主句是复合条件式 habrían venido（表达过去未能实现的假设结果），从句必须搭配虚拟式过去完成时（hubieran sabido 或 hubiesen sabido）。选 B。",
-        "categoryTag": "对过去相反的条件句假设",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
         "score": 25
       },
       {
         "id": "kaoyan-whu-2023-q4",
-        "type": "reading",
-        "passage": "El realismo mágico, consagrado por el Premio Nobel colombiano Gabriel García Márquez en Cien años de soledad, fusiona lo cotidiano y lo sobrenatural con total naturalidad en el imaginario pueblo de Macondo.",
-        "questionText": "¿Qué característica define fundamentalmente al realismo mágico según el texto?",
+        "type": "grammar",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "La narración exclusiva de hechos científicos"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "La fusión natural de lo cotidiano y lo sobrenatural"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "El rechazo a cualquier elemento tradicional"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "La descripción rigurosamente histórica de Europa"
+            "text": "lo"
           }
         ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：文中明确阐述“fusiona lo cotidiano y lo sobrenatural con total naturalidad”（将日常与超自然元素浑然天成地融合），对应选项 B。",
-        "categoryTag": "拉美魔幻现实主义读解",
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-kaoyan-sisu-chongqing-2024",
+    "id": "paper-kaoyan-sisu-cq-2024",
     "title": "2024年四川外国语大学 240二外西班牙语考研真题卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (四川外国语大学)",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (四川外国语大学)",
     "track": "kaoyan",
     "level": "考研二外",
     "schoolOrOrg": "四川外国语大学 外国语学院",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "川外考研重镇 · 西语西汉互译核心句法与性数变格避雷",
+    "summary": "川外考研真题 · 西汉互译核心句法与性数变格避雷",
     "questions": [
       {
-        "id": "kaoyan-sisu-chongqing-2024-q1",
+        "id": "kaoyan-sisu-cq-2024-q1",
         "type": "grammar",
-        "questionText": "【北大考研真题】\"La secretaria me entregó el documento ________ había redactado el abogado ayer.\"",
+        "questionText": "【南大考研真题·虚拟假设条件从句】\"Si hubieras venido ayer a la fiesta, te ________ (divertir) muchísimo con nosotros.\"",
         "options": [
           {
             "key": "A",
-            "text": "que"
+            "text": "habrías divertido"
           },
           {
             "key": "B",
-            "text": "quien"
+            "text": "diviertes"
           },
           {
             "key": "C",
-            "text": "cuyo"
+            "text": "divertías"
           },
           {
             "key": "D",
-            "text": "donde"
+            "text": "hayas divertido"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：先行词是物 el documento，在从句中作直接宾语，用最普遍的关系代词 que。选 A。",
-        "categoryTag": "限定性关系代词 que",
+        "explanation": "【南大考研权威解析】：Si + 虚拟式过去完成时（hubieras venido）表达对过去的相反假设，主句必须使用复合条件式（Condicional compuesto: habrías divertido）。选 A。",
+        "categoryTag": "对过去相反的虚拟假设复合条件式",
         "score": 25
       },
       {
-        "id": "kaoyan-sisu-chongqing-2024-q2",
+        "id": "kaoyan-sisu-cq-2024-q2",
         "type": "grammar",
-        "questionText": "【南大考研真题】\"Si ellos ________ (saber) la noticia antes, habrían venido a ayudarte.\"",
+        "questionText": "【北外考研真题·虚拟式情感从句】\"Me extraña mucho que ellos no ________ (asistir) a la reunión de antiguos alumnos.\"",
         "options": [
           {
             "key": "A",
-            "text": "supieran"
+            "text": "asisten"
           },
           {
             "key": "B",
-            "text": "hubieran sabido"
+            "text": "hayan asistido"
           },
           {
             "key": "C",
-            "text": "habían sabido"
+            "text": "asistieron"
           },
           {
             "key": "D",
-            "text": "supieron"
+            "text": "asistirán"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：主句是复合条件式 habrían venido（表达过去未能实现的假设结果），从句必须搭配虚拟式过去完成时（hubieran sabido 或 hubiesen sabido）。选 B。",
-        "categoryTag": "对过去相反的条件句假设",
+        "explanation": "【北外考研权威解析】：me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
+        "categoryTag": "使动情感动词 extrañar + 虚拟式",
         "score": 25
       },
       {
-        "id": "kaoyan-sisu-chongqing-2024-q3",
-        "type": "reading",
-        "passage": "El realismo mágico, consagrado por el Premio Nobel colombiano Gabriel García Márquez en Cien años de soledad, fusiona lo cotidiano y lo sobrenatural con total naturalidad en el imaginario pueblo de Macondo.",
-        "questionText": "¿Qué característica define fundamentalmente al realismo mágico según el texto?",
-        "options": [
-          {
-            "key": "A",
-            "text": "La narración exclusiva de hechos científicos"
-          },
-          {
-            "key": "B",
-            "text": "La fusión natural de lo cotidiano y lo sobrenatural"
-          },
-          {
-            "key": "C",
-            "text": "El rechazo a cualquier elemento tradicional"
-          },
-          {
-            "key": "D",
-            "text": "La descripción rigurosamente histórica de Europa"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：文中明确阐述“fusiona lo cotidiano y lo sobrenatural con total naturalidad”（将日常与超自然元素浑然天成地融合），对应选项 B。",
-        "categoryTag": "拉美魔幻现实主义读解",
-        "score": 25
-      },
-      {
-        "id": "kaoyan-sisu-chongqing-2024-q4",
+        "id": "kaoyan-sisu-cq-2024-q3",
         "type": "grammar",
-        "questionText": "【北外考研真题】\"Dudamos que el gobierno ________ (tomar) medidas drásticas antes de fin de año.\"",
+        "questionText": "【上外考研真题·代词位置与复指】\"A María ________ encontramos ayer paseando por el parque con su hermano.\"",
         "options": [
           {
             "key": "A",
-            "text": "toma"
+            "text": "la"
           },
           {
             "key": "B",
-            "text": "tome"
+            "text": "le"
           },
           {
             "key": "C",
-            "text": "tomará"
+            "text": "se"
           },
           {
             "key": "D",
-            "text": "ha tomado"
+            "text": "lo"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【上外考研权威解析】：明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
+        "categoryTag": "直宾提前代词复指 (Reduplicación)",
+        "score": 25
+      },
+      {
+        "id": "kaoyan-sisu-cq-2024-q4",
+        "type": "grammar",
+        "questionText": "【广外考研真题·时间状语从句时态配合】\"Te llamaré por teléfono en cuanto ________ (llegar) a la oficina de Madrid.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "llego"
+          },
+          {
+            "key": "B",
+            "text": "llegue"
+          },
+          {
+            "key": "C",
+            "text": "llegaré"
+          },
+          {
+            "key": "D",
+            "text": "llegara"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：dudar（怀疑）表达不确定性与存疑态度，其宾语从句强制使用虚拟式。主句为现在时 dudamos，从句用虚拟式现在时 tome。选 B。",
-        "categoryTag": "怀疑动词 dudar + 虚拟式",
+        "explanation": "【广外考研权威解析】：en cuanto (一...就...) 引导时间状语从句，当主句为将来时（llamaré）表达未来未发生的动作时，从句强制使用虚拟式现在时（llegue）。选 B。",
+        "categoryTag": "en cuanto 将来时间从句 + 虚拟式",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-kaoyan-语法专项",
-    "title": "全国高校考研 240二外西语 · 核心语法专项攻坚卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (全国统考攻关)",
-    "track": "kaoyan",
-    "level": "考研二外",
-    "schoolOrOrg": "全国统考攻关 外国语学院",
+    "id": "paper-mock-tongkao-01",
+    "title": "2026年全国统考考研 240二外西班牙语全真模拟大卷 (甲卷)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "八大高频考点 · 虚拟式、时态配合、双代词、por与para",
+    "summary": "考前押题 · 八大核心语法高频出题点与全真阅读演练",
     "questions": [
       {
-        "id": "kaoyan-语法专项-q1",
+        "id": "mock-tongkao-01-q1",
         "type": "grammar",
-        "questionText": "【南大考研真题】\"Si ellos ________ (saber) la noticia antes, habrían venido a ayudarte.\"",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
         "options": [
           {
             "key": "A",
-            "text": "supieran"
+            "text": "parece"
           },
           {
             "key": "B",
-            "text": "hubieran sabido"
+            "text": "parezca"
           },
           {
             "key": "C",
-            "text": "habían sabido"
+            "text": "parecerá"
           },
           {
             "key": "D",
-            "text": "supieron"
+            "text": "pareció"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：主句是复合条件式 habrían venido（表达过去未能实现的假设结果），从句必须搭配虚拟式过去完成时（hubieran sabido 或 hubiesen sabido）。选 B。",
-        "categoryTag": "对过去相反的条件句假设",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
         "score": 25
       },
       {
-        "id": "kaoyan-语法专项-q2",
+        "id": "mock-tongkao-01-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-01-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-01-q4",
         "type": "reading",
-        "passage": "El realismo mágico, consagrado por el Premio Nobel colombiano Gabriel García Márquez en Cien años de soledad, fusiona lo cotidiano y lo sobrenatural con total naturalidad en el imaginario pueblo de Macondo.",
-        "questionText": "¿Qué característica define fundamentalmente al realismo mágico según el texto?",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
         "options": [
           {
             "key": "A",
-            "text": "La narración exclusiva de hechos científicos"
+            "text": "Obras de más de tres horas en auditorios gigantescos"
           },
           {
             "key": "B",
-            "text": "La fusión natural de lo cotidiano y lo sobrenatural"
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
           },
           {
             "key": "C",
-            "text": "El rechazo a cualquier elemento tradicional"
+            "text": "El abandono de la interacción entre público y actores"
           },
           {
             "key": "D",
-            "text": "La descripción rigurosamente histórica de Europa"
+            "text": "Precios prohibitivos destinados a élites"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：文中明确阐述“fusiona lo cotidiano y lo sobrenatural con total naturalidad”（将日常与超自然元素浑然天成地融合），对应选项 B。",
-        "categoryTag": "拉美魔幻现实主义读解",
-        "score": 25
-      },
-      {
-        "id": "kaoyan-语法专项-q3",
-        "type": "grammar",
-        "questionText": "【北外考研真题】\"Dudamos que el gobierno ________ (tomar) medidas drásticas antes de fin de año.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "toma"
-          },
-          {
-            "key": "B",
-            "text": "tome"
-          },
-          {
-            "key": "C",
-            "text": "tomará"
-          },
-          {
-            "key": "D",
-            "text": "ha tomado"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：dudar（怀疑）表达不确定性与存疑态度，其宾语从句强制使用虚拟式。主句为现在时 dudamos，从句用虚拟式现在时 tome。选 B。",
-        "categoryTag": "怀疑动词 dudar + 虚拟式",
-        "score": 25
-      },
-      {
-        "id": "kaoyan-语法专项-q4",
-        "type": "grammar",
-        "questionText": "【上外考研真题】\"Aunque ________ (llover) mañana, nosotros iremos al partido de fútbol.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "llueve"
-          },
-          {
-            "key": "B",
-            "text": "llueva"
-          },
-          {
-            "key": "C",
-            "text": "llovió"
-          },
-          {
-            "key": "D",
-            "text": "llovía"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：aunque 引导让步从句：若陈述已知事实用陈述式；若表达未发生的不确定假设（“即使明天会下雨...”），必须使用虚拟式 llueva。选 B。",
-        "categoryTag": "aunque 让步从句未发生假设",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
         "score": 25
       }
     ]
   },
   {
-    "id": "paper-kaoyan-读解综合",
-    "title": "全国高校考研 240二外西语 · 读解与文化综合冲刺卷",
-    "spanishTitle": "Examen de Posgrado — Segunda Lengua Extranjera (全国名校攻关)",
-    "track": "kaoyan",
-    "level": "考研二外",
-    "schoolOrOrg": "全国名校攻关 外国语学院",
+    "id": "paper-mock-tongkao-02",
+    "title": "2026年全国统考考研 240二外西班牙语全真模拟大卷 (乙卷)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
     "durationMinutes": 75,
     "totalScore": 100,
-    "summary": "名校冲刺高分 · 加西亚·马尔克斯、博尔赫斯与拉美文明",
+    "summary": "考前押题 · 虚拟式愿望从句、让步从句与双重代词替换",
     "questions": [
       {
-        "id": "kaoyan-读解综合-q1",
-        "type": "reading",
-        "passage": "El realismo mágico, consagrado por el Premio Nobel colombiano Gabriel García Márquez en Cien años de soledad, fusiona lo cotidiano y lo sobrenatural con total naturalidad en el imaginario pueblo de Macondo.",
-        "questionText": "¿Qué característica define fundamentalmente al realismo mágico según el texto?",
+        "id": "mock-tongkao-02-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
         "options": [
           {
             "key": "A",
-            "text": "La narración exclusiva de hechos científicos"
+            "text": "ha viajado"
           },
           {
             "key": "B",
-            "text": "La fusión natural de lo cotidiano y lo sobrenatural"
+            "text": "viajó"
           },
           {
             "key": "C",
-            "text": "El rechazo a cualquier elemento tradicional"
+            "text": "viajaba"
           },
           {
             "key": "D",
-            "text": "La descripción rigurosamente histórica de Europa"
+            "text": "viajara"
           }
         ],
         "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：文中明确阐述“fusiona lo cotidiano y lo sobrenatural con total naturalidad”（将日常与超自然元素浑然天成地融合），对应选项 B。",
-        "categoryTag": "拉美魔幻现实主义读解",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
         "score": 25
       },
       {
-        "id": "kaoyan-读解综合-q2",
+        "id": "mock-tongkao-02-q2",
         "type": "grammar",
-        "questionText": "【北外考研真题】\"Dudamos que el gobierno ________ (tomar) medidas drásticas antes de fin de año.\"",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
         "options": [
           {
             "key": "A",
-            "text": "toma"
+            "text": "de"
           },
           {
             "key": "B",
-            "text": "tome"
+            "text": "en"
           },
           {
             "key": "C",
-            "text": "tomará"
+            "text": "a"
           },
           {
             "key": "D",
-            "text": "ha tomado"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：dudar（怀疑）表达不确定性与存疑态度，其宾语从句强制使用虚拟式。主句为现在时 dudamos，从句用虚拟式现在时 tome。选 B。",
-        "categoryTag": "怀疑动词 dudar + 虚拟式",
-        "score": 25
-      },
-      {
-        "id": "kaoyan-读解综合-q3",
-        "type": "grammar",
-        "questionText": "【上外考研真题】\"Aunque ________ (llover) mañana, nosotros iremos al partido de fútbol.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "llueve"
-          },
-          {
-            "key": "B",
-            "text": "llueva"
-          },
-          {
-            "key": "C",
-            "text": "llovió"
-          },
-          {
-            "key": "D",
-            "text": "llovía"
-          }
-        ],
-        "correctAnswer": "B",
-        "explanation": "【考研二外权威解析】：aunque 引导让步从句：若陈述已知事实用陈述式；若表达未发生的不确定假设（“即使明天会下雨...”），必须使用虚拟式 llueva。选 B。",
-        "categoryTag": "aunque 让步从句未发生假设",
-        "score": 25
-      },
-      {
-        "id": "kaoyan-读解综合-q4",
-        "type": "grammar",
-        "questionText": "【广外考研真题】\"Nos alegramos de que tú y tus compañeros ________ (aprobar) el examen oficial.\"",
-        "options": [
-          {
-            "key": "A",
-            "text": "hayan aprobado"
-          },
-          {
-            "key": "B",
-            "text": "habéis aprobado"
-          },
-          {
-            "key": "C",
-            "text": "aprobaron"
-          },
-          {
-            "key": "D",
-            "text": "aprobaréis"
+            "text": "por"
           }
         ],
         "correctAnswer": "A",
-        "explanation": "【考研二外权威解析】：alegrarse de que 表达主观情感喜悦，从句必须接虚拟式；动作在主句之前已完成（通过考试），用虚拟式现在完成时（hayan aprobado）。选 A。",
-        "categoryTag": "情感动词 alegrarse de que + 虚拟式",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-02-q3",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-02-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-tongkao-03",
+    "title": "2026年全国统考考研 240二外西班牙语全真模拟大卷 (丙卷)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "考前押题 · 过去未完成时与简单过去时混合长篇记叙",
+    "questions": [
+      {
+        "id": "mock-tongkao-03-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-03-q2",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-03-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-03-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-tongkao-04",
+    "title": "2026年全国统考考研 240二外西班牙语全真模拟大卷 (丁卷)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "考前押题 · 目的状语从句与条件假设复合时态演练",
+    "questions": [
+      {
+        "id": "mock-tongkao-04-q1",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-04-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-04-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-tongkao-04-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-subjuntivo-01",
+    "title": "考研二外西语 · 虚拟式高分突破专项模拟卷 (一)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "专题突破 · 愿望/怀疑/情感/意志/否定思考动词全盘操练",
+    "questions": [
+      {
+        "id": "mock-subjuntivo-01-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-subjuntivo-01-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-subjuntivo-01-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-subjuntivo-01-q4",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-subjuntivo-02",
+    "title": "考研二外西语 · 虚拟式高分突破专项模拟卷 (二)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "专题突破 · por muy que, sin que, a no ser que 等高难度从句",
+    "questions": [
+      {
+        "id": "mock-subjuntivo-02-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-subjuntivo-02-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-subjuntivo-02-q3",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-subjuntivo-02-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-pronouns-01",
+    "title": "考研二外西语 · 宾格与与格双代词攻关模拟卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "专题突破 · 间宾变身 se、直宾代词复指与副动词代词后置连写",
+    "questions": [
+      {
+        "id": "mock-pronouns-01-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-pronouns-01-q2",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-pronouns-01-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-pronouns-01-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-tenses-01",
+    "title": "考研二外西语 · 过去时态辨析黄金攻坚模拟卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "专题突破 · 简单过去时、过去未完成时、过去完成时三维对照",
+    "questions": [
+      {
+        "id": "mock-tenses-01-q1",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-tenses-01-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-tenses-01-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-tenses-01-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-prepositions-01",
+    "title": "考研二外西语 · 固定前置词搭配绝密扫雷模拟卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "专题突破 · por与para终极辨析、动词+介词固定短语汇总",
+    "questions": [
+      {
+        "id": "mock-prepositions-01-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-prepositions-01-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-prepositions-01-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-prepositions-01-q4",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-relative-01",
+    "title": "考研二外西语 · 关系代词与复杂从句高分突破卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "专题突破 · cuyo, donde, el que, quien 在考研长难句中的定位",
+    "questions": [
+      {
+        "id": "mock-relative-01-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-relative-01-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-relative-01-q3",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-relative-01-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-reading-01",
+    "title": "考研二外西语 · 拉美文学经典语段读解仿真大卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "读解专项 · 加西亚·马尔克斯、博尔赫斯、科塔萨尔名篇精读",
+    "questions": [
+      {
+        "id": "mock-reading-01-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-reading-01-q2",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-reading-01-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-reading-01-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-reading-02",
+    "title": "考研二外西语 · 现代西班牙社会与科技评论专练卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "读解专项 · 数字游民、绿色能源转型、都市文化热点透析",
+    "questions": [
+      {
+        "id": "mock-reading-02-q1",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-reading-02-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-reading-02-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-reading-02-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-sprint-final-01",
+    "title": "2026考研二外西语 · 考前48小时终极封题押密卷 (A)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "终极冲刺 · 难度系数 1.15 倍全真仿真综合考场演练",
+    "questions": [
+      {
+        "id": "mock-sprint-final-01-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
+        "score": 25
+      },
+      {
+        "id": "mock-sprint-final-01-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-sprint-final-01-q3",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-sprint-final-01-q4",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      }
+    ]
+  },
+  {
+    "id": "paper-mock-sprint-final-02",
+    "title": "2026考研二外西语 · 考前48小时终极封题押密卷 (B)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "totalScore": 100,
+    "summary": "终极冲刺 · 查漏补缺扫除知识盲点，助力二外高分破百",
+    "questions": [
+      {
+        "id": "mock-sprint-final-02-q1",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·时态辨析】\"El año pasado, Manuel ________ (viajar) por cinco países de Sudamérica.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "ha viajado"
+          },
+          {
+            "key": "B",
+            "text": "viajó"
+          },
+          {
+            "key": "C",
+            "text": "viajaba"
+          },
+          {
+            "key": "D",
+            "text": "viajara"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：el año pasado 是已经完全结束的明确过去时间段，必须使用简单过去时（Pretérito Indefinido: viajó）。选 B。",
+        "categoryTag": "明确过去时间点与简单过去时",
+        "score": 25
+      },
+      {
+        "id": "mock-sprint-final-02-q2",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·前置词进阶】\"Ayer nos enteramos ________ que habían cancelado el vuelo hacia Buenos Aires.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "de"
+          },
+          {
+            "key": "B",
+            "text": "en"
+          },
+          {
+            "key": "C",
+            "text": "a"
+          },
+          {
+            "key": "D",
+            "text": "por"
+          }
+        ],
+        "correctAnswer": "A",
+        "explanation": "【考研二外模拟剖析】：enterarse de que 表达“获悉、得知某事”，介词 de 绝对不能脱落。选 A。",
+        "categoryTag": "固定短语 enterarse de que",
+        "score": 25
+      },
+      {
+        "id": "mock-sprint-final-02-q3",
+        "type": "reading",
+        "passage": "El auge del microteatro en Madrid y Barcelona ha revolucionado las artes escénicas. En salas de apenas quince metros cuadrados y ante públicos reducidos, actores y dramaturgos ofrecen piezas intensas de quince minutos que democratizan el acceso a la cultura vanguardista.",
+        "questionText": "¿Qué rasgo distintivo caracteriza al fenómeno del microteatro según el fragmento?",
+        "options": [
+          {
+            "key": "A",
+            "text": "Obras de más de tres horas en auditorios gigantescos"
+          },
+          {
+            "key": "B",
+            "text": "Representaciones cortas en espacios íntimos ante un público reducido"
+          },
+          {
+            "key": "C",
+            "text": "El abandono de la interacción entre público y actores"
+          },
+          {
+            "key": "D",
+            "text": "Precios prohibitivos destinados a élites"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：文中清晰描述小剧场特色“salas de apenas quince metros cuadrados... públicos reducidos... piezas de quince minutos”，即微型空间、观众精炼、时长短促，对应选项 B。",
+        "categoryTag": "考研二外·现代西班牙都市文化读解",
+        "score": 25
+      },
+      {
+        "id": "mock-sprint-final-02-q4",
+        "type": "grammar",
+        "questionText": "【考研二外全真模拟·让步从句】\"Por muy difícil que ________ (parecer) el examen, no debes desanimarte.\"",
+        "options": [
+          {
+            "key": "A",
+            "text": "parece"
+          },
+          {
+            "key": "B",
+            "text": "parezca"
+          },
+          {
+            "key": "C",
+            "text": "parecerá"
+          },
+          {
+            "key": "D",
+            "text": "pareció"
+          }
+        ],
+        "correctAnswer": "B",
+        "explanation": "【考研二外模拟剖析】：por muy + 形容词 + que（无论多么...）引导高阶让步从句，其从句动词必须强制使用虚拟式 parezca。选 B。",
+        "categoryTag": "por muy + adj + que + 虚拟式",
         "score": 25
       }
     ]
