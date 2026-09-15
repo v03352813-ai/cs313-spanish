@@ -648,28 +648,6 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
         </section>
       )}
 
-      {/* 未激活学员提示横幅 (100% 对齐日法语小语种矩阵二级页面底部 VIP 转化引导) */}
-      {!isVip && (
-        <div className="bg-gradient-to-r from-[#B82E24] via-[#991B1B] to-[#59100B] rounded-2xl sm:rounded-3xl p-5 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg shadow-[#B82E24]/20">
-          <div className="space-y-1 text-center sm:text-left">
-            <div className="flex items-center gap-1.5 justify-center sm:justify-start font-black text-sm">
-              <Sparkles className="w-4 h-4 text-[#D97706]" />
-              <span>当前正在体验【西班牙语 27 字母与基础发音 · 免费体验】</span>
-            </div>
-            <p className="text-xs text-white/90 leading-relaxed">
-              开通 VIP 终身卡（仅 ¥49.9），立享<strong>全部 5 大高阶重音戴帽与 RRR 极速突破法</strong>、30部西影精学课、36套国家级模考全真大卷与 5000+ 核心词库！
-            </p>
-          </div>
-          <button
-            onClick={() => onOpenVipModal?.('🔒 开通 VIP 终身卡（仅 ¥49.9），即可解锁全部高阶重音与大舌音突破法则与全真机考大卷！')}
-            className="px-5 py-2.5 rounded-2xl bg-white text-[#B82E24] hover:bg-[#FEF2F2] font-black text-xs shadow-md transition active:scale-98 shrink-0 flex items-center gap-1.5 cursor-pointer"
-          >
-            <Lock className="w-3.5 h-3.5 text-[#B82E24]" />
-            <span>输入卡密解锁全量特权 →</span>
-          </button>
-        </div>
-      )}
-
     </div>
   );
 };

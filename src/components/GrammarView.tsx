@@ -770,28 +770,6 @@ export const GrammarView: React.FC<GrammarViewProps> = ({
 
       </div>
 
-      {/* 未激活学员提示横幅 (100% 对齐日法语小语种矩阵二级页面底部 VIP 转化引导) */}
-      {!isVip && (
-        <div className="bg-gradient-to-r from-[#B82E24] via-[#991B1B] to-[#59100B] rounded-2xl sm:rounded-3xl p-5 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg shadow-[#B82E24]/20">
-          <div className="space-y-1 text-center sm:text-left">
-            <div className="flex items-center gap-1.5 justify-center sm:justify-start font-black text-sm">
-              <Sparkles className="w-4 h-4 text-[#D97706]" />
-              <span>当前正在体验【西班牙语考研二外与 DELE 核心文法 · 基础试学】</span>
-            </div>
-            <p className="text-xs text-white/90 leading-relaxed">
-              开通 VIP 终身卡（仅 ¥49.9），立享<strong>全部 48 考点全景大树、虚拟式全家桶与双重代词高阶避坑</strong>、30部西影精学课与 36 套国家级模考全真大卷！
-            </p>
-          </div>
-          <button
-            onClick={() => onOpenVipModal?.('🔒 开通 VIP 终身卡（仅 ¥49.9），即可解锁全部考研二外高阶文法解析与全真机考大卷！')}
-            className="px-5 py-2.5 rounded-2xl bg-white text-[#B82E24] hover:bg-[#FEF2F2] font-black text-xs shadow-md transition active:scale-98 shrink-0 flex items-center gap-1.5 cursor-pointer"
-          >
-            <Lock className="w-3.5 h-3.5 text-[#B82E24]" />
-            <span>输入卡密解锁全量特权 →</span>
-          </button>
-        </div>
-      )}
-
     </div>
   );
 };
