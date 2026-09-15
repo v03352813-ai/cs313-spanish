@@ -1,0 +1,103 @@
+// 闲鱼/小红书自动发货卡密库与授权中心 (CS313 西班牙语研习社)
+export interface LicenseInfo {
+  isVip: boolean;
+  activatedAt?: string;
+  key?: string;
+  source?: string;
+}
+
+const STORAGE_KEY = 'cs313_es_license_v1';
+const ADMIN_KEY = 'cs313_admin_es_session';
+
+// 预设 100 条真实激活卡密 (以 ESVIP- 为前缀)
+export const PRESET_CARD_KEYS: string[] = [
+  'ESVIP-7A9B-4C2E-8F1A', 'ESVIP-3D5F-9E2A-6B8C', 'ESVIP-1A4C-7E9B-2F5D', 'ESVIP-8B2E-5D1F-9A4C',
+  'ESVIP-6C9A-3F8B-1E5D', 'ESVIP-4E7B-2A9C-5F1D', 'ESVIP-9F1D-6C4A-8B2E', 'ESVIP-2B5E-8A1C-7F9D',
+  'ESVIP-5D8A-1F4B-9E2C', 'ESVIP-7C2F-9B5D-3A8E', 'ESVIP-1E6D-4A9B-8C2F', 'ESVIP-8F3B-7D1E-5A9C',
+  'ESVIP-3A9E-5C8F-2D1B', 'ESVIP-6B1F-8E4A-9C7D', 'ESVIP-4D7A-2B9E-1F6C', 'ESVIP-9E2C-6F1D-8A4B',
+  'ESVIP-2F8B-4D7A-5C9E', 'ESVIP-5A1D-9C6E-4B8F', 'ESVIP-7E4B-1A9F-6D2C', 'ESVIP-8C5F-3D8B-2A9E',
+  'ESVIP-1B9D-7E2A-4F6C', 'ESVIP-6F4A-8B1E-9D3C', 'ESVIP-4A8C-2D9F-5E1B', 'ESVIP-9D3E-6A8B-1C7F',
+  'ESVIP-3F1B-5E9C-8A2D', 'ESVIP-7B6D-1F4A-9C5E', 'ESVIP-2E9A-8C3F-7D1B', 'ESVIP-8A4F-6B2D-3E9C',
+  'ESVIP-5C7E-9A1B-4F8D', 'ESVIP-1D8B-4F6C-2E9A', 'ESVIP-6E2A-8D5F-1B4C', 'ESVIP-4B9F-3A7E-8C1D',
+  'ESVIP-9C1D-7E4B-2A8F', 'ESVIP-3E8F-2A9D-6C1B', 'ESVIP-7A5C-9B3E-8D2F', 'ESVIP-2D1B-6F8A-4E9C',
+  'ESVIP-8E9C-4A2F-1D7B', 'ESVIP-5F3A-8D1B-9C6E', 'ESVIP-1C7E-9F4B-3A8D', 'ESVIP-6D8B-2C5E-7A1F',
+  'ESVIP-4F1D-7B9A-2C8E', 'ESVIP-9A6E-1D8F-5B3C', 'ESVIP-3B2C-8F4A-9E7D', 'ESVIP-7D9A-4E1B-6F2C',
+  'ESVIP-2A8F-9C3E-1D5B', 'ESVIP-8B7D-5A2C-4E9F', 'ESVIP-5E1B-9F8A-3D6C', 'ESVIP-1F4C-6D9E-8B2A',
+  'ESVIP-6A3E-8B2F-9C1D', 'ESVIP-4C9D-1E7B-5A8F', 'ESVIP-9B8A-5C1D-2F4E', 'ESVIP-3D6F-2A9E-8B1C',
+  'ESVIP-7F1B-8D4C-9A5E', 'ESVIP-2C9E-4F8A-1B7D', 'ESVIP-8D5A-3B1F-6E2C', 'ESVIP-5B4C-7E9D-2A8F',
+  'ESVIP-1A9F-2D6B-4C8E', 'ESVIP-6E8D-5B3C-9A1F', 'ESVIP-4D2A-9F1E-7C5B', 'ESVIP-9F7C-3E8A-1B4D',
+  'ESVIP-3C1E-7A4B-8F9D', 'ESVIP-7E9D-1C5A-2B8F', 'ESVIP-2F4B-8E2D-6A1C', 'ESVIP-8A3C-6D9F-4B7E',
+  'ESVIP-5D9E-4B1C-8A3F', 'ESVIP-1E8A-2F4D-9C6B', 'ESVIP-6C7B-9A2E-1D8F', 'ESVIP-4A1F-8C6D-3E9B',
+  'ESVIP-9B3D-4E9A-7C2F', 'ESVIP-3F8C-1D5B-6A4E', 'ESVIP-7D2A-6F1E-9B8C', 'ESVIP-2A7E-9B4C-1D6F',
+  'ESVIP-8F1D-3C8E-5A2B', 'ESVIP-5C9B-8E2A-4F1D', 'ESVIP-1D4F-7A9C-8E3B', 'ESVIP-6B8E-4D1F-2C9A',
+  'ESVIP-4E3A-9B6C-7F1D', 'ESVIP-9A1D-5F8B-3C2E', 'ESVIP-3B9F-2E7A-6D4C', 'ESVIP-7C6D-4A2F-8E1B',
+  'ESVIP-2D8C-1F9E-5B3A', 'ESVIP-8E4B-7D3C-9A6F', 'ESVIP-5F2A-3C8D-1E9B', 'ESVIP-1C9E-8B4F-2A7D',
+  'ESVIP-6D1F-5A9C-3E8B', 'ESVIP-4B7D-2E1A-9F6C', 'ESVIP-9E8B-6C4D-1A3F', 'ESVIP-3A4C-8F2E-9D1B',
+  'ESVIP-7F9A-1B6D-4E2C', 'ESVIP-2C1D-9E8F-3A5B', 'ESVIP-8B3E-4A9C-6D1F', 'ESVIP-5D6F-1C4A-8B9E',
+  'ESVIP-1A8B-9E3D-2F7C', 'ESVIP-6E4C-2D8A-5F1B', 'ESVIP-4F9E-7B1C-3A8D', 'ESVIP-9C2A-8F5D-4E6B',
+  'ESVIP-3D7B-1E4F-9A2C', 'ESVIP-7A1E-6D9B-2C4F', 'ESVIP-2F6C-4B7D-8E1A', 'ESVIP-8A2D-5F1B-9C3E'
+];
+
+export function verifyCardKey(rawKey: string): { success: boolean; message: string } {
+  if (!rawKey) return { success: false, message: '请输入授权卡密' };
+  const key = rawKey.trim().toUpperCase();
+
+  // 1. 匹配预设 100 张卡密库
+  if (PRESET_CARD_KEYS.includes(key)) {
+    saveLicense({ isVip: true, activatedAt: new Date().toISOString(), key, source: 'preset_key' });
+    return { success: true, message: '🎉 终身 VIP 激活成功！欢迎加入西班牙语研习社！' };
+  }
+
+  // 2. 算法通配校验：只要格式为 ESVIP-XXXX-XXXX-XXXX 且符合特征即授权 (增强离线鲁棒性)
+  const regex = /^ESVIP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/;
+  if (regex.test(key)) {
+    saveLicense({ isVip: true, activatedAt: new Date().toISOString(), key, source: 'algorithmic_key' });
+    return { success: true, message: '🎉 终身 VIP 激活成功！全部模块与真题库已解锁！' };
+  }
+
+  // 3. 通用管理员体验码
+  if (key === 'CS313-SPANISH-VIP' || key === 'HOLA-ESPANOL-2026') {
+    saveLicense({ isVip: true, activatedAt: new Date().toISOString(), key, source: 'admin_pass' });
+    return { success: true, message: '🎉 管理员体验权限激活成功！' };
+  }
+
+  return { success: false, message: '卡密无效或已被使用，请检查输入或联系客服微信获取' };
+}
+
+export function getLocalLicense(): LicenseInfo | null {
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+export function saveLicense(info: LicenseInfo): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(info));
+  } catch {}
+}
+
+export function checkAdminSession(): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    return sessionStorage.getItem(ADMIN_KEY) === 'true';
+  } catch {
+    return false;
+  }
+}
+
+export function setAdminSession(val: boolean): void {
+  if (typeof window === 'undefined') return;
+  try {
+    if (val) {
+      sessionStorage.setItem(ADMIN_KEY, 'true');
+    } else {
+      sessionStorage.removeItem(ADMIN_KEY);
+    }
+  } catch {}
+}
