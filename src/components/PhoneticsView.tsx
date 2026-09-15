@@ -60,6 +60,18 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
     return item.category === activeCategory;
   });
 
+  // 获取官方字母音与字母名称标准发音
+  const getLetterSpokenText = (item: SpanishPhoneticItem): string => {
+    if (item.category === 'vowel') {
+      return item.letter.split(' ')[0].toLowerCase();
+    }
+    if (item.id === 'r_single') return 'ere';
+    if (item.id === 'rr_multi') return 'erre';
+    if (item.id === 'ch') return 'che';
+    if (item.id === 'll') return 'doble ele';
+    return item.name;
+  };
+
   // 播放发音
   const handlePlaySpeech = (text: string) => {
     setPlayingWord(text);
@@ -375,9 +387,7 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
                     key={item.id}
                     onClick={() => {
                       setSelectedItem(item);
-                      if (item.examples.length > 0) {
-                        handlePlaySpeech(item.examples[0].word);
-                      }
+                      handlePlaySpeech(getLetterSpokenText(item));
                     }}
                     className={`relative p-3 rounded-2xl flex flex-col items-center justify-center transition-all duration-150 border cursor-pointer ${
                       isSelected
@@ -446,9 +456,9 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
                 </div>
 
                 <button
-                  onClick={() => handlePlayAllExamples(selectedItem)}
-                  className="w-11 h-11 rounded-2xl bg-[#B82E24] hover:bg-[#991B1B] text-white flex items-center justify-center shadow-xs hover:scale-105 transition cursor-pointer"
-                  title="朗读全部例词"
+                  onClick={() => handlePlaySpeech(getLetterSpokenText(selectedItem))}
+                  className="w-11 h-11 rounded-2xl bg-[#B82E24] hover:bg-[#991B1B] text-white flex items-center justify-center shadow-xs hover:scale-105 transition cursor-pointer shrink-0"
+                  title={`听标准字母音: ${getLetterSpokenText(selectedItem)}`}
                 >
                   <Volume2 className="w-5 h-5" />
                 </button>
@@ -480,8 +490,17 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
 
               {/* 权威考纲核心例词与发音对照 */}
               <div className="space-y-2">
-                <div className="text-xs font-bold text-slate-800">
+                <div className="flex items-center justify-between text-xs font-bold text-slate-800">
                   <span>权威考纲核心例词与发音对照</span>
+                  <button
+                    type="button"
+                    onClick={() => handlePlayAllExamples(selectedItem)}
+                    className="text-[11px] text-[#B82E24] hover:text-[#991B1B] flex items-center gap-1 cursor-pointer font-bold px-2.5 py-0.5 rounded-lg bg-red-50 hover:bg-red-100 transition border border-red-200/60"
+                    title="按顺序朗读下方全部例词"
+                  >
+                    <Volume2 className="w-3.5 h-3.5" />
+                    <span>连播例词</span>
+                  </button>
                 </div>
                 <div className="space-y-2">
                   {selectedItem.examples.map(ex => (
