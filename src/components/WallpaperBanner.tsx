@@ -1,37 +1,78 @@
 import React from 'react';
-import { Sparkles, Image as ImageIcon, Flame } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface WallpaperBannerProps {
-  streakCount: number;
-  onOpenModal: () => void;
+  onOpenModal?: () => void;
+  onOpenWallpaperModal?: () => void;
+  streakCount?: number;
+  className?: string;
 }
 
-export const WallpaperBanner: React.FC<WallpaperBannerProps> = ({ streakCount, onOpenModal }) => {
+export const WallpaperBanner: React.FC<WallpaperBannerProps> = ({
+  onOpenModal,
+  onOpenWallpaperModal,
+  className = ''
+}) => {
+  const handleClick = () => {
+    if (onOpenWallpaperModal) onOpenWallpaperModal();
+    else if (onOpenModal) onOpenModal();
+  };
+
   return (
-    <div 
-      onClick={onOpenModal}
-      className="cursor-pointer group relative overflow-hidden rounded-2xl p-4 bg-gradient-to-r from-orange-500 via-amber-500 to-rose-600 text-white shadow-md hover:shadow-lg transition-all duration-300"
+    <div
+      onClick={handleClick}
+      className={`group relative bg-gradient-to-r from-[#FEF2F2]/40 via-slate-50 to-white rounded-2xl sm:rounded-3xl p-3.5 sm:p-4 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-[#B82E24]/50 transition-all duration-300 cursor-pointer overflow-hidden ${className}`}
     >
-      <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-white/10 rounded-full blur-xl group-hover:scale-125 transition-transform duration-500 pointer-events-none" />
-      <div className="flex items-center justify-between relative z-10">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 text-white shadow-xs">
-            <ImageIcon className="w-5 h-5" />
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-3.5">
+        
+        {/* Left Thumbnail & Text */}
+        <div className="flex items-center gap-3.5 w-full sm:w-auto">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 border border-[#D97706]/80 shadow-xs group-hover:scale-105 transition-transform duration-300">
+            <img 
+              src="/images/wallpaper/wallpaper_thumb.jpg" 
+              alt="一子一木4K高清壁纸" 
+              className="w-full h-full object-cover"
+            />
+            <span className="absolute bottom-1 right-1 bg-black/70 backdrop-blur-xs text-[9px] text-amber-300 font-extrabold px-1.5 py-0.2 rounded-md">
+              4K原图
+            </span>
           </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="font-black text-sm tracking-wide">西班牙与拉美风情 · 4K 每日壁纸激励</span>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-white/20 font-bold border border-white/30 flex items-center gap-1">
-                <Flame className="w-3 h-3 text-amber-300 fill-amber-300" /> 连击 {streakCount} 天
+
+          <div className="space-y-1 flex-1">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#B82E24] to-[#991B1B] text-white text-[10px] font-extrabold shadow-2xs">
+                🎁 学员美学福利
               </span>
+              <h3 className="text-base sm:text-lg font-black text-slate-900 group-hover:text-[#B82E24] transition">
+                一子一木 4K 伴学治愈壁纸屋
+              </h3>
             </div>
-            <p className="text-xs text-white/85">每日金句打卡免费解锁圣家堂、阿尔罕布拉宫、马丘比丘高清艺术壁纸！</p>
+            <p className="text-xs text-slate-600 leading-relaxed font-medium">
+              精选西语与拉美风情手机/iPad 高清学习壁纸 · 免费下载 · 每日打卡参与微信小程序积分抽大奖！
+            </p>
+            <div className="hidden sm:flex items-center gap-2 text-[11px] text-slate-600 font-mono">
+              <span className="bg-white/80 px-2 py-0.5 rounded-md border border-slate-200 font-semibold text-[#B82E24]">
+                #小程序://一子一木/0JPDrt84ecI5Gwd
+              </span>
+              <span>微信扫码 / 口令秒开</span>
+            </div>
           </div>
         </div>
 
-        <button className="px-3.5 py-1.5 rounded-xl bg-white text-[#B82E24] font-black text-xs shadow-xs group-hover:bg-amber-50 transition flex items-center gap-1 shrink-0">
-          <Sparkles className="w-3.5 h-3.5 text-amber-500" /> 立即查看
-        </button>
+        {/* Right Action Button */}
+        <div className="w-full sm:w-auto shrink-0 flex items-center justify-end">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              handleClick();
+            }}
+            className="w-full sm:w-auto px-5 py-2.5 rounded-2xl bg-gradient-to-r from-[#B82E24] to-[#991B1B] hover:from-[#991B1B] hover:to-[#B82E24] text-white font-bold text-xs shadow-xs active:scale-98 transition flex items-center justify-center gap-1.5 group-hover:translate-x-0.5 cursor-pointer"
+          >
+            <span>🎁 免费领取壁纸 / 抽奖</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </button>
+        </div>
+
       </div>
     </div>
   );
