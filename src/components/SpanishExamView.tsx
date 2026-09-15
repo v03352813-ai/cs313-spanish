@@ -19,7 +19,8 @@ import {
   ShieldCheck,
   Play,
   Pause,
-  Clock
+  Clock,
+  Headphones
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { SPANISH_EXAM_PAPERS, ExamPaper, ExamQuestion } from '../data/examData';
@@ -82,6 +83,24 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [showInstantExplanation, setShowInstantExplanation] = useState<boolean>(true);
+
+  // 听力音频播放器状态
+  const [isPlayingAudio, setIsPlayingAudio] = useState<boolean>(false);
+  const [audioSpeed, setAudioSpeed] = useState<number>(1.0);
+  const [showListeningScript, setShowListeningScript] = useState<boolean>(false);
+
+  const handlePlayAudio = async (text: string) => {
+    if (isPlayingAudio) {
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      setIsPlayingAudio(false);
+      return;
+    }
+    setIsPlayingAudio(true);
+    await speakSpanish(text, audioSpeed);
+    setIsPlayingAudio(false);
+  };
 
   // 动态计算各赛道与各高校历年真题套数 (严格实时反映真实 64 套试卷题库)
   const paperCounts = useMemo(() => {
@@ -179,19 +198,24 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
 
   const currentQuestion: ExamQuestion | undefined = currentPaper?.questions[currentQuestionIndex];
 
-  // 计算当前试卷核心大板块（词汇文法、长篇读解）的题量与起始位置
+  // 计算当前试卷三大核心大板块（词汇文法、长篇读解、听解交际）的题量与起始位置
   const sectionTabs = useMemo(() => {
     if (!currentPaper || !currentPaper.questions || currentPaper.questions.length === 0) return [];
 
     let vocabStart = -1, vocabCount = 0;
     let readingStart = -1, readingCount = 0;
+    let listeningStart = -1, listeningCount = 0;
 
     currentPaper.questions.forEach((q, idx) => {
       const isReading = q.type === 'reading' || Boolean(q.passage) || q.categoryTag.includes('读解') || q.categoryTag.includes('阅读');
+      const isListening = q.type === 'listening' || Boolean(q.audioScript) || q.categoryTag.includes('听力') || q.categoryTag.includes('交际') || q.categoryTag.includes('广播');
 
       if (isReading) {
         if (readingStart === -1) readingStart = idx;
         readingCount++;
+      } else if (isListening) {
+        if (listeningStart === -1) listeningStart = idx;
+        listeningCount++;
       } else {
         if (vocabStart === -1) vocabStart = idx;
         vocabCount++;
@@ -200,7 +224,8 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
 
     const curQ = currentPaper.questions[currentQuestionIndex];
     const curIsReading = curQ && (curQ.type === 'reading' || Boolean(curQ.passage) || curQ.categoryTag.includes('读解') || curQ.categoryTag.includes('阅读'));
-    const curIsVocab = curQ && !curIsReading;
+    const curIsListening = curQ && (curQ.type === 'listening' || Boolean(curQ.audioScript) || curQ.categoryTag.includes('听力') || curQ.categoryTag.includes('交际') || curQ.categoryTag.includes('广播'));
+    const curIsVocab = curQ && !curIsReading && !curIsListening;
 
     const list: { key: string; name: string; icon: string; startIndex: number; count: number; isActive: boolean }[] = [];
 
@@ -222,6 +247,16 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
         startIndex: readingStart,
         count: readingCount,
         isActive: Boolean(curIsReading)
+      });
+    }
+    if (listeningCount > 0) {
+      list.push({
+        key: 'listening',
+        name: '听解原声与交际辨析',
+        icon: '🎧',
+        startIndex: listeningStart,
+        count: listeningCount,
+        isActive: Boolean(curIsListening)
       });
     }
 
@@ -303,6 +338,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
 
     let vocabTotal = 0, vocabEarned = 0, vocabCorrect = 0, vocabCount = 0;
     let readingTotal = 0, readingEarned = 0, readingCorrect = 0, readingCount = 0;
+    let listeningTotal = 0, listeningEarned = 0, listeningCorrect = 0, listeningCount = 0;
 
     currentPaper.questions.forEach((q, idx) => {
       totalScore += q.score;
@@ -312,8 +348,17 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
         correctCount += 1;
       }
 
-      const isReading = q.type === 'reading' || Boolean(q.passage) || q.categoryTag.includes('读解') || q.categoryTag.includes('阅读');
-      if (isReading) {
+      const isListening = q.type === 'listening' || q.categoryTag.includes('听解') || q.categoryTag.includes('原声');
+      const isReading = !isListening && (q.type === 'reading' || Boolean(q.passage) || q.categoryTag.includes('读解') || q.categoryTag.includes('阅读'));
+
+      if (isListening) {
+        listeningTotal += q.score;
+        listeningCount += 1;
+        if (isCorrect) {
+          listeningEarned += q.score;
+          listeningCorrect += 1;
+        }
+      } else if (isReading) {
         readingTotal += q.score;
         readingCount += 1;
         if (isCorrect) {
@@ -333,6 +378,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
     const scaledScore = totalScore > 0 ? Math.round((earnedScore / totalScore) * 100) : 0;
     const scaledVocab = vocabTotal > 0 ? Math.round((vocabEarned / vocabTotal) * 100) : 0;
     const scaledReading = readingTotal > 0 ? Math.round((readingEarned / readingTotal) * 100) : 0;
+    const scaledListening = listeningTotal > 0 ? Math.round((listeningEarned / listeningTotal) * 100) : 0;
 
     const isDele = currentPaper.track === 'dele';
     const isPassed = scaledScore >= 60;
@@ -346,7 +392,8 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
       isPassed,
       isDele,
       vocab: { score: scaledVocab, earned: vocabEarned, total: vocabTotal, count: vocabCount, correct: vocabCorrect },
-      reading: { score: scaledReading, earned: readingEarned, total: readingTotal, count: readingCount, correct: readingCorrect }
+      reading: { score: scaledReading, earned: readingEarned, total: readingTotal, count: readingCount, correct: readingCorrect },
+      listening: { score: scaledListening, earned: listeningEarned, total: listeningTotal, count: listeningCount, correct: listeningCorrect }
     };
   }, [currentPaper, isSubmitted, answers]);
 
@@ -751,6 +798,66 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                 </div>
               )}
 
+              {/* 听力播放器 (如有音频或原文脚本) */}
+              {(currentQuestion.audioScript || currentQuestion.type === 'listening') && (
+                <div className="p-4 rounded-2xl bg-slate-50/60 border border-[#B82E24]/30 shadow-2xs space-y-3">
+                  <div className="flex items-center justify-between flex-wrap gap-3">
+                    <div className="flex items-center gap-3">
+                      <button
+                        onClick={() => currentQuestion.audioScript && handlePlayAudio(currentQuestion.audioScript)}
+                        className="w-10 h-10 rounded-full bg-[#B82E24] hover:bg-[#991B1B] text-white flex items-center justify-center shadow-md shadow-[#B82E24]/25 transition cursor-pointer shrink-0"
+                        title={isPlayingAudio ? '暂停听力' : '播放原声听力'}
+                      >
+                        {isPlayingAudio ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 ml-0.5" />}
+                      </button>
+                      <div>
+                        <div className="text-xs font-bold text-[#B82E24] flex items-center gap-1.5">
+                          <Headphones className="w-3.5 h-3.5 text-[#B82E24]" />
+                          <span>考场原声听力播放器 (Comprensión auditiva)</span>
+                        </div>
+                        <p className="text-[11px] text-stone-600">
+                          {isPlayingAudio ? '正在播放卡斯蒂利亚西班牙语官方录音...' : '点击播放西班牙官方原声场景材料'}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1 text-[11px] font-bold text-stone-600 bg-white px-2 py-1 rounded-xl border border-slate-200/70">
+                        <span>语速:</span>
+                        {[0.8, 1.0, 1.2].map(speed => (
+                          <button
+                            key={speed}
+                            onClick={() => setAudioSpeed(speed)}
+                            className={`px-1.5 py-0.5 rounded text-[10px] ${
+                              audioSpeed === speed ? 'bg-[#B82E24] text-white font-bold' : 'hover:bg-white'
+                            }`}
+                          >
+                            {speed}x
+                          </button>
+                        ))}
+                      </div>
+
+                      <button
+                        onClick={() => setShowListeningScript(prev => !prev)}
+                        className="px-2.5 py-1 rounded-xl text-[11px] font-bold bg-white text-[#B82E24] border border-[#B82E24]/30 hover:bg-[#FEF2F2]/60 transition cursor-pointer"
+                      >
+                        {showListeningScript ? '隐藏原文' : '查看原文大纲'}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* 折叠听力原文 */}
+                  {showListeningScript && currentQuestion.audioScript && (
+                    <div className="pt-2 border-t border-[#B82E24]/20 text-xs font-serif italic text-[#29354A] leading-relaxed bg-white p-3 rounded-xl border border-slate-200/70">
+                      <div className="font-bold text-[#29354A] text-[11px] not-italic pb-1">
+                        【听力原声材料大纲】：
+                      </div>
+                      {currentQuestion.audioScript}
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* 题干文本 */}
               <h3 className="text-sm sm:text-base font-bold text-[#29354A] whitespace-pre-line leading-relaxed">
                 {currentQuestion.questionText}
@@ -988,6 +1095,21 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                       <div 
                         className="h-full bg-amber-500 rounded-full transition-all duration-500" 
                         style={{ width: `${scoreReport.reading.score}%` }} 
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {scoreReport.listening && scoreReport.listening.count > 0 && (
+                  <div>
+                    <div className="flex justify-between font-bold text-slate-700 mb-1">
+                      <span>听解原声与交际辨析</span>
+                      <span>{scoreReport.listening.score}% ({scoreReport.listening.correct}/{scoreReport.listening.count}题)</span>
+                    </div>
+                    <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                      <div 
+                        className="h-full bg-emerald-500 rounded-full transition-all duration-500" 
+                        style={{ width: `${scoreReport.listening.score}%` }} 
                       />
                     </div>
                   </div>
