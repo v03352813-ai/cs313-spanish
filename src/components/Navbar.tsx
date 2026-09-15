@@ -400,18 +400,27 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </button>
               )}
 
-              {/* 黑金通卡 / VIP 胶囊按钮 */}
-              <button
-                onClick={onOpenVipModal}
-                className={`px-3 py-1 rounded-full text-[10.5px] sm:text-[11px] font-black flex items-center gap-1 transition shadow-2xs cursor-pointer ${
-                  isVip
-                    ? 'bg-amber-100 text-amber-900 border border-amber-300'
-                    : 'bg-gradient-to-r from-[#D97706] to-[#B82E24] text-white hover:scale-105 active:scale-95'
-                }`}
-              >
-                <Crown className="w-3 h-3 text-amber-200" />
-                <span>{isVip ? '黑金终身已解锁' : 'CS313 黑金终身通卡'}</span>
-              </button>
+              {/* VIP Status or Activation Button (严格对标法语/日语：未购买显示卡密激活，购买后显示终身VIP/通卡) */}
+              {isVip ? (
+                <button
+                  onClick={onOpenVipModal}
+                  className="px-2.5 sm:px-3 py-1 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 text-white text-[10.5px] sm:text-[11px] font-black flex items-center gap-1 shadow-2xs transition cursor-pointer hover:opacity-95 active:scale-95"
+                  title={license?.planName || 'CS313 终身 VIP'}
+                >
+                  <Crown className="w-3 h-3 text-amber-200 shrink-0" />
+                  <span className="hidden sm:inline whitespace-nowrap">{license?.planName || '终身 VIP'}</span>
+                  <span className="inline sm:hidden whitespace-nowrap font-black">终身VIP</span>
+                </button>
+              ) : (
+                <button
+                  onClick={onOpenVipModal}
+                  className="px-2.5 sm:px-3 py-1 rounded-full bg-gradient-to-r from-[#B82E24] to-[#991B1B] hover:from-[#991B1B] hover:to-[#B82E24] text-white text-[10.5px] sm:text-[11px] font-black flex items-center gap-1 shadow-2xs transition shrink-0 whitespace-nowrap cursor-pointer hover:scale-105 active:scale-95"
+                  title="输入卡密激活 VIP 终身卡"
+                >
+                  <KeyRound className="w-3 h-3 shrink-0" />
+                  <span className="whitespace-nowrap">卡密激活</span>
+                </button>
+              )}
             </div>
           </div>
 
