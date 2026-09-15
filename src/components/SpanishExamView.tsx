@@ -550,7 +550,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                 </h1>
               </div>
               <p className="text-xs text-slate-500 font-medium mt-0.5">
-                塞万提斯 DELE 欧标机考 · SIELE 在线综合 · 高校西语专四 (TEM-4) · 全国名校考研二外 (24X)
+                塞万提斯 DELE 欧标机考 · SIELE 在线综合 · 全国高校西语专四 (EEE-4) · 全国名校考研二外 (24X)
               </p>
             </div>
           </div>
@@ -590,7 +590,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                 官方报考全景通道：
               </span>
               <div className="flex items-center gap-2 text-xs text-slate-600 truncate">
-                <span className="hidden sm:inline">2026 DELE 秋季统考 · 2027 高校专四 (TEM-4) · SIELE 在线机考日历已校准</span>
+                <span className="hidden sm:inline">2026 DELE 统考 · 2027 高校专四 (EEE-4) · SIELE 在线机考日历已校准</span>
                 <span className="inline sm:hidden">考期日历、报名入口与避坑 SOP</span>
               </div>
             </div>
@@ -606,7 +606,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           {[
             { id: 'dele' as ExamTrack, label: '塞万提斯 DELE 欧标机考', icon: Globe2, desc: 'A1-B2 终身认证真题卷', count: trackCounts.dele },
             { id: 'siele' as ExamTrack, label: 'SIELE 国际在线机考', icon: Laptop, desc: '四大顶尖大学机考', count: trackCounts.siele },
-            { id: 'tem4' as ExamTrack, label: '高校西语专四 (TEM-4)', icon: ShieldCheck, desc: '全国专业本科水平统考', count: trackCounts.tem4 },
+            { id: 'tem4' as ExamTrack, label: '高校西语专四 (EEE-4)', icon: ShieldCheck, desc: '全国专业本科水平统考 (专四)', count: trackCounts.tem4 },
             { id: 'kaoyan' as ExamTrack, label: '全国名校考研二外 (24X)', icon: GraduationCap, desc: '北外/上外自命题真题', count: trackCounts.kaoyan },
           ].map(track => {
             const Icon = track.icon;
@@ -660,7 +660,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                   : 'bg-white text-slate-700 hover:bg-amber-50 border border-amber-200/80'
               }`}
             >
-              {lvl === 'all' ? '全部试卷' : lvl}
+              {lvl === 'all' ? '全部试卷' : (lvl === 'TEM-4' ? '专四(EEE-4)' : lvl)}
             </button>
           ))}
         </div>
