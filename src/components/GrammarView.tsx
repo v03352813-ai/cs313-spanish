@@ -46,14 +46,21 @@ export const GrammarView: React.FC<GrammarViewProps> = ({
   const bridgeRef = useRef<HTMLDivElement | null>(null);
   const rulesRef = useRef<HTMLDivElement | null>(null);
   const trapRef = useRef<HTMLDivElement | null>(null);
+  const grammarTabsRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollGrammarTabs = (offset: number) => {
+    if (grammarTabsRef.current) {
+      grammarTabsRef.current.scrollBy({ left: offset, behavior: 'smooth' });
+    }
+  };
 
   const categories = [
     { id: 'all', label: '全部类别', isFree: true },
     { id: '冠词与名词', label: '冠词与名词 · 免费', isFree: true },
-    { id: '三大系动词与时态', label: '系动词与时态 (Ser/Estar/时态对决)', isFree: false },
-    { id: '代词系统', label: '代词全景 (直宾/间宾/Se变身)', isFree: false },
-    { id: '介词与连接词', label: '介词与逻辑连接 (Por/Para)', isFree: false },
-    { id: '虚拟式与从句', label: '虚拟式与从句 (WEIRDO六角星)', isFree: false },
+    { id: '三大系动词与时态', label: '系动词与时态 (Ser/Estar)', isFree: false },
+    { id: '代词系统', label: '代词系统 (Se变身)', isFree: false },
+    { id: '介词与连接词', label: '介词连接 (Por/Para)', isFree: false },
+    { id: '虚拟式与从句', label: '虚拟式与从句 (WEIRDO)', isFree: false },
   ];
 
   const kaoyanCount = useMemo(() => {
@@ -459,38 +466,61 @@ export const GrammarView: React.FC<GrammarViewProps> = ({
               </span>
             </div>
 
-            {/* Category Tabs */}
-            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-              {categories.map(cat => {
-                const isLocked = !isVip && !cat.isFree;
-                return (
-                  <button
-                    key={cat.id}
-                    onClick={() => {
-                      if (isLocked) {
-                        onOpenVipModal?.(`🔒【${cat.label}】为重点攻坚专区！输入卡密即可解锁虚拟式、双重宾代等全量文法考点！`);
-                        return;
-                      }
-                      setActiveCategory(cat.id);
-                    }}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer flex items-center gap-1.5 ${
-                      activeCategory === cat.id
-                        ? 'bg-[#B82E24] text-white shadow-xs font-black'
-                        : isLocked
-                        ? 'bg-slate-50 text-slate-500 hover:bg-slate-100 border border-slate-200/80'
-                        : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200/80'
-                    }`}
-                  >
-                    {isLocked && <Lock className="w-3 h-3 text-amber-600 shrink-0" />}
-                    <span>{cat.label}</span>
-                    {isLocked && (
-                      <span className="text-[9px] px-1 py-0.2 rounded bg-amber-100 text-amber-800 font-black">
-                        VIP
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
+            {/* Category Tabs (左右滚动按钮 + 可视化滑块) */}
+            <div className="flex items-center gap-1 bg-slate-100/70 p-1 rounded-2xl border border-slate-200/80">
+              <button
+                type="button"
+                onClick={() => scrollGrammarTabs(-180)}
+                className="w-7 h-7 rounded-xl bg-white hover:bg-slate-200/70 text-slate-500 hover:text-slate-900 transition flex items-center justify-center cursor-pointer shadow-2xs shrink-0 border border-slate-200/60"
+                title="向左滚动标签"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+
+              <div 
+                ref={grammarTabsRef}
+                className="flex items-center gap-1.5 overflow-x-auto py-0.5 px-1 scrollbar-thin scrollbar-thumb-slate-300 scrollbar-track-transparent flex-1"
+              >
+                {categories.map(cat => {
+                  const isLocked = !isVip && !cat.isFree;
+                  return (
+                    <button
+                      key={cat.id}
+                      onClick={() => {
+                        if (isLocked) {
+                          onOpenVipModal?.(`🔒【${cat.label}】为重点攻坚专区！输入卡密即可解锁虚拟式、双重宾代等全量文法考点！`);
+                          return;
+                        }
+                        setActiveCategory(cat.id);
+                      }}
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer flex items-center gap-1.5 shrink-0 ${
+                        activeCategory === cat.id
+                          ? 'bg-[#B82E24] text-white shadow-xs font-black'
+                          : isLocked
+                          ? 'bg-slate-50 text-slate-500 hover:bg-slate-100 border border-slate-200/80'
+                          : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200/80'
+                      }`}
+                    >
+                      {isLocked && <Lock className="w-3 h-3 text-amber-600 shrink-0" />}
+                      <span>{cat.label}</span>
+                      {isLocked && (
+                        <span className="text-[9px] px-1 py-0.2 rounded bg-amber-100 text-amber-800 font-black">
+                          VIP
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => scrollGrammarTabs(180)}
+                className="w-7 h-7 rounded-xl bg-white hover:bg-slate-200/70 text-slate-500 hover:text-slate-900 transition flex items-center justify-center cursor-pointer shadow-2xs shrink-0 border border-slate-200/60"
+                title="向右滚动标签"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
             </div>
           </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { 
   Sparkles, 
   Volume2, 
@@ -8,6 +8,7 @@ import {
   Flame, 
   BookOpen, 
   ChevronRight,
+  ChevronLeft,
   Layers,
   ArrowRight
 } from 'lucide-react';
@@ -34,13 +35,20 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
   const [playingWord, setPlayingWord] = useState<string | null>(null);
   const [showGoldenRule, setShowGoldenRule] = useState<boolean>(true);
   const [rrrStep, setRrrStep] = useState<number>(2); // 默认高亮齿龈搭桥
+  const tabsRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollTabs = (offset: number) => {
+    if (tabsRef.current) {
+      tabsRef.current.scrollBy({ left: offset, behavior: 'smooth' });
+    }
+  };
 
   const categories = [
-    { id: 'all', label: '全部 30 字母与音素' },
-    { id: 'vowel', label: '5 大核心元音 (5个)' },
-    { id: 'consonant', label: '核心辅音系统 (19个)' },
-    { id: 'special', label: '灵魂特色音 (Ñ / RR / CH / LL)' },
-    { id: 'contrast', label: '易混对决 (b/v, c/z, g/j, r/rr)' },
+    { id: 'all', label: '全部 30 字母' },
+    { id: 'vowel', label: '5 大核心元音' },
+    { id: 'consonant', label: '核心辅音 (19个)' },
+    { id: 'special', label: '灵魂特色音 (Ñ/RR)' },
+    { id: 'contrast', label: '易混音素对决' },
   ];
 
   // 筛选音素
@@ -315,21 +323,44 @@ export const PhoneticsView: React.FC<PhoneticsViewProps> = ({
           {/* 左侧 7 列：音素选择键盘与分类标签 */}
           <div className="lg:col-span-7 space-y-4">
             
-            {/* Category Filter Tabs */}
-            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-              {categories.map(cat => (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveCategory(cat.id as any)}
-                  className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition cursor-pointer ${
-                    activeCategory === cat.id
-                      ? 'bg-[#B82E24] text-white shadow-xs'
-                      : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200/80'
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
+            {/* Category Filter Tabs (左右滑动箭头 + 可视化滑块) */}
+            <div className="flex items-center gap-1 bg-slate-100/70 p-1 rounded-2xl border border-slate-200/80">
+              <button
+                type="button"
+                onClick={() => scrollTabs(-180)}
+                className="w-7 h-7 rounded-xl bg-white hover:bg-slate-200/70 text-slate-500 hover:text-slate-900 transition flex items-center justify-center cursor-pointer shadow-2xs shrink-0 border border-slate-200/60"
+                title="向左滚动标签"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+
+              <div 
+                ref={tabsRef}
+                className="flex items-center gap-1.5 overflow-x-auto py-0.5 px-1 scrollbar-thin scrollbar-thumb-slate-300 scrollbar-track-transparent flex-1"
+              >
+                {categories.map(cat => (
+                  <button
+                    key={cat.id}
+                    onClick={() => setActiveCategory(cat.id as any)}
+                    className={`px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition cursor-pointer shrink-0 ${
+                      activeCategory === cat.id
+                        ? 'bg-[#B82E24] text-white shadow-xs'
+                        : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200/80'
+                    }`}
+                  >
+                    {cat.label}
+                  </button>
+                ))}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => scrollTabs(180)}
+                className="w-7 h-7 rounded-xl bg-white hover:bg-slate-200/70 text-slate-500 hover:text-slate-900 transition flex items-center justify-center cursor-pointer shadow-2xs shrink-0 border border-slate-200/60"
+                title="向右滚动标签"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
             </div>
 
             {/* Sound Cards Grid */}
