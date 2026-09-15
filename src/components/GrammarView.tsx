@@ -307,6 +307,7 @@ export const GrammarView: React.FC<GrammarViewProps> = ({
       {/* 🌳 全景思维导图大树 (Visual Tree Graph) */}
       {showMindMap && (
         <SpanishGrammarVisualMindMap
+          isOpen={showMindMap}
           onSelectGrammar={(id) => {
             const pt = SPANISH_GRAMMAR_LIST.find(p => p.id === id);
             if (pt) {

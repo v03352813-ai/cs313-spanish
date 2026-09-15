@@ -347,7 +347,7 @@ export const SPANISH_GRAMMAR_LIST: GrammarPoint[] = [
     id: 'g_pronouns_se_cacofonia',
     title: '双重宾语代词合并与【防音爆变身 Se 法则】',
     spanishTitle: 'Cambio de LE por SE ante LO/LA',
-    level: 'A2',
+    level: 'A1-A2',
     category: '代词系统',
     tracks: ['kaoyan', 'dele'],
     trackNotes: {
@@ -460,7 +460,7 @@ export const SPANISH_GRAMMAR_LIST: GrammarPoint[] = [
     id: 'g_por_para',
     title: '两个“为了”的终极辨析：Por vs Para',
     spanishTitle: 'Por vs Para: Causa vs Finalidad',
-    level: 'A2-B1',
+    level: 'B1-B2',
     category: '介词与连接词',
     tracks: ['kaoyan', 'dele'],
     trackNotes: {
@@ -638,7 +638,7 @@ export const SPANISH_GRAMMAR_LIST: GrammarPoint[] = [
     id: 'g_conditionals_si',
     title: '条件从句 Si 的三重时态跳跃平行宇宙',
     spanishTitle: 'Las Oraciones Condicionales con SI',
-    level: 'B2-C1-KAOYAN',
+    level: 'C1-KAOYAN',
     category: '虚拟式与从句',
     tracks: ['kaoyan', 'dele'],
     trackNotes: {

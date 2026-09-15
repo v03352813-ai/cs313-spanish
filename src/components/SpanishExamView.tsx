@@ -73,11 +73,68 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
     };
   }, []);
 
+  // 赛道专属子分类过滤器 (随选定赛道智能联动，保证每个选项都有丰厚试卷，彻底杜绝空状态)
+  const currentSubFilters = useMemo(() => {
+    switch (activeTrack) {
+      case 'dele':
+        return [
+          { id: 'all', label: `全部 DELE (${trackCounts.dele}套)` },
+          { id: 'A1', label: 'A1 入门起步 (2套)', matchFn: (p: ExamPaper) => p.level === 'A1' },
+          { id: 'A2', label: 'A2 基础实用 (2套)', matchFn: (p: ExamPaper) => p.level === 'A2' },
+          { id: 'B1', label: 'B1 核心突破 (4套)', matchFn: (p: ExamPaper) => p.level === 'B1' },
+          { id: 'B2', label: 'B2 高阶攻关 (4套)', matchFn: (p: ExamPaper) => p.level === 'B2' },
+        ];
+      case 'siele':
+        return [
+          { id: 'all', label: `全部 SIELE (${trackCounts.siele}套)` },
+          { id: 'siele_global', label: '全球综合大卷 (2套)', matchFn: (p: ExamPaper) => p.title.includes('全球综合') },
+          { id: 'siele_biz', label: '商务与社评 (2套)', matchFn: (p: ExamPaper) => p.title.includes('商务') || p.title.includes('社评') },
+          { id: 'siele_spec', label: '语法词汇专项 (2套)', matchFn: (p: ExamPaper) => p.title.includes('专项') },
+          { id: 'siele_adapt', label: '自适应与阅读 (4套)', matchFn: (p: ExamPaper) => p.title.includes('自适应') || p.title.includes('快速阅读') || p.title.includes('学术综述') },
+        ];
+      case 'tem4':
+        return [
+          { id: 'all', label: `全部专四 (${trackCounts.tem4}套)` },
+          { id: 'tem4_real', label: '2017-2024统考真题 (8套)', matchFn: (p: ExamPaper) => /\d{4}年/.test(p.title) },
+          { id: 'tem4_spec', label: '语法词汇专项攻坚 (2套)', matchFn: (p: ExamPaper) => p.title.includes('语法专项') || p.title.includes('词汇与前置词') },
+          { id: 'tem4_mock', label: '考前金牌全真仿真 (2套)', matchFn: (p: ExamPaper) => p.title.includes('仿真大卷') },
+        ];
+      case 'kaoyan':
+        return [
+          { id: 'all', label: `全部历届真题 (${trackCounts.kaoyan}套)` },
+          { id: 'beiwai', label: '北京外国语大学 (4套)', matchFn: (p: ExamPaper) => p.schoolOrOrg.includes('北京外国语') },
+          { id: 'shisu', label: '上海外国语大学 (3套)', matchFn: (p: ExamPaper) => p.schoolOrOrg.includes('上海外国语') },
+          { id: 'gdufs', label: '广东外语外贸大学 (2套)', matchFn: (p: ExamPaper) => p.schoolOrOrg.includes('广东外语') },
+          { id: 'others', label: '北大/南大/复旦/武大等 (7套)', matchFn: (p: ExamPaper) => !p.schoolOrOrg.includes('北京外国语') && !p.schoolOrOrg.includes('上海外国语') && !p.schoolOrOrg.includes('广东外语') },
+        ];
+      case 'kaoyan_mock':
+        return [
+          { id: 'all', label: `全部模拟大卷 (${trackCounts.kaoyan_mock}套)` },
+          { id: 'mock_tongkao', label: '全国统考仿真大卷 (4套)', matchFn: (p: ExamPaper) => p.title.includes('全真模拟大卷') },
+          { id: 'mock_spec', label: '核心语法专项突破 (6套)', matchFn: (p: ExamPaper) => p.title.includes('专项') || p.title.includes('攻关') || p.title.includes('攻坚') || p.title.includes('扫雷') || p.title.includes('突破卷') },
+          { id: 'mock_reading', label: '文学读解与社评 (2套)', matchFn: (p: ExamPaper) => p.title.includes('读解') || p.title.includes('评论专练') },
+          { id: 'mock_final', label: '48小时终极押密 (2套)', matchFn: (p: ExamPaper) => p.title.includes('押密卷') },
+        ];
+      default:
+        return [{ id: 'all', label: '全部试卷' }];
+    }
+  }, [activeTrack, trackCounts]);
+
   // 赛道试卷过滤
   const filteredPapers = useMemo(() => {
     return SPANISH_EXAM_PAPERS.filter(p => {
       if (p.track !== activeTrack) return false;
-      if (levelFilter !== 'all' && p.level !== levelFilter) return false;
+      
+      // 子分类过滤
+      if (levelFilter !== 'all') {
+        const sub = currentSubFilters.find(f => f.id === levelFilter);
+        if (sub && 'matchFn' in sub && typeof (sub as any).matchFn === 'function') {
+          if (!(sub as any).matchFn(p)) return false;
+        } else if (p.level !== levelFilter) {
+          return false;
+        }
+      }
+
       const q = searchQuery.trim().toLowerCase();
       if (!q) return true;
       return (
@@ -86,7 +143,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
         p.schoolOrOrg.toLowerCase().includes(q)
       );
     });
-  }, [activeTrack, levelFilter, searchQuery]);
+  }, [activeTrack, levelFilter, searchQuery, currentSubFilters]);
 
   // 当前选中试卷
   const activePaper: ExamPaper = useMemo(() => {
@@ -605,11 +662,11 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
         {/* 五大权威大考与考研赛道选择 Tabs */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 pt-2 border-t border-amber-100">
           {[
-            { id: 'dele' as ExamTrack, label: '塞万提斯 DELE 欧标机考', icon: Globe2, desc: 'A1-B2 终身认证真题卷', count: trackCounts.dele },
-            { id: 'siele' as ExamTrack, label: 'SIELE 国际在线机考', icon: Laptop, desc: '四大顶尖大学机考', count: trackCounts.siele },
-            { id: 'tem4' as ExamTrack, label: '高校西语专四 (EEE-4)', icon: ShieldCheck, desc: '全国专业本科水平统考', count: trackCounts.tem4 },
-            { id: 'kaoyan' as ExamTrack, label: '名校考研二外历届真题', icon: GraduationCap, desc: '北外/上外/广外等真题卷', count: trackCounts.kaoyan },
-            { id: 'kaoyan_mock' as ExamTrack, label: '考研二外全真模拟冲刺', icon: Sparkles, desc: '全国统考模拟 & 专项攻坚', count: trackCounts.kaoyan_mock },
+            { id: 'dele' as ExamTrack, label: '塞万提斯 DELE 欧标', tag: '全球终身认证', icon: Globe2, desc: 'A1-B2 官方真题机考卷', count: trackCounts.dele },
+            { id: 'siele' as ExamTrack, label: 'SIELE 国际在线机考', tag: '四大名校联考', icon: Laptop, desc: '综合大卷/商务/自适应', count: trackCounts.siele },
+            { id: 'tem4' as ExamTrack, label: '高校西语专四 (EEE-4)', tag: '全国高校统考', icon: ShieldCheck, desc: '2017-2024历年真题及仿真', count: trackCounts.tem4 },
+            { id: 'kaoyan' as ExamTrack, label: '名校考研二外 · 历届真题', tag: '高校自主命题原卷', icon: GraduationCap, desc: '北外/上外/广外等统考真题', count: trackCounts.kaoyan },
+            { id: 'kaoyan_mock' as ExamTrack, label: '考研二外 · 仿真模拟与专项', tag: '全真冲刺与专项突破', icon: Sparkles, desc: '全国仿真大卷 & 语法专项', count: trackCounts.kaoyan_mock },
           ].map(track => {
             const Icon = track.icon;
             const isSelected = activeTrack === track.id;
@@ -639,38 +696,37 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                     {track.count} 套
                   </span>
                 </div>
-                <p className="text-[11px] text-slate-500 font-medium">
-                  {track.desc}
-                </p>
+                <div className="flex items-center justify-between gap-1">
+                  <p className="text-[11px] text-slate-500 font-medium truncate">
+                    {track.desc}
+                  </p>
+                  <span className={`text-[9px] px-1 py-0.2 rounded font-bold shrink-0 ${
+                    isSelected ? 'bg-[#B82E24]/10 text-[#B82E24]' : 'bg-slate-100 text-slate-400'
+                  }`}>
+                    {track.tag}
+                  </span>
+                </div>
               </button>
             );
           })}
         </div>
       </div>
 
-      {/* 2. 试卷级别子过滤 & 搜索 */}
+      {/* 2. 试卷分类子过滤 & 搜索 (随选定赛道智能联动，彻底杜绝无内容空状态) */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-          <span className="text-xs font-bold text-slate-500 whitespace-nowrap mr-1">分类过滤:</span>
-          {(['all', 'A1', 'A2', 'B1', 'B2', 'TEM-4', '考研二外', '考研模拟'] as const).map(lvl => (
+          <span className="text-xs font-bold text-slate-500 whitespace-nowrap mr-1">分类筛选:</span>
+          {currentSubFilters.map(sub => (
             <button
-              key={lvl}
-              onClick={() => setLevelFilter(lvl)}
+              key={sub.id}
+              onClick={() => setLevelFilter(sub.id)}
               className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer ${
-                levelFilter === lvl
+                levelFilter === sub.id
                   ? 'bg-[#B82E24] text-white shadow-2xs font-black'
                   : 'bg-white text-slate-700 hover:bg-amber-50 border border-amber-200/80'
               }`}
             >
-              {lvl === 'all' 
-                ? '全部试卷' 
-                : (lvl === 'TEM-4' 
-                    ? '专四(EEE-4)' 
-                    : (lvl === '考研二外' 
-                        ? '二外真题' 
-                        : (lvl === '考研模拟' 
-                            ? '二外模拟冲刺' 
-                            : lvl)))}
+              {sub.label}
             </button>
           ))}
         </div>

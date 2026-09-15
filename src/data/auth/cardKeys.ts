@@ -4,6 +4,7 @@ export interface LicenseInfo {
   activatedAt?: string;
   key?: string;
   source?: string;
+  planName?: string;
 }
 
 const STORAGE_KEY = 'cs313_es_license_v1';
