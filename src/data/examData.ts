@@ -700,7 +700,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -744,7 +744,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -788,7 +788,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -832,7 +832,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -876,7 +876,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -920,7 +920,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -964,7 +964,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -1008,7 +1008,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -1052,7 +1052,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -1096,7 +1096,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -1140,7 +1140,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -1184,7 +1184,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -1228,7 +1228,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -1272,7 +1272,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -1316,7 +1316,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -1360,7 +1360,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -1405,7 +1405,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -1450,7 +1450,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -1495,7 +1495,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -1540,7 +1540,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -1585,7 +1585,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -1630,7 +1630,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -1675,7 +1675,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -1720,7 +1720,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -1765,7 +1765,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -1810,7 +1810,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -1855,7 +1855,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -1900,7 +1900,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -1945,7 +1945,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -1990,7 +1990,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -2035,7 +2035,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -2080,7 +2080,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -2125,7 +2125,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -2170,7 +2170,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -2215,7 +2215,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -2260,7 +2260,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -2305,7 +2305,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -2350,7 +2350,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -2395,7 +2395,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -2440,7 +2440,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -2485,7 +2485,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -2530,7 +2530,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -2575,7 +2575,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -2620,7 +2620,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -2665,7 +2665,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -2710,7 +2710,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -3374,7 +3374,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -3418,7 +3418,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -3462,7 +3462,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -3506,7 +3506,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -3550,7 +3550,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -3594,7 +3594,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -3638,7 +3638,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -3682,7 +3682,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -3726,7 +3726,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -3770,7 +3770,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -3814,7 +3814,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -3858,7 +3858,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -3902,7 +3902,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -3946,7 +3946,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -3990,7 +3990,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -4034,7 +4034,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -4079,7 +4079,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -4124,7 +4124,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -4169,7 +4169,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -4214,7 +4214,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -4259,7 +4259,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -4304,7 +4304,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -4349,7 +4349,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -4394,7 +4394,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -4439,7 +4439,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -4484,7 +4484,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -4529,7 +4529,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -4574,7 +4574,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -4619,7 +4619,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -4664,7 +4664,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -4709,7 +4709,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -4754,7 +4754,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -4799,7 +4799,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -4844,7 +4844,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -4889,7 +4889,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -4934,7 +4934,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -4979,7 +4979,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -5024,7 +5024,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -5069,7 +5069,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -5114,7 +5114,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -5159,7 +5159,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -5204,7 +5204,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -5249,7 +5249,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -5294,7 +5294,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -5339,7 +5339,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -5384,7 +5384,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -6048,7 +6048,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -6092,7 +6092,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -6136,7 +6136,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -6180,7 +6180,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -6224,7 +6224,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -6268,7 +6268,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -6312,7 +6312,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -6356,7 +6356,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -6400,7 +6400,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -6444,7 +6444,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -6488,7 +6488,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -6532,7 +6532,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -6576,7 +6576,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -6620,7 +6620,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -6664,7 +6664,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -6708,7 +6708,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -6753,7 +6753,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -6798,7 +6798,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -6843,7 +6843,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -6888,7 +6888,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -6933,7 +6933,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -6978,7 +6978,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -7023,7 +7023,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -7068,7 +7068,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -7113,7 +7113,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -7158,7 +7158,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -7203,7 +7203,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -7248,7 +7248,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -7293,7 +7293,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -7338,7 +7338,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -7383,7 +7383,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -7428,7 +7428,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -7473,7 +7473,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -7518,7 +7518,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -7563,7 +7563,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -7608,7 +7608,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -7653,7 +7653,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -7698,7 +7698,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -7743,7 +7743,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -7788,7 +7788,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -7833,7 +7833,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -7878,7 +7878,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -7923,7 +7923,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -7968,7 +7968,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -8013,7 +8013,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -8058,7 +8058,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -8722,7 +8722,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -8766,7 +8766,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -8810,7 +8810,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -8854,7 +8854,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -8898,7 +8898,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -8942,7 +8942,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -8986,7 +8986,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -9030,7 +9030,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -9074,7 +9074,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -9118,7 +9118,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -9162,7 +9162,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -9206,7 +9206,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -9250,7 +9250,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -9294,7 +9294,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -9338,7 +9338,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -9382,7 +9382,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -9427,7 +9427,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -9472,7 +9472,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -9517,7 +9517,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -9562,7 +9562,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -9607,7 +9607,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -9652,7 +9652,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -9697,7 +9697,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -9742,7 +9742,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -9787,7 +9787,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -9832,7 +9832,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -9877,7 +9877,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -9922,7 +9922,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -9967,7 +9967,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -10012,7 +10012,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -10057,7 +10057,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -10102,7 +10102,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -10147,7 +10147,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -10192,7 +10192,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -10237,7 +10237,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -10282,7 +10282,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -10327,7 +10327,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -10372,7 +10372,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -10417,7 +10417,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -10462,7 +10462,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -10507,7 +10507,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -10552,7 +10552,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -10597,7 +10597,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -10642,7 +10642,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -10687,7 +10687,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -10732,7 +10732,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -11396,7 +11396,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -11440,7 +11440,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -11484,7 +11484,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -11528,7 +11528,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -11572,7 +11572,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -11616,7 +11616,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -11660,7 +11660,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -11704,7 +11704,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -11748,7 +11748,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -11792,7 +11792,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -11836,7 +11836,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -11880,7 +11880,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -11924,7 +11924,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -11968,7 +11968,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -12012,7 +12012,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -12056,7 +12056,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -12101,7 +12101,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -12146,7 +12146,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -12191,7 +12191,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -12236,7 +12236,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -12281,7 +12281,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -12326,7 +12326,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -12371,7 +12371,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -12416,7 +12416,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -12461,7 +12461,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -12506,7 +12506,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -12551,7 +12551,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -12596,7 +12596,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -12641,7 +12641,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -12686,7 +12686,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -12731,7 +12731,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -12776,7 +12776,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -12821,7 +12821,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -12866,7 +12866,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -12911,7 +12911,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -12956,7 +12956,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -13001,7 +13001,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -13046,7 +13046,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -13091,7 +13091,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -13136,7 +13136,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -13181,7 +13181,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -13226,7 +13226,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -13271,7 +13271,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -13316,7 +13316,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -13361,7 +13361,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -13406,7 +13406,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -14070,7 +14070,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -14114,7 +14114,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -14158,7 +14158,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -14202,7 +14202,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -14246,7 +14246,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -14290,7 +14290,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -14334,7 +14334,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -14378,7 +14378,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -14422,7 +14422,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -14466,7 +14466,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -14510,7 +14510,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -14554,7 +14554,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -14598,7 +14598,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -14642,7 +14642,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -14686,7 +14686,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -14730,7 +14730,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -14775,7 +14775,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -14820,7 +14820,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -14865,7 +14865,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -14910,7 +14910,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -14955,7 +14955,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -15000,7 +15000,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -15045,7 +15045,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -15090,7 +15090,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -15135,7 +15135,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -15180,7 +15180,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -15225,7 +15225,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -15270,7 +15270,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -15315,7 +15315,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -15360,7 +15360,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -15405,7 +15405,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -15450,7 +15450,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -15495,7 +15495,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -15540,7 +15540,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -15585,7 +15585,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -15630,7 +15630,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -15675,7 +15675,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -15720,7 +15720,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -15765,7 +15765,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -15810,7 +15810,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -15855,7 +15855,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -15900,7 +15900,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -15945,7 +15945,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -15990,7 +15990,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -16035,7 +16035,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -16080,7 +16080,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -16744,7 +16744,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -16788,7 +16788,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -16832,7 +16832,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -16876,7 +16876,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -16920,7 +16920,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -16964,7 +16964,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -17008,7 +17008,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -17052,7 +17052,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -17096,7 +17096,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -17140,7 +17140,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -17184,7 +17184,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -17228,7 +17228,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -17272,7 +17272,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -17316,7 +17316,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -17360,7 +17360,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -17404,7 +17404,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -17449,7 +17449,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -17494,7 +17494,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -17539,7 +17539,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -17584,7 +17584,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -17629,7 +17629,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -17674,7 +17674,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -17719,7 +17719,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -17764,7 +17764,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -17809,7 +17809,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -17854,7 +17854,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -17899,7 +17899,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -17944,7 +17944,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -17989,7 +17989,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -18034,7 +18034,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -18079,7 +18079,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -18124,7 +18124,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -18169,7 +18169,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -18214,7 +18214,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -18259,7 +18259,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -18304,7 +18304,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -18349,7 +18349,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -18394,7 +18394,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -18439,7 +18439,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -18484,7 +18484,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -18529,7 +18529,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -18574,7 +18574,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -18619,7 +18619,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -18664,7 +18664,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -18709,7 +18709,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -18754,7 +18754,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -19418,7 +19418,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -19462,7 +19462,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -19506,7 +19506,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -19550,7 +19550,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -19594,7 +19594,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -19638,7 +19638,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -19682,7 +19682,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -19726,7 +19726,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -19770,7 +19770,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -19814,7 +19814,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -19858,7 +19858,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -19902,7 +19902,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -19946,7 +19946,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -19990,7 +19990,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -20034,7 +20034,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -20078,7 +20078,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -20123,7 +20123,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -20168,7 +20168,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -20213,7 +20213,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -20258,7 +20258,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -20303,7 +20303,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -20348,7 +20348,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -20393,7 +20393,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -20438,7 +20438,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -20483,7 +20483,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -20528,7 +20528,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -20573,7 +20573,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -20618,7 +20618,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -20663,7 +20663,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -20708,7 +20708,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -20753,7 +20753,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -20798,7 +20798,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -20843,7 +20843,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -20888,7 +20888,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -20933,7 +20933,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -20978,7 +20978,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -21023,7 +21023,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -21068,7 +21068,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -21113,7 +21113,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -21158,7 +21158,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -21203,7 +21203,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -21248,7 +21248,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -21293,7 +21293,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -21338,7 +21338,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -21383,7 +21383,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -21428,7 +21428,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -22092,7 +22092,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -22136,7 +22136,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -22180,7 +22180,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -22224,7 +22224,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -22268,7 +22268,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -22312,7 +22312,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -22356,7 +22356,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -22400,7 +22400,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -22444,7 +22444,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -22488,7 +22488,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -22532,7 +22532,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -22576,7 +22576,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -22620,7 +22620,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -22664,7 +22664,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -22708,7 +22708,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -22752,7 +22752,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -22797,7 +22797,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -22842,7 +22842,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -22887,7 +22887,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -22932,7 +22932,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -22977,7 +22977,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -23022,7 +23022,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -23067,7 +23067,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -23112,7 +23112,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -23157,7 +23157,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -23202,7 +23202,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -23247,7 +23247,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -23292,7 +23292,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -23337,7 +23337,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -23382,7 +23382,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -23427,7 +23427,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -23472,7 +23472,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -23517,7 +23517,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -23562,7 +23562,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -23607,7 +23607,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -23652,7 +23652,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -23697,7 +23697,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -23742,7 +23742,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -23787,7 +23787,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -23832,7 +23832,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -23877,7 +23877,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -23922,7 +23922,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -23967,7 +23967,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -24012,7 +24012,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -24057,7 +24057,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -24102,7 +24102,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -24766,7 +24766,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -24810,7 +24810,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -24854,7 +24854,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -24898,7 +24898,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -24942,7 +24942,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -24986,7 +24986,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -25030,7 +25030,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -25074,7 +25074,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -25118,7 +25118,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -25162,7 +25162,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -25206,7 +25206,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -25250,7 +25250,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -25294,7 +25294,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -25338,7 +25338,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -25382,7 +25382,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -25426,7 +25426,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -25471,7 +25471,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -25516,7 +25516,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -25561,7 +25561,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -25606,7 +25606,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -25651,7 +25651,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -25696,7 +25696,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -25741,7 +25741,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -25786,7 +25786,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -25831,7 +25831,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -25876,7 +25876,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -25921,7 +25921,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -25966,7 +25966,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -26011,7 +26011,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -26056,7 +26056,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -26101,7 +26101,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -26146,7 +26146,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -26191,7 +26191,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -26236,7 +26236,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -26281,7 +26281,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -26326,7 +26326,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -26371,7 +26371,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -26416,7 +26416,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -26461,7 +26461,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -26506,7 +26506,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -26551,7 +26551,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -26596,7 +26596,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -26641,7 +26641,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -26686,7 +26686,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -26731,7 +26731,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -26776,7 +26776,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -27440,7 +27440,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -27484,7 +27484,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -27528,7 +27528,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -27572,7 +27572,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -27616,7 +27616,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -27660,7 +27660,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -27704,7 +27704,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -27748,7 +27748,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -27792,7 +27792,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -27836,7 +27836,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -27880,7 +27880,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -27924,7 +27924,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -27968,7 +27968,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -28012,7 +28012,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -28056,7 +28056,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -28100,7 +28100,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -28145,7 +28145,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -28190,7 +28190,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -28235,7 +28235,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -28280,7 +28280,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -28325,7 +28325,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -28370,7 +28370,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -28415,7 +28415,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -28460,7 +28460,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -28505,7 +28505,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -28550,7 +28550,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -28595,7 +28595,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -28640,7 +28640,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -28685,7 +28685,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -28730,7 +28730,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -28775,7 +28775,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -28820,7 +28820,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -28865,7 +28865,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -28910,7 +28910,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -28955,7 +28955,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -29000,7 +29000,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -29045,7 +29045,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -29090,7 +29090,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -29135,7 +29135,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -29180,7 +29180,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -29225,7 +29225,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -29270,7 +29270,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -29315,7 +29315,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -29360,7 +29360,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -29405,7 +29405,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -29450,7 +29450,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -30114,7 +30114,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -30158,7 +30158,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -30202,7 +30202,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -30246,7 +30246,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -30290,7 +30290,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -30334,7 +30334,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -30378,7 +30378,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -30422,7 +30422,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -30466,7 +30466,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -30510,7 +30510,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -30554,7 +30554,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -30598,7 +30598,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -30642,7 +30642,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -30686,7 +30686,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -30730,7 +30730,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -30774,7 +30774,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -30819,7 +30819,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -30864,7 +30864,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -30909,7 +30909,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -30954,7 +30954,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -30999,7 +30999,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -31044,7 +31044,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -31089,7 +31089,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -31134,7 +31134,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -31179,7 +31179,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -31224,7 +31224,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -31269,7 +31269,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -31314,7 +31314,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -31359,7 +31359,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -31404,7 +31404,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -31449,7 +31449,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -31494,7 +31494,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -31539,7 +31539,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -31584,7 +31584,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -31629,7 +31629,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -31674,7 +31674,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -31719,7 +31719,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -31764,7 +31764,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -31809,7 +31809,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -31854,7 +31854,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -31899,7 +31899,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -31944,7 +31944,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -31989,7 +31989,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -32034,7 +32034,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -32079,7 +32079,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -32124,7 +32124,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -32788,7 +32788,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -32832,7 +32832,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -32876,7 +32876,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -32920,7 +32920,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -32964,7 +32964,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -33008,7 +33008,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -33052,7 +33052,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -33096,7 +33096,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -33140,7 +33140,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -33184,7 +33184,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -33228,7 +33228,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -33272,7 +33272,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -33316,7 +33316,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -33360,7 +33360,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -33404,7 +33404,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -33448,7 +33448,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -33493,7 +33493,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -33538,7 +33538,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -33583,7 +33583,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -33628,7 +33628,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -33673,7 +33673,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -33718,7 +33718,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -33763,7 +33763,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -33808,7 +33808,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -33853,7 +33853,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -33898,7 +33898,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -33943,7 +33943,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -33988,7 +33988,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -34033,7 +34033,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -34078,7 +34078,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -34123,7 +34123,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -34168,7 +34168,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -34213,7 +34213,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -34258,7 +34258,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -34303,7 +34303,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -34348,7 +34348,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -34393,7 +34393,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -34438,7 +34438,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -34483,7 +34483,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -34528,7 +34528,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -34573,7 +34573,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -34618,7 +34618,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -34663,7 +34663,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -34708,7 +34708,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -34753,7 +34753,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -34798,7 +34798,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -35462,7 +35462,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -35506,7 +35506,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -35550,7 +35550,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -35594,7 +35594,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -35638,7 +35638,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -35682,7 +35682,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -35726,7 +35726,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -35770,7 +35770,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -35814,7 +35814,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -35858,7 +35858,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -35902,7 +35902,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -35946,7 +35946,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -35990,7 +35990,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -36034,7 +36034,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -36078,7 +36078,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -36122,7 +36122,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -36167,7 +36167,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -36212,7 +36212,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -36257,7 +36257,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -36302,7 +36302,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -36347,7 +36347,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -36392,7 +36392,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -36437,7 +36437,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -36482,7 +36482,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -36527,7 +36527,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -36572,7 +36572,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -36617,7 +36617,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -36662,7 +36662,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -36707,7 +36707,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -36752,7 +36752,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -36797,7 +36797,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -36842,7 +36842,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -36887,7 +36887,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -36932,7 +36932,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -36977,7 +36977,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -37022,7 +37022,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -37067,7 +37067,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -37112,7 +37112,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -37157,7 +37157,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -37202,7 +37202,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -37247,7 +37247,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -37292,7 +37292,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -37337,7 +37337,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -37382,7 +37382,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -37427,7 +37427,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -37472,7 +37472,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -38136,7 +38136,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -38180,7 +38180,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -38224,7 +38224,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -38268,7 +38268,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -38312,7 +38312,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -38356,7 +38356,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -38400,7 +38400,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -38444,7 +38444,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -38488,7 +38488,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -38532,7 +38532,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -38576,7 +38576,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -38620,7 +38620,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -38664,7 +38664,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -38708,7 +38708,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -38752,7 +38752,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -38796,7 +38796,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -38841,7 +38841,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -38886,7 +38886,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -38931,7 +38931,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -38976,7 +38976,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -39021,7 +39021,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -39066,7 +39066,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -39111,7 +39111,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -39156,7 +39156,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -39201,7 +39201,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -39246,7 +39246,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -39291,7 +39291,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -39336,7 +39336,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -39381,7 +39381,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -39426,7 +39426,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -39471,7 +39471,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -39516,7 +39516,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -39561,7 +39561,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -39606,7 +39606,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -39651,7 +39651,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -39696,7 +39696,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -39741,7 +39741,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -39786,7 +39786,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -39831,7 +39831,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -39876,7 +39876,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -39921,7 +39921,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -39966,7 +39966,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -40011,7 +40011,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -40056,7 +40056,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -40101,7 +40101,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -40146,7 +40146,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -40810,7 +40810,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -40854,7 +40854,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -40898,7 +40898,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -40942,7 +40942,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -40986,7 +40986,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -41030,7 +41030,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -41074,7 +41074,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -41118,7 +41118,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -41162,7 +41162,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -41206,7 +41206,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -41250,7 +41250,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -41294,7 +41294,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -41338,7 +41338,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -41382,7 +41382,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -41426,7 +41426,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -41470,7 +41470,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -41515,7 +41515,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -41560,7 +41560,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -41605,7 +41605,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -41650,7 +41650,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -41695,7 +41695,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -41740,7 +41740,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -41785,7 +41785,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -41830,7 +41830,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -41875,7 +41875,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -41920,7 +41920,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -41965,7 +41965,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -42010,7 +42010,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -42055,7 +42055,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -42100,7 +42100,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -42145,7 +42145,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -42190,7 +42190,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -42235,7 +42235,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -42280,7 +42280,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -42325,7 +42325,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -42370,7 +42370,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -42415,7 +42415,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -42460,7 +42460,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -42505,7 +42505,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -42550,7 +42550,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -42595,7 +42595,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -42640,7 +42640,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -42685,7 +42685,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -42730,7 +42730,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -42775,7 +42775,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -42820,7 +42820,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -43484,7 +43484,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -43528,7 +43528,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -43572,7 +43572,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -43616,7 +43616,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -43660,7 +43660,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -43704,7 +43704,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -43748,7 +43748,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -43792,7 +43792,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -43836,7 +43836,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -43880,7 +43880,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -43924,7 +43924,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -43968,7 +43968,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -44012,7 +44012,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -44056,7 +44056,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -44100,7 +44100,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -44144,7 +44144,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -44189,7 +44189,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -44234,7 +44234,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -44279,7 +44279,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -44324,7 +44324,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -44369,7 +44369,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -44414,7 +44414,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -44459,7 +44459,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -44504,7 +44504,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -44549,7 +44549,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -44594,7 +44594,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -44639,7 +44639,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -44684,7 +44684,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -44729,7 +44729,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -44774,7 +44774,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -44819,7 +44819,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -44864,7 +44864,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -44909,7 +44909,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -44954,7 +44954,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -44999,7 +44999,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -45044,7 +45044,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -45089,7 +45089,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -45134,7 +45134,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -45179,7 +45179,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -45224,7 +45224,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -45269,7 +45269,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -45314,7 +45314,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -45359,7 +45359,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -45404,7 +45404,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -45449,7 +45449,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -45494,7 +45494,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -46158,7 +46158,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -46202,7 +46202,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -46246,7 +46246,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -46290,7 +46290,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -46334,7 +46334,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -46378,7 +46378,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -46422,7 +46422,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -46466,7 +46466,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -46510,7 +46510,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -46554,7 +46554,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -46598,7 +46598,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -46642,7 +46642,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -46686,7 +46686,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -46730,7 +46730,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -46774,7 +46774,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -46818,7 +46818,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -46863,7 +46863,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -46908,7 +46908,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -46953,7 +46953,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -46998,7 +46998,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -47043,7 +47043,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -47088,7 +47088,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -47133,7 +47133,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -47178,7 +47178,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -47223,7 +47223,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -47268,7 +47268,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -47313,7 +47313,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -47358,7 +47358,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -47403,7 +47403,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -47448,7 +47448,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -47493,7 +47493,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -47538,7 +47538,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -47583,7 +47583,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -47628,7 +47628,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -47673,7 +47673,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -47718,7 +47718,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -47763,7 +47763,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -47808,7 +47808,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -47853,7 +47853,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -47898,7 +47898,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -47943,7 +47943,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -47988,7 +47988,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -48033,7 +48033,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -48078,7 +48078,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -48123,7 +48123,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -48168,7 +48168,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -48832,7 +48832,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -48876,7 +48876,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -48920,7 +48920,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -48964,7 +48964,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -49008,7 +49008,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -49052,7 +49052,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -49096,7 +49096,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -49140,7 +49140,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -49184,7 +49184,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -49228,7 +49228,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -49272,7 +49272,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -49316,7 +49316,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -49360,7 +49360,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -49404,7 +49404,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -49448,7 +49448,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -49492,7 +49492,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -49537,7 +49537,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -49582,7 +49582,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -49627,7 +49627,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -49672,7 +49672,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -49717,7 +49717,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -49762,7 +49762,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -49807,7 +49807,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -49852,7 +49852,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -49897,7 +49897,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -49942,7 +49942,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -49987,7 +49987,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -50032,7 +50032,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -50077,7 +50077,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -50122,7 +50122,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -50167,7 +50167,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -50212,7 +50212,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -50257,7 +50257,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -50302,7 +50302,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -50347,7 +50347,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -50392,7 +50392,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -50437,7 +50437,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -50482,7 +50482,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -50527,7 +50527,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -50572,7 +50572,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -50617,7 +50617,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -50662,7 +50662,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -50707,7 +50707,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -50752,7 +50752,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -50797,7 +50797,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -50842,7 +50842,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -51506,7 +51506,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -51550,7 +51550,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -51594,7 +51594,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -51638,7 +51638,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -51682,7 +51682,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -51726,7 +51726,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -51770,7 +51770,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -51814,7 +51814,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -51858,7 +51858,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -51902,7 +51902,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -51946,7 +51946,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -51990,7 +51990,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -52034,7 +52034,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -52078,7 +52078,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -52122,7 +52122,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -52166,7 +52166,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -52211,7 +52211,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -52256,7 +52256,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -52301,7 +52301,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -52346,7 +52346,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -52391,7 +52391,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -52436,7 +52436,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -52481,7 +52481,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -52526,7 +52526,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -52571,7 +52571,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -52616,7 +52616,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -52661,7 +52661,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -52706,7 +52706,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -52751,7 +52751,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -52796,7 +52796,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -52841,7 +52841,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -52886,7 +52886,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -52931,7 +52931,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -52976,7 +52976,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -53021,7 +53021,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -53066,7 +53066,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -53111,7 +53111,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -53156,7 +53156,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -53201,7 +53201,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -53246,7 +53246,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -53291,7 +53291,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -53336,7 +53336,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -53381,7 +53381,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -53426,7 +53426,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -53471,7 +53471,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -53516,7 +53516,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -54180,7 +54180,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -54224,7 +54224,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -54268,7 +54268,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -54312,7 +54312,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -54356,7 +54356,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -54400,7 +54400,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -54444,7 +54444,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -54488,7 +54488,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -54532,7 +54532,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -54576,7 +54576,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -54620,7 +54620,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -54664,7 +54664,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -54708,7 +54708,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -54752,7 +54752,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -54796,7 +54796,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -54840,7 +54840,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -54885,7 +54885,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -54930,7 +54930,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -54975,7 +54975,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -55020,7 +55020,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -55065,7 +55065,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -55110,7 +55110,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -55155,7 +55155,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -55200,7 +55200,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -55245,7 +55245,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -55290,7 +55290,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -55335,7 +55335,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -55380,7 +55380,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -55425,7 +55425,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -55470,7 +55470,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -55515,7 +55515,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -55560,7 +55560,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -55605,7 +55605,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -55650,7 +55650,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -55695,7 +55695,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -55740,7 +55740,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -55785,7 +55785,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -55830,7 +55830,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -55875,7 +55875,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -55920,7 +55920,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -55965,7 +55965,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -56010,7 +56010,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -56055,7 +56055,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -56100,7 +56100,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -56145,7 +56145,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -56190,7 +56190,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -56854,7 +56854,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -56898,7 +56898,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -56942,7 +56942,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -56986,7 +56986,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -57030,7 +57030,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -57074,7 +57074,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -57118,7 +57118,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -57162,7 +57162,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -57206,7 +57206,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -57250,7 +57250,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -57294,7 +57294,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -57338,7 +57338,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -57382,7 +57382,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -57426,7 +57426,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -57470,7 +57470,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -57514,7 +57514,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.75,
+        "score": 1.5,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -57559,7 +57559,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -57604,7 +57604,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -57649,7 +57649,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -57694,7 +57694,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -57739,7 +57739,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -57784,7 +57784,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -57829,7 +57829,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -57874,7 +57874,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -57919,7 +57919,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -57964,7 +57964,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 1.5,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -58009,7 +58009,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -58054,7 +58054,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -58099,7 +58099,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -58144,7 +58144,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -58189,7 +58189,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -58234,7 +58234,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -58279,7 +58279,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -58324,7 +58324,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -58369,7 +58369,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -58414,7 +58414,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -58459,7 +58459,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -58504,7 +58504,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -58549,7 +58549,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -58594,7 +58594,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -58639,7 +58639,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -58684,7 +58684,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -58729,7 +58729,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
         "explanationDetail": {
           "analysis": "语音导览强调其通过镜中倒影（reflejar a los reyes en el espejo）与画家自画像，使观赏者成为场景焦点，对应 B。",
@@ -58774,7 +58774,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.6,
+        "score": 2,
         "explanation": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
         "explanationDetail": {
           "analysis": "听力原文明确播报：“la puerta de embarque ha sido trasladada... a la puerta T-28 en la planta superior... tengan preparado su pasaporte en mano”。选 A。",
@@ -58819,7 +58819,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
         "explanationDetail": {
           "analysis": "对话中中介列举优势：“ático reformado... incluye calefacción central y fibra óptica... a solo siete minutos a pie de la Facultad”，对应 B。",
@@ -58864,7 +58864,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.6,
+        "score": 2,
         "explanation": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
         "explanationDetail": {
           "analysis": "原文核心提议：“¿Sería posible aplazar nuestro encuentro sobre el presupuesto para el jueves a las once y media?”（把预算会议顺延到周四上午11点半）。选 B。",
@@ -61331,7 +61331,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -61375,7 +61375,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -61419,7 +61419,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -61463,7 +61463,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -61507,7 +61507,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -61551,7 +61551,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -61595,7 +61595,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -61639,7 +61639,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -61683,7 +61683,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -61727,7 +61727,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -61771,7 +61771,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -61815,7 +61815,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -61859,7 +61859,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -61903,7 +61903,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -61947,7 +61947,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -61991,7 +61991,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -62035,7 +62035,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -62079,7 +62079,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -62123,7 +62123,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -62167,7 +62167,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -64634,7 +64634,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -64678,7 +64678,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -64722,7 +64722,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -64766,7 +64766,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -64810,7 +64810,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -64854,7 +64854,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -64898,7 +64898,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -64942,7 +64942,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -64986,7 +64986,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -65030,7 +65030,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -65074,7 +65074,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -65118,7 +65118,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -65162,7 +65162,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -65206,7 +65206,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -65250,7 +65250,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -65294,7 +65294,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -65338,7 +65338,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -65382,7 +65382,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -65426,7 +65426,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -65470,7 +65470,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -67937,7 +67937,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -67981,7 +67981,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -68025,7 +68025,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -68069,7 +68069,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -68113,7 +68113,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -68157,7 +68157,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -68201,7 +68201,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -68245,7 +68245,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -68289,7 +68289,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -68333,7 +68333,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -68377,7 +68377,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -68421,7 +68421,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -68465,7 +68465,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -68509,7 +68509,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -68553,7 +68553,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -68597,7 +68597,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -68641,7 +68641,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -68685,7 +68685,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -68729,7 +68729,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -68773,7 +68773,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -71240,7 +71240,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -71284,7 +71284,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -71328,7 +71328,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -71372,7 +71372,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -71416,7 +71416,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -71460,7 +71460,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -71504,7 +71504,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -71548,7 +71548,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -71592,7 +71592,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -71636,7 +71636,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -71680,7 +71680,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -71724,7 +71724,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -71768,7 +71768,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -71812,7 +71812,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -71856,7 +71856,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -71900,7 +71900,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -71944,7 +71944,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -71988,7 +71988,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -72032,7 +72032,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -72076,7 +72076,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -74543,7 +74543,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -74587,7 +74587,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -74631,7 +74631,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -74675,7 +74675,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -74719,7 +74719,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -74763,7 +74763,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -74807,7 +74807,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -74851,7 +74851,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -74895,7 +74895,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -74939,7 +74939,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -74983,7 +74983,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -75027,7 +75027,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -75071,7 +75071,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -75115,7 +75115,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -75159,7 +75159,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -75203,7 +75203,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -75247,7 +75247,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -75291,7 +75291,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -75335,7 +75335,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -75379,7 +75379,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -77846,7 +77846,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -77890,7 +77890,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -77934,7 +77934,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -77978,7 +77978,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -78022,7 +78022,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -78066,7 +78066,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -78110,7 +78110,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -78154,7 +78154,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -78198,7 +78198,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -78242,7 +78242,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -78286,7 +78286,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -78330,7 +78330,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -78374,7 +78374,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -78418,7 +78418,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -78462,7 +78462,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -78506,7 +78506,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -78550,7 +78550,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -78594,7 +78594,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -78638,7 +78638,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -78682,7 +78682,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -81149,7 +81149,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -81193,7 +81193,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -81237,7 +81237,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -81281,7 +81281,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -81325,7 +81325,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -81369,7 +81369,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -81413,7 +81413,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -81457,7 +81457,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -81501,7 +81501,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -81545,7 +81545,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -81589,7 +81589,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -81633,7 +81633,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -81677,7 +81677,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -81721,7 +81721,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -81765,7 +81765,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -81809,7 +81809,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -81853,7 +81853,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -81897,7 +81897,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -81941,7 +81941,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -81985,7 +81985,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -84452,7 +84452,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -84496,7 +84496,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -84540,7 +84540,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -84584,7 +84584,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -84628,7 +84628,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -84672,7 +84672,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -84716,7 +84716,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -84760,7 +84760,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -84804,7 +84804,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -84848,7 +84848,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -84892,7 +84892,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -84936,7 +84936,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -84980,7 +84980,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -85024,7 +85024,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -85068,7 +85068,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -85112,7 +85112,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -85156,7 +85156,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -85200,7 +85200,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -85244,7 +85244,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -85288,7 +85288,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -87755,7 +87755,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -87799,7 +87799,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -87843,7 +87843,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -87887,7 +87887,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -87931,7 +87931,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -87975,7 +87975,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -88019,7 +88019,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -88063,7 +88063,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -88107,7 +88107,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -88151,7 +88151,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -88195,7 +88195,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -88239,7 +88239,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -88283,7 +88283,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -88327,7 +88327,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -88371,7 +88371,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -88415,7 +88415,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -88459,7 +88459,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -88503,7 +88503,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -88547,7 +88547,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -88591,7 +88591,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -91058,7 +91058,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -91102,7 +91102,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -91146,7 +91146,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -91190,7 +91190,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -91234,7 +91234,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -91278,7 +91278,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -91322,7 +91322,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -91366,7 +91366,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -91410,7 +91410,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -91454,7 +91454,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -91498,7 +91498,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -91542,7 +91542,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -91586,7 +91586,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -91630,7 +91630,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -91674,7 +91674,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -91718,7 +91718,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -91762,7 +91762,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -91806,7 +91806,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -91850,7 +91850,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -91894,7 +91894,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -94361,7 +94361,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -94405,7 +94405,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -94449,7 +94449,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -94493,7 +94493,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -94537,7 +94537,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -94581,7 +94581,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -94625,7 +94625,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -94669,7 +94669,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -94713,7 +94713,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -94757,7 +94757,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -94801,7 +94801,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -94845,7 +94845,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -94889,7 +94889,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -94933,7 +94933,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -94977,7 +94977,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -95021,7 +95021,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -95065,7 +95065,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -95109,7 +95109,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -95153,7 +95153,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -95197,7 +95197,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -97664,7 +97664,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -97708,7 +97708,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -97752,7 +97752,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -97796,7 +97796,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -97840,7 +97840,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -97884,7 +97884,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -97928,7 +97928,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -97972,7 +97972,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -98016,7 +98016,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -98060,7 +98060,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -98104,7 +98104,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -98148,7 +98148,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -98192,7 +98192,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -98236,7 +98236,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -98280,7 +98280,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -98324,7 +98324,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -98368,7 +98368,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -98412,7 +98412,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -98456,7 +98456,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": 1.2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -98500,7 +98500,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 1.25,
+        "score": -0.3,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -177401,7 +177401,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
         "explanationDetail": {
           "analysis": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
@@ -177444,7 +177444,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "D",
-        "score": 8.5,
+        "score": 2,
         "explanation": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
         "explanationDetail": {
           "analysis": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
@@ -177487,7 +177487,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
         "explanationDetail": {
           "analysis": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
@@ -177530,7 +177530,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
         "explanationDetail": {
           "analysis": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
@@ -177573,7 +177573,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
         "explanationDetail": {
           "analysis": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
@@ -177616,7 +177616,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
         "explanationDetail": {
           "analysis": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
@@ -177659,7 +177659,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
         "explanationDetail": {
           "analysis": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
@@ -177702,7 +177702,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
         "explanationDetail": {
           "analysis": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
@@ -177745,7 +177745,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
         "explanationDetail": {
           "analysis": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
@@ -177788,7 +177788,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
         "explanationDetail": {
           "analysis": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
@@ -177831,7 +177831,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
         "explanationDetail": {
           "analysis": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
@@ -177874,7 +177874,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
         "explanationDetail": {
           "analysis": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
@@ -177935,7 +177935,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
         "explanationDetail": {
           "analysis": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
@@ -177978,7 +177978,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
         "explanationDetail": {
           "analysis": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
@@ -178021,7 +178021,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
         "explanationDetail": {
           "analysis": "在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
@@ -178064,7 +178064,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
         "explanationDetail": {
           "analysis": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
@@ -178107,7 +178107,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
         "explanationDetail": {
           "analysis": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
@@ -178150,7 +178150,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
         "explanationDetail": {
           "analysis": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
@@ -178193,7 +178193,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
         "explanationDetail": {
           "analysis": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
@@ -178236,7 +178236,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
         "explanationDetail": {
           "analysis": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
@@ -178279,7 +178279,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
         "explanationDetail": {
           "analysis": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
@@ -178322,7 +178322,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
         "explanationDetail": {
           "analysis": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
@@ -178365,7 +178365,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
         "explanationDetail": {
           "analysis": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
@@ -178408,7 +178408,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
         "explanationDetail": {
           "analysis": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
@@ -178469,7 +178469,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
         "explanationDetail": {
           "analysis": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
@@ -178512,7 +178512,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
         "explanationDetail": {
           "analysis": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
@@ -178555,7 +178555,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
         "explanationDetail": {
           "analysis": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
@@ -178598,7 +178598,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
         "explanationDetail": {
           "analysis": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
@@ -178641,7 +178641,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
         "explanationDetail": {
           "analysis": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
@@ -178684,7 +178684,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
         "explanationDetail": {
           "analysis": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
@@ -178727,7 +178727,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
         "explanationDetail": {
           "analysis": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
@@ -178770,7 +178770,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
         "explanationDetail": {
           "analysis": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
@@ -178813,7 +178813,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
         "explanationDetail": {
           "analysis": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
@@ -178856,7 +178856,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "D",
-        "score": 8.5,
+        "score": 2,
         "explanation": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
         "explanationDetail": {
           "analysis": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
@@ -178899,7 +178899,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
         "explanationDetail": {
           "analysis": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
@@ -178942,7 +178942,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
         "explanationDetail": {
           "analysis": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
@@ -179003,7 +179003,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
         "explanationDetail": {
           "analysis": "在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
@@ -179046,7 +179046,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
         "explanationDetail": {
           "analysis": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
@@ -179089,7 +179089,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
         "explanationDetail": {
           "analysis": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
@@ -179132,7 +179132,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
         "explanationDetail": {
           "analysis": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
@@ -179175,7 +179175,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
         "explanationDetail": {
           "analysis": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
@@ -179218,7 +179218,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
         "explanationDetail": {
           "analysis": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
@@ -179261,7 +179261,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
         "explanationDetail": {
           "analysis": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
@@ -179304,7 +179304,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
         "explanationDetail": {
           "analysis": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
@@ -179347,7 +179347,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
         "explanationDetail": {
           "analysis": "在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
@@ -179390,7 +179390,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
         "explanationDetail": {
           "analysis": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
@@ -179433,7 +179433,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
         "explanationDetail": {
           "analysis": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
@@ -179476,7 +179476,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
         "explanationDetail": {
           "analysis": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
@@ -179537,7 +179537,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
         "explanationDetail": {
           "analysis": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
@@ -179580,7 +179580,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
         "explanationDetail": {
           "analysis": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
@@ -179623,7 +179623,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
         "explanationDetail": {
           "analysis": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
@@ -179666,7 +179666,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "D",
-        "score": 8.5,
+        "score": 2,
         "explanation": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
         "explanationDetail": {
           "analysis": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
@@ -179709,7 +179709,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
         "explanationDetail": {
           "analysis": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
@@ -179752,7 +179752,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
         "explanationDetail": {
           "analysis": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
@@ -179795,7 +179795,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
         "explanationDetail": {
           "analysis": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
@@ -179838,7 +179838,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
         "explanationDetail": {
           "analysis": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
@@ -179881,7 +179881,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
         "explanationDetail": {
           "analysis": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
@@ -179924,7 +179924,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
         "explanationDetail": {
           "analysis": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
@@ -179967,7 +179967,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
         "explanationDetail": {
           "analysis": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
@@ -180010,7 +180010,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
         "explanationDetail": {
           "analysis": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
@@ -180071,7 +180071,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "D",
-        "score": 8.5,
+        "score": 2,
         "explanation": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
         "explanationDetail": {
           "analysis": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
@@ -180114,7 +180114,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
         "explanationDetail": {
           "analysis": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
@@ -180157,7 +180157,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
         "explanationDetail": {
           "analysis": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
@@ -180200,7 +180200,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
         "explanationDetail": {
           "analysis": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
@@ -180243,7 +180243,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
         "explanationDetail": {
           "analysis": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
@@ -180286,7 +180286,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
         "explanationDetail": {
           "analysis": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
@@ -180329,7 +180329,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
         "explanationDetail": {
           "analysis": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
@@ -180372,7 +180372,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
         "explanationDetail": {
           "analysis": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
@@ -180415,7 +180415,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
         "explanationDetail": {
           "analysis": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
@@ -180458,7 +180458,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
         "explanationDetail": {
           "analysis": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
@@ -180501,7 +180501,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
         "explanationDetail": {
           "analysis": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
@@ -180544,7 +180544,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
         "explanationDetail": {
           "analysis": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
@@ -180605,7 +180605,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
         "explanationDetail": {
           "analysis": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
@@ -180648,7 +180648,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
         "explanationDetail": {
           "analysis": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
@@ -180691,7 +180691,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
         "explanationDetail": {
           "analysis": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
@@ -180734,7 +180734,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
         "explanationDetail": {
           "analysis": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
@@ -180777,7 +180777,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
         "explanationDetail": {
           "analysis": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
@@ -180820,7 +180820,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
         "explanationDetail": {
           "analysis": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
@@ -180863,7 +180863,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
         "explanationDetail": {
           "analysis": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
@@ -180906,7 +180906,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
         "explanationDetail": {
           "analysis": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
@@ -180949,7 +180949,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
         "explanationDetail": {
           "analysis": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
@@ -180992,7 +180992,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "D",
-        "score": 8.5,
+        "score": 2,
         "explanation": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
         "explanationDetail": {
           "analysis": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
@@ -181035,7 +181035,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
         "explanationDetail": {
           "analysis": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
@@ -181078,7 +181078,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
         "explanationDetail": {
           "analysis": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
@@ -181139,7 +181139,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
         "explanationDetail": {
           "analysis": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
@@ -181182,7 +181182,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
         "explanationDetail": {
           "analysis": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
@@ -181225,7 +181225,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
         "explanationDetail": {
           "analysis": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
@@ -181268,7 +181268,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
         "explanationDetail": {
           "analysis": "ser 表达人或事物的本质固有属性（ha sido inteligente）；estar 表达特定时间段内的暂时状态或临时表现（今天心不在焉），故用 está。选 B。",
@@ -181311,7 +181311,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
         "explanationDetail": {
           "analysis": "agua 为阴性名词，但因以重读 a- 音节开头，为避免连音音爆单数定冠词用 el（el agua）；在复数时不存在音爆，恢复使用阴性定冠词 las（las aguas）。选 A。",
@@ -181354,7 +181354,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
         "explanationDetail": {
           "analysis": "volver a + inf. 表达“重新做某事，恢复做某事”，符合病愈后“重新恢复工作”的语境。选 A。",
@@ -181397,7 +181397,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "D",
-        "score": 8.5,
+        "score": 2,
         "explanation": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
         "explanationDetail": {
           "analysis": "肯定形式 creo que 接直陈式；但否定形式 no creo que 表达怀疑与否定看法，从句强制使用虚拟式现在时 baje。选 D。",
@@ -181440,7 +181440,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
         "explanationDetail": {
           "analysis": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
@@ -181483,7 +181483,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
         "explanationDetail": {
           "analysis": "mientras 引导过去正在持续进行的背景动作，用过去未完成时 cenábamos；de repente（突然）打断背景的突发瞬时动作，用简单过去时 empezó。选 A。",
@@ -181526,7 +181526,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
         "explanationDetail": {
           "analysis": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
@@ -181569,7 +181569,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
         "explanationDetail": {
           "analysis": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
@@ -181612,7 +181612,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
         "explanationDetail": {
           "analysis": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
@@ -181673,7 +181673,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
         "explanationDetail": {
           "analysis": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
@@ -181716,7 +181716,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
         "explanationDetail": {
           "analysis": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
@@ -181759,7 +181759,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
         "explanationDetail": {
           "analysis": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
@@ -181802,7 +181802,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
         "explanationDetail": {
           "analysis": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
@@ -181845,7 +181845,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
         "explanationDetail": {
           "analysis": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
@@ -181888,7 +181888,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
         "explanationDetail": {
           "analysis": "在过去的过去发生的动作（老师进教室前已做完），必须使用直陈式过去完成时（habían terminado）。选 B。",
@@ -181931,7 +181931,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
         "explanationDetail": {
           "analysis": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
@@ -181974,7 +181974,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
         "explanationDetail": {
           "analysis": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
@@ -182017,7 +182017,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
         "explanationDetail": {
           "analysis": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
@@ -182060,7 +182060,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
         "explanationDetail": {
           "analysis": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
@@ -182103,7 +182103,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
         "explanationDetail": {
           "analysis": "aunque 引导让步从句，若表达尚未发生的未来假设、说话人尚未确认的事实或不在乎其发生与否，必须使用虚拟式现在时 haga。选 B。",
@@ -182146,7 +182146,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
         "explanationDetail": {
           "analysis": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
@@ -182207,7 +182207,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
         "explanationDetail": {
           "analysis": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
@@ -182250,7 +182250,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
         "explanationDetail": {
           "analysis": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
@@ -182293,7 +182293,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
         "explanationDetail": {
           "analysis": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
@@ -182336,7 +182336,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
         "explanationDetail": {
           "analysis": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
@@ -182379,7 +182379,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
         "explanationDetail": {
           "analysis": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
@@ -182422,7 +182422,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
         "explanationDetail": {
           "analysis": "自反被动句（pasiva refleja）中，真正的语法主语是后面的 cursos intensivos（复数），谓语动词必须使用第三人称复数 imparten。选 B。",
@@ -182465,7 +182465,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
         "explanationDetail": {
           "analysis": "关系形容词 cuyo（...的）起所有格连接作用，其性数绝不与先行词一致，而是必须与修饰的后一名词（novelas，阴性复数）保持性数一致（cuyas）。选 B。",
@@ -182508,7 +182508,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
         "explanationDetail": {
           "analysis": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
@@ -182551,7 +182551,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
         "explanationDetail": {
           "analysis": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
@@ -182594,7 +182594,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
         "explanationDetail": {
           "analysis": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
@@ -182637,7 +182637,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
         "explanationDetail": {
           "analysis": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
@@ -182680,7 +182680,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
         "explanationDetail": {
           "analysis": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
@@ -182741,7 +182741,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
         "explanationDetail": {
           "analysis": "caber 在简单过去时为特殊变位词干 cup-，第三人称复数形式为 cupieron。选 A。",
@@ -182784,7 +182784,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
         "explanationDetail": {
           "analysis": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
@@ -182827,7 +182827,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
         "explanationDetail": {
           "analysis": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
@@ -182870,7 +182870,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
         "explanationDetail": {
           "analysis": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
@@ -182913,7 +182913,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
         "explanationDetail": {
           "analysis": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
@@ -182956,7 +182956,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
         "explanationDetail": {
           "analysis": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
@@ -182999,7 +182999,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
         "explanationDetail": {
           "analysis": "quejarse 表达“抱怨、抗议某事”固定搭配前置词 de（quejarse de algo）。选 A。",
@@ -183042,7 +183042,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
         "explanationDetail": {
           "analysis": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
@@ -183085,7 +183085,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
         "explanationDetail": {
           "analysis": "动词 consistir 表达“在于、包含”固定搭配介词 en（consistir en algo / inf.）。选 A。",
@@ -183128,7 +183128,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
         "explanationDetail": {
           "analysis": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
@@ -183171,7 +183171,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
         "explanationDetail": {
           "analysis": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
@@ -183214,7 +183214,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
         "explanationDetail": {
           "analysis": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
@@ -183275,7 +183275,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
         "explanationDetail": {
           "analysis": "dudar que 表达怀疑接虚拟式，saber 的虚拟式现在时第三人称复数为 sepan（不规则变位 sep-）。选 B。",
@@ -183318,7 +183318,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
         "explanationDetail": {
           "analysis": "traer 的副动词元音间变 y 为 trayendo；双代词后置连写变倒数第四音节重音，必须添加重音符号 trayéndoselos。选 A。",
@@ -183361,7 +183361,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
         "explanationDetail": {
           "analysis": "decir 针对 tú 的肯定命令式为 di，连写代词 se 与 la 后形成重读闭音节，添加书写重音符号 dísela。选 A。",
@@ -183404,7 +183404,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
         "explanationDetail": {
           "analysis": "从句是对过去的假设（hubieras estudiado），而主句有 ahora 标识现在的状态，需用简单条件式 hablarías。选 A。",
@@ -183447,7 +183447,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
         "explanationDetail": {
           "analysis": "古西班牙语保留文书介词短语 so pena de（在面临...惩治的威胁下，以...为处罚代价），是考研与专四高频典雅考点。选 A。",
@@ -183490,7 +183490,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
         "explanationDetail": {
           "analysis": "连词短语 para que 引导目的从句且主从句主语不同（yo vs tú），从句强制接虚拟式现在时 puedas。选 B。",
@@ -183533,7 +183533,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
         "explanationDetail": {
           "analysis": "第一空 motivos de salud 为原因动机（因病），用 por；第二空 para que 引导目的状语从句（为了让我们读），用 para。选 A。",
@@ -183576,7 +183576,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
         "explanationDetail": {
           "analysis": "me extraña que 表达主观诧异情绪，从句强制使用虚拟式；动作发生在过去已完成，使用虚拟式现在完成时 hayan asistido。选 B。",
@@ -183619,7 +183619,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
         "explanationDetail": {
           "analysis": "明确人称的直接宾语（A María）提前到动词前面时，西语句法要求必须在动词前添加相应的宾格代词进行复指！María 是女性单数直宾，用 la。选 A。",
@@ -183662,7 +183662,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
         "explanationDetail": {
           "analysis": "en cuanto（一...就...）引导时间状语从句，主句是一般将来时 llamaré，从句动作尚未发生（表达将来的预期），严禁使用将来时，强制使用虚拟式现在时 llegue。选 B。",
@@ -183705,7 +183705,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
         "explanationDetail": {
           "analysis": "主句是复合条件式 habría habido，表达与过去事实完全相反的假设，Si 引导的条件从句必须使用虚拟式过去完成时 hubierais avisado。选 A。",
@@ -183748,7 +183748,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
         "explanationDetail": {
           "analysis": "las llaves 为阴性复数直宾代词 las，al conserje 为第三人称间宾代词 le。当 le 与直宾代词 las 相遇时，为避免连音音爆变身为 se，因此为 se las。选 A。",
@@ -183810,7 +183810,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -183854,7 +183854,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -183898,7 +183898,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -183942,7 +183942,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -183986,7 +183986,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -184030,7 +184030,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -184074,7 +184074,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -184118,7 +184118,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -184162,7 +184162,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -184206,7 +184206,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -184250,7 +184250,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -184294,7 +184294,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -184356,7 +184356,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -184400,7 +184400,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -184444,7 +184444,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -184488,7 +184488,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -184532,7 +184532,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -184576,7 +184576,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -184620,7 +184620,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -184664,7 +184664,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -184708,7 +184708,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -184752,7 +184752,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -184796,7 +184796,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -184840,7 +184840,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -184902,7 +184902,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -184946,7 +184946,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -184990,7 +184990,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -185034,7 +185034,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
@@ -185078,7 +185078,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -185122,7 +185122,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -185166,7 +185166,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -185210,7 +185210,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -185254,7 +185254,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -185298,7 +185298,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -185342,7 +185342,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -185386,7 +185386,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -185448,7 +185448,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
         "explanationDetail": {
           "analysis": "原文第二段明确指出：“ha permitido a jóvenes emprendedores permanecer en sus localidades natales, frenando la sangría demográfica”（使年轻创业者留在故乡，遏制了人口流失），对应 B。",
@@ -185492,7 +185492,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
         "explanationDetail": {
           "analysis": "原文第三段指出其生态足迹极小，且“fomenta el respeto por los ecosistemas forestales, el consumo de productos de proximidad”，对应 B。",
@@ -185536,7 +185536,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
         "explanationDetail": {
           "analysis": "sangría demográfica 为西语经典社科比喻，指内陆地区“人口大失血（空心化）”，frenar 即遏制这一失血现象。选 B。",
@@ -185580,7 +185580,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
         "explanationDetail": {
           "analysis": "全文论述了朝圣之路将文化底蕴、乡村振兴与生态可持续性深度融合的典范价值。选 B。",
@@ -185624,7 +185624,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
         "explanationDetail": {
           "analysis": "第一段末明确指出“donde lo maravilloso era recibido sin asombro ni cuestionamiento por los habitantes de Macondo”（在马孔多，神奇之事被习以为常地接受），选 B。",
@@ -185668,7 +185668,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
         "explanationDetail": {
           "analysis": "第二段第一句指出“operaba como una herramienta estética de descolonización cultural”，选 B。",
@@ -185712,7 +185712,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
         "explanationDetail": {
           "analysis": "第二段末尾强调拉美作家向欧洲文学正典证明了西语文学“具有重塑现代小说的成熟与丰饶”，选 A。",
@@ -185756,7 +185756,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "A",
-        "score": 8.5,
+        "score": 2,
         "explanation": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
         "explanationDetail": {
           "analysis": "poroso 形象描摹了历史记录与民间神话在西语拉美语境下不可分割、互相渗透的深厚特质。选 A。",
@@ -185800,7 +185800,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
         "explanationDetail": {
           "analysis": "第一段末句指出“el universo natural era el maestro supremo de la ingeniería estructural”，即自然本身是力学结构的至高源泉。选 B。",
@@ -185844,7 +185844,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
         "explanationDetail": {
           "analysis": "第二段阐述双曲面分叉立柱能够像大树树干般传导拱顶的重力负荷，对应 B。",
@@ -185888,7 +185888,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
         "explanationDetail": {
           "analysis": "第二段末句指出不同朝向彩绘玻璃将日出与日落色温洒入殿堂，营造如发光宇宙森林般的震撼体验。选 B。",
@@ -185932,7 +185932,7 @@ export const SPANISH_EXAM_PAPERS: ExamPaper[] = [
           }
         ],
         "correctAnswer": "B",
-        "score": 8.5,
+        "score": 2,
         "explanation": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
         "explanationDetail": {
           "analysis": "第三段指出现代参数化三维技术与几何模型完美承袭了高迪遗留的结构法则，使得这一工程得以精确推进。选 B。",
