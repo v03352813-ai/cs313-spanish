@@ -241,21 +241,21 @@ export const VocabView: React.FC<VocabViewProps> = ({
   return (
     <div className="w-full space-y-3 sm:space-y-3.5 pb-16 animate-in fade-in duration-300">
       
-      {/* 1. 顶部导引条 (对标日韩法语版：大考词纲定位与掌握度进度统计) */}
-      <div className="bg-white rounded-3xl p-4 sm:p-5 border border-amber-200/90 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+      {/* 1. 顶部权威 Hero Banner (对标法语图3标准规范) */}
+      <div className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="space-y-1">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="px-2.5 py-0.5 rounded-full bg-[#FEF2F2] text-[#B82E24] text-xs font-black border border-[#B82E24]/20">
-              词汇切片 · 3D 闪卡
+            <span className="px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 text-xs font-bold border border-red-200">
+              ✨ 塞万提斯官方词纲 · 3D 闪卡记忆
             </span>
-            <h1 className="text-base sm:text-lg font-black text-slate-900">
-              5,000+ 核心词汇 · 阴阳性双标 3D 翻转记忆库
-            </h1>
             <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
               已掌握 {masteredIds.length} 词
             </span>
           </div>
-          <p className="text-xs text-slate-500 font-medium">
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+            5,000+ 核心词汇 · 阴阳性双标 3D 翻转记忆库
+          </h1>
+          <p className="text-xs sm:text-sm text-stone-500 font-medium leading-relaxed">
             背西班牙语单词最忌讳不记阴阳性！严格标定 <strong className="text-amber-800">阳性 (el)</strong> 与 <strong className="text-[#B82E24]">阴性 (la)</strong>，3D 空间翻转查看释义与真题原比例句。
           </p>
         </div>

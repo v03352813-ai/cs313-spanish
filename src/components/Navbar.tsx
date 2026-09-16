@@ -67,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'writing' as ActiveTab, label: 'AI写作', shortLabel: '写作', icon: PenTool, isHero: true },
     { id: 'grammar' as ActiveTab, label: '语法宝典', shortLabel: '语法', icon: BookOpenCheck },
     { id: 'cinema' as ActiveTab, label: '西影精听', shortLabel: '精听', icon: Headphones },
-    { id: 'exam' as ActiveTab, label: 'DELE模考', shortLabel: '模考', icon: FileCheck2 },
+    { id: 'exam' as ActiveTab, label: '真题模考', shortLabel: '模考', icon: FileCheck2 },
   ];
 
   const currentItem = navItems.find(item => item.id === activeTab) || navItems[0];

@@ -1,33 +1,32 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { 
   FileCheck2, 
-  CheckCircle2, 
+  CheckCircle, 
   XCircle, 
   Sparkles, 
   Volume2, 
+  Lock,
   ChevronRight,
   ChevronLeft,
+  ChevronDown,
   RotateCcw,
+  Timer,
+  Award,
+  BookOpen,
+  Search,
+  CheckCircle2,
+  Calendar,
+  Clock,
+  Zap,
+  Headphones,
   GraduationCap,
   Globe2,
-  Award,
-  Target,
-  BookOpen,
-  Laptop,
-  Calendar,
-  BookMarked,
-  ShieldCheck,
-  Play,
-  Pause,
-  Clock,
-  Headphones
+  Target
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { SPANISH_EXAM_PAPERS, ExamPaper, ExamQuestion } from '../data/examData';
+import { SPANISH_EXAM_PAPERS, ExamPaper, ExamQuestion, MainExamMode } from '../data/examData';
 import { WrongRecord } from './MistakesView';
 import { speakSpanish } from '../utils/speech';
-
-export type MainTrack = 'kaoyan' | 'tem4' | 'dele' | 'siele';
 
 interface SpanishExamViewProps {
   onSaveMistake: (record: WrongRecord) => void;
@@ -35,23 +34,13 @@ interface SpanishExamViewProps {
   isVip: boolean;
   onOpenVipModal: (reason?: string) => void;
   onOpenExamModal?: () => void;
-  initialTrack?: MainTrack;
-  onTrackChange?: (track: MainTrack) => void;
+  onNavigateToWriting?: () => void;
+  initialTrack?: string;
+  onTrackChange?: (track: string) => void;
 }
 
-// 判定是否为免费试考卷 (首套或2024真题免费预览)
-export const isFreePreviewPaper = (paper: ExamPaper): boolean => {
-  return (
-    paper.id.includes('-01') ||
-    paper.id.includes('2024') ||
-    paper.id.includes('a1') ||
-    paper.id.includes('s1') ||
-    paper.id === 'paper-kaoyan-bfsu-2024' ||
-    paper.id === 'paper-eee4-2024' ||
-    paper.id === 'paper-dele-a1-01' ||
-    paper.id === 'paper-siele-s1-01'
-  );
-};
+// 统一赛道类型：5赛道直接切换（法语风格大标签架构）
+type ActiveTrack = 'kaoyan' | 'tem4' | 'dele' | 'siele' | 'drill';
 
 export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
   onSaveMistake,
@@ -59,443 +48,466 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
   isVip,
   onOpenVipModal,
   onOpenExamModal,
-  initialTrack = 'kaoyan',
-  onTrackChange
+  onNavigateToWriting,
+  initialTrack = 'marathon_full'
 }) => {
-  const [activeTrack, setActiveTrack] = useState<MainTrack>(initialTrack);
+  // 统一赛道选择（法语风格：直接切换 5 赛道，无需先选模式再筛赛道）
+  const [activeTrack, setActiveTrack] = useState<ActiveTrack>('kaoyan');
 
-  // 子分类过滤器状态
-  const [kaoyanFilter, setKaoyanFilter] = useState<string>('all');
-  const [tem4Filter, setTem4Filter] = useState<string>('all');
-  const [deleFilter, setDeleFilter] = useState<string>('all');
-  const [sieleFilter, setSieleFilter] = useState<string>('all');
-  const [searchQuery, setSearchQuery] = useState<string>('');
+  // 各赛道子筛选状态
+  const [kaoyanSubFilter, setKaoyanSubFilter] = useState<string>('all');
+  const [deleSubFilter, setDeleSubFilter] = useState<string>('all');
+  const [sieleSubFilter, setSieleSubFilter] = useState<string>('all');
+  const [drillSubFilter, setDrillSubFilter] = useState<string>('all');
 
-  // 考场交互状态
-  const [selectedPaperId, setSelectedPaperId] = useState<string>(() => {
-    if (initialTrack === 'tem4') return 'paper-eee4-2024';
-    if (initialTrack === 'dele') return 'paper-dele-a1-01';
-    if (initialTrack === 'siele') return 'paper-siele-s1-01';
-    return 'paper-kaoyan-bfsu-2024';
-  });
-
+  // 当前选中试卷与考场状态
+  const [selectedPaperId, setSelectedPaperId] = useState<string>('paper-kaoyan-beiwai-2024');
+  const [showOfficialGuide, setShowOfficialGuide] = useState<boolean>(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
-  const [answers, setAnswers] = useState<Record<number, string>>({});
+  const [answers, setAnswers] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [searchQuery, setSearchQuery] = useState<string>('');
   const [showInstantExplanation, setShowInstantExplanation] = useState<boolean>(true);
-
-  // 听力音频播放器状态
-  const [isPlayingAudio, setIsPlayingAudio] = useState<boolean>(false);
   const [audioSpeed, setAudioSpeed] = useState<number>(1.0);
-  const [showListeningScript, setShowListeningScript] = useState<boolean>(false);
 
-  const handlePlayAudio = async (text: string) => {
-    if (isPlayingAudio) {
-      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-      }
-      setIsPlayingAudio(false);
-      return;
-    }
-    setIsPlayingAudio(true);
-    await speakSpanish(text, audioSpeed);
-    setIsPlayingAudio(false);
-  };
+  // 考场全真倒计时 (秒数)
+  const [timeLeftSec, setTimeLeftSec] = useState<number>(130 * 60);
+  const [timerRunning, setTimerRunning] = useState<boolean>(true);
 
-  // 动态计算各赛道与各高校历年真题套数 (严格实时反映真实 64 套试卷题库)
+  // 兼容旧 mainMode 逻辑（考场计时器、重置、解析显示）
+  const mainMode: MainExamMode = activeTrack === 'drill' ? 'special_drill' : 'marathon_full';
+
+  // 试卷套数精确统计
+  const marathonCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.mode === 'marathon_full').length, []);
+  const drillCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.mode === 'special_drill').length, []);
+
+  const tem4Count = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.track === 'tem4').length, []);
+  const kaoyanCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.track === 'kaoyan' || p.track === 'kaoyan_mock').length, []);
+  const deleCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.track === 'dele').length, []);
+  const sieleCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.track === 'siele').length, []);
+
+  // 各赛道子分类动态统计
   const paperCounts = useMemo(() => {
-    const kaoyanPapers = SPANISH_EXAM_PAPERS.filter(p => p.track === 'kaoyan' || p.track === 'kaoyan_mock');
-    const tem4Papers = SPANISH_EXAM_PAPERS.filter(p => p.track === 'tem4');
-    const delePapers = SPANISH_EXAM_PAPERS.filter(p => p.track === 'dele');
-    const sielePapers = SPANISH_EXAM_PAPERS.filter(p => p.track === 'siele');
-
+    const kaoyan = SPANISH_EXAM_PAPERS.filter(p => p.track === 'kaoyan' || p.track === 'kaoyan_mock');
+    const dele = SPANISH_EXAM_PAPERS.filter(p => p.track === 'dele');
+    const siele = SPANISH_EXAM_PAPERS.filter(p => p.track === 'siele');
+    const drill = SPANISH_EXAM_PAPERS.filter(p => p.mode === 'special_drill');
     return {
       kaoyan: {
-        all: kaoyanPapers.length,
-        beiwai: kaoyanPapers.filter(p => p.schoolOrOrg.includes('北京外国语')).length,
-        shisu: kaoyanPapers.filter(p => p.schoolOrOrg.includes('上海外国语')).length,
-        gdufs: kaoyanPapers.filter(p => p.schoolOrOrg.includes('广东外语')).length,
-        others: kaoyanPapers.filter(p => p.track === 'kaoyan' && !p.schoolOrOrg.includes('北京外国语') && !p.schoolOrOrg.includes('上海外国语') && !p.schoolOrOrg.includes('广东外语')).length,
-        mock: kaoyanPapers.filter(p => p.track === 'kaoyan_mock').length,
-      },
-      tem4: {
-        all: tem4Papers.length,
-        real: tem4Papers.filter(p => /\d{4}年/.test(p.title)).length,
-        spec: tem4Papers.filter(p => p.title.includes('语法专项') || p.title.includes('词汇与前置词')).length,
-        mock: tem4Papers.filter(p => p.title.includes('仿真大卷')).length,
+        all: kaoyan.length,
+        beiwai: kaoyan.filter(p => p.schoolOrOrg.includes('北京外国语大学')).length,
+        shisu: kaoyan.filter(p => p.schoolOrOrg.includes('上海外国语大学')).length,
+        gdufs: kaoyan.filter(p => p.schoolOrOrg.includes('广东外语外贸大学')).length,
+        others985: kaoyan.filter(p =>
+          p.schoolOrOrg.includes('北京大学') || p.schoolOrOrg.includes('南京大学') ||
+          p.schoolOrOrg.includes('复旦') || p.schoolOrOrg.includes('武汉大学') ||
+          p.schoolOrOrg.includes('四川外国语大学')
+        ).length,
+        sprint: kaoyan.filter(p => p.schoolOrOrg.includes('仿真') || p.schoolOrOrg.includes('教研组')).length,
       },
       dele: {
-        all: delePapers.length,
-        A1: delePapers.filter(p => p.level === 'A1').length,
-        A2: delePapers.filter(p => p.level === 'A2').length,
-        B1: delePapers.filter(p => p.level === 'B1').length,
-        B2: delePapers.filter(p => p.level === 'B2').length,
+        all: dele.length,
+        A1: dele.filter(p => p.level.includes('A1')).length,
+        A2: dele.filter(p => p.level.includes('A2')).length,
+        B1: dele.filter(p => p.level.includes('B1')).length,
+        B2: dele.filter(p => p.level.includes('B2')).length,
       },
       siele: {
-        all: sielePapers.length,
-        global: sielePapers.filter(p => p.title.includes('全球综合')).length,
-        biz: sielePapers.filter(p => p.title.includes('商务') || p.title.includes('社评')).length,
-        spec: sielePapers.filter(p => p.title.includes('专项')).length,
-        adapt: sielePapers.filter(p => p.title.includes('自适应') || p.title.includes('快速阅读') || p.title.includes('学术综述')).length,
+        all: siele.length,
+        A2: siele.filter(p => p.level.includes('A2')).length,
+        B1: siele.filter(p => p.level.includes('B1')).length,
+        B2: siele.filter(p => p.level.includes('B2')).length,
+      },
+      drill: {
+        all: drill.length,
+        subjunctive: drill.filter(p => p.category === '虚拟式时态与句式专项').length,
+        conjugation: drill.filter(p => p.category === '动词变位与时态辨析').length,
+        pronoun: drill.filter(p => p.category === '双代词与固定前置词').length,
+        reading: drill.filter(p => p.category === '长篇读解与社科文化').length,
       }
     };
   }, []);
 
-  // 过滤试卷列表
+  // 根据 activeTrack 与各赛道子筛选筛选试卷列表（法语风格统一赛道架构）
   const filteredPapers = useMemo(() => {
     return SPANISH_EXAM_PAPERS.filter(p => {
-      // 赛道与子标签联动过滤
+      // 赛道匹配
       if (activeTrack === 'kaoyan') {
         if (p.track !== 'kaoyan' && p.track !== 'kaoyan_mock') return false;
-        if (kaoyanFilter === 'beiwai' && !p.schoolOrOrg.includes('北京外国语')) return false;
-        if (kaoyanFilter === 'shisu' && !p.schoolOrOrg.includes('上海外国语')) return false;
-        if (kaoyanFilter === 'gdufs' && !p.schoolOrOrg.includes('广东外语')) return false;
-        if (kaoyanFilter === 'others' && (p.track !== 'kaoyan' || p.schoolOrOrg.includes('北京外国语') || p.schoolOrOrg.includes('上海外国语') || p.schoolOrOrg.includes('广东外语'))) return false;
-        if (kaoyanFilter === 'mock' && p.track !== 'kaoyan_mock') return false;
+        if (kaoyanSubFilter === 'beiwai' && !p.schoolOrOrg.includes('北京外国语大学')) return false;
+        if (kaoyanSubFilter === 'shisu' && !p.schoolOrOrg.includes('上海外国语大学')) return false;
+        if (kaoyanSubFilter === 'gdufs' && !p.schoolOrOrg.includes('广东外语外贸大学')) return false;
+        if (kaoyanSubFilter === 'others985' && !(
+          p.schoolOrOrg.includes('北京大学') || p.schoolOrOrg.includes('南京大学') ||
+          p.schoolOrOrg.includes('复旦') || p.schoolOrOrg.includes('武汉大学') ||
+          p.schoolOrOrg.includes('四川外国语大学')
+        )) return false;
+        if (kaoyanSubFilter === 'sprint' && !(p.schoolOrOrg.includes('仿真') || p.schoolOrOrg.includes('教研组'))) return false;
       } else if (activeTrack === 'tem4') {
         if (p.track !== 'tem4') return false;
-        if (tem4Filter === 'real' && !/\d{4}年/.test(p.title)) return false;
-        if (tem4Filter === 'spec' && !p.title.includes('语法专项') && !p.title.includes('词汇与前置词')) return false;
-        if (tem4Filter === 'mock' && !p.title.includes('仿真大卷')) return false;
       } else if (activeTrack === 'dele') {
         if (p.track !== 'dele') return false;
-        if (deleFilter !== 'all' && p.level !== deleFilter) return false;
+        if (deleSubFilter !== 'all' && !p.level.includes(deleSubFilter)) return false;
       } else if (activeTrack === 'siele') {
         if (p.track !== 'siele') return false;
-        if (sieleFilter === 'global' && !p.title.includes('全球综合')) return false;
-        if (sieleFilter === 'biz' && !p.title.includes('商务') && !p.title.includes('社评')) return false;
-        if (sieleFilter === 'spec' && !p.title.includes('专项')) return false;
-        if (sieleFilter === 'adapt' && !p.title.includes('自适应') && !p.title.includes('快速阅读') && !p.title.includes('学术综述')) return false;
+        if (sieleSubFilter !== 'all' && !p.level.includes(sieleSubFilter)) return false;
+      } else if (activeTrack === 'drill') {
+        if (p.mode !== 'special_drill') return false;
+        if (drillSubFilter === 'subjunctive' && p.category !== '虚拟式时态与句式专项') return false;
+        if (drillSubFilter === 'conjugation' && p.category !== '动词变位与时态辨析') return false;
+        if (drillSubFilter === 'pronoun' && p.category !== '双代词与固定前置词') return false;
+        if (drillSubFilter === 'reading' && p.category !== '长篇读解与社科文化') return false;
       }
 
+      // 搜索匹配
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         return (
           p.title.toLowerCase().includes(q) ||
-          p.spanishTitle.toLowerCase().includes(q) ||
-          p.schoolOrOrg.toLowerCase().includes(q) ||
-          p.summary.toLowerCase().includes(q)
+          p.yearSession.toLowerCase().includes(q) ||
+          p.level.toLowerCase().includes(q) ||
+          p.schoolOrOrg.toLowerCase().includes(q)
         );
       }
 
       return true;
     });
-  }, [activeTrack, kaoyanFilter, tem4Filter, deleFilter, sieleFilter, searchQuery]);
+  }, [activeTrack, kaoyanSubFilter, deleSubFilter, sieleSubFilter, drillSubFilter, searchQuery]);
 
-  // 当切换赛道或过滤后，自动校准选中的试卷
+  // 当筛选变化时保持试卷同步
   useEffect(() => {
     if (filteredPapers.length > 0 && !filteredPapers.some(p => p.id === selectedPaperId)) {
       setSelectedPaperId(filteredPapers[0].id);
-      setCurrentQuestionIndex(0);
-      setAnswers({});
-      setIsSubmitted(false);
     }
   }, [filteredPapers, selectedPaperId]);
 
-  const currentPaper: ExamPaper = useMemo(() => {
-    return SPANISH_EXAM_PAPERS.find(p => p.id === selectedPaperId) || filteredPapers[0] || SPANISH_EXAM_PAPERS[0];
-  }, [selectedPaperId, filteredPapers]);
+  const paper: ExamPaper = filteredPapers.find(p => p.id === selectedPaperId) || filteredPapers[0] || SPANISH_EXAM_PAPERS[0];
+  const isLocked = !isVip && !paper.isFreePreview;
+  const currentQ: ExamQuestion | undefined = paper?.questions[currentQuestionIndex];
 
-  const currentQuestion: ExamQuestion | undefined = currentPaper?.questions[currentQuestionIndex];
-
-  // 计算当前试卷三大核心大板块（词汇文法、长篇读解、听解交际）的题量与起始位置
+  // 动态计算当前试卷的大题板块（Section Tabs），提供一键锚点跳转
   const sectionTabs = useMemo(() => {
-    if (!currentPaper || !currentPaper.questions || currentPaper.questions.length === 0) return [];
+    if (!paper || !paper.questions || paper.questions.length === 0) return [];
 
-    let vocabStart = -1, vocabCount = 0;
-    let readingStart = -1, readingCount = 0;
-    let listeningStart = -1, listeningCount = 0;
+    const tabs: { key: string; name: string; icon: string; startIndex: number; count: number; isActive: boolean }[] = [];
+    const qList = paper.questions;
 
-    currentPaper.questions.forEach((q, idx) => {
-      const isReading = q.type === 'reading' || Boolean(q.passage) || q.categoryTag.includes('读解') || q.categoryTag.includes('阅读');
-      const isListening = q.type === 'listening' || Boolean(q.audioScript) || q.categoryTag.includes('听力') || q.categoryTag.includes('交际') || q.categoryTag.includes('广播');
+    let lStart = -1, lCount = 0;
+    let gStart = -1, gCount = 0;
+    let cStart = -1, cCount = 0;
+    let rStart = -1, rCount = 0;
 
-      if (isReading) {
-        if (readingStart === -1) readingStart = idx;
-        readingCount++;
-      } else if (isListening) {
-        if (listeningStart === -1) listeningStart = idx;
-        listeningCount++;
-      } else {
-        if (vocabStart === -1) vocabStart = idx;
-        vocabCount++;
+    qList.forEach((q, idx) => {
+      if (q.type === 'listening') {
+        if (lStart === -1) lStart = idx;
+        lCount++;
+      } else if (q.type === 'grammar') {
+        if (gStart === -1) gStart = idx;
+        gCount++;
+      } else if (q.type === 'cloze') {
+        if (cStart === -1) cStart = idx;
+        cCount++;
+      } else if (q.type === 'reading') {
+        if (rStart === -1) rStart = idx;
+        rCount++;
       }
     });
 
-    const curQ = currentPaper.questions[currentQuestionIndex];
-    const curIsReading = curQ && (curQ.type === 'reading' || Boolean(curQ.passage) || curQ.categoryTag.includes('读解') || curQ.categoryTag.includes('阅读'));
-    const curIsListening = curQ && (curQ.type === 'listening' || Boolean(curQ.audioScript) || curQ.categoryTag.includes('听力') || curQ.categoryTag.includes('交际') || curQ.categoryTag.includes('广播'));
-    const curIsVocab = curQ && !curIsReading && !curIsListening;
+    const curQType = currentQ?.type;
 
-    const list: { key: string; name: string; icon: string; startIndex: number; count: number; isActive: boolean }[] = [];
-
-    if (vocabCount > 0) {
-      list.push({
-        key: 'vocab',
-        name: '词汇与文法结构',
-        icon: '📝',
-        startIndex: vocabStart,
-        count: vocabCount,
-        isActive: Boolean(curIsVocab)
-      });
-    }
-    if (readingCount > 0) {
-      list.push({
-        key: 'reading',
-        name: '实用告示与长篇读解',
-        icon: '📖',
-        startIndex: readingStart,
-        count: readingCount,
-        isActive: Boolean(curIsReading)
-      });
-    }
-    if (listeningCount > 0) {
-      list.push({
+    if (lCount > 0) {
+      tabs.push({
         key: 'listening',
-        name: '听解原声与交际辨析',
+        name: '听力理解',
         icon: '🎧',
-        startIndex: listeningStart,
-        count: listeningCount,
-        isActive: Boolean(curIsListening)
+        startIndex: lStart,
+        count: lCount,
+        isActive: curQType === 'listening'
+      });
+    }
+    if (gCount > 0) {
+      tabs.push({
+        key: 'grammar',
+        name: '词汇语法',
+        icon: '📝',
+        startIndex: gStart,
+        count: gCount,
+        isActive: curQType === 'grammar'
+      });
+    }
+    if (cCount > 0) {
+      tabs.push({
+        key: 'cloze',
+        name: '完型填空',
+        icon: '🧩',
+        startIndex: cStart,
+        count: cCount,
+        isActive: curQType === 'cloze'
+      });
+    }
+    if (rCount > 0) {
+      tabs.push({
+        key: 'reading',
+        name: '阅读理解',
+        icon: '📖',
+        startIndex: rStart,
+        count: rCount,
+        isActive: curQType === 'reading'
       });
     }
 
-    return list;
-  }, [currentPaper, currentQuestionIndex]);
+    return tabs;
+  }, [paper, currentQuestionIndex, currentQ]);
 
-  // 选择选项
-  const handleSelectOption = (optKey: string) => {
-    if (isSubmitted) return;
-    setAnswers(prev => ({
-      ...prev,
-      [currentQuestionIndex]: optKey
-    }));
-  };
-
-  // 重置作答
-  const handleResetExam = () => {
+  // 切换试卷或模式时重置考场
+  useEffect(() => {
     setAnswers({});
-    setCurrentQuestionIndex(0);
     setIsSubmitted(false);
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
+    setCurrentQuestionIndex(0);
+    setTimeLeftSec((paper?.durationMinutes || 130) * 60);
+    setTimerRunning(mainMode !== 'special_drill');
+  }, [paper?.id, mainMode]);
+
+  // 倒计时心跳
+  useEffect(() => {
+    let interval: any = null;
+    if (timerRunning && !isSubmitted && timeLeftSec > 0) {
+      interval = setInterval(() => {
+        setTimeLeftSec(prev => {
+          if (prev <= 1) {
+            clearInterval(interval);
+            setIsSubmitted(true);
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
     }
-  };
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [timerRunning, isSubmitted, timeLeftSec]);
 
-  // 提交答卷与收集错题
-  const handleSubmitPaper = () => {
-    setIsSubmitted(true);
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-    }
-
-    if (currentPaper) {
-      currentPaper.questions.forEach((q, idx) => {
-        const uAns = answers[idx];
-        if (uAns !== q.correctAnswer) {
-          onSaveMistake({
-            id: `${currentPaper.id}_${q.id}_${Date.now()}`,
-            paperId: currentPaper.id,
-            paperTitle: currentPaper.title,
-            question: q,
-            wrongUserAnswer: uAns || '未作答',
-            dateAdded: new Date().toLocaleDateString('zh-CN')
-          });
-        }
-      });
-    }
-
-    // 庆祝彩带
-    try {
-      confetti({
-        particleCount: 80,
-        spread: 70,
-        origin: { y: 0.6 }
-      });
-    } catch {}
-  };
-
-  // 点击选择试卷
-  const handleSelectPaper = (paper: ExamPaper) => {
-    const isFree = isFreePreviewPaper(paper);
-    const isLocked = !isVip && !isFree;
-
+  const handleSelectOption = (qId: string, optKey: string) => {
     if (isLocked) {
-      onOpenVipModal(`🔒《${paper.title}》为 VIP 专属高频考卷！开通 VIP 即可解锁全部 64 套西班牙语考研二外、高校专四与 DELE/SIELE 官方机考大卷及名师深度题解！`);
+      onOpenVipModal();
+      return;
+    }
+    setAnswers(prev => ({ ...prev, [qId]: optKey }));
+  };
+
+  // 智能计算得分与预估评级
+  const calculateScore = () => {
+    if (!paper) return { earned: 0, total: 100, percentage: 0, gradeEstimate: '' };
+    let earned = 0;
+    let total = 0;
+    paper.questions.forEach(q => {
+      total += q.score;
+      if (answers[q.id] === q.correctAnswer) {
+        earned += q.score;
+      }
+    });
+    const percentage = total > 0 ? Math.round((earned / total) * 100) : 0;
+    earned = Math.round(earned);
+    total = Math.round(total);
+
+    let gradeEstimate = 'TEM-4 及格 (60分+)';
+    if (paper.track === 'tem4') {
+      if (percentage >= 85) gradeEstimate = 'TEM-4 优秀 (85分+ · 卓越高分)';
+      else if (percentage >= 70) gradeEstimate = 'TEM-4 良好 (70分+ · 稳定发挥)';
+      else if (percentage >= 60) gradeEstimate = 'TEM-4 通过及格线 (60分+)';
+      else gradeEstimate = '暂未达标及格线 (建议强化语法与长篇阅读)';
+    } else if (paper.track === 'kaoyan') {
+      if (percentage >= 88) gradeEstimate = '考研二外 90分+ (顶尖名校公费冲刺水准)';
+      else if (percentage >= 75) gradeEstimate = '考研二外 80分+ (高分稳固过线)';
+      else if (percentage >= 60) gradeEstimate = '考研二外 65分+ (基本达标线)';
+      else gradeEstimate = '暂未达标 60分 (建议强化虚拟式与完型填空)';
+    } else if (paper.track === 'dele') {
+      if (percentage >= 75) gradeEstimate = 'DELE 官方评估: APTO (高分卓越合格)';
+      else if (percentage >= 60) gradeEstimate = 'DELE 官方评估: APTO (合格通过认证)';
+      else gradeEstimate = 'DELE 官方评估: NO APTO (未达标，需加强听力与长文)';
+    } else {
+      if (percentage >= 80) gradeEstimate = '专项攻坚评级: 极佳 (熟练掌握该题型)';
+      else if (percentage >= 60) gradeEstimate = '专项攻坚评级: 良好 (仍有个别变位盲区)';
+      else gradeEstimate = '专项攻坚评级: 需强化 (建议多刷该分类专项卷)';
+    }
+
+    return { earned, total, percentage, gradeEstimate };
+  };
+
+  const handleSubmitExam = () => {
+    setIsSubmitted(true);
+    setTimerRunning(false);
+    confetti({
+      particleCount: 100,
+      spread: 80,
+      origin: { y: 0.6 }
+    });
+
+    // 自动归集错题至错题本
+    try {
+      const wrongQuestions = paper.questions.filter(
+        q => answers[q.id] !== undefined && answers[q.id] !== q.correctAnswer
+      );
+      wrongQuestions.forEach(wq => {
+        onSaveMistake({
+          id: `mistake-${Date.now()}-${wq.id}`,
+          paperId: paper.id,
+          paperTitle: paper.title,
+          question: wq,
+          wrongUserAnswer: answers[wq.id] || '',
+          dateAdded: new Date().toLocaleDateString('zh-CN')
+        });
+      });
+    } catch (e) {
+      console.warn('[SpanishExamView] Save mistake warning:', e);
+    }
+  };
+
+  const resetExam = () => {
+    setAnswers({});
+    setIsSubmitted(false);
+    setCurrentQuestionIndex(0);
+    setTimeLeftSec((paper?.durationMinutes || 130) * 60);
+    setTimerRunning(mainMode !== 'special_drill');
+  };
+
+  const formatTimer = (secs: number) => {
+    const hours = Math.floor(secs / 3600);
+    const mins = Math.floor((secs % 3600) / 60);
+    const remainingSecs = secs % 60;
+    if (hours > 0) {
+      return `${hours}:${mins.toString().padStart(2, '0')}:${remainingSecs.toString().padStart(2, '0')}`;
+    }
+    return `${mins.toString().padStart(2, '0')}:${remainingSecs.toString().padStart(2, '0')}`;
+  };
+
+  const scoreResult = isSubmitted ? calculateScore() : null;
+
+  const handleSelectPaper = (targetPaper: ExamPaper) => {
+    const pIdx = filteredPapers.findIndex(p => p.id === targetPaper.id);
+    const isLockedPaper = !isVip && !targetPaper.isFreePreview && pIdx !== 0;
+
+    if (isLockedPaper) {
+      onOpenVipModal(`🔒《${targetPaper.title}》为 VIP 专属高频考卷！升级 VIP 终身卡（仅 ¥49.9），即可解锁全部 80 套西班牙语专四 75 题、考研二外 60 题、DELE/SIELE 欧标大卷与四大题型专项攻坚！`);
       return;
     }
 
-    setSelectedPaperId(paper.id);
-    handleResetExam();
+    setSelectedPaperId(targetPaper.id);
+    resetExam();
   };
 
-  // 成绩报告
-  const scoreReport = useMemo(() => {
-    if (!currentPaper || !isSubmitted) return null;
-    let totalScore = 0;
-    let earnedScore = 0;
-    let correctCount = 0;
-
-    let vocabTotal = 0, vocabEarned = 0, vocabCorrect = 0, vocabCount = 0;
-    let readingTotal = 0, readingEarned = 0, readingCorrect = 0, readingCount = 0;
-    let listeningTotal = 0, listeningEarned = 0, listeningCorrect = 0, listeningCount = 0;
-
-    currentPaper.questions.forEach((q, idx) => {
-      totalScore += q.score;
-      const isCorrect = answers[idx] === q.correctAnswer;
-      if (isCorrect) {
-        earnedScore += q.score;
-        correctCount += 1;
-      }
-
-      const isListening = q.type === 'listening' || q.categoryTag.includes('听解') || q.categoryTag.includes('原声');
-      const isReading = !isListening && (q.type === 'reading' || Boolean(q.passage) || q.categoryTag.includes('读解') || q.categoryTag.includes('阅读'));
-
-      if (isListening) {
-        listeningTotal += q.score;
-        listeningCount += 1;
-        if (isCorrect) {
-          listeningEarned += q.score;
-          listeningCorrect += 1;
-        }
-      } else if (isReading) {
-        readingTotal += q.score;
-        readingCount += 1;
-        if (isCorrect) {
-          readingEarned += q.score;
-          readingCorrect += 1;
-        }
-      } else {
-        vocabTotal += q.score;
-        vocabCount += 1;
-        if (isCorrect) {
-          vocabEarned += q.score;
-          vocabCorrect += 1;
-        }
-      }
-    });
-
-    const scaledScore = totalScore > 0 ? Math.round((earnedScore / totalScore) * 100) : 0;
-    const scaledVocab = vocabTotal > 0 ? Math.round((vocabEarned / vocabTotal) * 100) : 0;
-    const scaledReading = readingTotal > 0 ? Math.round((readingEarned / readingTotal) * 100) : 0;
-    const scaledListening = listeningTotal > 0 ? Math.round((listeningEarned / listeningTotal) * 100) : 0;
-
-    const isDele = currentPaper.track === 'dele';
-    const isPassed = scaledScore >= 60;
-
-    return {
-      earnedScore,
-      totalScore,
-      correctCount,
-      totalQuestions: currentPaper.questions.length,
-      scaledScore,
-      isPassed,
-      isDele,
-      vocab: { score: scaledVocab, earned: vocabEarned, total: vocabTotal, count: vocabCount, correct: vocabCorrect },
-      reading: { score: scaledReading, earned: readingEarned, total: readingTotal, count: readingCount, correct: readingCorrect },
-      listening: { score: scaledListening, earned: listeningEarned, total: listeningTotal, count: listeningCount, correct: listeningCorrect }
-    };
-  }, [currentPaper, isSubmitted, answers]);
-
   return (
-    <div className="space-y-3 sm:space-y-3.5 pb-0 animate-in fade-in duration-200">
+    <div className="w-full space-y-3 sm:space-y-3.5 pb-8 animate-in fade-in duration-300">
       
-      {/* 1. 顶部大考题库展台 Banner (对标法语国家级与国际官方全真机考大卷库) */}
+      {/* Top Hero Banner (法语研习社同款权威大横幅) */}
       <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xs p-5 sm:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="space-y-1">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="px-2.5 py-0.5 rounded-full bg-[#FEF2F2] text-[#B82E24] border border-[#B82E24]/20 text-xs font-bold">
+            <span className="px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200 text-xs font-bold">
               🏛️ 西班牙国家级与国际官方全真机考大卷库
             </span>
             <span className="text-xs text-stone-500 font-medium">
-              64套全国名校历年全卷 · 1,536道官方全真试题 · 100分标准实测评分 · 动词变位 / 虚拟式配合 / 关系从句 / 介词辨析 / 实用告示 / 社科长篇读解
+              80套全国名校历年全卷 · 4,872道官方全真试题 · 100分标准实测评分 · 词汇语法 / 动词变位 / 完形填空 / 实用告示 / 原声听解 / 社科长篇读解
             </span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-black text-[#29354A] tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
             西班牙语国家统考与国际认证全真机考大卷库
           </h1>
           <p className="text-xs sm:text-sm text-stone-500">
-            涵盖全国名校考研二外 (北京外国语大学/上海外国语大学/广东外语外贸大学/北大/南大/复旦/武大/川外等历年真题及全真模拟冲刺)、高校西语专四 (EEE-4)、塞万提斯 DELE 欧标 (A1~B2) 与 SIELE 国际在线机考大卷！
+            涵盖全国名校考研二外 (北京外国语大学/上海外国语大学/广东外语外贸大学/北大/人大等历年真题)、全国高校西语专四 (TEM-4)、塞万提斯学院 DELE / SIELE 欧标国际认证与四大考点专项突破！
           </p>
         </div>
 
-        <div className="flex items-center gap-2 self-start md:self-auto shrink-0 flex-wrap">
-          {onOpenExamModal && (
-            <button
-              onClick={onOpenExamModal}
-              className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-2xs active:scale-95"
-              title="查看 2026 西班牙语官方报考全景指南与考期日历"
-            >
-              <Calendar className="w-3.5 h-3.5" />
-              <span>官方报考指南 & 考期</span>
-            </button>
+        {/* 倒计时与重置 */}
+        <div className="flex items-center gap-2 self-end md:self-auto shrink-0">
+          {mainMode !== 'special_drill' && (
+            <div className="flex items-center gap-1.5 bg-slate-900 text-white px-3 py-1.5 rounded-xl shadow-xs font-mono font-bold text-xs">
+              <Timer className="w-3.5 h-3.5 text-amber-400" />
+              <span>倒计时: {formatTimer(timeLeftSec)}</span>
+            </div>
           )}
           <button
-            onClick={onGoToMistakes}
-            className="px-3.5 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-[#B82E24] border border-amber-200 text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-2xs"
+            onClick={resetExam}
+            className="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold flex items-center gap-1 transition cursor-pointer"
+            title="清空答题重新开始"
           >
-            <BookMarked className="w-4 h-4" />
-            <span>查看错题本</span>
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span>重置</span>
           </button>
         </div>
       </div>
 
-      {/* 2. 四大赛道官方考纲权威说明横幅 */}
-      <div className="p-4 rounded-2xl bg-gradient-to-r from-[#FEF2F2]/50 via-slate-50 to-white border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+      {/* 📌 赛道官方考纲权威说明横幅 */}
+      <div className="p-4 rounded-2xl bg-gradient-to-r from-red-50/50 via-slate-50 to-white border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
         <div className="flex items-start gap-2.5">
           <span className={`w-2.5 h-2.5 rounded-full mt-1 shrink-0 animate-pulse ${
-            activeTrack === 'kaoyan' ? 'bg-[#B82E24]' : activeTrack === 'tem4' ? 'bg-indigo-600' : activeTrack === 'dele' ? 'bg-amber-600' : 'bg-slate-700'
+            activeTrack === 'kaoyan' ? 'bg-blue-600' : activeTrack === 'tem4' ? 'bg-red-600' : activeTrack === 'dele' ? 'bg-emerald-600' : activeTrack === 'siele' ? 'bg-amber-600' : 'bg-slate-700'
           }`} />
           <div className="space-y-0.5">
-            <div className="flex items-center gap-2 font-black text-[#29354A]">
-              <span className={activeTrack === 'kaoyan' ? 'text-[#B82E24]' : activeTrack === 'tem4' ? 'text-indigo-800' : activeTrack === 'dele' ? 'text-amber-800' : 'text-slate-800'}>
-                {activeTrack === 'kaoyan' ? `🎓 全国硕士考研二外西语·历年名校大卷与仿真专项 (${paperCounts.kaoyan.all}套)` 
-                  : activeTrack === 'tem4' ? `🏛️ 全国高校西班牙语专业四级 (EEE-4) 统考历年真题 (${paperCounts.tem4.all}套)`
-                  : activeTrack === 'dele' ? `🌍 塞万提斯学院 DELE 欧标国际认证 (A1-B2) 官方考卷 (${paperCounts.dele.all}套)`
-                  : `💻 SIELE 国际在线机考官方试题与自适应大卷 (${paperCounts.siele.all}套)`}
+            <div className="flex items-center gap-2 font-black text-slate-800">
+              <span className={activeTrack === 'kaoyan' ? 'text-blue-800' : activeTrack === 'tem4' ? 'text-red-800' : activeTrack === 'dele' ? 'text-emerald-800' : activeTrack === 'siele' ? 'text-amber-800' : 'text-slate-800'}>
+                {activeTrack === 'kaoyan' ? `🎓 全国硕士考研二外西语·历年名校大卷 (${paperCounts.kaoyan.all}套)` 
+                  : activeTrack === 'tem4' ? `🔴 全国高校西班牙语专业四级 (TEM-4) 统考大卷 (${tem4Count}套)`
+                  : activeTrack === 'dele' ? `🌍 DELE 塞万提斯学院官方权威认证大卷 (${paperCounts.dele.all}套)`
+                  : activeTrack === 'siele' ? `🟡 SIELE 国际机考综合与分级大卷 (${paperCounts.siele.all}套)`
+                  : `⚡ 西班牙语高频难点四大分类题型专项突破 (${paperCounts.drill.all}套)`}
               </span>
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-white text-[#29354A] border border-slate-200">
-                {activeTrack === 'kaoyan' ? '全国名校自主命题 & 仿真专项 · 100分制' 
-                  : activeTrack === 'tem4' ? '教育部高校外语指导委 · 100分制'
-                  : activeTrack === 'dele' ? '塞万提斯学院官方标准 · APTO认证制'
-                  : '四大名校联合在线机考 · 自适应出分'}
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-white text-slate-700 border border-slate-200">
+                {activeTrack === 'kaoyan' ? '全国高校自主命题 · 60题大卷 · 180分钟' 
+                  : activeTrack === 'tem4' ? '教育部高校外语指导委 · 75题大卷 · 130分钟'
+                  : activeTrack === 'dele' ? '塞万提斯学院官方标准 · 60题大卷 · APTO评级'
+                  : activeTrack === 'siele' ? '西班牙国际评估官方 · 60题大卷'
+                  : '四大核心考点靶向精练 · 12题短测'}
               </span>
             </div>
-            <p className="text-stone-600 leading-relaxed font-medium">
+            <p className="text-slate-600 leading-relaxed font-medium">
               {activeTrack === 'kaoyan' && (
-                <span>全面收录北京外国语大学、上海外国语大学、广东外语外贸大学、北京大学、南京大学、武汉大学、复旦大学等历年统考初试试卷，结合全国统考仿真卷与重点攻坚专项，重点考查 <strong>【动词变位·时态配合·双代词位置·虚拟式触发】</strong> 与 <strong>【拉美社科长文读解】</strong>，满分 100 分。</span>
+                <span>全面收录北京外国语大学、上海外国语大学、广东外语外贸大学、北京大学、南京大学、复旦大学、武汉大学等历年统考真题编年卷，重点考察 <strong>【虚拟式从句·变位时态·双代词连写】</strong> 与 <strong>【社科长篇阅读逻辑】</strong>，满分 100 分。</span>
               )}
               {activeTrack === 'tem4' && (
-                <span>高校西语专业四级 (EEE-4) 为全国高校西语专业最权威统一测试，全面考核 <strong>【动词时态配合·前置词搭配·自反被动句·完形填空·篇章读解】</strong>，精准检验本科阶段西语综合运用水平。</span>
+                <span>全国高校外语指导委员会权威命题，严格按 1:1 官方考卷比例配置：<strong>【听力理解 15题 + 词汇语法 30题 + 完型填空 10题 + 阅读理解 20题】</strong>，满额 75 题客观全真卷。</span>
               )}
               {activeTrack === 'dele' && (
-                <span>塞万提斯学院官方终身有效国际认证，覆盖 A1-B2 真实机考卷，严格采用 <strong>【APTO (合格) 双大组 60% 认证规则】</strong>，总分 100 分满分需达到 60 分且两大组各拿 30 分以上，终身免审！</span>
+                <span>西班牙塞万提斯学院官方终身认证机考母卷，覆盖 A1、A2、B1、B2 级别，精准配备<strong>考场原声朗读音频</strong>与<strong>逐题深度详析</strong>，满额 60 题大卷。</span>
               )}
               {activeTrack === 'siele' && (
-                <span>塞万提斯学院、墨西哥国立自治大学、萨拉曼卡大学和布宜诺斯艾利斯大学联合创办，涵盖 <strong>【全球综合大卷·商务与社评·语法词汇专项·自适应冲顶卷】</strong>，快速机考出分。</span>
+                <span>西班牙语国际评估测试 (SIELE)，涵盖 S1-S4 综合模块与全球自适应冲刺大卷，真实还原线上机考界面与答题流程。</span>
+              )}
+              {activeTrack === 'drill' && (
+                <span>直击中国西语学习者四大高频失分痛点：<strong>【虚拟式时态与句式】</strong>、<strong>【动词变位与时态辨析】</strong>、<strong>【双代词与固定前置词】</strong>、<strong>【长篇读解与社科文化】</strong>，配备做题即时解析！</span>
               )}
             </p>
           </div>
         </div>
+
+        {onNavigateToWriting && (
+          <button
+            onClick={onNavigateToWriting}
+            className="px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shrink-0 flex items-center justify-center gap-1.5 shadow-xs transition active:scale-98 cursor-pointer self-start sm:self-auto"
+          >
+            <span>✍️ 直通 AI 写作工坊</span>
+            <ChevronRight className="w-3.5 h-3.5" />
+          </button>
+        )}
       </div>
 
-      {/* 3. 赛道切换与试卷选择卡片 (Track Switcher & Filter Card) */}
+      {/* Track Switcher & Filter Card (大标签 + 二级子分类 + 卷库卡片网格) */}
       <div className="bg-white rounded-2xl p-4 border border-slate-200/80 shadow-xs space-y-4">
         
-        {/* 四大赛道主切换 Tabs */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 p-1.5 bg-slate-100 rounded-2xl border border-slate-200/70">
+        {/* Track Switcher Tabs (五大赛道大标签) */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 p-1.5 bg-slate-100 rounded-2xl border border-slate-200/70">
           <button
             onClick={() => {
               setActiveTrack('kaoyan');
-              setKaoyanFilter('all');
-              setSelectedPaperId('paper-kaoyan-bfsu-2024');
-              handleResetExam();
-              onTrackChange?.('kaoyan');
+              setKaoyanSubFilter('all');
+              setSelectedPaperId('paper-kaoyan-beiwai-2024');
+              resetExam();
             }}
             className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
               activeTrack === 'kaoyan'
-                ? 'bg-[#B82E24] text-white shadow-xs font-black'
-                : 'text-[#29354A] hover:bg-white/60'
+                ? 'bg-blue-600 text-white shadow-xs font-black'
+                : 'text-slate-700 hover:bg-white/60'
             }`}
           >
             <GraduationCap className="w-4 h-4" />
@@ -505,33 +517,30 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           <button
             onClick={() => {
               setActiveTrack('tem4');
-              setTem4Filter('all');
-              setSelectedPaperId('paper-eee4-2024');
-              handleResetExam();
-              onTrackChange?.('tem4');
+              setSelectedPaperId('paper-tem4-2024');
+              resetExam();
             }}
             className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
               activeTrack === 'tem4'
-                ? 'bg-[#B82E24] text-white shadow-xs font-black'
-                : 'text-[#29354A] hover:bg-white/60'
+                ? 'bg-red-600 text-white shadow-xs font-black'
+                : 'text-slate-700 hover:bg-white/60'
             }`}
           >
-            <ShieldCheck className="w-4 h-4" />
-            <span>🏛️ 高校西语专四 ({paperCounts.tem4.all}套)</span>
+            <Award className="w-4 h-4" />
+            <span>🔴 专四 TEM-4 ({tem4Count}套)</span>
           </button>
 
           <button
             onClick={() => {
               setActiveTrack('dele');
-              setDeleFilter('all');
+              setDeleSubFilter('all');
               setSelectedPaperId('paper-dele-a1-01');
-              handleResetExam();
-              onTrackChange?.('dele');
+              resetExam();
             }}
             className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
               activeTrack === 'dele'
-                ? 'bg-[#B82E24] text-white shadow-xs font-black'
-                : 'text-[#29354A] hover:bg-white/60'
+                ? 'bg-emerald-600 text-white shadow-xs font-black'
+                : 'text-slate-700 hover:bg-white/60'
             }`}
           >
             <Globe2 className="w-4 h-4" />
@@ -541,27 +550,43 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           <button
             onClick={() => {
               setActiveTrack('siele');
-              setSieleFilter('all');
+              setSieleSubFilter('all');
               setSelectedPaperId('paper-siele-s1-01');
-              handleResetExam();
-              onTrackChange?.('siele');
+              resetExam();
             }}
             className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
               activeTrack === 'siele'
-                ? 'bg-[#B82E24] text-white shadow-xs font-black'
-                : 'text-[#29354A] hover:bg-white/60'
+                ? 'bg-amber-600 text-white shadow-xs font-black'
+                : 'text-slate-700 hover:bg-white/60'
             }`}
           >
-            <Laptop className="w-4 h-4" />
-            <span>💻 SIELE 国际机考 ({paperCounts.siele.all}套)</span>
+            <Zap className="w-4 h-4" />
+            <span>🟡 SIELE 机考 ({paperCounts.siele.all}套)</span>
+          </button>
+
+          <button
+            onClick={() => {
+              setActiveTrack('drill');
+              setDrillSubFilter('all');
+              setSelectedPaperId('paper-drill-sub-01');
+              resetExam();
+            }}
+            className={`flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
+              activeTrack === 'drill'
+                ? 'bg-slate-800 text-white shadow-xs font-black'
+                : 'text-slate-700 hover:bg-white/60'
+            }`}
+          >
+            <Target className="w-4 h-4" />
+            <span>⚡ 专项攻坚突破 ({paperCounts.drill.all}套)</span>
           </button>
         </div>
 
-        {/* 分类筛选子标签 (高校 / 级别 / 专题分类) */}
+        {/* Sub-Filters: 分类筛选 */}
         <div className="flex items-center gap-2 flex-wrap pt-1">
-          <div className="flex items-center gap-1.5 text-xs font-black text-[#29354A] shrink-0">
+          <div className="flex items-center gap-1.5 text-xs font-black text-slate-800 shrink-0">
             <span className={`w-1.5 h-3.5 rounded-full ${
-              activeTrack === 'kaoyan' ? 'bg-[#B82E24]' : activeTrack === 'tem4' ? 'bg-indigo-600' : activeTrack === 'dele' ? 'bg-amber-600' : 'bg-slate-700'
+              activeTrack === 'kaoyan' ? 'bg-blue-600' : activeTrack === 'tem4' ? 'bg-red-600' : activeTrack === 'dele' ? 'bg-emerald-600' : activeTrack === 'siele' ? 'bg-amber-600' : 'bg-slate-700'
             }`} />
             <span>分类筛选:</span>
           </div>
@@ -573,16 +598,16 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                 { id: 'beiwai', label: `北京外国语大学 (${paperCounts.kaoyan.beiwai})` },
                 { id: 'shisu', label: `上海外国语大学 (${paperCounts.kaoyan.shisu})` },
                 { id: 'gdufs', label: `广东外语外贸大学 (${paperCounts.kaoyan.gdufs})` },
-                { id: 'others', label: `985名校联盟 (${paperCounts.kaoyan.others})` },
-                { id: 'mock', label: `全国统考综合与专项 (${paperCounts.kaoyan.mock})` }
+                { id: 'others985', label: `985名校联盟 (${paperCounts.kaoyan.others985})` },
+                { id: 'sprint', label: `全真冲刺大卷 (${paperCounts.kaoyan.sprint})` }
               ].map(f => (
                 <button
                   key={f.id}
-                  onClick={() => setKaoyanFilter(f.id)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer ${
-                    kaoyanFilter === f.id
-                      ? 'bg-[#B82E24] text-white shadow-2xs font-black'
-                      : 'bg-slate-50 text-[#29354A] hover:bg-slate-100 border border-slate-200/70'
+                  onClick={() => setKaoyanSubFilter(f.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+                    kaoyanSubFilter === f.id
+                      ? 'bg-blue-600 text-white shadow-2xs font-black'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200/70'
                   }`}
                 >
                   {f.label}
@@ -593,43 +618,28 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
 
           {activeTrack === 'tem4' && (
             <div className="flex items-center gap-1.5 flex-wrap">
-              {[
-                { id: 'all', label: `全部专四真题 (${paperCounts.tem4.all})` },
-                { id: 'real', label: `2017-2024统考真题 (${paperCounts.tem4.real})` },
-                { id: 'spec', label: `语法词汇专项 (${paperCounts.tem4.spec})` },
-                { id: 'mock', label: `考前金牌全真仿真 (${paperCounts.tem4.mock})` }
-              ].map(f => (
-                <button
-                  key={f.id}
-                  onClick={() => setTem4Filter(f.id)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer ${
-                    tem4Filter === f.id
-                      ? 'bg-[#B82E24] text-white shadow-2xs font-black'
-                      : 'bg-slate-50 text-[#29354A] hover:bg-slate-100 border border-slate-200/70'
-                  }`}
-                >
-                  {f.label}
-                </button>
-              ))}
+              <span className="px-3 py-1.5 rounded-xl text-xs font-black bg-red-600 text-white shadow-2xs">
+                全国统考真题与仿真编年卷 ({tem4Count}套 · 75题满额)
+              </span>
             </div>
           )}
 
           {activeTrack === 'dele' && (
             <div className="flex items-center gap-1.5 flex-wrap">
               {[
-                { id: 'all', label: `全部 DELE 欧标 (${paperCounts.dele.all})` },
-                { id: 'A1', label: `DELE A1 入门级 (${paperCounts.dele.A1})` },
-                { id: 'A2', label: `DELE A2 基础级 (${paperCounts.dele.A2})` },
-                { id: 'B1', label: `DELE B1 独立级 (${paperCounts.dele.B1})` },
-                { id: 'B2', label: `DELE B2 高阶级 (${paperCounts.dele.B2})` }
+                { id: 'all', label: `全部欧标考卷 (${paperCounts.dele.all})` },
+                { id: 'A1', label: `A1 入门级 (${paperCounts.dele.A1})` },
+                { id: 'A2', label: `A2 基础级 (${paperCounts.dele.A2})` },
+                { id: 'B1', label: `B1 进阶级 (${paperCounts.dele.B1})` },
+                { id: 'B2', label: `B2 中高级 (${paperCounts.dele.B2})` }
               ].map(f => (
                 <button
                   key={f.id}
-                  onClick={() => setDeleFilter(f.id)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer ${
-                    deleFilter === f.id
-                      ? 'bg-[#B82E24] text-white shadow-2xs font-black'
-                      : 'bg-slate-50 text-[#29354A] hover:bg-slate-100 border border-slate-200/70'
+                  onClick={() => setDeleSubFilter(f.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+                    deleSubFilter === f.id
+                      ? 'bg-emerald-600 text-white shadow-2xs font-black'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200/70'
                   }`}
                 >
                   {f.label}
@@ -641,19 +651,42 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           {activeTrack === 'siele' && (
             <div className="flex items-center gap-1.5 flex-wrap">
               {[
-                { id: 'all', label: `全部 SIELE 机考 (${paperCounts.siele.all})` },
-                { id: 'global', label: `全球综合大卷 (${paperCounts.siele.global})` },
-                { id: 'biz', label: `商务与文化社评 (${paperCounts.siele.biz})` },
-                { id: 'spec', label: `语法词汇专项 (${paperCounts.siele.spec})` },
-                { id: 'adapt', label: `自适应与阅读 (${paperCounts.siele.adapt})` }
+                { id: 'all', label: `全部机考大卷 (${paperCounts.siele.all})` },
+                { id: 'A2', label: `A2 分级卷 (${paperCounts.siele.A2})` },
+                { id: 'B1', label: `B1 综合卷 (${paperCounts.siele.B1})` },
+                { id: 'B2', label: `B2 高分冲刺卷 (${paperCounts.siele.B2})` }
               ].map(f => (
                 <button
                   key={f.id}
-                  onClick={() => setSieleFilter(f.id)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition cursor-pointer ${
-                    sieleFilter === f.id
-                      ? 'bg-[#B82E24] text-white shadow-2xs font-black'
-                      : 'bg-slate-50 text-[#29354A] hover:bg-slate-100 border border-slate-200/70'
+                  onClick={() => setSieleSubFilter(f.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+                    sieleSubFilter === f.id
+                      ? 'bg-amber-600 text-white shadow-2xs font-black'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200/70'
+                  }`}
+                >
+                  {f.label}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {activeTrack === 'drill' && (
+            <div className="flex items-center gap-1.5 flex-wrap">
+              {[
+                { id: 'all', label: `全部专项攻坚 (${paperCounts.drill.all})` },
+                { id: 'subjunctive', label: `虚拟式时态与句式 (${paperCounts.drill.subjunctive})` },
+                { id: 'conjugation', label: `动词变位与时态 (${paperCounts.drill.conjugation})` },
+                { id: 'pronoun', label: `双代词与固定前置词 (${paperCounts.drill.pronoun})` },
+                { id: 'reading', label: `长篇读解与社科文化 (${paperCounts.drill.reading})` }
+              ].map(f => (
+                <button
+                  key={f.id}
+                  onClick={() => setDrillSubFilter(f.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+                    drillSubFilter === f.id
+                      ? 'bg-slate-800 text-white shadow-2xs font-black'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200/70'
                   }`}
                 >
                   {f.label}
@@ -663,29 +696,44 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           )}
         </div>
 
-        {/* 试卷列表: 3 列平铺带滚动条 (完全参照法语模板 Paper Selector) */}
-        <div className="space-y-2 pt-1 border-t border-slate-100">
+        {/* Paper Selector: Visual Scrollable Cards */}
+        <div className="space-y-2 pt-2 border-t border-slate-100">
           <div className="flex items-center justify-between text-xs font-bold text-slate-600 px-1">
             <span className="flex items-center gap-1.5">
-              <FileCheck2 className="w-3.5 h-3.5 text-[#B82E24]" />
+              <FileCheck2 className="w-3.5 h-3.5 text-red-600" />
               <span>当前可作答试卷 ({filteredPapers.length} 套):</span>
             </span>
-            <span className="text-[11px] text-stone-400">点击卡片直接进入考场</span>
+            <div className="flex items-center gap-3">
+              {activeTrack === 'drill' && (
+                <div className="flex items-center gap-1 bg-slate-50 px-2 py-0.5 rounded-lg border border-slate-200">
+                  <span className="text-slate-500 text-[11px]">做题即时解析:</span>
+                  <button
+                    onClick={() => setShowInstantExplanation(!showInstantExplanation)}
+                    className={`px-1.5 py-0.5 rounded text-[10px] font-bold cursor-pointer ${
+                      showInstantExplanation ? 'bg-red-600 text-white' : 'bg-slate-200 text-slate-600'
+                    }`}
+                  >
+                    {showInstantExplanation ? '已开启' : '关闭'}
+                  </button>
+                </div>
+              )}
+              <span className="text-[11px] text-stone-400">点击卡片直接进入考场</span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 max-h-[220px] overflow-y-auto scrollbar-thin p-1">
-            {filteredPapers.map((paper) => {
-              const isSelected = selectedPaperId === paper.id;
-              const isFree = isFreePreviewPaper(paper);
-              const isLocked = !isVip && !isFree;
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 max-h-[230px] overflow-y-auto scrollbar-thin p-1">
+            {filteredPapers.map((p, idx) => {
+              const isSelected = selectedPaperId === p.id;
+              const isFree = p.isFreePreview;
+              const isLocked = !isVip && !isFree && idx !== 0;
 
               return (
                 <button
-                  key={paper.id}
-                  onClick={() => handleSelectPaper(paper)}
+                  key={p.id}
+                  onClick={() => handleSelectPaper(p)}
                   className={`p-3 rounded-2xl border text-left transition flex flex-col justify-between cursor-pointer relative ${
                     isSelected
-                      ? 'bg-[#FEF2F2] border-2 border-[#B82E24] shadow-xs'
+                      ? 'bg-red-50/70 border-2 border-red-600 shadow-xs'
                       : isLocked
                       ? 'bg-slate-50/70 hover:bg-slate-100/90 border-slate-200/70'
                       : 'bg-white hover:bg-slate-50 border-slate-200/80'
@@ -694,27 +742,27 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                   <div className="space-y-1">
                     <div className="flex items-center justify-between gap-1">
                       <span className={`text-[10px] px-1.5 py-0.2 rounded font-bold ${
-                        isFree 
+                        isFree || idx === 0
                           ? 'bg-emerald-100 text-emerald-800' 
                           : isVip 
                           ? 'bg-amber-100 text-amber-800' 
                           : 'bg-slate-200 text-slate-600'
                       }`}>
-                        {isFree ? '✓ 免费试考' : isVip ? '★ VIP专享' : '🔒 VIP专属'}
+                        {isFree || idx === 0 ? '✓ 免费试考' : isVip ? '★ VIP专享' : '🔒 VIP专属'}
                       </span>
-                      <span className="text-[10px] text-slate-400 font-medium truncate">
-                        {paper.schoolOrOrg}
+                      <span className="text-[10px] text-slate-400 font-medium truncate max-w-[140px]">
+                        {p.schoolOrOrg}
                       </span>
                     </div>
 
-                    <h4 className={`text-xs font-black line-clamp-1 ${isSelected ? 'text-[#B82E24]' : 'text-[#29354A]'}`}>
-                      {paper.title}
+                    <h4 className={`text-xs font-black line-clamp-1 ${isSelected ? 'text-red-700' : 'text-slate-900'}`}>
+                      {p.title}
                     </h4>
                   </div>
 
                   <div className="pt-2 mt-1 border-t border-slate-200/50 flex items-center justify-between text-[10px] text-slate-400">
-                    <span>{paper.questions.length} 题 · 满分 {paper.totalScore}分</span>
-                    <span>{paper.durationMinutes} 分钟</span>
+                    <span>{p.questions.length} 题 · 满分 {p.totalScore || 100}分</span>
+                    <span>{p.durationMinutes} 分钟</span>
                   </div>
                 </button>
               );
@@ -724,443 +772,410 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
 
       </div>
 
-      {/* 4. 考场核心交互区域 (Main Exam Arena: 左侧试题展示 + 右侧考场答题卡) */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-        
-        {/* 左侧 8 列: 试题展示 */}
-        <div className="lg:col-span-8 bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/80 shadow-xs space-y-4 sm:space-y-5">
-          {currentQuestion ? (
-            <div className="space-y-5">
-              
-              {/* 板块快速直达 (词汇语法 / 实用读解) */}
-              {sectionTabs.length > 1 && (
-                <div className="flex items-center gap-1.5 p-1.5 bg-slate-100 rounded-2xl border border-slate-200/70 overflow-x-auto no-scrollbar">
-                  <span className="text-[11px] font-bold text-stone-500 pl-2 shrink-0">题型直达:</span>
-                  {sectionTabs.map((tab) => (
+      {/* Locked Paper Barrier Screen for Non-VIP */}
+      {!isVip && !paper.isFreePreview && filteredPapers.indexOf(paper) !== 0 ? (
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border-2 border-red-200 shadow-xl text-center space-y-4 max-w-xl mx-auto my-6 animate-in fade-in duration-300">
+          <div className="w-16 h-16 mx-auto rounded-2xl bg-red-50 text-red-600 flex items-center justify-center">
+            <Lock className="w-8 h-8" />
+          </div>
+          <h3 className="text-xl font-black text-slate-900">《{paper.title}》为 VIP 专属高分真题考场</h3>
+          <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
+            该套试卷包含 {paper.questions.length} 道全真试题、听力原声音频与逐题双语名师拆解。免费学员仅开放首套体验卷。升级 VIP 终身卡（仅 ¥49.9），立享全站 {SPANISH_EXAM_PAPERS.length} 套大卷无限次实战刷题、原声调速精听与错题本自动归集！
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <button
+              onClick={() => onOpenVipModal(`🔒《${paper.title}》为 VIP 会员专享试卷！升级 VIP 终身卡（仅 ¥49.9），即可畅刷 ${SPANISH_EXAM_PAPERS.length} 套官方全真满额大卷与专项突破！`)}
+              className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-extrabold text-xs shadow-lg shadow-red-500/25 transition cursor-pointer"
+            >
+              立即升级 VIP 解锁全套真题 (¥49.9)
+            </button>
+            <button
+              onClick={() => setSelectedPaperId(filteredPapers[0].id)}
+              className="w-full sm:w-auto px-5 py-3 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition cursor-pointer"
+            >
+              返回免费体验卷
+            </button>
+          </div>
+        </div>
+      ) : currentQ ? (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+          
+          {/* Left 8 Cols: Question Details */}
+          <div className="lg:col-span-8 bg-white rounded-3xl p-5 sm:p-7 border border-slate-200/90 shadow-md space-y-6">
+            
+            {/* 考卷各大板块快速直达 (听力理解 / 词汇语法 / 完型填空 / 阅读理解 / 主观写作) */}
+            <div className="flex items-center gap-1.5 p-1.5 bg-slate-100/90 rounded-2xl overflow-x-auto no-scrollbar">
+              <span className="text-[11px] font-bold text-slate-500 pl-2 shrink-0">考卷板块:</span>
+              {sectionTabs.map((tab) => (
+                <button
+                  key={tab.key}
+                  onClick={() => setCurrentQuestionIndex(tab.startIndex)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
+                    tab.isActive
+                      ? 'bg-red-600 text-white shadow-xs font-black'
+                      : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200/60'
+                  }`}
+                  title={`直接跳转到【${tab.name}】首题`}
+                >
+                  <span>{tab.icon}</span>
+                  <span>{tab.name}</span>
+                  <span className={`text-[10px] px-1.5 py-0.2 rounded-md ${tab.isActive ? 'bg-white/25 text-white font-black' : 'bg-slate-100 text-slate-600'}`}>
+                    {tab.count}题
+                  </span>
+                </button>
+              ))}
+
+              {onNavigateToWriting && (
+                <button
+                  onClick={onNavigateToWriting}
+                  className="px-3 py-1.5 rounded-xl text-xs font-bold transition whitespace-nowrap flex items-center gap-1.5 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 shadow-2xs ml-auto cursor-pointer"
+                  title="前往西语专属 AI 写作与翻译实验室"
+                >
+                  <span>✍️</span>
+                  <span>主观写作工坊</span>
+                  <ChevronRight className="w-3 h-3 text-amber-700" />
+                </button>
+              )}
+            </div>
+
+            {/* Question Tag & Audio Navigation */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-3 border-b border-slate-100">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="px-2.5 py-1 rounded-lg bg-red-50 text-red-600 font-extrabold text-xs">
+                  第 {currentQ.questionNumber} 题 / 共 {paper.questions.length} 题
+                </span>
+                <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-xs font-bold">
+                  {currentQ.categoryTag}
+                </span>
+                <span className="text-[11px] text-slate-400">
+                  [{currentQ.score}分]
+                </span>
+              </div>
+
+              {/* Audio Player & Speed Controller */}
+              <div className="flex items-center gap-2 flex-wrap">
+                <div className="flex items-center bg-slate-100 p-0.5 rounded-lg text-[11px] font-bold">
+                  {[0.8, 1.0, 1.2].map((s) => (
                     <button
-                      key={tab.key}
-                      onClick={() => setCurrentQuestionIndex(tab.startIndex)}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-bold transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer ${
-                        tab.isActive
-                          ? 'bg-[#B82E24] text-white shadow-xs font-black'
-                          : 'bg-white text-[#29354A] hover:bg-slate-50 border border-slate-200/80'
+                      key={s}
+                      onClick={() => setAudioSpeed(s)}
+                      className={`px-1.5 py-0.5 rounded transition cursor-pointer ${
+                        audioSpeed === s ? 'bg-red-600 text-white shadow-2xs font-black' : 'text-slate-500 hover:text-slate-800'
                       }`}
-                      title={`直接跳转到【${tab.name}】`}
                     >
-                      <span>{tab.icon}</span>
-                      <span>{tab.name}</span>
-                      <span className={`text-[10px] px-1.5 py-0.2 rounded-md ${tab.isActive ? 'bg-white/25 text-white font-black' : 'bg-slate-50 text-slate-600'}`}>
-                        {tab.count}题
-                      </span>
+                      {s}x
                     </button>
                   ))}
                 </div>
-              )}
-
-              {/* 试题标头 */}
-              <div className="flex items-center justify-between gap-2 pb-3 border-b border-slate-200/80">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="px-2.5 py-1 rounded-xl text-white font-mono text-xs font-black bg-[#B82E24]">
-                    第 {currentQuestionIndex + 1} 题
-                  </span>
-                  <span className="px-2.5 py-0.5 rounded-full bg-slate-50 text-[#29354A] border border-slate-200/70 text-xs font-bold">
-                    {currentQuestion.categoryTag}
-                  </span>
-                  <span className="text-xs text-stone-400 font-medium">
-                    分值: {currentQuestion.score} 分
-                  </span>
-                </div>
 
                 <button
-                  onClick={() => speakSpanish(currentQuestion.passage || currentQuestion.questionText)}
-                  className="p-1.5 rounded-lg bg-[#FEF2F2] text-[#B82E24] hover:bg-[#FEF2F2]/70 transition cursor-pointer"
-                  title="标准卡斯蒂利亚西班牙语朗读题目"
+                  onClick={() => speakSpanish(currentQ.audioScript || currentQ.passage || currentQ.questionText, audioSpeed)}
+                  className="px-2.5 py-1 rounded-xl bg-red-50 hover:bg-red-100 text-xs text-red-600 hover:text-red-700 font-bold flex items-center gap-1 transition shadow-2xs cursor-pointer"
+                  title="朗读题目西班牙语音频"
                 >
-                  <Volume2 className="w-4 h-4" />
+                  <Volume2 className="w-3.5 h-3.5" />
+                  <span>朗读原音 ({audioSpeed}x)</span>
                 </button>
               </div>
+            </div>
 
-              {/* 阅读篇章文本 (如有) */}
-              {currentQuestion.passage && (
-                <div className="p-4 sm:p-5 rounded-2xl bg-slate-50/90 border border-slate-200/70 space-y-2.5 select-text shadow-2xs relative">
-                  <div className="flex items-center justify-between pb-2 border-b border-slate-200/70">
-                    <span className="text-xs font-black text-[#29354A] flex items-center gap-1.5">
-                      <BookOpen className="w-4 h-4 text-amber-600" />
-                      <span>【读解分析 · 官方全真西文阅读文本材料】</span>
-                    </span>
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-white text-[#B82E24] border border-amber-300/40 shadow-2xs">
-                      西文原汁原味语料
-                    </span>
-                  </div>
-                  <div className="text-xs sm:text-sm text-[#29354A] leading-relaxed font-medium whitespace-pre-line font-serif">
-                    {currentQuestion.passage}
-                  </div>
-                </div>
-              )}
-
-              {/* 听力播放器 (如有音频或原文脚本) */}
-              {(currentQuestion.audioScript || currentQuestion.type === 'listening') && (
-                <div className="p-4 rounded-2xl bg-slate-50/60 border border-[#B82E24]/30 shadow-2xs space-y-3">
-                  <div className="flex items-center justify-between flex-wrap gap-3">
-                    <div className="flex items-center gap-3">
-                      <button
-                        onClick={() => currentQuestion.audioScript && handlePlayAudio(currentQuestion.audioScript)}
-                        className="w-10 h-10 rounded-full bg-[#B82E24] hover:bg-[#991B1B] text-white flex items-center justify-center shadow-md shadow-[#B82E24]/25 transition cursor-pointer shrink-0"
-                        title={isPlayingAudio ? '暂停听力' : '播放原声听力'}
-                      >
-                        {isPlayingAudio ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 ml-0.5" />}
-                      </button>
-                      <div>
-                        <div className="text-xs font-bold text-[#B82E24] flex items-center gap-1.5">
-                          <Headphones className="w-3.5 h-3.5 text-[#B82E24]" />
-                          <span>考场原声听力播放器 (Comprensión auditiva)</span>
-                        </div>
-                        <p className="text-[11px] text-stone-600">
-                          {isPlayingAudio ? '正在播放卡斯蒂利亚西班牙语官方录音...' : '点击播放西班牙官方原声场景材料'}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <div className="flex items-center gap-1 text-[11px] font-bold text-stone-600 bg-white px-2 py-1 rounded-xl border border-slate-200/70">
-                        <span>语速:</span>
-                        {[0.8, 1.0, 1.2].map(speed => (
-                          <button
-                            key={speed}
-                            onClick={() => setAudioSpeed(speed)}
-                            className={`px-1.5 py-0.5 rounded text-[10px] ${
-                              audioSpeed === speed ? 'bg-[#B82E24] text-white font-bold' : 'hover:bg-white'
-                            }`}
-                          >
-                            {speed}x
-                          </button>
-                        ))}
-                      </div>
-
-                      <button
-                        onClick={() => setShowListeningScript(prev => !prev)}
-                        className="px-2.5 py-1 rounded-xl text-[11px] font-bold bg-white text-[#B82E24] border border-[#B82E24]/30 hover:bg-[#FEF2F2]/60 transition cursor-pointer"
-                      >
-                        {showListeningScript ? '隐藏原文' : '查看原文大纲'}
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* 折叠听力原文 */}
-                  {showListeningScript && currentQuestion.audioScript && (
-                    <div className="pt-2 border-t border-[#B82E24]/20 text-xs font-serif italic text-[#29354A] leading-relaxed bg-white p-3 rounded-xl border border-slate-200/70">
-                      <div className="font-bold text-[#29354A] text-[11px] not-italic pb-1">
-                        【听力原声材料大纲】：
-                      </div>
-                      {currentQuestion.audioScript}
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {/* 题干文本 */}
-              <h3 className="text-sm sm:text-base font-bold text-[#29354A] whitespace-pre-line leading-relaxed">
-                {currentQuestion.questionText}
+            {/* Official Question Title Headline */}
+            <div className="space-y-1">
+              <span className="text-[11px] font-bold text-slate-400">
+                [Pregunta Oficial] Lee atentamente y selecciona la opción correcta:
+              </span>
+              <h3 className="text-base sm:text-lg font-black text-slate-900 leading-snug">
+                {currentQ.title}
               </h3>
+            </div>
 
-              {/* 选项列表 */}
-              <div className="space-y-2.5">
-                {currentQuestion.options.map((opt) => {
-                  const isSelected = answers[currentQuestionIndex] === opt.key;
-                  const isCorrect = currentQuestion.correctAnswer === opt.key;
-                  const showResult = isSubmitted || (showInstantExplanation && answers[currentQuestionIndex] !== undefined);
-
-                  let optStyle = 'bg-slate-50/70 hover:bg-white text-[#29354A] border-slate-200/80';
-                  if (isSelected) {
-                    optStyle = 'bg-[#FEF2F2] border-[#B82E24] text-[#B82E24] shadow-2xs font-bold';
-                  }
-                  if (showResult) {
-                    if (isCorrect) {
-                      optStyle = 'bg-emerald-50 border-emerald-500 text-emerald-900 font-bold';
-                    } else if (isSelected && !isCorrect) {
-                      optStyle = 'bg-rose-50 border-rose-500 text-rose-900 font-bold';
-                    }
-                  }
-
-                  return (
-                    <button
-                      key={opt.key}
-                      onClick={() => handleSelectOption(opt.key)}
-                      className={`w-full text-left p-3.5 rounded-2xl border transition duration-150 flex items-center justify-between gap-3 text-xs sm:text-sm cursor-pointer ${optStyle}`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <span className={`w-6 h-6 rounded-lg text-xs font-black flex items-center justify-center ${
-                          isSelected && !showResult
-                            ? 'bg-[#B82E24] text-white'
-                            : 'bg-white border border-slate-200/80 text-[#29354A]'
-                        }`}>
-                          {opt.key}
-                        </span>
-                        <span className="leading-relaxed">{opt.text}</span>
-                      </div>
-
-                      {showResult && isCorrect && (
-                        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                      )}
-                      {showResult && isSelected && !isCorrect && (
-                        <XCircle className="w-4 h-4 text-rose-600 shrink-0" />
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* 即时权威解析卡片 */}
-              {(isSubmitted || (showInstantExplanation && answers[currentQuestionIndex] !== undefined)) && (
-                <div className="p-4 sm:p-5 rounded-2xl bg-slate-50/80 border border-slate-200/80 space-y-3 text-xs">
-                  <div className="flex items-center gap-1.5 text-[#B82E24] font-black">
-                    <Sparkles className="w-4 h-4 text-amber-500" />
-                    <span>考点权威名师解析</span>
-                  </div>
-                  <p className="text-[#29354A] leading-relaxed font-medium whitespace-pre-line">
-                    {currentQuestion.explanation}
-                  </p>
+            {/* Reading Passage / Context Box - Authentic Spanish Exam Layout */}
+            {currentQ.passage && (
+              <div className="p-5 sm:p-6 rounded-2xl bg-amber-50/40 border-2 border-amber-200/80 text-sm sm:text-base font-medium text-slate-900 leading-loose whitespace-pre-line select-text shadow-xs relative">
+                <div className="flex items-center justify-between pb-2 mb-3 border-b border-amber-200/60">
+                  <span className="text-xs font-black text-amber-900 flex items-center gap-1.5">
+                    <BookOpen className="w-4 h-4 text-red-600" />
+                    <span>[Texto de Lectura · 官方全真篇章材料]</span>
+                  </span>
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-white text-amber-800 border border-amber-200">
+                    西语原汁原味权威语料
+                  </span>
                 </div>
-              )}
-
-              {/* 翻题导航 */}
-              <div className="flex items-center justify-between pt-4 border-t border-slate-200/80">
-                <button
-                  onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))}
-                  disabled={currentQuestionIndex === 0}
-                  className="px-4 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200/80 disabled:opacity-40 text-[#29354A] text-xs font-bold transition flex items-center gap-1 cursor-pointer"
-                >
-                  <ChevronLeft className="w-4 h-4" />
-                  <span>上一题</span>
-                </button>
-
-                <span className="text-xs text-stone-500 font-mono">
-                  {currentQuestionIndex + 1} / {currentPaper?.questions.length || 0}
-                </span>
-
-                <button
-                  onClick={() => setCurrentQuestionIndex(prev => Math.min((currentPaper?.questions.length || 1) - 1, prev + 1))}
-                  disabled={currentQuestionIndex === (currentPaper?.questions.length || 1) - 1}
-                  className="px-4 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200/80 disabled:opacity-40 text-[#29354A] text-xs font-bold transition flex items-center gap-1 cursor-pointer"
-                >
-                  <span>下一题</span>
-                  <ChevronRight className="w-4 h-4" />
-                </button>
+                <div className="font-serif sm:text-[15px] text-slate-900 leading-relaxed tracking-wide">
+                  {currentQ.passage}
+                </div>
               </div>
+            )}
 
-            </div>
-          ) : (
-            <div className="text-center py-12 text-stone-400 text-sm">
-              暂无试卷题目
-            </div>
-          )}
-        </div>
-
-        {/* 右侧 4 列: 考场答题卡与评分 */}
-        <div className="lg:col-span-4 space-y-4">
-          
-          {/* 答题卡 */}
-          <div className="bg-white rounded-3xl p-5 border border-slate-200/80 shadow-xs space-y-4">
-            <div className="flex items-center justify-between pb-2 border-b border-slate-200/80">
-              <h4 className="text-sm font-black text-[#29354A] flex items-center gap-1.5">
-                <Target className="w-4 h-4 text-[#B82E24]" />
-                <span>考场答题卡</span>
-              </h4>
-              <div className="flex items-center gap-2">
-                <span className="text-xs text-stone-400 font-mono">
-                  已答 {Object.keys(answers).length} / {currentPaper?.questions.length || 0}
-                </span>
-                {Object.keys(answers).length > 0 && !isSubmitted && (
-                  <button
-                    onClick={handleResetExam}
-                    className="text-[11px] text-stone-500 hover:text-[#B82E24] transition flex items-center gap-0.5 cursor-pointer font-bold px-1.5 py-0.5 rounded bg-slate-50 hover:bg-rose-50 border border-slate-200/70"
-                    title="清空当前试卷已选答案"
-                  >
-                    <RotateCcw className="w-3 h-3" />
-                    <span>清空作答</span>
-                  </button>
-                )}
-              </div>
+            {/* Question sentence */}
+            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 text-sm sm:text-base font-bold text-slate-900">
+              {currentQ.questionText}
             </div>
 
-            {/* 答题气泡网格 */}
-            <div className="grid grid-cols-5 gap-2">
-              {currentPaper?.questions.map((q, idx) => {
-                const isAnswered = answers[idx] !== undefined;
-                const isCurrent = currentQuestionIndex === idx;
-                const isCorrect = answers[idx] === q.correctAnswer;
+            {/* Options List */}
+            <div className="space-y-3">
+              <span className="text-xs font-bold text-slate-500 block">
+                [Opciones · 4选1单项选择]：
+              </span>
+              {currentQ.options.map((opt) => {
+                const isSelected = answers[currentQ.id] === opt.key;
+                const isCorrect = currentQ.correctAnswer === opt.key;
+                const userAnswered = answers[currentQ.id] !== undefined;
+                // 只对【用户实际作答过的题目】才展示对错反馈，未作答题目即使交卷也不显示正确答案
+                const showFeedback = userAnswered && (isSubmitted || (mainMode === 'special_drill' && showInstantExplanation));
 
-                let bubbleStyle = 'bg-slate-50 text-[#29354A] hover:bg-slate-100 border border-slate-200/80';
-                if (isCurrent) {
-                  bubbleStyle = 'ring-2 ring-[#B82E24] font-bold bg-white border-slate-200/80';
+                let optionStyle = 'bg-white hover:bg-slate-50 border-slate-200 text-slate-800';
+                if (isSelected) {
+                  optionStyle = 'bg-red-600 text-white border-red-600 shadow-md shadow-red-500/20 font-bold';
                 }
-                if (isSubmitted) {
-                  bubbleStyle = isCorrect ? 'bg-emerald-500 text-white font-bold' : 'bg-rose-500 text-white font-bold';
-                } else if (isAnswered) {
-                  bubbleStyle = 'bg-[#B82E24] text-white font-bold';
+                if (showFeedback) {
+                  if (isCorrect) {
+                    optionStyle = 'bg-emerald-500 text-white border-emerald-500 shadow-md font-bold';
+                  } else if (isSelected && !isCorrect) {
+                    optionStyle = 'bg-rose-500 text-white border-rose-500 shadow-md font-bold';
+                  }
                 }
 
                 return (
                   <button
-                    key={idx}
-                    onClick={() => setCurrentQuestionIndex(idx)}
-                    className={`h-9 rounded-xl text-xs flex items-center justify-center transition cursor-pointer ${bubbleStyle}`}
+                    key={opt.key}
+                    onClick={() => handleSelectOption(currentQ.id, opt.key)}
+                    className={`w-full p-4 rounded-2xl border text-left transition flex items-center justify-between gap-3 text-sm cursor-pointer ${optionStyle}`}
                   >
-                    {idx + 1}
+                    <div className="flex items-center gap-3">
+                      <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-black shrink-0 ${
+                        isSelected || (showFeedback && isCorrect)
+                          ? 'bg-white/20 text-white'
+                          : 'bg-slate-100 text-slate-700'
+                      }`}>
+                        {opt.key}
+                      </span>
+                      <span className="font-medium">{opt.text}</span>
+                    </div>
+
+                    {showFeedback && (
+                      <span className="shrink-0">
+                        {isCorrect ? <CheckCircle className="w-5 h-5" /> : isSelected ? <XCircle className="w-5 h-5" /> : null}
+                      </span>
+                    )}
                   </button>
                 );
               })}
             </div>
 
-            {/* 即时解析开关 */}
-            <div className="pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs text-[#29354A]">
-              <span>做完即时显示解析</span>
+            {/* Instant / Post-Submit Explanation Card — 只对已作答题目显示，不泄露未作答题的正确答案 */}
+            {answers[currentQ.id] !== undefined && (isSubmitted || (mainMode === 'special_drill' && showInstantExplanation)) && (
+              <div className="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200/80 text-xs space-y-3 animate-in fade-in duration-300">
+                <div className="flex items-center justify-between font-bold text-amber-900 border-b border-amber-200/60 pb-2">
+                  <span className="flex items-center gap-1">
+                    <Sparkles className="w-4 h-4 text-amber-600" />
+                    <span>官方教研答案解析与考点拆解</span>
+                  </span>
+                  <span className="px-2 py-0.5 rounded-full bg-amber-200/80 text-amber-900 font-extrabold text-[11px]">
+                    正确答案: 选项 {currentQ.correctAnswer}
+                  </span>
+                </div>
+
+                <div className="space-y-1.5 text-slate-700">
+                  <strong className="text-amber-950 block">💡 考点深度剖析：</strong>
+                  <p className="leading-relaxed">
+                    {currentQ.explanationDetail?.analysis || currentQ.explanation}
+                  </p>
+                </div>
+
+                {currentQ.explanationDetail?.translation && (
+                  <div className="space-y-1.5 text-slate-700">
+                    <strong className="text-amber-950 block">📖 全文/原句中文翻译：</strong>
+                    <p className="leading-relaxed text-slate-600">{currentQ.explanationDetail.translation}</p>
+                  </div>
+                )}
+
+                {/* Audio Script Review Box if available */}
+                {currentQ.audioScript && (
+                  <div className="bg-white p-3.5 rounded-xl border border-amber-200/90 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="font-bold text-amber-900 flex items-center gap-1.5">
+                        <Volume2 className="w-3.5 h-3.5 text-red-600" />
+                        <span>🎧 官方听力对话录音原文大纲 (Transcripción de Audio)</span>
+                      </span>
+                      <button
+                        onClick={() => speakSpanish(currentQ.audioScript || '', audioSpeed)}
+                        className="px-2 py-0.5 rounded-lg bg-red-600 hover:bg-red-700 text-white font-bold text-[11px] flex items-center gap-1 transition shadow-2xs cursor-pointer"
+                      >
+                        <Volume2 className="w-3 h-3" />
+                        <span>精听重播 ({audioSpeed}x)</span>
+                      </button>
+                    </div>
+                    <div className="p-2.5 rounded-lg bg-slate-50 text-slate-800 font-medium leading-relaxed font-mono text-[11px] whitespace-pre-line border border-slate-200/60">
+                      {currentQ.audioScript}
+                    </div>
+                  </div>
+                )}
+
+                {currentQ.explanationDetail?.vocabList && currentQ.explanationDetail.vocabList.length > 0 && (
+                  <div className="space-y-1.5 pt-1">
+                    <strong className="text-amber-950 block">🔑 核心考点高频词：</strong>
+                    <div className="flex flex-wrap gap-1.5">
+                      {currentQ.explanationDetail.vocabList.map((v, i) => (
+                        <span key={i} className="px-2 py-0.5 rounded-md bg-white border border-amber-200 text-amber-900 font-mono text-[11px]">
+                          <strong>{v.word}</strong>: {v.meaning}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Bottom Question Prev/Next Navigation */}
+            <div className="flex items-center justify-between pt-4 border-t border-slate-100">
               <button
-                onClick={() => setShowInstantExplanation(prev => !prev)}
-                className={`w-10 h-6 rounded-full transition-colors relative cursor-pointer ${
-                  showInstantExplanation
-                    ? 'bg-[#B82E24]'
-                    : 'bg-stone-300'
+                onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))}
+                disabled={currentQuestionIndex === 0}
+                className={`px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition ${
+                  currentQuestionIndex === 0
+                    ? 'text-slate-300 cursor-not-allowed'
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer'
                 }`}
               >
-                <div className={`w-4 h-4 rounded-full bg-white absolute top-1 transition-transform ${
-                  showInstantExplanation ? 'left-5' : 'left-1'
-                }`} />
+                <ChevronLeft className="w-4 h-4" />
+                <span>上一题</span>
+              </button>
+
+              <span className="text-xs text-slate-400 font-mono">
+                {currentQuestionIndex + 1} / {paper.questions.length}
+              </span>
+
+              <button
+                onClick={() => setCurrentQuestionIndex(prev => Math.min(paper.questions.length - 1, prev + 1))}
+                disabled={currentQuestionIndex === paper.questions.length - 1}
+                className={`px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition ${
+                  currentQuestionIndex === paper.questions.length - 1
+                    ? 'text-slate-300 cursor-not-allowed'
+                    : 'bg-red-600 text-white hover:bg-red-700 shadow-md shadow-red-500/20 cursor-pointer'
+                }`}
+              >
+                <span>下一题</span>
+                <ChevronRight className="w-4 h-4" />
               </button>
             </div>
 
-            {/* 提交答卷按钮 */}
-            {!isSubmitted ? (
-              <button
-                onClick={handleSubmitPaper}
-                className="w-full py-3 rounded-2xl bg-[#B82E24] hover:bg-[#991B1B] shadow-[#B82E24]/25 text-white font-black text-sm shadow-md active:scale-98 transition cursor-pointer"
-              >
-                提交答卷 · 生成成绩单
-              </button>
-            ) : (
-              <button
-                onClick={handleResetExam}
-                className="w-full py-2.5 rounded-2xl bg-slate-50 hover:bg-slate-100 text-[#29354A] font-bold text-xs border border-slate-200/80 transition cursor-pointer"
-              >
-                再考一次
-              </button>
-            )}
           </div>
 
-          {/* 成绩单面板 (提交后呈现) */}
-          {scoreReport && (
-            <div className="bg-white rounded-3xl p-5 border border-slate-200/80 shadow-xs space-y-3.5 animate-in fade-in duration-200">
-              <div className="flex items-center justify-between pb-2 border-b border-slate-100">
-                <span className="text-xs font-black text-[#29354A]">官方综合评分结果</span>
-                <span className={`px-2 py-0.5 rounded-md text-xs font-black ${
-                  scoreReport.isPassed ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'
-                }`}>
-                  {scoreReport.isDele 
-                    ? (scoreReport.isPassed ? 'APTO (合格认证)' : 'NO APTO (未通过)') 
-                    : (scoreReport.isPassed ? '合格通过' : '未达及格线')}
+          {/* Right 4 Cols: Answer Sheet & Score Report */}
+          <div className="lg:col-span-4 space-y-4">
+            
+            {/* Answer Sheet Card */}
+            <div className="bg-white rounded-3xl p-5 border border-slate-200/90 shadow-md space-y-4">
+              <div className="flex items-center justify-between">
+                <h4 className="font-extrabold text-sm text-slate-900">
+                  全真答题卡 ({paper.questions.length} 题)
+                </h4>
+                <span className="text-xs text-slate-400 font-mono">
+                  已做 {Object.keys(answers).length}/{paper.questions.length}
                 </span>
               </div>
 
-              <div className="text-center py-2 bg-slate-50 rounded-2xl border border-slate-100">
-                <div className="text-3xl font-black text-[#B82E24]">
-                  {scoreReport.scaledScore} <span className="text-xs font-normal text-slate-500">/ 100 分</span>
-                </div>
-                <p className="text-[11px] text-slate-500 font-medium mt-0.5">
-                  答对 {scoreReport.correctCount} 题 / 共 {scoreReport.totalQuestions} 题
-                </p>
+              {/* Number Matrix (60~75 题矩阵自适应) */}
+              <div className="grid grid-cols-5 sm:grid-cols-4 gap-1.5 max-h-[320px] overflow-y-auto pr-1 no-scrollbar">
+                {paper.questions.map((q, idx) => {
+                  const isCurrent = idx === currentQuestionIndex;
+                  const isAnswered = answers[q.id] !== undefined;
+                  const isCorrect = isSubmitted && answers[q.id] === q.correctAnswer;
+                  const isWrong = isSubmitted && isAnswered && answers[q.id] !== q.correctAnswer;
+
+                  let boxClass = 'bg-slate-50 text-slate-700 border-slate-200';
+                  if (isAnswered) boxClass = 'bg-red-50 text-red-700 border-red-300 font-bold';
+                  if (isCurrent) boxClass = 'ring-2 ring-red-600 font-black';
+                  if (isSubmitted) {
+                    if (isCorrect) boxClass = 'bg-emerald-500 text-white border-emerald-500 font-bold';
+                    else if (isWrong) boxClass = 'bg-rose-500 text-white border-rose-500 font-bold';
+                  }
+
+                  return (
+                    <button
+                      key={q.id}
+                      onClick={() => setCurrentQuestionIndex(idx)}
+                      className={`h-8 rounded-lg border text-[11px] flex items-center justify-center transition font-mono cursor-pointer ${boxClass}`}
+                    >
+                      {idx + 1}
+                    </button>
+                  );
+                })}
               </div>
 
-              {/* 各题型得分率 */}
-              <div className="space-y-2 text-xs">
-                <div>
-                  <div className="flex justify-between font-bold text-slate-700 mb-1">
-                    <span>词汇与文法结构</span>
-                    <span>{scoreReport.vocab.score}% ({scoreReport.vocab.correct}/{scoreReport.vocab.count}题)</span>
-                  </div>
-                  <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-[#B82E24] rounded-full transition-all duration-500" 
-                      style={{ width: `${scoreReport.vocab.score}%` }} 
-                    />
-                  </div>
-                </div>
-
-                {scoreReport.reading.count > 0 && (
-                  <div>
-                    <div className="flex justify-between font-bold text-slate-700 mb-1">
-                      <span>实用告示与长篇读解</span>
-                      <span>{scoreReport.reading.score}% ({scoreReport.reading.correct}/{scoreReport.reading.count}题)</span>
-                    </div>
-                    <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                      <div 
-                        className="h-full bg-amber-500 rounded-full transition-all duration-500" 
-                        style={{ width: `${scoreReport.reading.score}%` }} 
-                      />
-                    </div>
-                  </div>
-                )}
-
-                {scoreReport.listening && scoreReport.listening.count > 0 && (
-                  <div>
-                    <div className="flex justify-between font-bold text-slate-700 mb-1">
-                      <span>听解原声与交际辨析</span>
-                      <span>{scoreReport.listening.score}% ({scoreReport.listening.correct}/{scoreReport.listening.count}题)</span>
-                    </div>
-                    <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                      <div 
-                        className="h-full bg-emerald-500 rounded-full transition-all duration-500" 
-                        style={{ width: `${scoreReport.listening.score}%` }} 
-                      />
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              <button
-                onClick={onGoToMistakes}
-                className="w-full py-2 bg-amber-50 hover:bg-amber-100 text-[#B82E24] border border-amber-200 font-bold text-xs rounded-xl transition cursor-pointer flex items-center justify-center gap-1"
-              >
-                <BookMarked className="w-3.5 h-3.5" />
-                <span>进入错题本逐题复盘</span>
-              </button>
+              {/* Submit Button */}
+              {!isSubmitted ? (
+                <button
+                  onClick={handleSubmitExam}
+                  className="w-full py-3 rounded-2xl bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-extrabold text-xs shadow-lg shadow-red-500/25 transition active:scale-98 cursor-pointer"
+                >
+                  交卷并生成评估报告
+                </button>
+              ) : (
+                <button
+                  onClick={resetExam}
+                  className="w-full py-3 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs border border-slate-200 transition cursor-pointer"
+                >
+                  重新作答本科目
+                </button>
+              )}
             </div>
-          )}
 
-          {/* 考场须知与官方评分指引 (未提交时展示，填补右侧下方空白保持左右对齐) */}
-          {!scoreReport && (
-            <div className="bg-white rounded-3xl p-4 sm:p-5 border border-slate-200/80 shadow-xs space-y-3">
-              <div className="flex items-center gap-2 pb-2 border-b border-slate-100">
-                <Sparkles className="w-4 h-4 text-amber-500" />
-                <h5 className="text-xs font-black text-[#29354A]">官方考纲与考场规则</h5>
+            {/* Exam Result Report Board (When Submitted) */}
+            {scoreResult && (
+              <div className="bg-gradient-to-br from-amber-50/90 via-red-50/40 to-white text-slate-900 rounded-3xl p-5 border border-amber-200/90 shadow-md space-y-3 animate-in zoom-in-95 duration-200">
+                <div className="flex items-center gap-2">
+                  <Award className="w-5 h-5 text-amber-600" />
+                  <h4 className="font-extrabold text-sm text-slate-900">
+                    西班牙语模考成绩评估单
+                  </h4>
+                </div>
+
+                <div className="p-3 bg-white rounded-2xl border border-amber-100 space-y-1 shadow-2xs">
+                  <div className="flex items-baseline justify-between">
+                    <span className="text-xs text-slate-500">得分/总分:</span>
+                    <span className="text-xl font-black text-red-600 font-mono">
+                      {scoreResult.earned} / {scoreResult.total} 分
+                    </span>
+                  </div>
+                  <div className="flex items-baseline justify-between text-xs">
+                    <span className="text-slate-500">正确率:</span>
+                    <span className="font-bold text-emerald-600">{scoreResult.percentage}%</span>
+                  </div>
+                </div>
+
+                <div className="p-3 bg-amber-100/60 border border-amber-200 rounded-2xl space-y-1">
+                  <span className="text-[11px] text-amber-900 font-bold block">📊 官方预估等级：</span>
+                  <p className="text-sm font-black text-amber-800">{scoreResult.gradeEstimate}</p>
+                </div>
+
+                {/* Free User VIP Upgrade Card */}
+                {!isVip && (
+                  <div className="p-3.5 rounded-2xl bg-gradient-to-r from-red-600 to-amber-600 text-white space-y-2 shadow-lg shadow-red-500/25">
+                    <div className="flex items-center gap-1.5 text-xs font-black">
+                      <Sparkles className="w-4 h-4 text-amber-200" />
+                      <span>诊断完成！开启考前满分冲刺</span>
+                    </div>
+                    <p className="text-[11px] text-white/90 leading-relaxed">
+                      开通 VIP 终身卡（仅 ¥49.9），立即解锁剩余 <strong>{SPANISH_EXAM_PAPERS.length - 1} 套</strong> 官方全真专四、考研大卷、DELE/SIELE 认证大卷与四大题型专项攻坚！
+                    </p>
+                    <button
+                      onClick={() => onOpenVipModal(`🏆 您已完成免费试考卷评测！升级 VIP 终身卡（仅 ¥49.9），畅刷 ${SPANISH_EXAM_PAPERS.length} 套官方全真大卷与专项突破！`)}
+                      className="w-full py-2 bg-white text-red-700 hover:bg-red-50 font-black rounded-xl text-xs shadow-xs transition active:scale-98 flex items-center justify-center gap-1 cursor-pointer"
+                    >
+                      <Lock className="w-3.5 h-3.5" />
+                      <span>立即解锁全部 {SPANISH_EXAM_PAPERS.length - 1} 套考前真题 (¥49.9)</span>
+                    </button>
+                  </div>
+                )}
               </div>
-              <div className="space-y-2 text-[11px] text-stone-600 leading-relaxed">
-                {activeTrack === 'dele' && (
-                  <p>
-                    <strong>塞万提斯 DELE 欧标机考</strong>：终身有效国际认证，总分 100 分，及格判定为 <strong>APTO</strong>。试卷重点考查基础交际、叙事时态配合与复杂从句，需两组均达标方可拿证。
-                  </p>
-                )}
-                {activeTrack === 'kaoyan' && (
-                  <p>
-                    <strong>名校考研二外 (240)</strong>：各大高校自主命题，满分 100 分，及格线通常为 60 分。重点考查【虚拟式各种时态配合】、【代词位置与复指】及【拉美社会科技评论长文读解】。
-                  </p>
-                )}
-                {activeTrack === 'tem4' && (
-                  <p>
-                    <strong>全国西语专四 (EEE-4)</strong>：全国高校西语专业统考，满分 100 分，及格线为 60 分。重点考查过去未完成时与简单过去时辨析、前置词固定搭配及自反被动句。
-                  </p>
-                )}
-                {activeTrack === 'siele' && (
-                  <p>
-                    <strong>SIELE 国际在线机考</strong>：塞万提斯学院等四大名校联合认证，采用多维度自适应出分，全面考查日常与学术西语能力。
-                  </p>
-                )}
-              </div>
-            </div>
-          )}
+            )}
+
+          </div>
 
         </div>
-
-      </div>
+      ) : null}
 
     </div>
   );

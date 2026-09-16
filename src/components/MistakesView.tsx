@@ -26,29 +26,29 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
 }) => {
   return (
     <div className="w-full space-y-4 pb-16">
-      {/* 顶部标题栏 */}
-      <div className="bg-white p-6 rounded-3xl border border-amber-100 shadow-xs flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-2xl bg-[#FEF2F2] text-[#B82E24] flex items-center justify-center border border-[#B82E24]/20">
-            <BookMarked className="w-6 h-6" />
+      {/* 顶部权威 Hero Banner (对标法语图3标准规范) */}
+      <div className="bg-white p-5 sm:p-6 rounded-3xl border border-slate-200/80 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="space-y-1">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200 text-xs font-bold">
+              📖 错题靶向归集 · 弱项针对攻关
+            </span>
+            <span className="text-xs px-2.5 py-0.5 rounded-full bg-red-100 text-red-800 font-bold">
+              {mistakes.length} 道错题
+            </span>
           </div>
-          <div>
-            <h2 className="text-xl font-black text-slate-900 flex items-center gap-2">
-              西班牙语错题本 (Cuaderno de Errores)
-              <span className="text-xs px-2.5 py-0.5 rounded-full bg-red-100 text-red-800 font-bold">
-                {mistakes.length} 道错题
-              </span>
-            </h2>
-            <p className="text-xs text-slate-500">
-              全真模考中做错的试题已自动汇聚在此，针对性溯源考点，攻克变位与语法盲区
-            </p>
-          </div>
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+            西班牙语错题本 (Cuaderno de Errores)
+          </h1>
+          <p className="text-xs sm:text-sm text-stone-500 font-medium">
+            全真模考与专项攻坚中做错的试题已自动智能汇聚在此，针对性溯源考点，攻克变位与语法盲区！
+          </p>
         </div>
 
         {mistakes.length > 0 && (
           <button
             onClick={onClearAll}
-            className="px-3.5 py-2 rounded-xl text-xs font-bold text-slate-500 hover:text-red-600 hover:bg-red-50 border border-slate-200 hover:border-red-200 transition flex items-center gap-1.5 cursor-pointer"
+            className="px-4 py-2 rounded-xl text-xs font-bold text-slate-500 hover:text-red-600 hover:bg-red-50 border border-slate-200 hover:border-red-200 transition flex items-center gap-1.5 cursor-pointer self-start md:self-auto shrink-0"
           >
             <Trash2 className="w-4 h-4" /> 清空错题本
           </button>
@@ -62,13 +62,13 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
           </div>
           <h3 className="text-base font-bold text-slate-800">当前没有未解决的错题！太棒了！</h3>
           <p className="text-xs text-slate-500 max-w-sm mx-auto">
-            去【DELE / 专四模考】刷套真题检验一下实力吧，系统会自动记录做错的题目并在此生成深度解析。
+            去【真题模考】刷套真题检验一下实力吧，系统会自动记录做错的题目并在此生成深度解析。
           </p>
           <button
             onClick={onGoToExam}
             className="px-5 py-2.5 rounded-xl bg-[#B82E24] hover:bg-[#991B1B] text-white text-xs font-bold transition shadow-xs flex items-center gap-1.5 mx-auto cursor-pointer"
           >
-            进入 DELE 全真模考 <ArrowRight className="w-4 h-4" />
+            进入真题模考 <ArrowRight className="w-4 h-4" />
           </button>
         </div>
       ) : (

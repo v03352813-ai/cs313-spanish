@@ -1,0 +1,642 @@
+[
+  {
+    "id": "paper-dele-a1-01",
+    "title": "塞万提斯学院 DELE A1 官方真题机考精编卷 (一)",
+    "spanishTitle": "DELE A1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "A1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "入门起步 · 自我介绍、日常问候与基础数字时间"
+  },
+  {
+    "id": "paper-dele-a1-02",
+    "title": "塞万提斯学院 DELE A1 官方真题机考精编卷 (二)",
+    "spanishTitle": "DELE A1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "A1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "生活出行 · 餐厅点餐、家庭称谓与交通物品指认"
+  },
+  {
+    "id": "paper-dele-a2-01",
+    "title": "塞万提斯学院 DELE A2 官方真题机考大卷 (一)",
+    "spanishTitle": "DELE A2 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "A2",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "过去叙事 · 简单过去时体验、旅行买票与问路"
+  },
+  {
+    "id": "paper-dele-a2-02",
+    "title": "塞万提斯学院 DELE A2 官方真题机考大卷 (二)",
+    "spanishTitle": "DELE A2 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "A2",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "生活起居 · 过去未完成时场景、就医购物与实用通告"
+  },
+  {
+    "id": "paper-dele-b1-01",
+    "title": "塞万提斯官方 DELE B1 全真机考综合大卷 (一)",
+    "spanishTitle": "DELE B1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "欧标突破 · 过去时态辨析、虚拟式愿望从句与生态读解"
+  },
+  {
+    "id": "paper-dele-b1-02",
+    "title": "塞万提斯官方 DELE B1 全真机考综合大卷 (二)",
+    "spanishTitle": "DELE B1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "观点交锋 · 意见表达、虚拟式否定从句与拉美旅游读解"
+  },
+  {
+    "id": "paper-dele-b1-03",
+    "title": "塞万提斯官方 DELE B1 全真机考综合大卷 (三)",
+    "spanishTitle": "DELE B1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "社会生活 · 条件句入门、双重代词替换与跨文化交际"
+  },
+  {
+    "id": "paper-dele-b1-04",
+    "title": "塞万提斯官方 DELE B1 全真机考综合大卷 (四)",
+    "spanishTitle": "DELE B1 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B1",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "综合冲刺 · 目的从句与动词短语时态综合运用"
+  },
+  {
+    "id": "paper-dele-b2-01",
+    "title": "塞万提斯官方 DELE B2 高阶机考全真大卷 (一)",
+    "spanishTitle": "DELE B2 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B2",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "高阶攻关 · 虚拟式未完成时、条件假设与政经社论读解"
+  },
+  {
+    "id": "paper-dele-b2-02",
+    "title": "塞万提斯官方 DELE B2 高阶机考全真大卷 (二)",
+    "spanishTitle": "DELE B2 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B2",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "学术思辨 · 虚拟式各种从句嵌套、自反被动句与西语文学"
+  },
+  {
+    "id": "paper-dele-b2-03",
+    "title": "塞万提斯官方 DELE B2 高阶机考全真大卷 (三)",
+    "spanishTitle": "DELE B2 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B2",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "终极冲顶 · 委婉语气、固定前置词短语与经贸实务"
+  },
+  {
+    "id": "paper-dele-b2-04",
+    "title": "塞万提斯官方 DELE B2 高阶机考全真大卷 (四)",
+    "spanishTitle": "DELE B2 — Modelo Oficial de Examen (Instituto Cervantes)",
+    "track": "dele",
+    "level": "B2",
+    "schoolOrOrg": "Instituto Cervantes (塞万提斯学院官方)",
+    "durationMinutes": 45,
+    "summary": "全真模拟 · 综合读解能力与语言运用高难度冲刺"
+  },
+  {
+    "id": "paper-siele-s1-01",
+    "title": "SIELE 国际在线机考 全球综合大卷 S1",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B1",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "语言使用 · 词汇语法综合攻关与现代企业运营读解"
+  },
+  {
+    "id": "paper-siele-s1-02",
+    "title": "SIELE 国际在线机考 全球综合大卷 S2",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B1",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "跨文化交际 · 动词固定前置词搭配与拉美科技创新"
+  },
+  {
+    "id": "paper-siele-s2-01",
+    "title": "SIELE 商务西语与实用文书机考卷 S3",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B2",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "经贸实务 · 商务函电写作逻辑与数字化办公读解"
+  },
+  {
+    "id": "paper-siele-s2-02",
+    "title": "SIELE 拉美多元文化与社评机考卷 S4",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B2",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "拉美风情 · 游记文学与数字游民生活形态精读"
+  },
+  {
+    "id": "paper-siele-spec-01",
+    "title": "SIELE 语法与词汇专项攻关突破卷 (甲)",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B1",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "专项突破 · 虚拟式要求从句与双重代词位置"
+  },
+  {
+    "id": "paper-siele-spec-02",
+    "title": "SIELE 语法与词汇专项攻关突破卷 (乙)",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B2",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "专项突破 · 动词短语 llevar/seguir + gerundio 辨析"
+  },
+  {
+    "id": "paper-siele-tier-01",
+    "title": "SIELE 欧标自适应机考梯级挑战卷 (A2-B1)",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "A2",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "阶梯进阶 · 基础时态迈向复合从句平稳过渡"
+  },
+  {
+    "id": "paper-siele-tier-02",
+    "title": "SIELE 欧标自适应机考终极冲顶卷 (B1-B2)",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B2",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "巅峰对决 · 全真自适应机考高难度试题汇编"
+  },
+  {
+    "id": "paper-siele-read-01",
+    "title": "SIELE 国际机考 快速阅读与图表信息检索专练卷",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B1",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "题型专项 · 官方通告、商务邮件与公共设施信息检索"
+  },
+  {
+    "id": "paper-siele-read-02",
+    "title": "SIELE 国际机考 长篇学术综述与观点论证综合卷",
+    "spanishTitle": "Examen Oficial SIELE Global (Cervantes, UNAM, USAL, UBA)",
+    "track": "siele",
+    "level": "B2",
+    "schoolOrOrg": "Servicio Internacional de Evaluación (SIELE 官方)",
+    "durationMinutes": 50,
+    "summary": "高分攻关 · 环境生态、数字化经济与拉美社会前沿"
+  },
+  {
+    "id": "paper-eee4-2024",
+    "title": "2024年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "教指委统考 · 过去完成时配合、前置词搭配与自反被动句"
+  },
+  {
+    "id": "paper-eee4-2023",
+    "title": "2023年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "教指委经典 · 目的从句 para que、所有格关系代词 cuya"
+  },
+  {
+    "id": "paper-eee4-2022",
+    "title": "2022年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "真题精炼 · 黄金世纪文学史常识与词汇多义辨析"
+  },
+  {
+    "id": "paper-eee4-2021",
+    "title": "2021年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "考纲溯源 · 虚拟式时态配合与被动 se 主谓一致"
+  },
+  {
+    "id": "paper-eee4-2020",
+    "title": "2020年全国高校西班牙语专业四级 (EEE-4) 统考全真卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "经典回溯 · 直宾代词提前与复合条件假设句"
+  },
+  {
+    "id": "paper-eee4-2019",
+    "title": "2019年全国高校西班牙语专业四级 (EEE-4) 统考全真卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "命题规律 · 重读 a- 开头反常阴性词与关系从句"
+  },
+  {
+    "id": "paper-eee4-2018",
+    "title": "2018年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "语法溯源 · 过去时态混合叙事与副动词用法"
+  },
+  {
+    "id": "paper-eee4-2017",
+    "title": "2017年全国高校西班牙语专业四级 (EEE-4) 统考真题卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "十年经典 · 虚拟式独立用法与陈述式虚拟式辨析"
+  },
+  {
+    "id": "paper-eee4-spec-grammar",
+    "title": "全国高校西语专四 (EEE-4) 语法专项攻坚卷 (虚拟式与时态配合)",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "核心专题 · 虚拟式六大主从句触发铁律深度攻坚"
+  },
+  {
+    "id": "paper-eee4-spec-prep",
+    "title": "全国高校西语专四 (EEE-4) 词汇与前置词搭配高频扫雷卷",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "高频扫雷 · tardar en, quejarse de, soñar con 等专四必背"
+  },
+  {
+    "id": "paper-eee4-mock-a",
+    "title": "全国高校西语专四 (EEE-4) 考前金牌仿真大卷 (甲卷)",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "权威仿真 · 严格依照专业四级考试大纲 1:1 标准命制"
+  },
+  {
+    "id": "paper-eee4-mock-b",
+    "title": "全国高校西语专四 (EEE-4) 考前金牌仿真大卷 (乙卷)",
+    "spanishTitle": "Examen Estatal de Español - Grado 4 (EEE-4 / Convocatoria Oficial)",
+    "track": "tem4",
+    "level": "TEM-4",
+    "schoolOrOrg": "全国高校外语专业教学指导委员会西班牙语分委会",
+    "durationMinutes": 60,
+    "summary": "临考冲刺 · 难度系数、知识点覆盖与题型配比全面仿真"
+  },
+  {
+    "id": "paper-kaoyan-bfsu-2024",
+    "title": "2024年北京外国语大学 240二外西班牙语考研统考真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "北外官方真题 · 虚拟式情感从句、前置词搭配与拉美文学读解"
+  },
+  {
+    "id": "paper-kaoyan-bfsu-2023",
+    "title": "2023年北京外国语大学 240二外西班牙语考研统考真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "北外官方真题 · 过去时态辨析与拉丁美洲生态可持续读解"
+  },
+  {
+    "id": "paper-kaoyan-bfsu-2022",
+    "title": "2022年北京外国语大学 240二外西班牙语考研统考真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "北外官方真题 · 关系代词 cuyo 与动词短语副动词进阶"
+  },
+  {
+    "id": "paper-kaoyan-bfsu-2021",
+    "title": "2021年北京外国语大学 240二外西班牙语考研统考真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "北外官方真题 · 目的从句 para que 与双重代词替换"
+  },
+  {
+    "id": "paper-kaoyan-sisu-2024",
+    "title": "2024年上海外国语大学 240二外西班牙语考研自命题真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (上海外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "上海外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "上外自命题真题 · aunque 让步从句未发生假设与代词复指"
+  },
+  {
+    "id": "paper-kaoyan-sisu-2023",
+    "title": "2023年上海外国语大学 240二外西班牙语考研自命题真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (上海外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "上海外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "上外自命题真题 · 词义辨析与拉美魔幻现实主义阅读"
+  },
+  {
+    "id": "paper-kaoyan-sisu-2022",
+    "title": "2022年上海外国语大学 240二外西班牙语考研自命题真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (上海外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "上海外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "上外自命题真题 · 条件假设从句与自反被动句型"
+  },
+  {
+    "id": "paper-kaoyan-gdufs-2024",
+    "title": "2024年广东外语外贸大学 240二外西班牙语考研统考卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (广东外语外贸大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "广东外语外贸大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "广外统考真题 · en cuanto 时间从句虚拟式与经贸阅读"
+  },
+  {
+    "id": "paper-kaoyan-gdufs-2023",
+    "title": "2023年广东外语外贸大学 240二外西班牙语考研统考卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (广东外语外贸大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "广东外语外贸大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "广外统考真题 · 情感动词 alegrarse 虚拟式与社会热点"
+  },
+  {
+    "id": "paper-kaoyan-pku-2024",
+    "title": "2024年北京大学 硕士研究生入学二外西语真题精编卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "北大命题真题 · 文学社科经典语段读解与高难度从句结构"
+  },
+  {
+    "id": "paper-kaoyan-pku-2023",
+    "title": "2023年北京大学 硕士研究生入学二外西语真题精编卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (北京大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "北京大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "北大命题真题 · 西班牙哲学与黄金世纪文学名篇精读"
+  },
+  {
+    "id": "paper-kaoyan-nju-2024",
+    "title": "2024年南京大学 硕士研究生入学二外西语统考大卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (南京大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "南京大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "南大统考真题 · 对过去虚拟假设句 Si + hubieras venido"
+  },
+  {
+    "id": "paper-kaoyan-nju-2023",
+    "title": "2023年南京大学 硕士研究生入学二外西语统考大卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (南京大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "南京大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "南大统考真题 · 过去未完成时与简单过去时交织叙事考查"
+  },
+  {
+    "id": "paper-kaoyan-fudan-2024",
+    "title": "2024年复旦大学 硕士研究生入学二外西语真题大卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (复旦大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "复旦大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "复旦自命题真题 · 复杂长句分析、动词时态配合与汉西互译"
+  },
+  {
+    "id": "paper-kaoyan-whu-2023",
+    "title": "2023年武汉大学 240二外西班牙语考研真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (武汉大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "武汉大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "武大统考真题 · 目的状语从句与条件式复合句深入推导"
+  },
+  {
+    "id": "paper-kaoyan-sisu-cq-2024",
+    "title": "2024年四川外国语大学 240二外西班牙语考研真题卷",
+    "spanishTitle": "Examen Oficial de Posgrado — Segunda Lengua Española (四川外国语大学)",
+    "track": "kaoyan",
+    "level": "考研二外",
+    "schoolOrOrg": "四川外国语大学 外国语学院",
+    "durationMinutes": 75,
+    "summary": "川外考研真题 · 西汉互译核心句法与性数变格避雷"
+  },
+  {
+    "id": "paper-mock-tongkao-01",
+    "title": "2026年全国统考考研 240二外西班牙语全真模拟大卷 (甲卷)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "考前押题 · 八大核心语法高频出题点与全真阅读演练"
+  },
+  {
+    "id": "paper-mock-tongkao-02",
+    "title": "2026年全国统考考研 240二外西班牙语全真模拟大卷 (乙卷)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "考前押题 · 虚拟式愿望从句、让步从句与双重代词替换"
+  },
+  {
+    "id": "paper-mock-tongkao-03",
+    "title": "2026年全国统考考研 240二外西班牙语全真模拟大卷 (丙卷)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "考前押题 · 过去未完成时与简单过去时混合长篇记叙"
+  },
+  {
+    "id": "paper-mock-tongkao-04",
+    "title": "2026年全国统考考研 240二外西班牙语全真模拟大卷 (丁卷)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "考前押题 · 目的状语从句与条件假设复合时态演练"
+  },
+  {
+    "id": "paper-mock-subjuntivo-01",
+    "title": "考研二外西语 · 虚拟式高分突破专项模拟卷 (一)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "专题突破 · 愿望/怀疑/情感/意志/否定思考动词全盘操练"
+  },
+  {
+    "id": "paper-mock-subjuntivo-02",
+    "title": "考研二外西语 · 虚拟式高分突破专项模拟卷 (二)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "专题突破 · por muy que, sin que, a no ser que 等高难度从句"
+  },
+  {
+    "id": "paper-mock-pronouns-01",
+    "title": "考研二外西语 · 宾格与与格双代词攻关模拟卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "专题突破 · 间宾变身 se、直宾代词复指与副动词代词后置连写"
+  },
+  {
+    "id": "paper-mock-tenses-01",
+    "title": "考研二外西语 · 过去时态辨析黄金攻坚模拟卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "专题突破 · 简单过去时、过去未完成时、过去完成时三维对照"
+  },
+  {
+    "id": "paper-mock-prepositions-01",
+    "title": "考研二外西语 · 固定前置词搭配绝密扫雷模拟卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "专题突破 · por与para终极辨析、动词+介词固定短语汇总"
+  },
+  {
+    "id": "paper-mock-relative-01",
+    "title": "考研二外西语 · 关系代词与复杂从句高分突破卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "专题突破 · cuyo, donde, el que, quien 在考研长难句中的定位"
+  },
+  {
+    "id": "paper-mock-reading-01",
+    "title": "考研二外西语 · 拉美文学经典语段读解仿真大卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "读解专项 · 加西亚·马尔克斯、博尔赫斯、科塔萨尔名篇精读"
+  },
+  {
+    "id": "paper-mock-reading-02",
+    "title": "考研二外西语 · 现代西班牙社会与科技评论专练卷",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "读解专项 · 数字游民、绿色能源转型、都市文化热点透析"
+  },
+  {
+    "id": "paper-mock-sprint-final-01",
+    "title": "2026考研二外西语 · 考前48小时终极封题押密卷 (A)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "终极冲刺 · 难度系数 1.15 倍全真仿真综合考场演练"
+  },
+  {
+    "id": "paper-mock-sprint-final-02",
+    "title": "2026考研二外西语 · 考前48小时终极封题押密卷 (B)",
+    "spanishTitle": "Examen de Simulación Oficial — Segunda Lengua Española (Maestría)",
+    "track": "kaoyan_mock",
+    "level": "考研模拟",
+    "schoolOrOrg": "全国高校二外教研组仿真中心",
+    "durationMinutes": 75,
+    "summary": "终极冲刺 · 查漏补缺扫除知识盲点，助力二外高分破百"
+  }
+]

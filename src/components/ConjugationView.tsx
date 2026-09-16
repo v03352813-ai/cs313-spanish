@@ -59,24 +59,27 @@ export const ConjugationView: React.FC<ConjugationViewProps> = ({ isVip, onOpenV
 
   return (
     <div className="w-full space-y-4 pb-16">
-      {/* 顶部自研教学法速查顶栏 */}
-      <div className="bg-white p-6 rounded-3xl border border-amber-100 shadow-xs space-y-4">
+      {/* 顶部自研教学法权威 Hero Banner (对标法语图3标准规范) */}
+      <div className="bg-white p-5 sm:p-6 rounded-3xl border border-slate-200/80 shadow-xs space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-[#FEF2F2] text-[#B82E24] flex items-center justify-center border border-[#B82E24]/20">
-              <RotateCcw className="w-6 h-6" />
-            </div>
-            <div>
-              <h2 className="text-xl font-black text-slate-900 flex items-center gap-2">
-                动词变位神器 ·【靴子法则 & 灵魂互换】
-              </h2>
-              <p className="text-xs text-slate-500">
+          <div className="space-y-1">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200 text-xs font-bold">
+                👢 动词变位核心自研教学法
+              </span>
+              <span className="text-xs text-stone-500 font-medium">
                 收录 1,000+ 高频动词 · 告别死记硬背 · 1分钟秒懂变位核爆与避险逻辑
-              </p>
+              </span>
             </div>
+            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+              西班牙语动词变位神器 ·【靴子法则 & 灵魂互换】
+            </h1>
+            <p className="text-xs sm:text-sm text-stone-500">
+              精准攻克规则/不规则变位、靴子音变核爆、虚拟式 A⇄E 互换与各时态真实发音。
+            </p>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 self-start md:self-auto shrink-0">
             <button
               onClick={() => setShowBootHighlight(!showBootHighlight)}
               className={`px-4 py-2 rounded-xl text-xs font-black transition cursor-pointer flex items-center gap-2 shadow-xs ${

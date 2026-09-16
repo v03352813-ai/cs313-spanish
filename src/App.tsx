@@ -127,6 +127,7 @@ export const App: React.FC = () => {
       const hash = window.location.hash.replace('#', '') as ActiveTab;
       if (['home', 'phonetics', 'conjugation', 'vocab', 'grammar', 'cinema', 'speaking', 'writing', 'exam', 'mistakes'].includes(hash)) {
         setActiveTab(hash);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       }
     };
     handleHash();
@@ -258,6 +259,7 @@ export const App: React.FC = () => {
                   isVip={isVip}
                   onOpenVipModal={() => handleOpenVipModal('模考全真试卷权限')}
                   onOpenExamModal={() => setIsExamModalOpen(true)}
+                  onNavigateToWriting={() => handleTabChange('writing')}
                 />
               )}
 

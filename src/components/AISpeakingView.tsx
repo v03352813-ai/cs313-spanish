@@ -49,7 +49,8 @@ export const AISpeakingView: React.FC = () => {
   const [inputText, setInputText] = useState('');
   const [showTranslation, setShowTranslation] = useState<boolean>(true);
   const [isRecording, setIsRecording] = useState<boolean>(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
+  const isFirstRender = useRef(true);
 
   const SCENARIOS: Scenario[] = [
     {
@@ -170,6 +171,9 @@ export const AISpeakingView: React.FC = () => {
         textZh: target.starterZh
       }
     ]);
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({ top: 0, behavior: 'instant' });
+    }
   };
 
   const handleSendMessage = (textToSend?: string) => {
@@ -179,29 +183,30 @@ export const AISpeakingView: React.FC = () => {
     const userText = raw.trim();
     setInputText('');
 
-    const userMsg: Message = {
+    // 添加用户消息
+    const newMsg: Message = {
       sender: 'user',
       textEs: userText,
-      textZh: '（您的回答）',
+      textZh: '（您的回答已发送）',
       feedback: {
-        score: 95,
-        grammarTip: '动词变位正确，语序自然流畅！时态使用得当。',
-        betterExpression: userText.endsWith('.') ? userText : `${userText}.`
+        score: Math.floor(Math.random() * 8) + 92,
+        betterExpression: userText.includes('gracias') ? '¡Muchas gracias por su amable atención!' : 'Me complace enormemente compartir este punto de vista.',
+        grammarTip: '动词虚拟式与时态配合精准，建议在衔接处适当增加连词以增强地道口语语感。'
       }
     };
 
-    setMessages(prev => [...prev, userMsg]);
+    setMessages(prev => [...prev, newMsg]);
 
-    // 模拟 AI 语伴智能响应
+    // AI 拟真回复
     setTimeout(() => {
-      let replyEs = '¡Muy bien dicho! Me parece perfecto. Cuéntame más sobre eso.';
-      let replyZh = '说得太棒了！我觉得很合适。能再跟我多聊聊吗？';
+      let replyEs = '¡Muy interesante lo que dices! Cuéntame un poco más sobre eso.';
+      let replyZh = '非常有趣的观点！能再跟我多聊聊相关的细节吗？';
 
-      if (currentScenario.id === 'tapas-bar') {
-        replyEs = '¡Marchando! Un vino tinto y la tortilla enseguida. ¿Desea también algo de postre o café?';
-        replyZh = '马上来！一杯红酒和土豆饼马上送到。您之后还需要甜点或咖啡吗？';
+      if (currentScenario.id === 'free-talk') {
+        replyEs = '¡Qué bien! A mí me encanta pasear por la Gran Vía y tomar un café. ¿Y a ti qué te gusta hacer en tu tiempo libre?';
+        replyZh = '太棒了！我非常喜欢在格兰大道散步喝杯咖啡。你平时空闲时间喜欢做些什么呢？';
       } else if (currentScenario.id === 'dele-b1-oral') {
-        replyEs = 'Excelente argumentación. ¿Y qué ventajas crees que ofrece la ciudad para la vida de los jóvenes estudiantes?';
+        replyEs = 'Muy bien argumentado. ¿Qué ventajas cree que aporta vivir en una gran ciudad para los estudiantes?';
         replyZh = '非常精彩的论述。那你认为城市给年轻学生的学习和生活带来了哪些优势呢？';
       } else if (currentScenario.id === 'cinema-lacasa') {
         replyEs = 'Exacto. Mantengamos la calma. El tiempo corre a nuestro favor. Tokio, prepárate.';
@@ -214,7 +219,17 @@ export const AISpeakingView: React.FC = () => {
   };
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    // 仅在对话过程中产生新消息时平滑滚动聊天卡片内部，绝不滚动整个页面
+    if (messages.length > 1 && chatContainerRef.current) {
+      chatContainerRef.current.scrollTo({
+        top: chatContainerRef.current.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
   }, [messages]);
 
   const filteredScenarios = SCENARIOS.filter(s => {
@@ -226,30 +241,28 @@ export const AISpeakingView: React.FC = () => {
   return (
     <div className="w-full space-y-3 sm:space-y-4 pb-16">
       
-      {/* 1. 顶部工坊标语卡片 (对标日语图 5) */}
-      <div className="bg-white p-4 sm:p-5 rounded-3xl border border-amber-200/90 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-amber-500 text-white font-black text-sm flex items-center justify-center shadow-xs shrink-0">
-            06
+      {/* 1. 顶部权威 Hero Banner (对标法语图3标准规范，移除 06 步骤圈) */}
+      <div className="bg-white rounded-3xl border border-slate-200/80 shadow-xs p-5 sm:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="space-y-1">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold">
+              🎙️ 塞万提斯官方口试大纲 · 沉浸实战对练
+            </span>
+            <span className="text-xs text-stone-500 font-medium">
+              马德里正统发音 · 真实场景角色扮演 · 实时交互反馈 · 1v1 纯正语料
+            </span>
           </div>
-          <div>
-            <div className="flex items-center gap-2 flex-wrap">
-              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
-                实战对练
-              </span>
-              <h2 className="text-base sm:text-lg font-black text-slate-900 tracking-tight">
-                AI 智能西语口语实战对练 · 马德里腔角色扮演工坊
-              </h2>
-            </div>
-            <p className="text-xs text-slate-500 font-medium mt-0.5">
-              DELE 实用对话对练 · 马德里生活实操 · 西班牙外企面试 · 经典影视名场面对戏
-            </p>
-          </div>
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+            AI 智能西语口语实战对练 · 马德里腔角色扮演工坊
+          </h1>
+          <p className="text-xs sm:text-sm text-stone-500">
+            DELE 实用口语对话对练 · 马德里生活实操 · 西班牙外企面试 · 经典影视名场面对戏，随时随地开口脱敏！
+          </p>
         </div>
 
-        <div className="flex items-center gap-2 self-start sm:self-auto">
-          <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-black text-xs flex items-center gap-1.5 shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+        <div className="flex items-center gap-2 self-start md:self-auto shrink-0">
+          <span className="px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-black text-xs flex items-center gap-2 shadow-2xs">
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
             <span>AI 对练就绪</span>
           </span>
         </div>
@@ -390,7 +403,7 @@ export const AISpeakingView: React.FC = () => {
           </div>
 
           {/* 对话消息滚动流 */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-[#FAF8F5]/40">
+          <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-4 space-y-4 bg-[#FAF8F5]/40">
             {messages.map((msg, idx) => {
               const isAi = msg.sender === 'ai';
               return (
@@ -447,7 +460,6 @@ export const AISpeakingView: React.FC = () => {
                 </div>
               );
             })}
-            <div ref={messagesEndRef} />
           </div>
 
           {/* 底部输入与灵感提示栏 */}
