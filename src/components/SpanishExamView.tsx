@@ -56,6 +56,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
 
   // 各赛道子筛选状态
   const [kaoyanSubFilter, setKaoyanSubFilter] = useState<string>('all');
+  const [tem4SubFilter, setTem4SubFilter] = useState<string>('all');
   const [deleSubFilter, setDeleSubFilter] = useState<string>('all');
   const [sieleSubFilter, setSieleSubFilter] = useState<string>('all');
   const [drillSubFilter, setDrillSubFilter] = useState<string>('all');
@@ -89,6 +90,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
   // 各赛道子分类动态统计
   const paperCounts = useMemo(() => {
     const kaoyan = SPANISH_EXAM_PAPERS.filter(p => p.track === 'kaoyan' || p.track === 'kaoyan_mock');
+    const tem4 = SPANISH_EXAM_PAPERS.filter(p => p.track === 'tem4');
     const dele = SPANISH_EXAM_PAPERS.filter(p => p.track === 'dele');
     const siele = SPANISH_EXAM_PAPERS.filter(p => p.track === 'siele');
     const drill = SPANISH_EXAM_PAPERS.filter(p => p.mode === 'special_drill');
@@ -104,6 +106,12 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           p.schoolOrOrg.includes('四川外国语大学')
         ).length,
         sprint: kaoyan.filter(p => p.schoolOrOrg.includes('仿真') || p.schoolOrOrg.includes('教研组')).length,
+      },
+      tem4: {
+        all: tem4.length,
+        latest: tem4.filter(p => p.yearSession.includes('2024') || p.yearSession.includes('2023') || p.yearSession.includes('2022')).length,
+        recent: tem4.filter(p => p.yearSession.includes('2021') || p.yearSession.includes('2020') || p.yearSession.includes('2019')).length,
+        classic: tem4.filter(p => p.yearSession.includes('2018') || p.yearSession.includes('2017') || p.yearSession.includes('官方')).length,
       },
       dele: {
         all: dele.length,
@@ -145,6 +153,9 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
         if (kaoyanSubFilter === 'sprint' && !(p.schoolOrOrg.includes('仿真') || p.schoolOrOrg.includes('教研组'))) return false;
       } else if (activeTrack === 'tem4') {
         if (p.track !== 'tem4') return false;
+        if (tem4SubFilter === 'latest' && !(p.yearSession.includes('2024') || p.yearSession.includes('2023') || p.yearSession.includes('2022'))) return false;
+        if (tem4SubFilter === 'recent' && !(p.yearSession.includes('2021') || p.yearSession.includes('2020') || p.yearSession.includes('2019'))) return false;
+        if (tem4SubFilter === 'classic' && !(p.yearSession.includes('2018') || p.yearSession.includes('2017') || p.yearSession.includes('官方'))) return false;
       } else if (activeTrack === 'dele') {
         if (p.track !== 'dele') return false;
         if (deleSubFilter !== 'all' && !p.level.includes(deleSubFilter)) return false;
@@ -172,7 +183,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
 
       return true;
     });
-  }, [activeTrack, kaoyanSubFilter, deleSubFilter, sieleSubFilter, drillSubFilter, searchQuery]);
+  }, [activeTrack, kaoyanSubFilter, tem4SubFilter, deleSubFilter, sieleSubFilter, drillSubFilter, searchQuery]);
 
   // 当筛选变化时保持试卷同步
   useEffect(() => {
@@ -438,57 +449,73 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
         </div>
       </div>
 
-      {/* 📌 赛道官方考纲权威说明横幅 */}
-      <div className="p-4 rounded-2xl bg-gradient-to-r from-red-50/50 via-slate-50 to-white border border-slate-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
-        <div className="flex items-start gap-2.5">
-          <span className={`w-2.5 h-2.5 rounded-full mt-1 shrink-0 animate-pulse ${
-            activeTrack === 'kaoyan' ? 'bg-blue-600' : activeTrack === 'tem4' ? 'bg-red-600' : activeTrack === 'dele' ? 'bg-emerald-600' : activeTrack === 'siele' ? 'bg-amber-600' : 'bg-slate-700'
-          }`} />
-          <div className="space-y-0.5">
-            <div className="flex items-center gap-2 font-black text-slate-800">
-              <span className={activeTrack === 'kaoyan' ? 'text-blue-800' : activeTrack === 'tem4' ? 'text-red-800' : activeTrack === 'dele' ? 'text-emerald-800' : activeTrack === 'siele' ? 'text-amber-800' : 'text-slate-800'}>
+      {/* 📌 赛道官方考纲权威说明横幅 (可折叠，默认收起以节约首屏空间) */}
+      <div className="rounded-2xl bg-gradient-to-r from-red-50/50 via-slate-50 to-white border border-slate-200/80 overflow-hidden text-xs">
+        <div
+          onClick={() => setShowOfficialGuide(!showOfficialGuide)}
+          className="p-3.5 flex items-center justify-between cursor-pointer select-none hover:bg-slate-50/60 transition"
+        >
+          <div className="flex items-center gap-2.5">
+            <span className={`w-2.5 h-2.5 rounded-full shrink-0 animate-pulse ${
+              activeTrack === 'kaoyan' ? 'bg-blue-600' : activeTrack === 'tem4' ? 'bg-red-600' : activeTrack === 'dele' ? 'bg-emerald-600' : activeTrack === 'siele' ? 'bg-amber-600' : 'bg-slate-700'
+            }`} />
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className={`font-black ${
+                activeTrack === 'kaoyan' ? 'text-blue-800' : activeTrack === 'tem4' ? 'text-red-800' : activeTrack === 'dele' ? 'text-emerald-800' : activeTrack === 'siele' ? 'text-amber-800' : 'text-slate-800'
+              }`}>
                 {activeTrack === 'kaoyan' ? `🎓 全国硕士考研二外西语·历年名校大卷 (${paperCounts.kaoyan.all}套)` 
                   : activeTrack === 'tem4' ? `🔴 全国高校西班牙语专业四级 (TEM-4) 统考大卷 (${tem4Count}套)`
                   : activeTrack === 'dele' ? `🌍 DELE 塞万提斯学院官方权威认证大卷 (${paperCounts.dele.all}套)`
                   : activeTrack === 'siele' ? `🟡 SIELE 国际机考综合与分级大卷 (${paperCounts.siele.all}套)`
                   : `⚡ 西班牙语高频难点四大分类题型专项突破 (${paperCounts.drill.all}套)`}
               </span>
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-white text-slate-700 border border-slate-200">
-                {activeTrack === 'kaoyan' ? '全国高校自主命题 · 60题大卷 · 180分钟' 
-                  : activeTrack === 'tem4' ? '教育部高校外语指导委 · 75题大卷 · 130分钟'
-                  : activeTrack === 'dele' ? '塞万提斯学院官方标准 · 60题大卷 · APTO评级'
-                  : activeTrack === 'siele' ? '西班牙国际评估官方 · 60题大卷'
-                  : '四大核心考点靶向精练 · 12题短测'}
+              <span className="hidden sm:inline-block px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-white text-slate-700 border border-slate-200">
+                {activeTrack === 'kaoyan' ? '自主命题 · 60题 · 180分' 
+                  : activeTrack === 'tem4' ? '官方考纲 · 75题 · 130分'
+                  : activeTrack === 'dele' ? '官方标准 · 60题 · APTO'
+                  : activeTrack === 'siele' ? '国际评估 · 60题'
+                  : '靶向精练 · 12题'}
               </span>
             </div>
-            <p className="text-slate-600 leading-relaxed font-medium">
-              {activeTrack === 'kaoyan' && (
-                <span>全面收录北京外国语大学、上海外国语大学、广东外语外贸大学、北京大学、南京大学、复旦大学、武汉大学等历年统考真题编年卷，重点考察 <strong>【虚拟式从句·变位时态·双代词连写】</strong> 与 <strong>【社科长篇阅读逻辑】</strong>，满分 100 分。</span>
-              )}
-              {activeTrack === 'tem4' && (
-                <span>全国高校外语指导委员会权威命题，严格按 1:1 官方考卷比例配置：<strong>【听力理解 15题 + 词汇语法 30题 + 完型填空 10题 + 阅读理解 20题】</strong>，满额 75 题客观全真卷。</span>
-              )}
-              {activeTrack === 'dele' && (
-                <span>西班牙塞万提斯学院官方终身认证机考母卷，覆盖 A1、A2、B1、B2 级别，精准配备<strong>考场原声朗读音频</strong>与<strong>逐题深度详析</strong>，满额 60 题大卷。</span>
-              )}
-              {activeTrack === 'siele' && (
-                <span>西班牙语国际评估测试 (SIELE)，涵盖 S1-S4 综合模块与全球自适应冲刺大卷，真实还原线上机考界面与答题流程。</span>
-              )}
-              {activeTrack === 'drill' && (
-                <span>直击中国西语学习者四大高频失分痛点：<strong>【虚拟式时态与句式】</strong>、<strong>【动词变位与时态辨析】</strong>、<strong>【双代词与固定前置词】</strong>、<strong>【长篇读解与社科文化】</strong>，配备做题即时解析！</span>
-              )}
-            </p>
+          </div>
+
+          <div className="flex items-center gap-2.5 shrink-0">
+            {onNavigateToWriting && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onNavigateToWriting();
+                }}
+                className="px-2.5 py-1 rounded-lg bg-red-600 hover:bg-red-700 text-white font-bold text-[11px] shrink-0 flex items-center gap-1 shadow-2xs transition active:scale-98 cursor-pointer"
+              >
+                <span>✍️ AI 写作</span>
+              </button>
+            )}
+            <div className="flex items-center gap-1 text-[11px] text-slate-500 font-semibold">
+              <span>{showOfficialGuide ? '收起考纲' : '查看考纲'}</span>
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${showOfficialGuide ? 'rotate-180' : ''}`} />
+            </div>
           </div>
         </div>
 
-        {onNavigateToWriting && (
-          <button
-            onClick={onNavigateToWriting}
-            className="px-3.5 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shrink-0 flex items-center justify-center gap-1.5 shadow-xs transition active:scale-98 cursor-pointer self-start sm:self-auto"
-          >
-            <span>✍️ 直通 AI 写作工坊</span>
-            <ChevronRight className="w-3.5 h-3.5" />
-          </button>
+        {showOfficialGuide && (
+          <div className="px-4 pb-3.5 pt-1 text-slate-600 leading-relaxed font-medium border-t border-slate-200/60 bg-white/60">
+            {activeTrack === 'kaoyan' && (
+              <p>全面收录北京外国语大学、上海外国语大学、广东外语外贸大学、北京大学、南京大学、复旦大学、武汉大学等历年统考真题编年卷，重点考察 <strong>【虚拟式从句·变位时态·双代词连写】</strong> 与 <strong>【社科长篇阅读逻辑】</strong>，满分 100 分。</p>
+            )}
+            {activeTrack === 'tem4' && (
+              <p>全国高校外语指导委员会权威命题，严格按 1:1 官方考卷比例配置：<strong>【听力理解 15题 + 词汇语法 30题 + 完型填空 10题 + 阅读理解 20题】</strong>，满额 75 题客观全真卷。</p>
+            )}
+            {activeTrack === 'dele' && (
+              <p>西班牙塞万提斯学院官方终身认证机考母卷，覆盖 A1、A2、B1、B2 级别，精准配备<strong>考场原声朗读音频</strong>与<strong>逐题深度详析</strong>，满额 60 题大卷。</p>
+            )}
+            {activeTrack === 'siele' && (
+              <p>西班牙语国际评估测试 (SIELE)，涵盖 S1-S4 综合模块与全球自适应冲刺大卷，真实还原线上机考界面与答题流程。</p>
+            )}
+            {activeTrack === 'drill' && (
+              <p>直击中国西语学习者四大高频失分痛点：<strong>【虚拟式时态与句式】</strong>、<strong>【动词变位与时态辨析】</strong>、<strong>【双代词与固定前置词】</strong>、<strong>【长篇读解与社科文化】</strong>，配备做题即时解析！</p>
+            )}
+          </div>
         )}
       </div>
 
@@ -517,6 +544,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           <button
             onClick={() => {
               setActiveTrack('tem4');
+              setTem4SubFilter('all');
               setSelectedPaperId('paper-tem4-2024');
               resetExam();
             }}
@@ -618,9 +646,24 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
 
           {activeTrack === 'tem4' && (
             <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="px-3 py-1.5 rounded-xl text-xs font-black bg-red-600 text-white shadow-2xs">
-                全国统考真题与仿真编年卷 ({tem4Count}套 · 75题满额)
-              </span>
+              {[
+                { id: 'all', label: `全部专四真题 (${paperCounts.tem4.all})` },
+                { id: 'latest', label: `2024~2022 最新卷 (${paperCounts.tem4.latest})` },
+                { id: 'recent', label: `2021~2019 历年真题 (${paperCounts.tem4.recent})` },
+                { id: 'classic', label: `经典真题与仿真 (${paperCounts.tem4.classic})` }
+              ].map(f => (
+                <button
+                  key={f.id}
+                  onClick={() => setTem4SubFilter(f.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+                    tem4SubFilter === f.id
+                      ? 'bg-red-600 text-white shadow-2xs font-black'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200/70'
+                  }`}
+                >
+                  {f.label}
+                </button>
+              ))}
             </div>
           )}
 
