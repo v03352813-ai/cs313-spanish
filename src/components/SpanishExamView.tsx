@@ -68,7 +68,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [showInstantExplanation, setShowInstantExplanation] = useState<boolean>(true);
+  const [showInstantExplanation, setShowInstantExplanation] = useState<boolean>(false);
   const [audioSpeed, setAudioSpeed] = useState<number>(1.0);
 
   // 考场全真倒计时 (秒数)
@@ -965,11 +965,11 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                 const isCorrect = currentQ.correctAnswer === opt.key;
                 const userAnswered = answers[currentQ.id] !== undefined;
                 // 只对【用户实际作答过的题目】才展示对错反馈，未作答题目即使交卷也不显示正确答案
-                const showFeedback = userAnswered && (isSubmitted || (mainMode === 'special_drill' && showInstantExplanation));
+                const showFeedback = userAnswered && (isSubmitted || showInstantExplanation);
 
                 let optionStyle = 'bg-white hover:bg-slate-50 border-slate-200 text-slate-800';
                 if (isSelected) {
-                  optionStyle = 'bg-red-600 text-white border-red-600 shadow-md shadow-red-500/20 font-bold';
+                  optionStyle = 'bg-amber-50/80 border-amber-500 text-amber-950 font-bold shadow-2xs ring-2 ring-amber-400/25';
                 }
                 if (showFeedback) {
                   if (isCorrect) {
@@ -987,9 +987,9 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                   >
                     <div className="flex items-center gap-3">
                       <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-black shrink-0 ${
-                        isSelected || (showFeedback && isCorrect)
-                          ? 'bg-white/20 text-white'
-                          : 'bg-slate-100 text-slate-700'
+                        showFeedback
+                          ? (isCorrect || (isSelected && !isCorrect) ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-700')
+                          : (isSelected ? 'bg-amber-500 text-white' : 'bg-slate-100 text-slate-700')
                       }`}>
                         {opt.key}
                       </span>
@@ -1007,7 +1007,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
             </div>
 
             {/* Instant / Post-Submit Explanation Card — 只对已作答题目显示，不泄露未作答题的正确答案 */}
-            {answers[currentQ.id] !== undefined && (isSubmitted || (mainMode === 'special_drill' && showInstantExplanation)) && (
+            {answers[currentQ.id] !== undefined && (isSubmitted || showInstantExplanation) && (
               <div className="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200/80 text-xs space-y-3 animate-in fade-in duration-300">
                 <div className="flex items-center justify-between font-bold text-amber-900 border-b border-amber-200/60 pb-2">
                   <span className="flex items-center gap-1">
@@ -1145,6 +1145,21 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                     </button>
                   );
                 })}
+              </div>
+
+              {/* Instant Mode Toggle (做题即时解析开关，默认关闭，交卷后统一公布) */}
+              <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+                <span>做完即时显示解析</span>
+                <button
+                  onClick={() => setShowInstantExplanation(prev => !prev)}
+                  className={`w-10 h-6 rounded-full transition-colors relative cursor-pointer ${
+                    showInstantExplanation ? 'bg-red-600' : 'bg-slate-200'
+                  }`}
+                >
+                  <div className={`w-4 h-4 rounded-full bg-white absolute top-1 transition-transform ${
+                    showInstantExplanation ? 'left-5' : 'left-1'
+                  }`} />
+                </button>
               </div>
 
               {/* Submit Button */}
