@@ -419,7 +419,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
               🏛️ 西班牙国家级与国际官方全真机考大卷库
             </span>
             <span className="text-xs text-stone-500 font-medium">
-              80套全国名校历年全卷 · 4,872道官方全真试题 · 100分标准实测评分 · 词汇语法 / 动词变位 / 完形填空 / 实用告示 / 原声听解 / 社科长篇读解
+              全国名校历年统考真题 · 官方全真标准评分 · 词汇语法 / 动词变位 / 完形填空 / 实用告示 / 原声听解 / 社科长篇读解
             </span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
@@ -463,17 +463,17 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
               <span className={`font-black ${
                 activeTrack === 'kaoyan' ? 'text-blue-800' : activeTrack === 'tem4' ? 'text-red-800' : activeTrack === 'dele' ? 'text-emerald-800' : activeTrack === 'siele' ? 'text-amber-800' : 'text-slate-800'
               }`}>
-                {activeTrack === 'kaoyan' ? `🎓 全国硕士考研二外西语·历年名校大卷 (${paperCounts.kaoyan.all}套)` 
-                  : activeTrack === 'tem4' ? `🔴 全国高校西班牙语专业四级 (TEM-4) 统考大卷 (${tem4Count}套)`
-                  : activeTrack === 'dele' ? `🌍 DELE 塞万提斯学院官方权威认证大卷 (${paperCounts.dele.all}套)`
-                  : activeTrack === 'siele' ? `🟡 SIELE 国际机考综合与分级大卷 (${paperCounts.siele.all}套)`
-                  : `⚡ 西班牙语高频难点四大分类题型专项突破 (${paperCounts.drill.all}套)`}
+                {activeTrack === 'kaoyan' ? '🎓 全国硕士考研二外西语·历年名校大卷' 
+                  : activeTrack === 'tem4' ? '🔴 全国高校西班牙语专业四级 (TEM-4) 统考大卷' 
+                  : activeTrack === 'dele' ? '🌍 DELE 塞万提斯学院官方权威认证大卷' 
+                  : activeTrack === 'siele' ? '🟡 SIELE 国际机考综合与分级大卷' 
+                  : '⚡ 西班牙语高频难点四大分类题型专项突破'}
               </span>
               <span className="hidden sm:inline-block px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-white text-slate-700 border border-slate-200">
                 {activeTrack === 'kaoyan' ? '自主命题 · 60题 · 180分' 
-                  : activeTrack === 'tem4' ? '官方考纲 · 75题 · 130分'
-                  : activeTrack === 'dele' ? '官方标准 · 60题 · APTO'
-                  : activeTrack === 'siele' ? '国际评估 · 60题'
+                  : activeTrack === 'tem4' ? '官方考纲 · 75题 · 130分' 
+                  : activeTrack === 'dele' ? '官方标准 · 60题 · APTO' 
+                  : activeTrack === 'siele' ? '国际评估 · 60题' 
                   : '靶向精练 · 12题'}
               </span>
             </div>
@@ -538,7 +538,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
             }`}
           >
             <GraduationCap className="w-4 h-4" />
-            <span>🎓 考研二外 ({paperCounts.kaoyan.all}套)</span>
+            <span>🎓 考研二外</span>
           </button>
 
           <button
@@ -555,7 +555,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
             }`}
           >
             <Award className="w-4 h-4" />
-            <span>🔴 专四 TEM-4 ({tem4Count}套)</span>
+            <span>🔴 专四 TEM-4</span>
           </button>
 
           <button
@@ -572,7 +572,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
             }`}
           >
             <Globe2 className="w-4 h-4" />
-            <span>🌍 DELE 欧标 ({paperCounts.dele.all}套)</span>
+            <span>🌍 DELE 欧标</span>
           </button>
 
           <button
@@ -589,7 +589,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
             }`}
           >
             <Zap className="w-4 h-4" />
-            <span>🟡 SIELE 机考 ({paperCounts.siele.all}套)</span>
+            <span>🟡 SIELE 机考</span>
           </button>
 
           <button
@@ -606,7 +606,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
             }`}
           >
             <Target className="w-4 h-4" />
-            <span>⚡ 专项攻坚突破 ({paperCounts.drill.all}套)</span>
+            <span>⚡ 专项攻坚突破</span>
           </button>
         </div>
 
@@ -622,12 +622,12 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           {activeTrack === 'kaoyan' && (
             <div className="flex items-center gap-1.5 flex-wrap">
               {[
-                { id: 'all', label: `全部考研真题 (${paperCounts.kaoyan.all})` },
-                { id: 'beiwai', label: `北京外国语大学 (${paperCounts.kaoyan.beiwai})` },
-                { id: 'shisu', label: `上海外国语大学 (${paperCounts.kaoyan.shisu})` },
-                { id: 'gdufs', label: `广东外语外贸大学 (${paperCounts.kaoyan.gdufs})` },
-                { id: 'others985', label: `985名校联盟 (${paperCounts.kaoyan.others985})` },
-                { id: 'sprint', label: `全真冲刺大卷 (${paperCounts.kaoyan.sprint})` }
+                { id: 'all', label: '全部考研真题' },
+                { id: 'beiwai', label: '北京外国语大学' },
+                { id: 'shisu', label: '上海外国语大学' },
+                { id: 'gdufs', label: '广东外语外贸大学' },
+                { id: 'others985', label: '985名校联盟' },
+                { id: 'sprint', label: '全真冲刺大卷' }
               ].map(f => (
                 <button
                   key={f.id}
@@ -647,10 +647,10 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           {activeTrack === 'tem4' && (
             <div className="flex items-center gap-1.5 flex-wrap">
               {[
-                { id: 'all', label: `全部专四真题 (${paperCounts.tem4.all})` },
-                { id: 'latest', label: `2024~2022 最新卷 (${paperCounts.tem4.latest})` },
-                { id: 'recent', label: `2021~2019 历年真题 (${paperCounts.tem4.recent})` },
-                { id: 'classic', label: `经典真题与仿真 (${paperCounts.tem4.classic})` }
+                { id: 'all', label: '全部专四真题' },
+                { id: 'latest', label: '2024~2022 最新卷' },
+                { id: 'recent', label: '2021~2019 历年真题' },
+                { id: 'classic', label: '经典真题与仿真' }
               ].map(f => (
                 <button
                   key={f.id}
@@ -670,11 +670,11 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           {activeTrack === 'dele' && (
             <div className="flex items-center gap-1.5 flex-wrap">
               {[
-                { id: 'all', label: `全部欧标考卷 (${paperCounts.dele.all})` },
-                { id: 'A1', label: `A1 入门级 (${paperCounts.dele.A1})` },
-                { id: 'A2', label: `A2 基础级 (${paperCounts.dele.A2})` },
-                { id: 'B1', label: `B1 进阶级 (${paperCounts.dele.B1})` },
-                { id: 'B2', label: `B2 中高级 (${paperCounts.dele.B2})` }
+                { id: 'all', label: '全部欧标考卷' },
+                { id: 'A1', label: 'A1 入门级' },
+                { id: 'A2', label: 'A2 基础级' },
+                { id: 'B1', label: 'B1 进阶级' },
+                { id: 'B2', label: 'B2 中高级' }
               ].map(f => (
                 <button
                   key={f.id}
@@ -694,10 +694,10 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           {activeTrack === 'siele' && (
             <div className="flex items-center gap-1.5 flex-wrap">
               {[
-                { id: 'all', label: `全部机考大卷 (${paperCounts.siele.all})` },
-                { id: 'A2', label: `A2 分级卷 (${paperCounts.siele.A2})` },
-                { id: 'B1', label: `B1 综合卷 (${paperCounts.siele.B1})` },
-                { id: 'B2', label: `B2 高分冲刺卷 (${paperCounts.siele.B2})` }
+                { id: 'all', label: '全部机考大卷' },
+                { id: 'A2', label: 'A2 分级卷' },
+                { id: 'B1', label: 'B1 综合卷' },
+                { id: 'B2', label: 'B2 高分冲刺卷' }
               ].map(f => (
                 <button
                   key={f.id}
@@ -717,11 +717,11 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           {activeTrack === 'drill' && (
             <div className="flex items-center gap-1.5 flex-wrap">
               {[
-                { id: 'all', label: `全部专项攻坚 (${paperCounts.drill.all})` },
-                { id: 'subjunctive', label: `虚拟式时态与句式 (${paperCounts.drill.subjunctive})` },
-                { id: 'conjugation', label: `动词变位与时态 (${paperCounts.drill.conjugation})` },
-                { id: 'pronoun', label: `双代词与固定前置词 (${paperCounts.drill.pronoun})` },
-                { id: 'reading', label: `长篇读解与社科文化 (${paperCounts.drill.reading})` }
+                { id: 'all', label: '全部专项攻坚' },
+                { id: 'subjunctive', label: '虚拟式时态与句式' },
+                { id: 'conjugation', label: '动词变位与时态' },
+                { id: 'pronoun', label: '双代词与固定前置词' },
+                { id: 'reading', label: '长篇读解与社科文化' }
               ].map(f => (
                 <button
                   key={f.id}
@@ -744,7 +744,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           <div className="flex items-center justify-between text-xs font-bold text-slate-600 px-1">
             <span className="flex items-center gap-1.5">
               <FileCheck2 className="w-3.5 h-3.5 text-red-600" />
-              <span>当前可作答试卷 ({filteredPapers.length} 套):</span>
+              <span>当前官方真题试卷库:</span>
             </span>
             <div className="flex items-center gap-3">
               {activeTrack === 'drill' && (
