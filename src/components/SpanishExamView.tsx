@@ -400,7 +400,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
     const isLockedPaper = !isVip && !targetPaper.isFreePreview && pIdx !== 0;
 
     if (isLockedPaper) {
-      onOpenVipModal(`🔒《${targetPaper.title}》为 VIP 专属高频考卷！升级 VIP 终身卡（仅 ¥49.9），即可解锁全部 80 套西班牙语专四 75 题、考研二外 60 题、DELE/SIELE 欧标大卷与四大题型专项攻坚！`);
+      onOpenVipModal(`🔒《${targetPaper.title}》为 VIP 专属高频考卷！升级 VIP 终身卡（仅 ¥49.9），即可解锁西班牙语专四、考研二外、DELE/SIELE 欧标大卷与四大题型专项攻坚！`);
       return;
     }
 
@@ -823,11 +823,11 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
           </div>
           <h3 className="text-xl font-black text-slate-900">《{paper.title}》为 VIP 专属高分真题考场</h3>
           <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
-            该套试卷包含 {paper.questions.length} 道全真试题、听力原声音频与逐题双语名师拆解。免费学员仅开放首套体验卷。升级 VIP 终身卡（仅 ¥49.9），立享全站 {SPANISH_EXAM_PAPERS.length} 套大卷无限次实战刷题、原声调速精听与错题本自动归集！
+            该套试卷包含 {paper.questions.length} 道全真试题、听力原声音频与逐题双语名师拆解。免费学员仅开放首套体验卷。升级 VIP 终身卡（仅 ¥49.9），立享全站官方大卷无限次实战刷题、原声调速精听与错题本自动归集！
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
             <button
-              onClick={() => onOpenVipModal(`🔒《${paper.title}》为 VIP 会员专享试卷！升级 VIP 终身卡（仅 ¥49.9），即可畅刷 ${SPANISH_EXAM_PAPERS.length} 套官方全真满额大卷与专项突破！`)}
+              onClick={() => onOpenVipModal(`🔒《${paper.title}》为 VIP 会员专享试卷！升级 VIP 终身卡（仅 ¥49.9），即可畅刷官方全真满额大卷与专项突破！`)}
               className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-extrabold text-xs shadow-lg shadow-red-500/25 transition cursor-pointer"
             >
               立即升级 VIP 解锁全套真题 (¥49.9)
@@ -1201,14 +1201,14 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
                       <span>诊断完成！开启考前满分冲刺</span>
                     </div>
                     <p className="text-[11px] text-white/90 leading-relaxed">
-                      开通 VIP 终身卡（仅 ¥49.9），立即解锁剩余 <strong>{SPANISH_EXAM_PAPERS.length - 1} 套</strong> 官方全真专四、考研大卷、DELE/SIELE 认证大卷与四大题型专项攻坚！
+                      开通 VIP 终身卡（仅 ¥49.9），立即解锁全量官方全真专四、考研大卷、DELE/SIELE 认证大卷与四大题型专项攻坚！
                     </p>
                     <button
-                      onClick={() => onOpenVipModal(`🏆 您已完成免费试考卷评测！升级 VIP 终身卡（仅 ¥49.9），畅刷 ${SPANISH_EXAM_PAPERS.length} 套官方全真大卷与专项突破！`)}
+                      onClick={() => onOpenVipModal('🏆 您已完成免费试考卷评测！升级 VIP 终身卡（仅 ¥49.9），畅刷官方全真大卷与专项突破！')}
                       className="w-full py-2 bg-white text-red-700 hover:bg-red-50 font-black rounded-xl text-xs shadow-xs transition active:scale-98 flex items-center justify-center gap-1 cursor-pointer"
                     >
                       <Lock className="w-3.5 h-3.5" />
-                      <span>立即解锁全部 {SPANISH_EXAM_PAPERS.length - 1} 套考前真题 (¥49.9)</span>
+                      <span>立即解锁考前真题大卷 (¥49.9)</span>
                     </button>
                   </div>
                 )}
