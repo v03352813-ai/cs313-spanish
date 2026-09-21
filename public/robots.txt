@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://es.cs313.cn/sitemap.xml
