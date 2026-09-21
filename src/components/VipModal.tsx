@@ -17,16 +17,17 @@ export const VipModal: React.FC<VipModalProps> = ({ isOpen, onClose, onSuccess, 
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMsg('');
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      const res = verifyCardKey(inputKey);
-      setIsSubmitting(false);
+    // call api directly
+      const device = getDeviceFingerprint();
+    const res = await api.verifyCardKey(inputKey, device);
+    setIsSubmitting(false);
 
-      if (res.success) {
+    if (res.success) {
         confetti({
           particleCount: 100,
           spread: 70,
@@ -37,7 +38,7 @@ export const VipModal: React.FC<VipModalProps> = ({ isOpen, onClose, onSuccess, 
       } else {
         setErrorMsg(res.message);
       }
-    }, 400);
+    
   };
 
   const vipPerks = [
