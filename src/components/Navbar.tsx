@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     return (
       <header className="w-full pt-2.5 sm:pt-3 transition-all">
         <div className="max-w-6xl mx-auto px-4 w-full">
-          <div className="bg-white/95 backdrop-blur-sm rounded-3xl border border-amber-200/90 shadow-xs p-3.5 sm:p-5 space-y-3 sm:space-y-3.5 overflow-hidden">
+          <div className="bg-white/95 backdrop-blur-sm rounded-3xl border border-[#B82E24]/20 shadow-xs p-3.5 sm:p-5 space-y-3 sm:space-y-3.5 overflow-hidden">
             
             {/* 顶部品牌区与右侧 5 大特色指标方块 */}
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 min-w-0">
@@ -128,7 +128,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     className="flex items-center gap-1.5 cursor-pointer select-none group mr-1 shrink-0"
                     title="西班牙语研习社 (点击刷新首页 / 连击5次开启管理员)"
                   >
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-gradient-to-br from-[#B82E24] via-[#D97706] to-[#B45309] flex items-center justify-center text-white shadow-xs font-black text-xs tracking-tight group-hover:scale-105 transition shrink-0">
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-gradient-to-br from-[#C8102E] via-[#B82E24] to-[#8F141B] flex items-center justify-center text-white shadow-xs font-black text-xs tracking-tight group-hover:scale-105 transition shrink-0">
                       ES
                     </div>
                     <span className="font-black text-sm sm:text-base tracking-tight text-slate-900">
@@ -138,7 +138,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
                   {/* 平台定位徽章 */}
                   <div className="flex items-center gap-1.5 shrink-0 flex-wrap">
-                    <span className="hidden xs:inline-block px-2 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 text-[10.5px] sm:text-[11px] font-bold whitespace-nowrap">
+                    <span className="hidden xs:inline-block px-2 py-0.5 rounded-full bg-[#FEF2F2] text-[#B82E24] border border-[#B82E24]/20 text-[10.5px] sm:text-[11px] font-bold whitespace-nowrap">
                       Spanish Pro · 自研平台
                     </span>
                     <span className="hidden sm:inline-flex px-2 py-0.5 rounded-full bg-[#FEF2F2] text-[#B82E24] border border-[#B82E24]/20 text-[10.5px] sm:text-[11px] font-bold items-center gap-1 whitespace-nowrap">
@@ -179,11 +179,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                 {/* 1. 变位神器 */}
                 <button
                   onClick={() => setActiveTab('conjugation')}
-                  className="px-2.5 py-2 rounded-xl bg-gradient-to-br from-amber-500 via-amber-600 to-orange-600 text-white flex flex-col items-center justify-center min-w-[62px] sm:min-w-[68px] shadow-2xs hover:scale-105 transition cursor-pointer"
+                  className="px-2.5 py-2 rounded-xl bg-gradient-to-br from-[#C8102E] via-[#B82E24] to-[#8F141B] text-white flex flex-col items-center justify-center min-w-[62px] sm:min-w-[68px] shadow-2xs hover:scale-105 transition cursor-pointer"
                   title="开启靴子法则动词变位推导演练器"
                 >
                   <span className="text-[11px] font-black leading-none">变位神器</span>
-                  <span className="text-[9px] font-normal opacity-90 mt-0.5">靴子法则</span>
+                  <span className="text-[9px] font-normal text-rose-100 mt-0.5">靴子法则</span>
                 </button>
 
                 {/* 2. 全真卷 */}
@@ -222,13 +222,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                 {onOpenWallpaperModal && (
                   <button
                     onClick={onOpenWallpaperModal}
-                    className="px-2 py-2 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 text-amber-900 flex flex-col items-center justify-center min-w-[60px] sm:min-w-[64px] hover:bg-amber-100 transition cursor-pointer"
+                    className="px-2 py-2 rounded-xl bg-gradient-to-br from-rose-50 to-amber-50/40 border border-[#B82E24]/20 text-[#B82E24] flex flex-col items-center justify-center min-w-[60px] sm:min-w-[64px] hover:bg-rose-100 transition cursor-pointer"
                     title="领取 4K 伴学壁纸福利"
                   >
                     <span className="text-[11px] font-black leading-none flex items-center gap-0.5">
                       🎁 免费壁纸
                     </span>
-                    <span className="text-[9px] text-amber-800 mt-0.5">4K 伴学视界</span>
+                    <span className="text-[9px] text-[#B82E24]/80 mt-0.5">4K 伴学视界</span>
                   </button>
                 )}
               </div>
@@ -315,7 +315,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="w-full pt-2 sm:pt-2.5 transition-all">
       <div className="max-w-6xl mx-auto px-4 w-full">
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl border border-amber-200/90 shadow-xs p-3 sm:p-4 space-y-2.5 overflow-hidden">
+        <div className="bg-white/95 backdrop-blur-sm rounded-3xl border border-[#B82E24]/20 shadow-xs p-3 sm:p-4 space-y-2.5 overflow-hidden">
           
           {/* 第一行：左侧 Logo + 当前模块标识；右侧 考期 + 壁纸 + 黑金通卡 + 多语 */}
           <div className="flex items-center justify-between gap-2.5 min-w-0">
@@ -326,7 +326,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 className="flex items-center gap-1.5 cursor-pointer select-none group shrink-0"
                 title="返回首页"
               >
-                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-gradient-to-br from-[#B82E24] via-[#D97706] to-[#B45309] flex items-center justify-center text-white shadow-xs font-black text-xs tracking-tight group-hover:scale-105 transition shrink-0">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-gradient-to-br from-[#C8102E] via-[#B82E24] to-[#8F141B] flex items-center justify-center text-white shadow-xs font-black text-xs tracking-tight group-hover:scale-105 transition shrink-0">
                   ES
                 </div>
                 <span className="font-black text-sm sm:text-base tracking-tight text-slate-900 hidden xs:inline">
@@ -342,7 +342,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               {/* 当前所在模块高光指示器 (对标日语图 2 图 5) */}
               <div className="flex items-center gap-1 text-xs">
                 <span className="text-slate-400 font-medium hidden sm:inline">当前模块:</span>
-                <span className="px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-300/80 font-black text-xs flex items-center gap-1 shadow-2xs">
+                <span className="px-2.5 py-0.5 rounded-full bg-[#FEF2F2] text-[#B82E24] border border-[#B82E24]/25 font-black text-xs flex items-center gap-1 shadow-2xs">
                   <currentItem.icon className="w-3 h-3 text-[#B82E24]" />
                   <span>{currentItem.label}</span>
                 </span>
@@ -355,7 +355,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               {onOpenExamModal && (
                 <button
                   onClick={onOpenExamModal}
-                  className="px-2.5 py-1 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white text-[10.5px] sm:text-[11px] font-black flex items-center gap-1 shadow-2xs transition cursor-pointer active:scale-95"
+                  className="px-2.5 py-1 rounded-full bg-gradient-to-r from-[#B82E24] to-[#8F141B] hover:from-[#8F141B] hover:to-[#B82E24] text-white text-[10.5px] sm:text-[11px] font-black flex items-center gap-1 shadow-2xs transition cursor-pointer active:scale-95"
                   title="查看官方考期全景指南"
                 >
                   <Calendar className="w-3 h-3" />
@@ -370,7 +370,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               {onOpenWallpaperModal && (
                 <button
                   onClick={onOpenWallpaperModal}
-                  className="hidden sm:flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 text-[10.5px] sm:text-[11px] font-bold transition cursor-pointer"
+                  className="hidden sm:flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#FEF2F2] hover:bg-rose-100 text-[#B82E24] border border-[#B82E24]/20 text-[10.5px] sm:text-[11px] font-bold transition cursor-pointer"
                   title="领取 4K 伴学壁纸福利"
                 >
                   <Gift className="w-3 h-3 text-[#B82E24]" />
