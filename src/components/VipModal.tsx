@@ -201,7 +201,7 @@ export const VipModal: React.FC<VipModalProps> = ({
                       type="text"
                       value={inputKey}
                       onChange={e => setInputKey(e.target.value)}
-                      placeholder="粘贴以 ESVIP- 开头的终身卡密"
+                      placeholder="在此粘贴补差价获得的专属卡密"
                       className="flex-1 px-3 py-2 rounded-xl border border-slate-300 focus:border-[#B82E24] outline-none text-xs font-mono uppercase"
                     />
                     <button
@@ -279,7 +279,7 @@ export const VipModal: React.FC<VipModalProps> = ({
                     type="text"
                     value={inputKey}
                     onChange={e => setInputKey(e.target.value)}
-                    placeholder="输入 ES30D- 或 ESVIP- 卡密"
+                    placeholder="在此粘贴或输入您的专属激活卡密"
                     className="flex-1 px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-[#B82E24] focus:ring-2 focus:ring-[#B82E24]/20 outline-none text-xs sm:text-sm font-mono uppercase tracking-wide"
                   />
                   <button
