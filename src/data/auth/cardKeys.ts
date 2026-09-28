@@ -8,6 +8,7 @@ export interface LicenseInfo {
   remainingDays?: number;
   isExpired?: boolean;
   key?: string;
+  cardKey?: string;
   source?: string;
   boundDevicesCount?: number;
   maxDevices?: number;

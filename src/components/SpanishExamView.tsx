@@ -83,13 +83,13 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
   const drillCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.mode === 'special_drill').length, []);
 
   const tem4Count = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.track === 'tem4').length, []);
-  const kaoyanCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.track === 'kaoyan' || p.track === 'kaoyan_mock').length, []);
+  const kaoyanCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => (p.track as string) === 'kaoyan' || (p.track as string) === 'kaoyan_mock').length, []);
   const deleCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.track === 'dele').length, []);
   const sieleCount = useMemo(() => SPANISH_EXAM_PAPERS.filter(p => p.track === 'siele').length, []);
 
   // 各赛道子分类动态统计
   const paperCounts = useMemo(() => {
-    const kaoyan = SPANISH_EXAM_PAPERS.filter(p => p.track === 'kaoyan' || p.track === 'kaoyan_mock');
+    const kaoyan = SPANISH_EXAM_PAPERS.filter(p => (p.track as string) === 'kaoyan' || (p.track as string) === 'kaoyan_mock');
     const tem4 = SPANISH_EXAM_PAPERS.filter(p => p.track === 'tem4');
     const dele = SPANISH_EXAM_PAPERS.filter(p => p.track === 'dele');
     const siele = SPANISH_EXAM_PAPERS.filter(p => p.track === 'siele');
@@ -141,7 +141,7 @@ export const SpanishExamView: React.FC<SpanishExamViewProps> = ({
     return SPANISH_EXAM_PAPERS.filter(p => {
       // 赛道匹配
       if (activeTrack === 'kaoyan') {
-        if (p.track !== 'kaoyan' && p.track !== 'kaoyan_mock') return false;
+        if ((p.track as string) !== 'kaoyan' && (p.track as string) !== 'kaoyan_mock') return false;
         if (kaoyanSubFilter === 'beiwai' && !p.schoolOrOrg.includes('北京外国语大学')) return false;
         if (kaoyanSubFilter === 'shisu' && !p.schoolOrOrg.includes('上海外国语大学')) return false;
         if (kaoyanSubFilter === 'gdufs' && !p.schoolOrOrg.includes('广东外语外贸大学')) return false;
