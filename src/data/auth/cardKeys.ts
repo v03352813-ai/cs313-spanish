@@ -1,10 +1,17 @@
 // 闲鱼/小红书自动发货卡密库与授权中心 (CS313 西班牙语研习社)
 export interface LicenseInfo {
   isVip: boolean;
+  tier?: 'lifetime' | '30d';
+  planName?: string;
   activatedAt?: string;
+  expiresAt?: string;
+  remainingDays?: number;
+  isExpired?: boolean;
   key?: string;
   source?: string;
-  planName?: string;
+  boundDevicesCount?: number;
+  maxDevices?: number;
+  userId?: string;
 }
 
 const STORAGE_KEY = 'cs313_es_license_v1';
@@ -39,27 +46,87 @@ export const PRESET_CARD_KEYS: string[] = [
   'ESVIP-3D7B-1E4F-9A2C', 'ESVIP-7A1E-6D9B-2C4F', 'ESVIP-2F6C-4B7D-8E1A', 'ESVIP-8A2D-5F1B-9C3E'
 ];
 
-export function verifyCardKey(rawKey: string): { success: boolean; message: string } {
+export function verifyCardKey(rawKey: string): { success: boolean; message: string; license?: LicenseInfo } {
   if (!rawKey) return { success: false, message: '请输入授权卡密' };
   const key = rawKey.trim().toUpperCase();
+  const now = new Date();
+  const nowIso = now.toISOString();
 
-  // 1. 匹配预设 100 张卡密库
+  // 1. 匹配 30 天通行证算法特征 (ES30D-XXXX-XXXX-XXXX)
+  const is30dAlgo = /^ES30D-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(key);
+  if (is30dAlgo) {
+    const expiresDate = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
+    const lic: LicenseInfo = {
+      isVip: true,
+      tier: '30d',
+      planName: '【全真机考·30天通行证】',
+      activatedAt: nowIso,
+      expiresAt: expiresDate.toISOString(),
+      remainingDays: 30,
+      key,
+      source: 'algorithmic_30d'
+    };
+    saveLicense(lic);
+    return { 
+      success: true, 
+      message: '🎉【全真机考·30天通行证】激活成功！有效期 30 天，全真题库已解锁！',
+      license: lic
+    };
+  }
+
+  // 2. 匹配预设 100 张终身卡密库
   if (PRESET_CARD_KEYS.includes(key)) {
-    saveLicense({ isVip: true, activatedAt: new Date().toISOString(), key, source: 'preset_key' });
-    return { success: true, message: '🎉 终身 VIP 激活成功！欢迎加入西班牙语研习社！' };
+    const lic: LicenseInfo = {
+      isVip: true,
+      tier: 'lifetime',
+      planName: '【终身研习·黑金永久VIP】',
+      activatedAt: nowIso,
+      key,
+      source: 'preset_key'
+    };
+    saveLicense(lic);
+    return { 
+      success: true, 
+      message: '🎉 终身 VIP 激活成功！欢迎加入西班牙语研习社！',
+      license: lic
+    };
   }
 
-  // 2. 算法通配校验：只要格式为 ESVIP-XXXX-XXXX-XXXX 且符合特征即授权 (增强离线鲁棒性)
-  const regex = /^ESVIP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/;
-  if (regex.test(key)) {
-    saveLicense({ isVip: true, activatedAt: new Date().toISOString(), key, source: 'algorithmic_key' });
-    return { success: true, message: '🎉 终身 VIP 激活成功！全部模块与真题库已解锁！' };
+  // 3. 终身卡算法通配校验：ESVIP-XXXX-XXXX-XXXX
+  const isVipAlgo = /^ESVIP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(key);
+  if (isVipAlgo) {
+    const lic: LicenseInfo = {
+      isVip: true,
+      tier: 'lifetime',
+      planName: '【终身研习·黑金永久VIP】',
+      activatedAt: nowIso,
+      key,
+      source: 'algorithmic_key'
+    };
+    saveLicense(lic);
+    return { 
+      success: true, 
+      message: '🎉 终身 VIP 激活成功！全部模块与终身云更新已解锁！',
+      license: lic
+    };
   }
 
-  // 3. 通用管理员体验码
+  // 4. 通用管理员体验码
   if (key === 'CS313-SPANISH-VIP' || key === 'HOLA-ESPANOL-2026') {
-    saveLicense({ isVip: true, activatedAt: new Date().toISOString(), key, source: 'admin_pass' });
-    return { success: true, message: '🎉 管理员体验权限激活成功！' };
+    const lic: LicenseInfo = {
+      isVip: true,
+      tier: 'lifetime',
+      planName: '【特邀学员·终身研习卡】',
+      activatedAt: nowIso,
+      key,
+      source: 'admin_pass'
+    };
+    saveLicense(lic);
+    return { 
+      success: true, 
+      message: '🎉 管理员/特邀学员权限激活成功！',
+      license: lic
+    };
   }
 
   return { success: false, message: '卡密无效或已被使用，请检查输入或联系客服微信获取' };
@@ -70,7 +137,23 @@ export function getLocalLicense(): LicenseInfo | null {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
-    return JSON.parse(raw);
+    const lic: LicenseInfo = JSON.parse(raw);
+
+    // 校验 30 天通行证是否过期
+    if (lic.tier === '30d' && lic.expiresAt) {
+      const diffMs = new Date(lic.expiresAt).getTime() - Date.now();
+      if (diffMs <= 0) {
+        lic.isVip = false;
+        lic.isExpired = true;
+        lic.remainingDays = 0;
+      } else {
+        lic.isVip = true;
+        lic.isExpired = false;
+        lic.remainingDays = Math.ceil(diffMs / (24 * 60 * 60 * 1000));
+      }
+    }
+
+    return lic;
   } catch {
     return null;
   }

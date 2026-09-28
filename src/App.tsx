@@ -176,21 +176,42 @@ export const App: React.FC = () => {
         onOpenExamModal={() => setIsExamModalOpen(true)}
       />
 
-      {/* VIP 试学横幅提示条 (未激活前全站统一呈现，激活后自动隐藏) */}
-      {!isVip && (
+      {/* VIP 试学 / 30天通行证 / 过期提示横幅 */}
+      {!isVip ? (
         <div className="max-w-6xl mx-auto px-4 pt-2.5 sm:pt-3 w-full min-w-0 animate-fade-in">
           <div className="bg-gradient-to-r from-[#8F141B] via-[#B82E24] to-[#6B0F15] text-white py-2.5 px-4 sm:px-6 rounded-2xl text-xs font-semibold shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 border border-rose-900/30 min-w-0">
             <div className="flex items-start sm:items-center gap-2.5 min-w-0">
               <Sparkles className="w-4 h-4 shrink-0 text-amber-300 mt-0.5 sm:mt-0 animate-pulse" />
               <span className="leading-snug break-words min-w-0">
-                当前为<strong>【免费试学模式】</strong> · 拍下激活码即享 DELE/SIELE 欧标机考全真大卷、5,000+ 核心词库与经典西影原声精听
+                {license?.isExpired ? (
+                  <>⚠️ 您的<strong>【全真机考·30天通行证】</strong>已到期 · 支持全额抵扣，仅需补 40 元差价即可升级终身卡！</>
+                ) : (
+                  <>当前为<strong>【免费试学模式】</strong> · 拍下卡密即享 DELE/SIELE 欧标机考全真大卷、5,000+ 核心词库与经典西影原声精听</>
+                )}
               </span>
             </div>
             <button
-              onClick={() => handleOpenVipModal('拍下激活码即享 DELE/SIELE 欧标机考全真大卷、5,000+ 核心词库与经典西影原声精听！')}
+              onClick={() => handleOpenVipModal(license?.isExpired ? '您的30天通行证已到期，支持补40元差价升级终身卡，终身免更！' : '拍下激活码即享 DELE/SIELE 欧标机考全真大卷、5,000+ 核心词库与经典西影原声精听！')}
               className="w-full sm:w-auto px-4 py-1.5 rounded-xl bg-white text-[#B82E24] font-extrabold hover:bg-rose-50 transition shadow-xs text-xs cursor-pointer shrink-0 text-center flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
             >
-              <span>输入卡密解锁 ➔</span>
+              <span>{license?.isExpired ? '补40元升级终身卡 ➔' : '输入卡密解锁 ➔'}</span>
+            </button>
+          </div>
+        </div>
+      ) : license?.tier === '30d' && (
+        <div className="max-w-6xl mx-auto px-4 pt-2.5 sm:pt-3 w-full min-w-0 animate-fade-in">
+          <div className="bg-gradient-to-r from-amber-500 via-[#B82E24] to-[#8F141B] text-white py-2 px-4 sm:px-6 rounded-2xl text-xs font-semibold shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2 border border-amber-300/40 min-w-0">
+            <div className="flex items-center gap-2 min-w-0">
+              <Sparkles className="w-4 h-4 shrink-0 text-amber-200 animate-spin" />
+              <span className="leading-snug break-words min-w-0">
+                ⏰ 您的<strong>【全真机考·30天通行证】</strong>生效中（剩余 <strong>{license.remainingDays ?? 30}</strong> 天）· 体验满意？已付 9.9 全额抵扣！
+              </span>
+            </div>
+            <button
+              onClick={() => handleOpenVipModal('您已激活 30 天通行证，支持补 40 元差价直升终身卡，终身免更！')}
+              className="w-full sm:w-auto px-3.5 py-1 rounded-xl bg-white text-[#B82E24] font-black hover:bg-amber-50 transition shadow-xs text-xs cursor-pointer shrink-0 text-center flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
+            >
+              <span>补40元升级终身卡 ➔</span>
             </button>
           </div>
         </div>
@@ -308,6 +329,8 @@ export const App: React.FC = () => {
       <VipModal
         isOpen={isVipModalOpen}
         onClose={() => setIsVipModalOpen(false)}
+        isVip={isVip}
+        license={license}
         onSuccess={info => setLicense(info)}
         reason={vipModalReason}
       />

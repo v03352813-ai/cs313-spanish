@@ -118,6 +118,27 @@ function seedDefaultCards() {
       }
     }
 
+    // 载入【全真机考·30天通行证】发货卡密库
+    const txt30dPath = path.resolve(__dirname, '../闲鱼发货卡密库_100条_西班牙语30天通行证.txt');
+    if (fs.existsSync(txt30dPath)) {
+      try {
+        const lines = fs.readFileSync(txt30dPath, 'utf8').split('\n');
+        lines.forEach(line => {
+          const trimmed = line.trim();
+          if (trimmed.startsWith('ES30D-')) {
+            seedCards.push({
+              key: trimmed,
+              tier: 'es_30d',
+              batch: '2026-XIANYU-30D',
+              price: 9.9
+            });
+          }
+        });
+      } catch (err) {
+        console.warn('[SQLite DB] Failed to read Spanish 30d txt card file:', err.message);
+      }
+    }
+
     const insertStmt = db.prepare(`
       INSERT INTO card_keys (card_key, tier, status, batch_no, price, bound_devices, created_at)
       VALUES (?, ?, 'active', ?, ?, '[]', ?)
@@ -130,6 +151,27 @@ function seedDefaultCards() {
     });
 
     console.log(`[SQLite DB] Spanish DB seeded with ${seedCards.length} official card keys.`);
+  } else {
+    // 若数据库已有卡密，增量补入 30 天通行证卡密
+    const txt30dPath = path.resolve(__dirname, '../闲鱼发货卡密库_100条_西班牙语30天通行证.txt');
+    if (fs.existsSync(txt30dPath)) {
+      try {
+        const now = new Date().toISOString();
+        const insertStmt = db.prepare(`
+          INSERT OR IGNORE INTO card_keys (card_key, tier, status, batch_no, price, bound_devices, created_at)
+          VALUES (?, 'es_30d', 'active', '2026-XIANYU-30D', 9.9, '[]', ?)
+        `);
+        const lines = fs.readFileSync(txt30dPath, 'utf8').split('\n');
+        lines.forEach(line => {
+          const trimmed = line.trim();
+          if (trimmed.startsWith('ES30D-')) {
+            insertStmt.run(trimmed, now);
+          }
+        });
+      } catch (err) {
+        console.warn('[SQLite DB] Incremental 30d seed failed:', err.message);
+      }
+    }
   }
 }
 
@@ -142,15 +184,21 @@ function verifyAndBindCardKey(cardKey, device = {}) {
   const stmt = db.prepare('SELECT * FROM card_keys WHERE card_key = ?');
   let card = stmt.get(cleanKey);
 
-  // 2. 算法通配兼容：若格式符合 ESVIP-XXXX-XXXX-XXXX 则动态入库
+  // 2. 算法通配兼容：
+  // 模式 A: 终身卡 ESVIP-XXXX-XXXX-XXXX
+  // 模式 B: 30天卡 ES30D-XXXX-XXXX-XXXX
   if (!card) {
-    const regex = /^ESVIP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/;
-    if (regex.test(cleanKey)) {
+    const isLifetimeAlgo = /^ESVIP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(cleanKey);
+    const is30dAlgo = /^ES30D-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(cleanKey);
+
+    if (isLifetimeAlgo || is30dAlgo) {
       const now = new Date().toISOString();
+      const tier = is30dAlgo ? 'es_30d' : 'es_lifetime';
+      const price = is30dAlgo ? 9.9 : 49.9;
       db.prepare(`
         INSERT INTO card_keys (card_key, tier, status, batch_no, price, bound_devices, created_at)
-        VALUES (?, 'es_lifetime', 'active', '2026-ALGO', 49.9, '[]', ?)
-      `).run(cleanKey, now);
+        VALUES (?, ?, 'active', '2026-ALGO', ?, '[]', ?)
+      `).run(cleanKey, tier, price, now);
       card = stmt.get(cleanKey);
     }
   }
@@ -161,6 +209,21 @@ function verifyAndBindCardKey(cardKey, device = {}) {
 
   if (card.status === 'frozen' || card.status === 'revoked') {
     return { success: false, message: '该卡密已被店主冻结或作废，如有疑问请联系客服' };
+  }
+
+  // 3. 30天通行证到期校验逻辑
+  const is30d = card.tier === 'es_30d' || cleanKey.startsWith('ES30D-');
+  const nowMs = Date.now();
+  if (is30d && card.activated_at) {
+    const activatedMs = new Date(card.activated_at).getTime();
+    const expiresMs = activatedMs + 30 * 24 * 60 * 60 * 1000;
+    if (nowMs > expiresMs) {
+      return {
+        success: false,
+        message: '您的【全真机考·30天通行证】已到期。支持全额抵扣，仅需补 40 元差价即可升级终身卡！',
+        isExpired: true
+      };
+    }
   }
 
   let devices = [];
@@ -210,14 +273,24 @@ function verifyAndBindCardKey(cardKey, device = {}) {
   `);
   studentStmt.run(userId, cleanKey, devId, now, now);
 
+  const activatedTime = card.activated_at || now;
+  const activatedMs = new Date(activatedTime).getTime();
+  const expiresMs = activatedMs + 30 * 24 * 60 * 60 * 1000;
+  const remainingDays = is30d ? Math.max(0, Math.ceil((expiresMs - nowMs) / (24 * 60 * 60 * 1000))) : undefined;
+
   return {
     success: true,
-    message: '🎉 西语终身 VIP 卡密激活成功！已解锁 DELE/专四真题机考、动词变位与大舌音实验室！',
+    message: is30d 
+      ? `🎉【全真机考·30天通行证】激活成功！有效期 30 天，已解锁全真模考、动词变位与西影精听！`
+      : '🎉 西语终身黑金 VIP 激活成功！已解锁 DELE/专四真题机考、动词变位与终身云更新！',
     license: {
       isVip: true,
       cardKey: cleanKey,
-      tier: '西班牙语单语种终身VIP',
-      activatedAt: card.activated_at || now,
+      tier: is30d ? '30d' : 'lifetime',
+      planName: is30d ? '【全真机考·30天通行证】' : '【终身研习·黑金永久VIP】',
+      activatedAt: activatedTime,
+      expiresAt: is30d ? new Date(expiresMs).toISOString() : undefined,
+      remainingDays: remainingDays,
       boundDevicesCount: devices.length,
       maxDevices: 2,
       userId
