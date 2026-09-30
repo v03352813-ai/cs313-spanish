@@ -188,13 +188,14 @@ function verifyAndBindCardKey(cardKey, device = {}) {
   // 模式 A: 终身卡 ESVIP-XXXX-XXXX-XXXX
   // 模式 B: 30天卡 ES30D-XXXX-XXXX-XXXX
   if (!card) {
-    const isLifetimeAlgo = /^ESVIP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(cleanKey);
+    const isAllLang = cleanKey === 'CS313-ALL-GOLD-7U7R' || cleanKey === 'CS313-ALL-VIP8-87GT' || cleanKey.startsWith('CS313-ALL-');
+    const isLifetimeAlgo = isAllLang || /^ESVIP-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(cleanKey);
     const is30dAlgo = /^ES30D-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(cleanKey);
 
     if (isLifetimeAlgo || is30dAlgo) {
       const now = new Date().toISOString();
-      const tier = is30dAlgo ? 'es_30d' : 'es_lifetime';
-      const price = is30dAlgo ? 9.9 : 49.9;
+      const tier = is30dAlgo ? 'es_30d' : (isAllLang ? 'all_languages_vip' : 'es_lifetime');
+      const price = is30dAlgo ? 9.9 : (isAllLang ? 99.0 : 49.9);
       db.prepare(`
         INSERT INTO card_keys (card_key, tier, status, batch_no, price, bound_devices, created_at)
         VALUES (?, ?, 'active', '2026-ALGO', ?, '[]', ?)

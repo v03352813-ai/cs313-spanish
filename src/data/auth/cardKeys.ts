@@ -52,6 +52,23 @@ export function verifyCardKey(rawKey: string): { success: boolean; message: stri
   const key = rawKey.trim().toUpperCase();
   const now = new Date();
   const nowIso = now.toISOString();
+  // 0. 匹配全球小语种黑金终身通卡 (CS313-ALL-GOLD-7U7R / CS313-ALL-VIP8-87GT 等)
+  if (key === 'CS313-ALL-GOLD-7U7R' || key === 'CS313-ALL-VIP8-87GT' || key.startsWith('CS313-ALL-')) {
+    const lic: LicenseInfo = {
+      isVip: true,
+      tier: 'lifetime',
+      planName: '【全球小语种·黑金终身通卡】',
+      activatedAt: nowIso,
+      key,
+      source: 'all_languages_vip'
+    };
+    saveLicense(lic);
+    return {
+      success: true,
+      message: '👑 全球小语种黑金终身通卡激活成功！尊享西/法/日/韩全语种终身全功能畅学！',
+      license: lic
+    };
+  }
 
   // 1. 匹配 30 天通行证算法特征 (ES30D-XXXX-XXXX-XXXX)
   const is30dAlgo = /^ES30D-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(key);
