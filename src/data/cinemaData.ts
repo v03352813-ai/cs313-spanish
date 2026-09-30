@@ -1331,6 +1331,282 @@ export const SPANISH_CINEMA_LIST: CinemaScene[] = [
         "meaning": "正义、公正"
       }
     ]
+  },
+  {
+    "id": "film_secret_eyes",
+    "movieTitle": "谜一样的双眼",
+    "spanishTitle": "El secreto de sus ojos",
+    "year": 2009,
+    "director": "Juan José Campanella",
+    "genre": "悬疑烧脑",
+    "levelTag": "B2高阶",
+    "coverImage": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&auto=format&fit=crop&q=80",
+    "tag": "阿根廷奥斯卡最佳外语片 · 跨越25年的执念与爱恋",
+    "audioDuration": "02:10",
+    "isFreePreview": false,
+    "sceneSummary": "退休法院调查员本哈明试图写一本小说，追溯二十五年前未解的奸杀悬案。在火车站台与爱人的告别，浓缩了阿根廷现代文学的隐喻与西班牙语虚拟式的终极运用。",
+    "dialogues": [
+      {
+        "character": "Espósito",
+        "es": "Un hombre puede cambiar de todo: de cara, de casa, de familia, de novia, de religión... Pero hay una cosa que no puede cambiar: no puede cambiar de pasión.",
+        "zh": "一个人可以改变一切：换张脸，换栋房子，换个家庭，换个女友，换个信仰……但有一件事他永远无法改变：他无法改变自己的热爱与执念。",
+        "keyPoints": "cambiar de + 名词: 改变/换（如 cambiar de idea, cambiar de opinión）；pasión: 热情/执念。"
+      },
+      {
+        "character": "Irene",
+        "es": "Si sigues mirando hacia atrás, te vas a chocar con lo que tienes adelante.",
+        "zh": "如果你总是频频回头张望，你终将撞上迎面而来的未来。",
+        "keyPoints": "seguir + 副动词 (mirando): 持续做某事；chocarse con: 与……相撞；lo que: 中性关系代词“所……的事”。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "pasión (f.)",
+        "meaning": "激情 / 挚爱 / 执念"
+      },
+      {
+        "word": "obsesión (f.)",
+        "meaning": "痴迷 / 执念 / 困扰"
+      },
+      {
+        "word": "justicia (f.)",
+        "meaning": "正义 / 司法 / 公正"
+      },
+      {
+        "word": "mirar hacia atrás",
+        "meaning": "频频回顾 / 留恋过去"
+      }
+    ]
+  },
+  {
+    "id": "film_roma",
+    "movieTitle": "罗马",
+    "spanishTitle": "Roma",
+    "year": 2018,
+    "director": "Alfonso Cuarón",
+    "genre": "人生哲理",
+    "levelTag": "B1进阶",
+    "coverImage": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&auto=format&fit=crop&q=80",
+    "tag": "威尼斯金狮奖与奥斯卡最佳外语片 · 墨西哥黑白诗史",
+    "audioDuration": "01:50",
+    "isFreePreview": false,
+    "sceneSummary": "70年代初墨西哥城罗马区，年轻原住民女佣克莱奥在动荡社会与家庭破碎中，用坚韧与爱托举起一个中产阶级家庭的孩子们。",
+    "dialogues": [
+      {
+        "character": "Cleo",
+        "es": "No importa lo que digan, siempre estamos solas las mujeres en este mundo.",
+        "zh": "不论别人怎么说，在这个世界上，女人最终都是孤身奋战的。",
+        "keyPoints": "no importa lo que + 虚拟式 (digan): 不管他们说什么；虚拟现在时表让步。"
+      },
+      {
+        "character": "Sofía",
+        "es": "Las olas nos asustan, pero aprendemos a nadar juntas.",
+        "zh": "海浪固然令我们恐惧，但我们学着一起游过去。",
+        "keyPoints": "asustar: 使……害怕（类似于 gustar 的使动用法）；aprender a + 动词原形: 学会做某事。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "mar (m./f.)",
+        "meaning": "大海 / 海洋"
+      },
+      {
+        "word": "ola (f.)",
+        "meaning": "海浪 / 波涛"
+      },
+      {
+        "word": "abrazar (v.)",
+        "meaning": "拥抱 / 环抱"
+      },
+      {
+        "word": "valiente (adj.)",
+        "meaning": "勇敢的 / 坚毅的"
+      }
+    ]
+  },
+  {
+    "id": "film_open_eyes",
+    "movieTitle": "睁开你的双眼",
+    "spanishTitle": "Abre los ojos",
+    "year": 1997,
+    "director": "Alejandro Amenábar",
+    "genre": "悬疑烧脑",
+    "levelTag": "B2高阶",
+    "coverImage": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&auto=format&fit=crop&q=80",
+    "tag": "阿梅纳瓦尔惊世科幻悬疑神作 · 好莱坞《香草天空》原作",
+    "audioDuration": "02:05",
+    "isFreePreview": false,
+    "sceneSummary": "英俊富有的塞萨尔在一场车祸后毁容，随后现实与梦境开始不可逆地扭曲交错。影片开场马德里空无一人的格兰大道与终局的呼唤，构成了西语影史最震撼的视听图腾。",
+    "dialogues": [
+      {
+        "character": "César",
+        "es": "¿Cómo sabes si estás despierto o si sigues soñando dentro de una pesadilla?",
+        "zh": "你怎么知道你究竟是清醒着的，还是依然陷在一场噩梦的深渊里做梦？",
+        "keyPoints": "estar despierto: 处于清醒状态；seguir + 副动词: 持续处于……中；pesadilla: 噩梦。"
+      },
+      {
+        "character": "Voz de Sofía",
+        "es": "Abre los ojos... Es hora de despertar.",
+        "zh": "睁开你的双眼吧……该是醒来的时候了。",
+        "keyPoints": "abre: abrir 对 tú 的肯定祈使式；es hora de + 原形动词: 是做某事的时候了。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "despertar (v.)",
+        "meaning": "醒来 / 唤醒"
+      },
+      {
+        "word": "pesadilla (f.)",
+        "meaning": "噩梦 / 梦魇"
+      },
+      {
+        "word": "realidad (f.)",
+        "meaning": "现实 / 真实"
+      },
+      {
+        "word": "rostro (m.)",
+        "meaning": "容貌 / 面孔"
+      }
+    ]
+  },
+  {
+    "id": "film_mar_adentro",
+    "movieTitle": "深海长眠",
+    "spanishTitle": "Mar adentro",
+    "year": 2004,
+    "director": "Alejandro Amenábar",
+    "genre": "人生哲理",
+    "levelTag": "B2高阶",
+    "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80",
+    "tag": "威尼斯影帝与奥斯卡最佳外语片 · 哈维尔·巴登传世生命之歌",
+    "audioDuration": "02:15",
+    "isFreePreview": false,
+    "sceneSummary": "瘫痪三十年的雷蒙在加利西亚海边为尊严与自由而抗争，他通过文学与想象让灵魂飞越高山与大海。加利西亚海风与深沉的独白，是西班牙语诗歌修辞与高阶表达的巅峰典范。",
+    "dialogues": [
+      {
+        "character": "Ramón",
+        "es": "Cuando uno no puede escapar y depende constantemente de los demás, aprende a llorar sonriendo.",
+        "zh": "当一个人插翅难飞且无时无刻不依赖他人时，他就学会了如何微笑着流泪。",
+        "keyPoints": "depender de: 依赖于；aprende a + 原形: 学会；sonriendo: sonreír的副动词，表伴随方式。"
+      },
+      {
+        "character": "Julia",
+        "es": "El mar me da la vida, y el mar me la quita. Pero en el fondo del mar nunca hay ruido.",
+        "zh": "大海赐予我生命，大海又将它剥夺。但在深海之底，永远没有任何喧嚣。",
+        "keyPoints": "dar la vida / quitar la vida: 赋予生命 / 夺走生命；双重宾格代词 me la quita。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "libertad (f.)",
+        "meaning": "自由"
+      },
+      {
+        "word": "dignidad (f.)",
+        "meaning": "尊严 / 尊贵"
+      },
+      {
+        "word": "escapar (v.)",
+        "meaning": "逃离 / 摆脱"
+      },
+      {
+        "word": "horizonte (m.)",
+        "meaning": "地平线 / 视野"
+      }
+    ]
+  },
+  {
+    "id": "film_relatos_salvajes",
+    "movieTitle": "荒蛮故事",
+    "spanishTitle": "Relatos salvajes",
+    "year": 2014,
+    "director": "Damián Szifron",
+    "genre": "传奇罪案",
+    "levelTag": "B1进阶",
+    "coverImage": "https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=800&auto=format&fit=crop&q=80",
+    "tag": "戛纳电影节金棕榈提名 · 黑色幽默的极致复仇狂欢",
+    "audioDuration": "01:55",
+    "isFreePreview": false,
+    "sceneSummary": "失控的婚礼、路怒的绝杀、爆破工程师的复仇……六个荒诞而充满张力的独立短篇，生动展示了阿根廷口语与快节奏争辩在日常生活中的极致表达。",
+    "dialogues": [
+      {
+        "character": "Simón",
+        "es": "Todo el mundo tiene un límite. Si me empujas una vez más, vas a conocer el mío.",
+        "zh": "每个人都有自己的底线。如果你再把我往前逼一步，你就会见识到我的底线在哪。",
+        "keyPoints": "tener un límite: 有底线/界限；si + 陈述现在时 (empujas) 表条件句；el mío: 物主代词（我的底线）。"
+      },
+      {
+        "character": "Romina",
+        "es": "No voy a fingir que nada ha pasado. Esta noche vamos a bailar sobre las ruinas.",
+        "zh": "我绝不会假装什么都没发生过。今夜，我们就踩在这片废墟之上起舞。",
+        "keyPoints": "fingir que + 虚拟式/陈述式: 假装……；bailar sobre las ruinas: 在废墟上起舞（象征决绝）。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "límite (m.)",
+        "meaning": "极限 / 界限 / 底线"
+      },
+      {
+        "word": "salvaje (adj.)",
+        "meaning": "荒蛮的 / 野性的"
+      },
+      {
+        "word": "fingir (v.)",
+        "meaning": "假装 / 伪装"
+      },
+      {
+        "word": "ruinas (f.pl.)",
+        "meaning": "废墟 / 残骸"
+      }
+    ]
+  },
+  {
+    "id": "film_machuca",
+    "movieTitle": "马丘卡",
+    "spanishTitle": "Machuca",
+    "year": 2004,
+    "director": "Andrés Wood",
+    "genre": "青春生活",
+    "levelTag": "B1进阶",
+    "coverImage": "https://images.unsplash.com/photo-1471286174890-9c112ffca564?w=800&auto=format&fit=crop&q=80",
+    "tag": "智利影史殿堂级成长经典 · 动荡时代两少年的纯真友谊",
+    "audioDuration": "01:45",
+    "isFreePreview": false,
+    "sceneSummary": "1973年智利圣地亚哥，在私立贵族学校神父的破格实验下，贫民窟男孩马丘卡与富裕少年贡萨洛结为挚友。在社会动荡的暴风雨前夕，友谊成了最纯净的避风港。",
+    "dialogues": [
+      {
+        "character": "Gonzalo",
+        "es": "Mírame a la cara. ¿Crees que por tener zapatos diferentes no podemos ser amigos?",
+        "zh": "看着我的脸。你难道真以为就因为我们穿的鞋子不一样，我们俩就不能成为朋友吗？",
+        "keyPoints": "mírame: mirar 的祈使式 + me（看着我）；por + 原形动词 (tener) 表原因；amigo: 朋友。"
+      },
+      {
+        "character": "Machuca",
+        "es": "No son los zapatos, Gonzalo. Es el mundo entero que nos está separando.",
+        "zh": "并不是鞋子的问题，贡萨洛。是这整个世界在硬生生地把我们拆散开来。",
+        "keyPoints": "no son A, es B: 不是A而是B；estar + 副动词 (separando) 表进行时态。"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "amistad (f.)",
+        "meaning": "友谊 / 情谊"
+      },
+      {
+        "word": "separar (v.)",
+        "meaning": "分开 / 隔开 / 拆散"
+      },
+      {
+        "word": "zapatos (m.pl.)",
+        "meaning": "鞋子"
+      },
+      {
+        "word": "mundo (m.)",
+        "meaning": "世界 / 世间"
+      }
+    ]
   }
 ];
 
