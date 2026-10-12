@@ -160,7 +160,7 @@ export const VipModal: React.FC<VipModalProps> = ({
               </button>
             </div>
           ) : is30dActive ? (
-            /* 2. 若当前是 30 天通行证用户：突出展示【补 40 元升终身】通道 */
+            /* 2. 若当前是 30 天通行证用户：展示当前状态及终身卡升级入口 */
             <div className="space-y-3">
               <div className="p-3.5 rounded-2xl bg-amber-50/80 border border-amber-300/80 flex items-center justify-between">
                 <div>
@@ -177,31 +177,31 @@ export const VipModal: React.FC<VipModalProps> = ({
                 </span>
               </div>
 
-              {/* 补差价升级终身卡专区 */}
+              {/* 升级终身卡专区 */}
               <div className="p-4 rounded-2xl bg-gradient-to-br from-rose-50 to-amber-50 border border-rose-200 space-y-2.5">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-black text-[#B82E24] flex items-center gap-1">
                     <Zap className="w-3.5 h-3.5 fill-[#B82E24]" />
-                    <span>升单特权：已付 9.9 元 100% 全额抵扣！</span>
+                    <span>直升终身买断：解除天数限制</span>
                   </span>
-                  <span className="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
-                    仅需补 ¥40.0
+                  <span className="text-xs font-black text-rose-700 bg-rose-100 px-2 py-0.5 rounded-full">
+                    永久买断 VIP
                   </span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  升级为<strong>【终身研习·黑金永久VIP】</strong>后，免除过期限制，永久买断，随每年新考期持续免费云更新！
+                  若需升级为<strong>【终身研习·黑金永久VIP】</strong>，可拍下终身卡密在此直接激活，永久买断并享持续免费云更新！
                 </p>
 
                 <div className="pt-1 space-y-2">
                   <label className="text-[11px] font-bold text-slate-700 block">
-                    输入补差价获得的【终身VIP卡密】立即激活升级：
+                    输入获得的【终身VIP卡密】激活升级：
                   </label>
                   <form onSubmit={handleSubmit} className="flex gap-2">
                     <input
                       type="text"
                       value={inputKey}
                       onChange={e => setInputKey(e.target.value)}
-                      placeholder="在此粘贴补差价获得的专属卡密"
+                      placeholder="在此粘贴专属激活卡密"
                       className="flex-1 px-3 py-2 rounded-xl border border-slate-300 focus:border-[#B82E24] outline-none text-xs font-mono uppercase"
                     />
                     <button
@@ -209,14 +209,14 @@ export const VipModal: React.FC<VipModalProps> = ({
                       disabled={isSubmitting}
                       className="px-4 py-2 rounded-xl bg-[#B82E24] hover:bg-[#991B1B] text-white text-xs font-black shrink-0 transition cursor-pointer"
                     >
-                      {isSubmitting ? '核验中...' : '立即升级'}
+                      {isSubmitting ? '核验中...' : '立即激活'}
                     </button>
                   </form>
                 </div>
               </div>
             </div>
           ) : (
-            /* 3. 未激活用户：展示双规格选择与全额补差价承诺 */
+            /* 3. 未激活用户：展示双规格选择 */
             <div className="space-y-3">
               {/* 双规格对比卡片 */}
               <div className="grid grid-cols-2 gap-2.5">
@@ -259,10 +259,10 @@ export const VipModal: React.FC<VipModalProps> = ({
                 </div>
               </div>
 
-              {/* 核心升级承诺 Banner */}
-              <div className="p-2.5 rounded-xl bg-gradient-to-r from-amber-100/80 to-rose-100/80 border border-amber-300/80 text-center">
-                <p className="text-[11px] sm:text-xs font-black text-[#B82E24]">
-                  🔥【良心承诺】：已购 9.9 通行证支持 100% 全额抵扣，补 40 元即可升终身！
+              {/* 核心规格说明 Banner */}
+              <div className="p-2.5 rounded-xl bg-gradient-to-r from-amber-50 to-rose-50 border border-rose-200 text-center">
+                <p className="text-[11px] sm:text-xs font-bold text-[#B82E24]">
+                  🎯 冲刺刷题选【9.9元30天】· 长期自学考研选【49.9元终身买断】· 闲鱼拍下秒发卡密
                 </p>
               </div>
 

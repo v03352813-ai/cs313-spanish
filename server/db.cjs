@@ -221,7 +221,7 @@ function verifyAndBindCardKey(cardKey, device = {}) {
     if (nowMs > expiresMs) {
       return {
         success: false,
-        message: '您的【全真机考·30天通行证】已到期。支持全额抵扣，仅需补 40 元差价即可升级终身卡！',
+        message: '您的【全真机考·30天通行证】已到期。请重新购买卡密续期或升级终身卡继续使用！',
         isExpired: true
       };
     }

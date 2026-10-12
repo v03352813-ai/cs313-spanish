@@ -184,17 +184,17 @@ export const App: React.FC = () => {
               <Sparkles className="w-4 h-4 shrink-0 text-amber-300 mt-0.5 sm:mt-0 animate-pulse" />
               <span className="leading-snug break-words min-w-0">
                 {license?.isExpired ? (
-                  <>⚠️ 您的<strong>【全真机考·30天通行证】</strong>已到期 · 支持全额抵扣，仅需补 40 元差价即可升级终身卡！</>
+                  <>⚠️ 您的<strong>【全真机考·30天通行证】</strong>已到期 · 拍下卡密即可续期或升级为终身买断！</>
                 ) : (
                   <>当前为<strong>【免费试学模式】</strong> · 拍下卡密即享 DELE/SIELE 欧标机考全真大卷、5,000+ 核心词库与经典西影原声精听</>
                 )}
               </span>
             </div>
             <button
-              onClick={() => handleOpenVipModal(license?.isExpired ? '您的30天通行证已到期，支持补40元差价升级终身卡，终身免更！' : '拍下激活码即享 DELE/SIELE 欧标机考全真大卷、5,000+ 核心词库与经典西影原声精听！')}
+              onClick={() => handleOpenVipModal(license?.isExpired ? '您的30天通行证已到期，输入新卡密即可继续使用！' : '拍下激活码即享 DELE/SIELE 欧标机考全真大卷、5,000+ 核心词库与经典西影原声精听！')}
               className="w-full sm:w-auto px-4 py-1.5 rounded-xl bg-white text-[#B82E24] font-extrabold hover:bg-rose-50 transition shadow-xs text-xs cursor-pointer shrink-0 text-center flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
             >
-              <span>{license?.isExpired ? '补40元升级终身卡 ➔' : '输入卡密解锁 ➔'}</span>
+              <span>{license?.isExpired ? '重新激活 / 升级 ➔' : '输入卡密解锁 ➔'}</span>
             </button>
           </div>
         </div>
@@ -204,14 +204,14 @@ export const App: React.FC = () => {
             <div className="flex items-center gap-2 min-w-0">
               <Sparkles className="w-4 h-4 shrink-0 text-amber-200 animate-spin" />
               <span className="leading-snug break-words min-w-0">
-                ⏰ 您的<strong>【全真机考·30天通行证】</strong>生效中（剩余 <strong>{license.remainingDays ?? 30}</strong> 天）· 体验满意？已付 9.9 全额抵扣！
+                ⏰ 您的<strong>【全真机考·30天通行证】</strong>生效中（剩余 <strong>{license.remainingDays ?? 30}</strong> 天）· 尊享全真机考与动词变位推导
               </span>
             </div>
             <button
-              onClick={() => handleOpenVipModal('您已激活 30 天通行证，支持补 40 元差价直升终身卡，终身免更！')}
+              onClick={() => handleOpenVipModal('您当前已激活 30 天通行证，也可随时输入终身卡密直升永久VIP！')}
               className="w-full sm:w-auto px-3.5 py-1 rounded-xl bg-white text-[#B82E24] font-black hover:bg-amber-50 transition shadow-xs text-xs cursor-pointer shrink-0 text-center flex items-center justify-center gap-1 hover:scale-105 active:scale-95"
             >
-              <span>补40元升级终身卡 ➔</span>
+              <span>查看权限 / 升级 ➔</span>
             </button>
           </div>
         </div>
