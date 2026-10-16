@@ -41,8 +41,9 @@ export const VipModal: React.FC<VipModalProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [copiedXianyu, setCopiedXianyu] = useState(false);
 
-  // 闲鱼官方拍下链接 (支持通过商品 ID 动态跳转)
-  const XIANYU_ITEM_URL = 'https://m.tb.cn/h.gxXXXXX'; // 闲鱼官方商品直通车
+  // 闲鱼官方拍下链接 (真实商品直通车)
+  const XIANYU_URL_30D = 'https://h5.m.goofish.com/item?id=1090242127317';
+  const XIANYU_URL_VIP = 'https://h5.m.goofish.com/item?id=1093299220376';
 
   if (!isOpen) return null;
 
@@ -184,9 +185,15 @@ export const VipModal: React.FC<VipModalProps> = ({
                     <Zap className="w-3.5 h-3.5 fill-[#B82E24]" />
                     <span>直升终身买断：解除天数限制</span>
                   </span>
-                  <span className="text-xs font-black text-rose-700 bg-rose-100 px-2 py-0.5 rounded-full">
-                    永久买断 VIP
-                  </span>
+                  <a
+                    href={XIANYU_URL_VIP}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2.5 py-1 rounded-lg bg-[#B82E24] text-white text-[11px] font-bold flex items-center gap-1 shadow-2xs hover:bg-[#991B1B] transition"
+                  >
+                    <span>去闲鱼拍终身卡</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   若需升级为<strong>【终身研习·黑金永久VIP】</strong>，可拍下终身卡密在此直接激活，永久买断并享持续免费云更新！
@@ -233,9 +240,20 @@ export const VipModal: React.FC<VipModalProps> = ({
                       全真题机考 + 动词变位 + 西影精听（30天全开放）
                     </p>
                   </div>
-                  <div className="pt-2 flex items-baseline gap-1">
-                    <span className="text-base sm:text-lg font-black text-[#B82E24]">¥9.9</span>
-                    <span className="text-[10px] text-slate-400">/ 30天畅学</span>
+                  <div className="pt-2 flex items-center justify-between">
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-base sm:text-lg font-black text-[#B82E24]">¥9.9</span>
+                      <span className="text-[10px] text-slate-400">/ 30天</span>
+                    </div>
+                    <a
+                      href={XIANYU_URL_30D}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-2 py-0.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-white font-black text-[10.5px] inline-flex items-center gap-0.5 shadow-2xs transition"
+                    >
+                      <span>去闲鱼拍</span>
+                      <ExternalLink className="w-2.5 h-2.5" />
+                    </a>
                   </div>
                 </div>
 
@@ -252,9 +270,20 @@ export const VipModal: React.FC<VipModalProps> = ({
                       终身不限时 + 2台设备授权 + 后续新真题免费云更
                     </p>
                   </div>
-                  <div className="pt-2 flex items-baseline gap-1">
-                    <span className="text-base sm:text-lg font-black text-[#B82E24]">¥49.9</span>
-                    <span className="text-[10px] text-slate-400">/ 永久买断</span>
+                  <div className="pt-2 flex items-center justify-between">
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-base sm:text-lg font-black text-[#B82E24]">¥49.9</span>
+                      <span className="text-[10px] text-slate-400">/ 终身</span>
+                    </div>
+                    <a
+                      href={XIANYU_URL_VIP}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-2 py-0.5 rounded-lg bg-[#B82E24] hover:bg-[#991B1B] text-white font-black text-[10.5px] inline-flex items-center gap-0.5 shadow-2xs transition"
+                    >
+                      <span>去闲鱼拍</span>
+                      <ExternalLink className="w-2.5 h-2.5" />
+                    </a>
                   </div>
                 </div>
               </div>
